@@ -29,6 +29,7 @@ module.exports = {
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Install', link: '/install/' },
+      { text: 'Learn', link: '/learn/' },
       { text: 'System guide', link: '/guide/' },
       { text: 'API', link: '/api/' },
       { text: 'Support', link: 'https://rtloc.com/customer-support' },
