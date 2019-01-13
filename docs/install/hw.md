@@ -1,9 +1,20 @@
----
-pageClass: more-inf-class
----
 
-# Deployment
+
+# Device setup
+<!-- <NumberModifier :start="5"/> -->
 On this page you can find more information on some good (and bad) practices when you deploy a system. When you want to set up a high-end RTLS, you should keep a couple of simple rules in mind.
+
+## Basic requirements
+You will need at least the following hardware:
+
+* 1 Listener
+* 3 Anchors
+* 1 Tag
+* 1 Switch
+* 4 Micro usb cables (type B)
+* 2 Ethernet cables
+
+> If you have bought the Introduction Kit, everything will be included to get started.
 
 ## Basic rules
  1. **Strategically place your anchors.**
@@ -27,7 +38,7 @@ A crucial step in the deployment is to make sure that the antennas are well plac
 If you want good coverage in a certain area, it's best to point the antenna so that it has the highest gain in the direction of the area of interest.
 
 As already mentioned above, also make sure that the area around the antenna is clear. Make sure the antenna has a 'clear' sight. Also avoid having metal structures too close to the antenna.
-<!-- 
-Want more information on the different antennas? [Click Here](../docs/private/Learn/Hardware/Antennas/). -->
+
+<!-- Want more information on the different antennas? [Click Here](../docs/private/Learn/Hardware/Antennas/). -->
 
 ## Pitfalls

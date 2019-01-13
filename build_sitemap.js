@@ -1,9 +1,9 @@
 const sm = require('sitemap')
 const fs = require('fs')
-const package = require('./.vuepress/config')
+const package = require('./docs/.vuepress/config')
 
-const hostname = 'https://vuepress-examples.netlify.com/'
-const fn = './.vuepress/public/sitemap.xml'
+const hostname = 'https://docs.rtloc.com/'
+const fn = './docs/.vuepress/public/sitemap.xml'
 let urls = []
 
 for (const obj of package.themeConfig.sidebar) {
@@ -17,7 +17,6 @@ for (const obj of package.themeConfig.sidebar) {
   }
   urls.push({ url, changefreq, priority })
 }
-
 
 const sitemap = sm.createSitemap({ hostname, urls });
 const xml = sitemap.toXML()
