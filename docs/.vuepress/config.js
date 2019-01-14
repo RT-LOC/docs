@@ -49,7 +49,16 @@ module.exports = {
           ''
         ],
         '/learn/': [
-          ['cxRTLS', 'Basics']
+          ['cxRTLS', 'Basics'],
+          ['cxRTLS_actions', 'Actions'],
+          ['cxRTLS_concepts', 'Concepts'],
+          ['cxRTLS_config', 'Config'],
+          ['cxRTLS_cross', 'Cross'],
+          ['cxRTLS_fwup', 'Firmware Update'],
+          ['cxRTLS_license', 'License'],
+          ['cxRTLS_logconn', 'LogConn'],
+          ['cxRTLS_replay', 'Replay'],
+          ['cxRTLS_setup', 'Setup']
         ]
     }
   },

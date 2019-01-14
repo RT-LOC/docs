@@ -30,7 +30,7 @@ First we will describe all the bars and menus.
   * The current day and timebase
   * The current memory usage of the program
   * The current CPU usage of the program
- ![host](img/cxRTLS/1_host.png)
+ ![host](./img/cxRTLS/1_host.png)
 
 
 ### System bar
@@ -43,11 +43,11 @@ The system bar contains the most important data from the RTLS system. It will sh
  * The version of the anchor- & tagfirmware
  * The last task number
  * The firmware update status
-![system](img/cxRTLS/1_system.png)
+![system](./img/cxRTLS/1_system.png)
 
 ### Data bar
 The data bar is a collection of buttons that give you control over data input and output, as well as processing of the data.
-![data](img/cxRTLS/1_data.png)
+![data](./img/cxRTLS/1_data.png)
  * Select the View Mode and choose between Live, Replay or Link view.
  * The current project number
  * Stop the live data stream (similar to unplugging the listeners)
@@ -56,7 +56,7 @@ The data bar is a collection of buttons that give you control over data input an
 
 
 The engine can be switched off completely by selecting 'SkipEngine'. The configurable engine parameters are as follows:
-![data_engine](img/cxRTLS/1_data_eng.png)
+![data_engine](./img/cxRTLS/1_data_eng.png)
  - PitaComp - do a Pythagorean compensation on the results
  - ThreadCalc - run the engine in multiple threads for very heavy performance
  - MDS - perform MDS
@@ -71,11 +71,11 @@ The engine can be switched off completely by selecting 'SkipEngine'. The configu
 
 Pressing API will open a floating window with all the API settings.
 You will see all the active TCP clients and configure some general settings.
-![data_api](img/cxRTLS/1_data_api.png)
+![data_api](./img/cxRTLS/1_data_api.png)
 
 ### Extra bar
 The extra bar gives you access to all kind of extra data and information. Clicking one of these buttons will open a dedicated screen for some specific functionality.
-![extra](img/cxRTLS/1_extra.png)
+![extra](./img/cxRTLS/1_extra.png)
 - DW -
 - TASK - Send tasks to any of the nodes
 - TaskH - History of all the tasks, including whether or not they have been acked
@@ -96,7 +96,7 @@ The extra bar gives you access to all kind of extra data and information. Clicki
 
 ### Log bars
 You can log all the data to replay and analyze it afterwards.
-![log](img/cxRTLS/1_log.png)
+![log](./img/cxRTLS/1_log.png)
 There are 2 different kinds of logging:
 - Frame logging - the logged data is already processed and filtered. All the essential information is stored in a minimal format.
 - Raw logging - *all* the data is logged, will consume relatively large amount of storage space
@@ -108,7 +108,7 @@ The fly. Has some surprises for you.
 
 ### Menu
 The menu to select the screen you want.
-![menu](img/cxRTLS/1_menu.png)
+![menu](./img/cxRTLS/1_menu.png)
 - [License](cxRTLS_license.html) - details about your license
 - [Config](cxRTLS_config.html) -
 - [Floor](cxRTLS_floor.html) -
