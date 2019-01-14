@@ -7,10 +7,10 @@ It runs on Windows 7 or later versions and requires around 30MB of storage.
 
 ## Overview
 When you open the program, you will see something similar:
-![overview](img/cxRTLS/1_raw.png)
+![overview](./img/cxRTLS/1_raw.png)
 
 The program consists of multiple bars and menus:
-![overview](img/cxRTLS/1.png)
+![overview](./img/cxRTLS/1.png)
  1. host bar
  2. system bar
  3. data bar
