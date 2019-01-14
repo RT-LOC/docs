@@ -47,6 +47,9 @@ module.exports = {
         ],
         '/api/': [
           ''
+        ],
+        '/learn/': [
+          ''
         ]
     }
   },
