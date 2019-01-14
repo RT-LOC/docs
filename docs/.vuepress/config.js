@@ -29,38 +29,122 @@ module.exports = {
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Install', link: '/install/' },
-      { text: 'Learn', link: '/learn/' },
       { text: 'System guide', link: '/guide/' },
       { text: 'API', link: '/api/' },
       { text: 'Support', link: 'https://rtloc.com/customer-support' },
     ],
     // sidebar: 'auto'
     sidebar: {
-        '/install/': [
-            '',
-            // '/test'
-            ['hw', 'Deploying hardware'],
-            ['sw', 'Software setup']
-        ],
-        '/guide/': [
-          ''
-        ],
-        '/api/': [
-          ''
-        ],
-        '/learn/': [
-          ['cxRTLS', 'Basics'],
-          ['cxRTLS_actions', 'Actions'],
-          ['cxRTLS_concepts', 'Concepts'],
-          ['cxRTLS_config', 'Config'],
-          ['cxRTLS_cross', 'Cross'],
-          ['cxRTLS_fwup', 'Firmware Update'],
-          ['cxRTLS_license', 'License'],
-          ['cxRTLS_logconn', 'LogConn'],
-          ['cxRTLS_replay', 'Replay'],
-          ['cxRTLS_setup', 'Setup']
-        ]
+      
+        '/install/':  getInstallSidebar('Install'),
+        '/guide/': getGuideSidebar('cxRTLS'),
+        '/api/': getAPISidebar('API'),
+        // '/guide/': 
+        // {
+        //   title: 'cxRTLS',
+        //   collapsable: false,
+        //   children: [
+        //       '',
+        //       // '/test'
+        //       ['cxRTLS', 'Basics'],
+        //       ['cxRTLS_actions', 'Actions'],
+        //       ['cxRTLS_concepts', 'Concepts'],
+        //       ['cxRTLS_config', 'Config'],
+        //       ['cxRTLS_cross', 'Cross'],
+        //       ['cxRTLS_fwup', 'Firmware Update'],
+        //       ['cxRTLS_license', 'License'],
+        //       ['cxRTLS_logconn', 'LogConn'],
+        //       ['cxRTLS_replay', 'Replay'],
+        //       ['cxRTLS_setup', 'Setup']
+        //   ]
+        // },
+
+        // {
+        //   title: 'Group 1',
+        //   collapsable: false,
+        //   children: [
+        //       '',
+        //       // '/test'
+        //       ['hw', 'Deploying hardware'],
+        //       ['sw', 'Software setup']
+        //   ]
+        // }
+        // '/api/': [
+        //   ''
+        // ],
     }
   },
   plugins: ['@vuepress/pwa', '@vuepress/pagination', '@vuepress/back-to-top', '@vuepress/search', '@vuepress/medium-zoom']
+}
+
+// function getGuideSidebar (groupA, groupB) {
+//   return [
+//     {
+//       title: groupA,
+//       collapsable: false,
+//       children: 
+//       [
+//       ['hw', 'Deploying hardware'],
+//       ['sw', 'Software setup']
+//       ]
+//     },
+//     {
+//       title: groupB,
+//       collapsable: false,
+//       children: [
+//         'frontmatter',
+//         'permalinks',
+//         'markdown-slot',
+//         'global-computed'
+//       ]
+//     }
+//   ]
+// }
+function getInstallSidebar (groupA) {
+  return [
+    {
+      title: groupA,
+      collapsable: false,
+      children: 
+      [
+      ['hw', 'Deploying hardware'],
+      ['sw', 'Software setup']
+      ]
+    }
+  ]
+}
+
+function getGuideSidebar (groupA) {
+  return [
+    {
+      title: groupA,
+      collapsable: false,
+      children: 
+      [
+        ['cxRTLS', 'Basics'],
+        ['cxRTLS_actions', 'Actions'],
+        ['cxRTLS_concepts', 'Concepts'],
+        ['cxRTLS_config', 'Config'],
+        ['cxRTLS_cross', 'Cross'],
+        ['cxRTLS_fwup', 'Firmware Update'],
+        ['cxRTLS_license', 'License'],
+        ['cxRTLS_logconn', 'LogConn'],
+        ['cxRTLS_replay', 'Replay'],
+        ['cxRTLS_setup', 'Setup']
+      ]
+    }
+  ]
+}
+
+function getAPISidebar (groupA) {
+  return [
+    {
+      title: groupA,
+      collapsable: false,
+      children: 
+      [
+        ''
+      ]
+    }
+  ]
 }
