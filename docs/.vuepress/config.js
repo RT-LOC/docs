@@ -39,39 +39,6 @@ module.exports = {
         '/install/':  getInstallSidebar('Install'),
         '/guide/': getGuideSidebar('cxRTLS'),
         '/api/': getAPISidebar('API'),
-        // '/guide/': 
-        // {
-        //   title: 'cxRTLS',
-        //   collapsable: false,
-        //   children: [
-        //       '',
-        //       // '/test'
-        //       ['cxRTLS', 'Basics'],
-        //       ['cxRTLS_actions', 'Actions'],
-        //       ['cxRTLS_concepts', 'Concepts'],
-        //       ['cxRTLS_config', 'Config'],
-        //       ['cxRTLS_cross', 'Cross'],
-        //       ['cxRTLS_fwup', 'Firmware Update'],
-        //       ['cxRTLS_license', 'License'],
-        //       ['cxRTLS_logconn', 'LogConn'],
-        //       ['cxRTLS_replay', 'Replay'],
-        //       ['cxRTLS_setup', 'Setup']
-        //   ]
-        // },
-
-        // {
-        //   title: 'Group 1',
-        //   collapsable: false,
-        //   children: [
-        //       '',
-        //       // '/test'
-        //       ['hw', 'Deploying hardware'],
-        //       ['sw', 'Software setup']
-        //   ]
-        // }
-        // '/api/': [
-        //   ''
-        // ],
     }
   },
   plugins: ['@vuepress/pwa', '@vuepress/pagination', '@vuepress/back-to-top', '@vuepress/search', '@vuepress/medium-zoom']
@@ -118,7 +85,7 @@ function getGuideSidebar (groupA) {
   return [
     {
       title: groupA,
-      collapsable: false,
+      collapsable: true,
       children: 
       [
         ['cxRTLS', 'Basics'],
