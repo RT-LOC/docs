@@ -20,5 +20,5 @@ If you have entered the exact coordinates of the anchors ([see here](LINKREQUIRE
 Now you can measure the distances between the anchors by clicking on _'Run Anchor Dist'_. All the anchors will start to range with each other. This process can take a while, depending on how many anchors you have (about 10 seconds per anchor).
 If not all anchors have visibility to each other, the table might have some open spots.
 
-NOG MAKEN:
-![cross_detail](./img/cxRTLS/cross_detailed_anchoranchor.png)
+<!-- NOG MAKEN: -->
+<!-- ![cross_detail](./img/cxRTLS/cross_detailed_anchoranchor.png) -->
