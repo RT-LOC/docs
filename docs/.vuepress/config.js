@@ -49,7 +49,7 @@ module.exports = {
           ''
         ],
         '/learn/': [
-          ''
+          ['cxRTLS', 'Basics']
         ]
     }
   },
