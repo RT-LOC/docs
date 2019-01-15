@@ -70,12 +70,12 @@ function getInstallSidebar() {
 function getGuideSidebar() {
   return [
     {
-      title: "System basics",
+      title: "Software introduction",
       collapsable: true,
       children: [["cxRTLS", "Basics"]]
     },
     {
-      title: "System guide",
+      title: "Software guide",
       collapsable: true,
       children: [
         ["cxRTLS_concepts", "Concepts"],
@@ -91,6 +91,11 @@ function getGuideSidebar() {
       title: "Software elements",
       collapsable: true,
       children: [["cxRTLS_actions", "Actions"]]
+    },
+    {
+      title: "Web portal",
+      collapsable: true,
+      children: [["web", "Set up"]]
     }
   ];
 }
@@ -99,7 +104,7 @@ function getAPISidebar() {
   return [
     {
       title: "Developer API's",
-      collapsable: false,
+      collapsable: true,
       children: [""]
     }
   ];
