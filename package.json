@@ -1,10 +1,9 @@
 {
-  "name": "vuepress-examples",
+  "name": "rtloc-docs",
   "version": "1.0.0",
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
-    "serve": "cd .vuepress/dist/ && python -m SimpleHTTPServer 8000"
+    "build": "vuepress build docs"
   },
   "dependencies": {
     "@vuepress/plugin-back-to-top": "^1.0.0-alpha.0",
