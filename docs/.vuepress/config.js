@@ -1,7 +1,7 @@
 module.exports = {
   title: 'RTLOC documentation',
   description: 'Your guide to our system',
-  base: "/docs/",
+  base: "",
   head: [
     // ['link', { rel: 'icon', href: `/logo.png` }],
     // ['link', { rel: 'manifest', href: '/manifest.json' }],
