@@ -1,21 +1,21 @@
 # Config
 The configuration screen allows you to configure the most important timing parameters. You can choose the slots and update rate for the anchors and tags or let everything be configured automatically (this feature is coming). Also the parameters for the listeners are set here.
 
-## 1.Overview
+## Overview
 
 ![config](./img/cxRTLS/2_config.png)
 
 1.timestamps
 1.test2
 
-## 2. Listener Module
+## Listener Module
 All the connected listeners will appear in this screen. You will see their node numbers and IP addresses, to which IP the listener is sending its data and on which panID/subnetwork it is listening.
 ![listener_module](./img/cxRTLS/2_listener_module.png)
 
 You can reset each listener individually and change the destination IP address.
 Having problems getting the listeners in? Have a look at the troubleshoot (hier link).
 
-## 3. Slots & Frames
+## Slots & Frames
 Every second is subdivided into frames. During each frame, all of the nodes have a chance to send their data once. The size of the frames can be adjusted (more on that below), and the amount of frames that fit within a second determines the maximum update rate for the tags. The shorter the frame, the higher the update rate can be.
 
 Each frame is subdivided into slots. You can assign a slot to each anchor and tag. This will determine when  they will send their data in time exactly (cfr. TDMA or Time Division Multiple Access).
