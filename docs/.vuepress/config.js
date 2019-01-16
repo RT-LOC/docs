@@ -3,7 +3,7 @@ module.exports = {
   description: "Your guide to our system",
   base: "",
   head: [
-    // ['link', { rel: 'icon', href: `/logo.png` }],
+    ['link', { rel: 'icon', href: `/logo.png` }],
     // ['link', { rel: 'manifest', href: '/manifest.json' }],
     ["meta", { name: "theme-color", content: "#0c5a9e" }],
     ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
@@ -18,17 +18,9 @@ module.exports = {
   ],
   // theme: '@vuepress/vue',
   themeConfig: {
-    repo: "RT_LOC/docs",
-    editLinks: true
-    // docsDir: 'packages/docs/docs',
-    // Algolia search?
-    // algolia: ctx.isProd ? ({
-    //   apiKey: '3a539aab83105f01761a137c61004d85',
-    //   indexName: 'vuepress'
-    // }) : null
-  },
-  themeConfig: {
-    displayAllHeaders: true, // Default: false
+    // repo: "RT_LOC/docs", // Shows link in top nav bar
+    // editLinks: true,
+    // displayAllHeaders: true, // Default: false
     nav: [
       { text: "Home", link: "/" },
       { text: "Install", link: "/install/" },
