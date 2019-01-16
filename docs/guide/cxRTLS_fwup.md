@@ -5,6 +5,7 @@ In this document you can learn how to install the version you want on your syste
 ## Verify the version
 In the panel _'Deca Version'_, you can verify the current version of all the tags and anchors.
 The version will appear here once the system has received the information from the node. This will happen automatically. Keep in mind however that after booting the cxRTLS, it might take some time before all the information is collected (approx. 1 min).
+
 ![fwup_version](./img/cxRTLS/fwup_version.png)
 
 ## Import FWs in cxRTLS
@@ -36,9 +37,11 @@ You will also need to select the method of transfer.
 
 The `Internal` method is faster, but has the limitation that only the firmware that is available on the wired anchor can be used.
 With the `External` method you can send any firmware you want to the node.
+
 ![fwup_ota_method2](./img/cxRTLS/fwup_ota_method2.png)
 
 Now select the node you want to update in the _'Deca Module'_ panel and press _'ForceUpd'_ .
+
 ![fwup_ota_forceupd](./img/cxRTLS/fwup_ota_forceupd.png)
 
 The node will exit the current firmware it is running and jump to its firmwareloader.
@@ -56,9 +59,11 @@ This method will make it possible to connect an anchor via USB to your host and 
 If you don't have any infrastructure available or you miss a TCP connection to your anchor(s), the USB firmware update might help you out.
 Connect the node you want to update via a USB cable to the host computer and [open the connection](HIERNOGLINK).
 Force the node into BootLoader by pressing on _'BootLoader'_. Select the firmware you want to upload in the Firmwarescreen. The selected FW will appear in the USB window.
+
 ![fwup_usb_version](./img/cxRTLS/fwup_usb_version.png)
 
 Press _'Send'_ to start the upload. The progressbar of the update will appear.
+
 ![fwup_usb_progress](./img/cxRTLS/fwup_usb_progress.png)
 
 When the update is done, the node will automatically boot its new FW.
