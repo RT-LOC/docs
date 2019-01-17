@@ -36,11 +36,12 @@ module.exports = {
     }
   },
   plugins: [
-    "@vuepress/pwa",
-    "@vuepress/pagination",
-    "@vuepress/back-to-top",
-    "@vuepress/search",
-    "@vuepress/medium-zoom"
+    // '@vuepress/pwa',
+    '@vuepress/plugin-pagination',
+    '@vuepress/plugin-back-to-top',
+    '@vuepress/plugin-search',
+    '@vuepress/plugin-medium-zoom',
+    '@vuepress/plugin-last-updated'
   ]
 };
 
@@ -62,27 +63,19 @@ function getInstallSidebar() {
 function getGuideSidebar() {
   return [
     {
-      title: "Software introduction",
-      collapsable: true,
-      children: [["cxRTLS", "Basics"]]
-    },
-    {
-      title: "Software guide",
+      title: "PC Software",
       collapsable: true,
       children: [
+        ["cxRTLS", "Introduction"],
         ["cxRTLS_concepts", "Concepts"],
         ["cxRTLS_config", "Config"],
         ["cxRTLS_cross", "Cross"],
         ["cxRTLS_fwup", "Firmware Update"],
         ["cxRTLS_license", "License"],
         ["cxRTLS_logconn", "LogConn"],
-        ["cxRTLS_replay", "Replay"]
+        ["cxRTLS_replay", "Replay"],
+        ["cxRTLS_actions", "Actions"]
       ]
-    },
-    {
-      title: "Software elements",
-      collapsable: true,
-      children: [["cxRTLS_actions", "Actions"]]
     },
     {
       title: "Web portal",
