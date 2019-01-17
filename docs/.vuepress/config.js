@@ -36,12 +36,12 @@ module.exports = {
     }
   },
   plugins: [
-    // '@vuepress/pwa',
     '@vuepress/plugin-pagination',
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-search',
     '@vuepress/plugin-medium-zoom',
-    '@vuepress/plugin-last-updated'
+    '@vuepress/plugin-last-updated',
+        // '@vuepress/pwa',
   ]
 };
 
@@ -74,7 +74,8 @@ function getGuideSidebar() {
         ["cxRTLS_license", "License"],
         ["cxRTLS_logconn", "LogConn"],
         ["cxRTLS_replay", "Replay"],
-        ["cxRTLS_actions", "Actions"]
+        ["cxRTLS_actions", "Actions"],
+        ["cxRTLS_rfprofile", "RF Profile"]
       ]
     },
     {
