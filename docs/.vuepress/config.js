@@ -75,8 +75,21 @@ function getGuideSidebar() {
         ["cxRTLS_logconn", "LogConn"],
         ["cxRTLS_replay", "Replay"],
         ["cxRTLS_actions", "Actions"],
+        ["cxRTLS_adhoc", "Adhoc"],
         ["cxRTLS_rfprofile", "RF Profile"]
       ]
+    },
+    {
+      title: "Hardware",
+      collapsable: true,
+      children: [
+        ["hw_interface_ble", "BLE"],
+        // ["hw_interface_uart", "UART"],
+        ["hw_interface_sniffer", "Sniffer"],
+        // ["hw_interface_can", "CAN"],
+        ["hw_flashing", "Flashing Boards"]
+      ]
+
     },
     {
       title: "Web portal",
