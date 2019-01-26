@@ -16,12 +16,16 @@ module.exports = {
     // ['meta', { name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png' }],
     ["meta", { name: "msapplication-TileColor", content: "#0c5a9e" }]
   ],
-  // theme: '@vuepress/vue',
+  // theme: 'vue',
+  // serviceWorker: true,
   themeConfig: {
-    // repo: "RT_LOC/docs", // Shows link in top nav bar
-    // editLinks: true,
+    repo: "RT-LOC/docs", // Shows link in top nav bar
+    editLinks: true,
+    docsDir: 'docs',
+    docsBranch: 'master',
     // displayAllHeaders: true, // Default: false
     lastUpdated: 'Last Updated', // string | boolean
+    sidebarDepth: 3,
     nav: [
       { text: "Home", link: "/" },
       { text: "Install", link: "/install/" },
@@ -58,14 +62,15 @@ module.exports = {
       "/api/": getAPISidebar()
     }
   },
-  plugins: [
-    '@vuepress/plugin-pagination',
-    '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-search',
-    '@vuepress/plugin-medium-zoom',
-    '@vuepress/plugin-last-updated',
-        // '@vuepress/pwa',
-  ]
+  // plugins: [
+  //   ['@vuepress/medium-zoom', true],
+  //   ['@vuepress/pagination',true],
+  //   ['@vuepress/back-to-top',true],
+  //   ['@vuepress/search',true],
+  //   ['@vuepress/medium-zoom',true],
+  //   // ['@vuepress/last-updated',true],
+  //       // '@vuepress/pwa',
+  // ]
 };
 
 function getInstallSidebar() {
