@@ -15,7 +15,6 @@
   },
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.0.0-alpha.0",
-    "@vuepress/plugin-last-updated": "^1.0.0-alpha.0",
     "@vuepress/plugin-medium-zoom": "^1.0.0-alpha.0",
     "browser-sync": "^2.26.3"
   }
