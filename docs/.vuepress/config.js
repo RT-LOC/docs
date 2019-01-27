@@ -32,21 +32,24 @@ module.exports = {
       { text: "System guide", 
               items: [
                 { text: 'Introduction', link: '/guide/' },
-                { text: 'PC', items: [
-                  { text: 'cxRTLS', link: '/cxRTLS/' },
-                  // { text: '', link: '/guide/' }
-                  ] 
-                },
-                { text: 'Web', items: [
-                  { text: 'Portal', link: '/web/' },
-                  { text: 'Apps', link: '/web/' }
-                  ] 
-                },
-                { text: 'Embedded/Hardware', items: [
-                  { text: 'Interfaces', link: '/hardware/hw_interfaces' },
-                  { text: 'Flashing Boards', link: '/hardware/flashing/hw_flashing' }
-                  ] 
-                }
+                // { text: 'PC', items: [
+                //   { text: 'cxRTLS', link: '/cxRTLS/' },
+                //   // { text: '', link: '/guide/' }
+                //   ] 
+                // },
+                // { text: 'Web', items: [
+                //   { text: 'Portal', link: '/web/' },
+                //   { text: 'Apps', link: '/web/' }
+                //   ] 
+                // },
+                { text: 'cxRTLS',link: '/cxRTLS/'},
+                { text: 'Web',link: '/web/'},
+                { text: 'Embedded/Hardware', link: '/hardware/'}
+                // items: [
+                //   { text: 'Interfaces', link: '/hardware/hw_interfaces' },
+                //   { text: 'Flashing Boards', link: '/hardware/flashing/hw_flashing' }
+                //   ] 
+                // }
               ]
       },
       { text: "API", link: "/api/" },
@@ -56,9 +59,8 @@ module.exports = {
     sidebar: {
       "/install/": getInstallSidebar(),
       "/cxRTLS/": getcxRTLSSidebar(),
-      "/hardware/": getHardwareInterfacesSidebar(),
+      "/hardware/": getHardwareSidebar(),
       "/web/": getWebSidebar(),
-      // "/flashing/": getHardwareFlashingSidebar(),
       "/api/": getAPISidebar()
     }
   },
@@ -111,6 +113,15 @@ function getcxRTLSSidebar() {
         ["cxRTLS_concepts", "Concepts"],
         ["cxRTLS_rfprofile", "RF Profile"]
       ]
+    },
+    {
+      title: "Other",
+      collapsable: true,
+      children: [
+        ["cxRTLS_usb_console", "USB Console"],
+        ["cxRTLS_engine", "Engine"],
+        ["cxRTLS_tasks", "Tasks"]
+      ]
     }
   ];
 }
@@ -135,7 +146,7 @@ function getWebSidebar() {
   ];
 }
 
-function getHardwareInterfacesSidebar() {
+function getHardwareSidebar() {
   return [
     {
       title: "Flashing",
