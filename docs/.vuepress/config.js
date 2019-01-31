@@ -21,8 +21,8 @@ module.exports = {
   themeConfig: {
     repo: "RT-LOC/docs", // Shows link in top nav bar
     editLinks: true,
-    // docsDir: 'docs',
-    // docsBranch: 'master',
+    docsDir: 'docs',
+    docsBranch: 'master',
     // displayAllHeaders: true, // Default: false
     lastUpdated: 'Last Updated', // string | boolean
     sidebarDepth: 3,
