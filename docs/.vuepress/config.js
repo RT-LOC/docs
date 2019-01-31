@@ -1,5 +1,5 @@
 module.exports = {
-  title: "RTLOC documentation",
+  title: "Documentation",
   description: "Your guide to our system",
   base: "",
   head: [
@@ -179,7 +179,8 @@ function getReferenceSidebar() {
       children: [
         ["leds", "LED Patterns"], 
         ["pinouts", "Pinout"],
-        ["glossary", "Glossary"]]
+        ["glossary", "Glossary"],
+        ["algorithms", "Algorithms"]]
     },
   ];
 }
