@@ -180,7 +180,8 @@ function getReferenceSidebar() {
         ["leds", "LED Patterns"], 
         ["pinouts", "Pinout"],
         ["glossary", "Glossary"],
-        ["algorithms", "Algorithms"]]
+        ["algorithms", "Algorithms"],
+        ["updaterate", "Update Rate"]]
     },
   ];
 }
