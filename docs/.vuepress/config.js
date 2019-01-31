@@ -21,8 +21,8 @@ module.exports = {
   themeConfig: {
     repo: "RT-LOC/docs", // Shows link in top nav bar
     editLinks: true,
-    docsDir: 'docs',
-    docsBranch: 'master',
+    // docsDir: 'docs',
+    // docsBranch: 'master',
     // displayAllHeaders: true, // Default: false
     lastUpdated: 'Last Updated', // string | boolean
     sidebarDepth: 3,
@@ -44,7 +44,8 @@ module.exports = {
                 // },
                 { text: 'cxRTLS',link: '/cxRTLS/'},
                 { text: 'Web',link: '/web/'},
-                { text: 'Embedded/Hardware', link: '/hardware/'}
+                { text: 'Embedded/Hardware', link: '/hardware/'},
+                { text: 'Reference', link: '/reference/'}
                 // items: [
                 //   { text: 'Interfaces', link: '/hardware/hw_interfaces' },
                 //   { text: 'Flashing Boards', link: '/hardware/flashing/hw_flashing' }
@@ -61,7 +62,8 @@ module.exports = {
       "/cxRTLS/": getcxRTLSSidebar(),
       "/hardware/": getHardwareSidebar(),
       "/web/": getWebSidebar(),
-      "/api/": getAPISidebar()
+      "/api/": getAPISidebar(),
+      "/reference/": getReferenceSidebar()
     }
   },
   // plugins: [
@@ -118,7 +120,7 @@ function getcxRTLSSidebar() {
       title: "Other",
       collapsable: true,
       children: [
-        ["cxRTLS_usb_console", "USB Console"],
+        ["cxRTLS_console", "Console"],
         ["cxRTLS_engine", "Engine"],
         ["cxRTLS_tasks", "Tasks"]
       ]
@@ -159,12 +161,25 @@ function getHardwareSidebar() {
       collapsable: true,
       children: [
         ["hw_interface_ble", "BLE"],
-        // ["hw_interface_uart", "UART"],
-        ["hw_interface_sniffer", "Sniffer"],
+        ["hw_interface_usb", "USB"],
+        ["hw_interface_uart", "UART"],
         ["hw_interface_can", "CAN"],
-        // ["hw_flashing", "Flashing Boards"]
+        ["hw_interface_sniffer", "Sniffer"],
       ]
 
     }
+  ];
+}
+
+function getReferenceSidebar() {
+  return [
+    {
+      title: "Reference",
+      collapsable: true,
+      children: [
+        ["leds", "LED Patterns"], 
+        ["pinouts", "Pinout"],
+        ["glossary", "Glossary"]]
+    },
   ];
 }

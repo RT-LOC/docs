@@ -28,16 +28,9 @@ The USB console gives you direct control over the connected node. You can read o
 The console can be accessed from any of the possible firmwares (bootloader, fwloader, anchorFW, tagFW). The green box indicates the current FW.
 
 There are several commands available that give you more control over the node. Type `help` to get an idea of the commands.
-Here follows a list of the most important commands:
-- `help` - Show the help menu
-- `gettime` - Show the current time
-- `ifconfig` - Show the ethernet settings (for anchors only)
-- `ps` - Display the running threads
-- `...` - ...
+A detailed list of all the commands and more info on how to use the console yourself can be found [here](/cxRTLS/cxRTLS_console.html).
 
-You can also update the FW of the node through the USB window. More information can be found by [clicking here](cxRTLS_fwup.html#3-3-usb).
-
-
+You can also update the FW of the node through the USB window. More information can be found [here](cxRTLS_fwup.html#3-3-usb).
 
 By toggling AutoOpen, the USB connection will automatically be opened as soon as the host computer feels that a device is attached.
 
