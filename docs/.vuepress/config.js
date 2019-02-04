@@ -19,7 +19,7 @@ module.exports = {
   // theme: 'vue',
   // serviceWorker: true,
   themeConfig: {
-    repo: "RT-LOC/docs", // Shows link in top nav bar
+    // repo: "RT-LOC/docs", // Shows link in top nav bar
     editLinks: true,
     docsDir: 'docs',
     docsBranch: 'master',
@@ -32,20 +32,26 @@ module.exports = {
       { text: "System guide", 
               items: [
                 { text: 'Introduction', link: '/guide/' },
+                { text: 'Core', items: [
+                  { text: 'cxRTLS', link: '/cxRTLS/' },
+                  { text: 'Web',link: '/web/'},
+                  { text: 'Embedded/Hardware', link: '/hardware/'},
+                  ] 
+                },
+                { text: 'Other', items: [
+                  { text: 'Reference', link: '/reference/'},
+                  { text: 'FAQ', link: '/faq/'},
+                  ] 
+                },
+                // { text: 'cxRTLS',link: '/cxRTLS/'},
+                // { text: 'Web',link: '/web/'},
+                // { text: 'Embedded/Hardware', link: '/hardware/'},
+                // { text: 'Reference', link: '/reference/'},
                 // { text: 'PC', items: [
                 //   { text: 'cxRTLS', link: '/cxRTLS/' },
                 //   // { text: '', link: '/guide/' }
                 //   ] 
-                // },
-                // { text: 'Web', items: [
-                //   { text: 'Portal', link: '/web/' },
-                //   { text: 'Apps', link: '/web/' }
-                //   ] 
-                // },
-                { text: 'cxRTLS',link: '/cxRTLS/'},
-                { text: 'Web',link: '/web/'},
-                { text: 'Embedded/Hardware', link: '/hardware/'},
-                { text: 'Reference', link: '/reference/'}
+                // }
                 // items: [
                 //   { text: 'Interfaces', link: '/hardware/hw_interfaces' },
                 //   { text: 'Flashing Boards', link: '/hardware/flashing/hw_flashing' }
@@ -63,7 +69,8 @@ module.exports = {
       "/hardware/": getHardwareSidebar(),
       "/web/": getWebSidebar(),
       "/api/": getAPISidebar(),
-      "/reference/": getReferenceSidebar()
+      "/reference/": getReferenceSidebar(),
+      "/faq/": getFAQSidebar()
     }
   },
   // plugins: [
@@ -128,12 +135,32 @@ function getcxRTLSSidebar() {
   ];
 }
 
+function getFAQSidebar() {
+  return [
+    {
+      title: "FAQs",
+      collapsable: true,
+      children: [       
+        ["/faq/faq_general", "General"], 
+        ["/faq/faq_sensors", "Sensors"],
+        ["/faq/faq_network", "Network"],
+        // ["/faq/faq_rf", "RF"],
+      ]
+    }
+  ];
+}
+
 function getAPISidebar() {
   return [
     {
       title: "Developer API's",
       collapsable: true,
-      children: [""]
+      children: [        
+        ["/api/api_application", "Application"],
+        ["/api/api_console", "Console"],
+        ["/api/api_firmware", "Firmware"],
+        ["/api/api_web", "Web"]
+      ]
     }
   ];
 }
@@ -151,10 +178,12 @@ function getWebSidebar() {
 function getHardwareSidebar() {
   return [
     {
-      title: "Flashing",
+      title: "Building & Flashing",
       collapsable: true,
       // children: [["hardware/flashing/hw_flashing", "Flashing Boards"]]
-      children: [["flashing/hw_flashing", "Flashing"]]
+      children: [
+        ["flashing/hw_building", "Building"],
+        ["flashing/hw_flashing", "Flashing"]]
     },
     {
       title: "Interfaces",
@@ -181,6 +210,7 @@ function getReferenceSidebar() {
         ["pinouts", "Pinout"],
         ["glossary", "Glossary"],
         ["algorithms", "Algorithms"],
+        ["rf", "RF"],
         ["updaterate", "Update Rate"]]
     },
   ];

@@ -62,7 +62,15 @@ Click here for more information.
 
 `TagSpeed` -
 
+### Sensors
+- `Accelerometer` - Measures acceleration forces. These forces may be static (such as gravity) or dynamic.
+
+- `Gyroscope` - Measures angular velocity.
+
+- `Magnetometer` - Measures magnetic fields.
+
 ## Other Technology
 `IP66` - International Protection Marking. Rating of our enclosures. Dust- and waterproof.
+More information [here](https://en.wikipedia.org/wiki/IP_Code).
 
 `Enclosure` - The casing of the node
