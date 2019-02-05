@@ -3,7 +3,7 @@ module.exports = {
   description: "Your guide to our system",
   base: "",
   head: [
-    ['link', { rel: 'icon', href: `/logo.png` }],
+    ["link", { rel: "icon", href: `/logo.png` }],
     // ['link', { rel: 'manifest', href: '/manifest.json' }],
     ["meta", { name: "theme-color", content: "#0c5a9e" }],
     ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
@@ -21,43 +21,48 @@ module.exports = {
   themeConfig: {
     // repo: "RT-LOC/docs", // Shows link in top nav bar
     editLinks: true,
-    docsDir: 'docs',
-    docsBranch: 'master',
+    docsDir: "docs",
+    docsBranch: "master",
     // displayAllHeaders: true, // Default: false
-    lastUpdated: 'Last Updated', // string | boolean
+    lastUpdated: "Last Updated", // string | boolean
     sidebarDepth: 3,
     nav: [
       { text: "Home", link: "/" },
       { text: "Install", link: "/install/" },
-      { text: "System guide", 
-              items: [
-                { text: 'Introduction', link: '/guide/' },
-                { text: 'Core', items: [
-                  { text: 'cxRTLS', link: '/cxRTLS/' },
-                  { text: 'Web',link: '/web/'},
-                  { text: 'Embedded/Hardware', link: '/hardware/'},
-                  ] 
-                },
-                { text: 'Other', items: [
-                  { text: 'Reference', link: '/reference/'},
-                  { text: 'FAQ', link: '/faq/'},
-                  ] 
-                },
-                // { text: 'cxRTLS',link: '/cxRTLS/'},
-                // { text: 'Web',link: '/web/'},
-                // { text: 'Embedded/Hardware', link: '/hardware/'},
-                // { text: 'Reference', link: '/reference/'},
-                // { text: 'PC', items: [
-                //   { text: 'cxRTLS', link: '/cxRTLS/' },
-                //   // { text: '', link: '/guide/' }
-                //   ] 
-                // }
-                // items: [
-                //   { text: 'Interfaces', link: '/hardware/hw_interfaces' },
-                //   { text: 'Flashing Boards', link: '/hardware/flashing/hw_flashing' }
-                //   ] 
-                // }
-              ]
+      {
+        text: "System guide",
+        items: [
+          { text: "Introduction", link: "/guide/" },
+          {
+            text: "Core",
+            items: [
+              { text: "cxRTLS", link: "/cxRTLS/" },
+              { text: "Web", link: "/web/" },
+              { text: "Embedded/Hardware", link: "/hardware/" }
+            ]
+          },
+          {
+            text: "Other",
+            items: [
+              { text: "Reference", link: "/reference/" },
+              { text: "FAQ", link: "/faq/" }
+            ]
+          }
+          // { text: 'cxRTLS',link: '/cxRTLS/'},
+          // { text: 'Web',link: '/web/'},
+          // { text: 'Embedded/Hardware', link: '/hardware/'},
+          // { text: 'Reference', link: '/reference/'},
+          // { text: 'PC', items: [
+          //   { text: 'cxRTLS', link: '/cxRTLS/' },
+          //   // { text: '', link: '/guide/' }
+          //   ]
+          // }
+          // items: [
+          //   { text: 'Interfaces', link: '/hardware/hw_interfaces' },
+          //   { text: 'Flashing Boards', link: '/hardware/flashing/hw_flashing' }
+          //   ]
+          // }
+        ]
       },
       { text: "API", link: "/api/" },
       { text: "Support", link: "https://rtloc.com/customer-support" }
@@ -72,7 +77,7 @@ module.exports = {
       "/reference/": getReferenceSidebar(),
       "/faq/": getFAQSidebar()
     }
-  },
+  }
   // plugins: [
   //   ['@vuepress/medium-zoom', true],
   //   ['@vuepress/pagination',true],
@@ -89,7 +94,11 @@ function getInstallSidebar() {
     {
       title: "Install guide",
       collapsable: true,
-      children: [["hw", "Deploying hardware"], ["sw", "Software setup"]]
+      children: [
+        ["sw", "Software setup"],
+        ["hw", "Deploying hardware"],
+        ["firststeps", "First steps"]
+      ]
     },
     {
       title: "Initial tests",
@@ -112,7 +121,7 @@ function getcxRTLSSidebar() {
         ["cxRTLS_logconn", "LogConn"],
         ["cxRTLS_replay", "Replay"],
         ["cxRTLS_actions", "Actions"],
-        ["cxRTLS_adhoc", "Adhoc"],
+        ["cxRTLS_adhoc", "Adhoc"]
       ]
     },
     {
@@ -140,10 +149,10 @@ function getFAQSidebar() {
     {
       title: "FAQs",
       collapsable: true,
-      children: [       
-        ["/faq/faq_general", "General"], 
+      children: [
+        ["/faq/faq_general", "General"],
         ["/faq/faq_sensors", "Sensors"],
-        ["/faq/faq_network", "Network"],
+        ["/faq/faq_network", "Network"]
         // ["/faq/faq_rf", "RF"],
       ]
     }
@@ -155,7 +164,7 @@ function getAPISidebar() {
     {
       title: "Developer API's",
       collapsable: true,
-      children: [        
+      children: [
         ["/api/api_application", "Application"],
         ["/api/api_console", "Console"],
         ["/api/api_firmware", "Firmware"],
@@ -183,7 +192,8 @@ function getHardwareSidebar() {
       // children: [["hardware/flashing/hw_flashing", "Flashing Boards"]]
       children: [
         ["flashing/hw_building", "Building"],
-        ["flashing/hw_flashing", "Flashing"]]
+        ["flashing/hw_flashing", "Flashing"]
+      ]
     },
     {
       title: "Interfaces",
@@ -193,9 +203,8 @@ function getHardwareSidebar() {
         ["hw_interface_usb", "USB"],
         ["hw_interface_uart", "UART"],
         ["hw_interface_can", "CAN"],
-        ["hw_interface_sniffer", "Sniffer"],
+        ["hw_interface_sniffer", "Sniffer"]
       ]
-
     }
   ];
 }
@@ -206,12 +215,13 @@ function getReferenceSidebar() {
       title: "Reference",
       collapsable: true,
       children: [
-        ["leds", "LED Patterns"], 
+        ["leds", "LED Patterns"],
         ["pinouts", "Pinout"],
         ["glossary", "Glossary"],
         ["algorithms", "Algorithms"],
         ["rf", "RF"],
-        ["updaterate", "Update Rate"]]
-    },
+        ["updaterate", "Update Rate"]
+      ]
+    }
   ];
 }
