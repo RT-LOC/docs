@@ -1,4 +1,3 @@
 # RTLOC docs
 
-Built with Vuepress!
-Hosted at https://rt-loc.github.io/docs/
+Hosted at https://docs.rtloc.com
