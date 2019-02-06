@@ -94,7 +94,7 @@ function getInstallSidebar() {
       collapsable: true,
       children: [
         ["getting_started", "Getting Started"], 
-        ["sw", "Software setup"],
+        ["firststeps", "First steps"],
         ["anchor_placement", "Anchor Placement"]
       ]
     },
@@ -119,7 +119,7 @@ function getcxRTLSSidebar() {
         ["cxRTLS_logconn", "LogConn"],
         ["cxRTLS_replay", "Replay"],
         ["cxRTLS_actions", "Actions"],
-        ["cxRTLS_adhoc", "Adhoc"],
+        ["cxRTLS_adhoc", "Adhoc"]
       ]
     },
     {
@@ -149,7 +149,7 @@ function getTroubleshootSidebar() {
       collapsable: true,
       children: [       
         ["/troubleshoot/troubleshoot_enet", "Ethernet"], 
-        ["/troubleshoot/troubleshoot_embedded", "Embedded"],
+        ["/troubleshoot/troubleshoot_embedded", "Embedded"]
         // ["/faq/faq_rf", "RF"],
       ]
     }
@@ -165,7 +165,7 @@ function getFAQSidebar() {
       children: [       
         ["/faq/faq_general", "General"], 
         ["/faq/faq_sensors", "Sensors"],
-        ["/faq/faq_network", "Network"],
+        ["/faq/faq_network", "Network"]
         // ["/faq/faq_rf", "RF"],
       ]
     }
@@ -215,7 +215,7 @@ function getHardwareSidebar() {
         ["hw_interface_usb", "USB"],
         ["hw_interface_uart", "UART"],
         ["hw_interface_can", "CAN"],
-        ["hw_interface_sniffer", "Sniffer"],
+        ["hw_interface_sniffer", "Sniffer"]
       ]
 
     }
@@ -233,7 +233,8 @@ function getReferenceSidebar() {
         ["glossary", "Glossary"],
         ["algorithms", "Algorithms"],
         ["rf", "RF"],
-        ["updaterate", "Update Rate"]]
+        ["updaterate", "Update Rate"]
+      ]
     },
   ];
 }

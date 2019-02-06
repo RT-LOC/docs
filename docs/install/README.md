@@ -4,7 +4,8 @@ You will find help on how to install an RTLOC Positioning System on these pages.
 We talk about good practices when placing your anchors and more.
 
 1. [Getting Started](/install/getting_started.html)
-2. [Anchor Placement](/install/anchor_placement.html)
+2. [First localization](/install/firststeps.html)
+3. [Anchor Placement](/install/anchor_placement.html)
 
 ## Minimum Requirements
 You will need at least the following hardware:
@@ -20,14 +21,6 @@ You will need at least the following hardware:
 * Power supplies
   - 4 Micro usb cables (type B) and batteries
   - PoE
-
-## Getting started
-Follow these initial steps to get started:
-
-1. [Set up the software](/install/sw.html)
-2. [Place and power the hardware](/install/hw.html)
-> The order is not important here. You can also first place the hardware and then set up the software. 
-3. [First localization](/install/firststeps.html)
 
 # What's next
 
