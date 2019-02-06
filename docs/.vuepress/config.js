@@ -41,6 +41,7 @@ module.exports = {
                 { text: 'Other', items: [
                   { text: 'Reference', link: '/reference/'},
                   { text: 'FAQ', link: '/faq/'},
+                  { text: 'Troubleshoot', link: '/troubleshoot/'},
                   ] 
                 },
                 // { text: 'cxRTLS',link: '/cxRTLS/'},
@@ -70,7 +71,9 @@ module.exports = {
       "/web/": getWebSidebar(),
       "/api/": getAPISidebar(),
       "/reference/": getReferenceSidebar(),
-      "/faq/": getFAQSidebar()
+      "/faq/": getFAQSidebar(),
+      "/troubleshoot/": getTroubleshootSidebar()
+
     }
   },
   // plugins: [
@@ -89,7 +92,11 @@ function getInstallSidebar() {
     {
       title: "Install guide",
       collapsable: true,
-      children: [["hw", "Deploying hardware"], ["sw", "Software setup"]]
+      children: [
+        ["getting_started", "Getting Started"], 
+        ["sw", "Software setup"],
+        ["anchor_placement", "Anchor Placement"]
+      ]
     },
     {
       title: "Initial tests",
@@ -134,6 +141,21 @@ function getcxRTLSSidebar() {
     }
   ];
 }
+
+function getTroubleshootSidebar() {
+  return [
+    {
+      title: "Troubleshoots",
+      collapsable: true,
+      children: [       
+        ["/troubleshoot/troubleshoot_enet", "Ethernet"], 
+        ["/troubleshoot/troubleshoot_embedded", "Embedded"],
+        // ["/faq/faq_rf", "RF"],
+      ]
+    }
+  ];
+}
+
 
 function getFAQSidebar() {
   return [
