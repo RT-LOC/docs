@@ -1,4 +1,4 @@
-# API overview
+# APIs
 There are many ways to integrate with the RTLOC system and on different levels:
  - [`Console API`](/api/api_console.html) - Access the RTLS hardware (anchors and tags) via one of the [interfaces](/hardware/#interfaces).
  - [`Firmware API`](/api/api_firmware.html) - Build your own firmware (if you want to go very low-level).

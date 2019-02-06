@@ -32,5 +32,3 @@ We will list and compare the most important technologies here.
 ### Computer Vision
 
 ## Comparison
-
-HIER EEN TABEL

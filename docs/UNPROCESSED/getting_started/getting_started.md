@@ -1,57 +1,64 @@
-## Getting started With RTLOC
 
-### Introduction
-In this guide we will go through the setup of the RTLOC positioning system. You will learn some of the basics of the system and get familiar with some of the features.
-You will end up having a fully functional RTLS system and you can start tracking your first objects. Hooray!
 
-### What do I need?
-You will need at least the following hardware:
- - 1 Listener
- - 3 Anchors
- - 1 Tag
- - 1 Switch
- - 4 Micro usb cables (type B)
- - 2 Ethernet cables
+# Device setup
+On this page you can find more information on some good (and bad) practices when you deploy a system. When you want to set up a high-end RTLS, you should keep a couple of simple rules in mind.
 
-If you have bought the `Introduction Kit`, everything will be included to get started.
 
-### Connect the Hardware
-Let's apply power to the hardware (_HW_) to spark some life into it. There are multiple ways to power the HW. Click here [LINK] for more information. The easiest way to get started is to power the boards via the usb cables.
+## Connect listener anchor(s)
+* Connect the listener to the LAN network
+  - You can use a switch
+* The lights on the ethernet plug will start blinking.
 
-Once the boards have juice, you should see some lights blinking. There are a couple of patters possible. If all is going well, you should see a green light blinking on all boards.
+* Check that the listener is detected
+  - In the desktop software: Go the the screen 'Floor' in which you will see the Listener Module. All the connected listeners are listed here. It will show you to which IP address it is sending its data (this can be unicast, multicast or broadcast), together with the port.
 
-The last step before we turn to the PC is to connect the listener and one anchor to the same network as your PC. You can use the switch for this. The lights on the ethernet plug will start blinking.
+getting_started-listener2.png
 
-Place the anchors in a strategic way. Hang them around the area you want to track. Make sure they are placed so that they are not blocked by big objects (especially metal). You can find some more hints on how to hang the anchors here [LINK].
+Make sure you see the IP-address of your PC in the column SendTo, and the IP-address of the listener is colored green.
+If you are having problems getting the listener into the system, please click [here](troubleshoot_enet.html) to go to the troubleshoot.
 
-### Setup the PC software (cxRTLS)
-Locate the PC software and start it by double clicking the icon.
+## Placing anchors
+* Pick strategic places for the anchors
+  - They should be spread across the room
+  - Make sure they are placed so that they are not blocked by big objects (especially metal)
 
-<img align="middle" alt="getting_started-setup_icon.png" src="assets/getting_started-setup_icon.png" width="" height="">
+* For each anchor:
+  - Connect to power:
+    + Micro-USB
+    + Power over Ethernet (PoE)
+  - If all is well, you should see a green light blinking on all boards.
+  - Different light? See troubleshooting [TODO]
 
-You will get welcomed in the PC software.
+* Check connection in software:
+  - Connect By pressing AutoSetup, the system will automatically be set up and you won't have to bother about the details. Wait for about 15 seconds after pressing the button. You will see the green IP turn red for a short moment. All the anchors & tags that are powered on will start to appear in the list.
 
-#### Listener(s)
-First we will make sure the listener is properly initiated. Go the the screen  'Floor' in which you will see the _Listener Module_. All the connected listeners are listed here. It will show you to which IP address it is sending its data (this can be unicast, multicast or broadcast), together with the port.
+getting_started-tags.png
 
-<img alt="getting_started-listener2.png" src="assets/getting_started-listener2.png" width="" height="" >
+getting_started-anchors.png
 
-Make sure you see the IP-address of your PC in the column _SendTo_, and the IP-address of the listener is colored green.
+  - If all is good, the numbers in the column DecaNr should turn right. This means data of these nodes is received.
 
-#### Anchors & Tags
-Now let's setup the anchors and the tags. You should see the anchor that is connected to the ethernet appear in the Anchor list.
+## Basic rules
 
-By pressing _AutoSetup_, the system will automatically be set up and you won't have to bother about the details. Wait for about 15 seconds after pressing the button. You will see the green IP turn red for a short moment.
-All the anchors & tags that are powered on will start to appear in the list.
+1. **Strategically place your anchors.**
+If you want accurate results, it's best that you have measurements from different sides of the target. Ideally you should try to have anchors in a rectangle around the position you're measuring.
+Also make sure that every possible point in space you want to locate has at least 4 anchors with clear line of sight (LOS) on it.
 
-<img alt="getting_started-tags.png" src="assets/getting_started-tags.png" width="" height="" >
+2. **Calibrate your system.**
 
-<img alt="getting_started-anchors.png" src="assets/getting_started-anchors.png" width="" height="" >
+3. **Aim your antennas**.
+For more information, see below (x.).
 
-Whenever all is is right, the numbers in the column DecaNr should turn right. This means data of these nodes is received.
+4. **TODO.**
 
-#### Floorplan
-Now let's turn to visualising the data. Press the screen 'Floor'. Before we can see where the tags are, we need to know where the anchors are. You can calculate their (relative) positions automatically by pressing _AutoPos_. After a short while, you will see the anchors move to their position and you are ready to calculate your first tag positions. Walk around with your tag and check that the tag is actually moving on the screen.
+5. ...
 
-### What's next?
-You have just set up an easy RTLS system. Congratulations! Now there are several things you can do. Extend the area of intrest by adding more anchors. Follow more objects by adding more tags. Reach the highest possible accuracy by calibrating your system. Consult the API documentation to find out how you can connect your own system to RTLOC. There's a lot to discover. A whole new world of possibilities is waiting for you.
+6. ...
+
+
+## Antennas
+A crucial step in the deployment is to make sure that the antennas are well placed. Keep in mind that every antenna has some directionality, and works better in certain directions.
+If you want good coverage in a certain area, it's best to point the antenna so that it has the highest gain in the direction of the area of interest.
+
+As already mentioned above, also make sure that the area around the antenna is clear. Make sure the antenna has a 'clear' sight. Also avoid having metal structures too close to the antenna.
+
