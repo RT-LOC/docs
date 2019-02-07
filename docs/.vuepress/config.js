@@ -192,7 +192,7 @@ function getAPISidebar() {
       children: [
         ["/api/api_console", "Console"],
         ["/api/api_firmware", "Firmware"],
-        ["/api/api_BLE", "BLE"]
+        ["/api/api_ble", "BLE"]
       ]
     }
   ];
