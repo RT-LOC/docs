@@ -22,7 +22,7 @@ Such an external engine can run on any PC within the same network and connect to
 This means that the heavy work is decentralized to be more easy to handle.
 
 ## Mathematics
-The RTLOC engine supports 2 main problems: trilateration and multilateration.
+The RTLOC engine supports two localization techniques: trilateration and multilateration.
 
 :::tip Note
 We have some descriptions and a comparison of the algorithms [here](/reference/algorithms.html).
