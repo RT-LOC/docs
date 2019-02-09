@@ -34,9 +34,6 @@ You can change the configuration via our Tag Development Kit (TDK).
 ##Troubleshoot
 
 
-<sup>Last edited: 29 October 2017</sup>
-
-
 [img_list1]:img/listener1.png
 [img_list2]:img/listener2.png
 [img_setup_icon]:img/setup_icon.png

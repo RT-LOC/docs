@@ -62,6 +62,8 @@ Click here for more information.
 
 `TagSpeed` -
 
+`MANET` - Mobile Adhoc Network.
+
 ### Sensors
 - `Accelerometer` - Measures acceleration forces. These forces may be static (such as gravity) or dynamic.
 

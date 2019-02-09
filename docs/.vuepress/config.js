@@ -95,18 +95,22 @@ module.exports = {
 function getInstallSidebar() {
   return [
     {
-      title: "Install guide",
+      title: "Adhoc Distance System",
+      collapsable: true,
+      children: [
+        ["adhoc_getting_started", "Getting Started"],
+        ["firststeps", "First steps"],
+        // ["anchor_placement", "Anchor Placement"]
+      ]
+    },
+    {
+      title: "Positioning System",
       collapsable: true,
       children: [
         ["getting_started", "Getting Started"],
         ["firststeps", "First steps"],
         ["anchor_placement", "Anchor Placement"]
       ]
-    },
-    {
-      title: "Initial tests",
-      collapsable: true,
-      children: []
     }
   ];
 }

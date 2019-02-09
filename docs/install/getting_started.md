@@ -7,15 +7,37 @@ You will end up having a fully functional RTLS system and you can start tracking
 ## Basic requirements
 Before you get started, make sure you have at least the following hardware:
 
-* 1 Listener
-* 3 Anchors
-* 1 Tag
-* 1 Switch
-* 4 Micro usb cables (type B)
-* 2 Ethernet cables
+### Positioning devices
+![nodes](./img/install_nodes.png)
+
+```
+  - 4 anchors
+  - 1 listener anchor
+  - 1 Tag
+```
+
+### Networking equipment
 ![network](./img/install_network.png)
-![network](./img/install_nodes.png)
-![network](./img/install_power_supply.png)
+
+```
+  - 1 Switch
+  - 2 Ethernet cables
+```
+
+### Power supplies
+  ![power](./img/install_power_supply.png)
+
+```
+  - 4 Micro usb cables (type B) and batteries
+  - PoE
+```
+
+### Other
+![pc](./img/install_pc.jpeg)
+
+```
+ - Computer (desktop/laptop/tablet), preferably Windows OS
+```
 
 :::warning NOTE:
  If you have bought the `Introduction Kit`, everything will be included to get started.
@@ -89,3 +111,7 @@ Walk around with your tag and check that the tag is actually moving on the scree
 
 ## What's next?
 You have just set up an easy RTLS system. Congratulations! Now there are several things you can do. Extend the area of intrest by adding more anchors. Follow more objects by adding more tags. Reach the highest possible accuracy by calibrating your system. Consult the API documentation to find out how you can connect your own system to RTLOC. There's a lot to discover. A whole new world of possibilities is waiting for you.
+
+* Setup [finetuning](/install/tuning.html)
+* Follow our [system guide](/guide/)
+* Integrating with [our API](/api/)
