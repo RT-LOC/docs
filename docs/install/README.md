@@ -10,17 +10,34 @@ We talk about good practices when placing your anchors and more.
 ## Minimum Requirements
 You will need at least the following hardware:
 
-* Computer (desktop/laptop/tablet), preferably Windows OS
-* Positioning devices:
-  - 3 anchors
+
+### Positioning devices
+```
+  - 4 anchors
   - 1 listener anchor
   - 1 Tag
-* Networking equipment:
+```
+  ![nodes](./img/install_nodes.png)
+
+### Networking equipment
+```
   - 1 Switch
   - 2 Ethernet cables
-* Power supplies
+```
+![network](./img/install_network.png)
+
+### Power supplies
+```
   - 4 Micro usb cables (type B) and batteries
   - PoE
+```
+  ![power](./img/install_power_supply.png)
+
+### Other
+```
+ - Computer (desktop/laptop/tablet), preferably Windows OS
+```
+![pc](./img/install_pc.jpeg)
 
 # What's next
 

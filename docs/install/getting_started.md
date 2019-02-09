@@ -13,6 +13,9 @@ Before you get started, make sure you have at least the following hardware:
 * 1 Switch
 * 4 Micro usb cables (type B)
 * 2 Ethernet cables
+![network](./img/install_network.png)
+![network](./img/install_nodes.png)
+![network](./img/install_power_supply.png)
 
 :::warning NOTE:
  If you have bought the `Introduction Kit`, everything will be included to get started.

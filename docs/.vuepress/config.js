@@ -216,7 +216,8 @@ function getHardwareSidebar() {
       // children: [["hardware/flashing/hw_flashing", "Flashing Boards"]]
       children: [
         ["flashing/hw_building", "Building"],
-        ["flashing/hw_flashing", "Flashing"]
+        ["flashing/hw_flashing", "Flashing"],
+        ["hw_boards", "Boards"]
       ]
     },
     {
