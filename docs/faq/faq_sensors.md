@@ -8,10 +8,10 @@ Not all sensors are available on all boards. The following table shows which sen
 |**Anchor**| YES   | YES       | YES       |NO |
 |**Listener**|YES   | YES       | YES       | NO    |
 
-
-accelerometer to measure non-gravitational accelerations
+> (left to right) accelerometer, magnetometer, gyroscope, pressure sensor
+<!-- accelerometer to measure non-gravitational accelerations
 gyroscope to measure angular velocity
-magnetometer to measure the earths magnetic field
+magnetometer to measure the earths magnetic field -->
 
 ## How many times can I sample?
 You can access **all** sensors samples, according to the sample rate  to their maximum possible sensor rates.

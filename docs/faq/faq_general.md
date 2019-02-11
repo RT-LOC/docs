@@ -11,7 +11,7 @@ You can also run our deamon software on e.g. a NUC pc.
 The visualisation software runs on windows 7, 8, 10, iOS, macOS, linux, ...
 
 ## How reliable is your system? 
-We dedicated a lot of time on making our system as reliable as physically possible.
+We've spent a lot of time on making our system as reliable as physically possible.
 We made sure every single element in the system can be made 100% redundant. 
 If the power of a specific PC or anchor fails, the system will keep running seamlessly as if nothing happened.
 
@@ -27,7 +27,7 @@ This means we calculate 16.000 distances per second, which is close to the physi
 what is possible.
 
 ## Do I need to measure anything when setting up the system?
-No, we can autorange and auto position the anchors via the software.
+No, we can auto-range and auto-position the anchors via the software.
 However, when you want to achieve a higher accuracy, it is recommended to use a totalstation/tachyometer to calculate the positions of the anchors very precisely.
 
 ## Do I need to calibrate the system?
