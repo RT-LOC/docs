@@ -10,5 +10,8 @@ features:
   details: Reference manual for our software
 - title: API integration
   details: Developer guide on interfacing with our system
-footer: 'Remark: our documentation is undergoing development'
+footer: Copyright © 2018-present RTLOC, Callitrix
 ---
+::: tip
+Documentation undergoing development!
+:::

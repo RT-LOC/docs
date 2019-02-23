@@ -34,7 +34,7 @@ module.exports = {
         items: [
           { text: "Introduction", link: "/guide/" },
           {
-            text: "Core",
+            // text: "Core",
             items: [
               { text: "Desktop app", link: "/cxRTLS/" },
               { text: "Web portal", link: "/web/" },
