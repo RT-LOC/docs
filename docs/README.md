@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://rtloc.com/wp-content/themes/rtloc/img/horiz.svg
+heroImage: img/logo.svg
 actionText: Get Started
 actionLink: /install/
 features:
@@ -8,7 +8,7 @@ features:
   details: Instructions on how to set-up your RTLS system.
 - title: System guide
   details: Reference manual for our software
-- title: API Integration
+- title: API integration
   details: Developer guide on interfacing with our system
-footer: Copyright © 2018-present RTLOC, Callitrix
+footer: 'Remark: our documentation is undergoing development'
 ---

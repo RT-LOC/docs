@@ -13,4 +13,4 @@ Contents of this guide:
 * [Hardware](/hardware/) - Interface with our hardware and more.
 
 
-> :hammer: Elaborate documentation **COMING SOON**
+> :hammer: Work in progress! Elaborate documentation **COMING SOON**

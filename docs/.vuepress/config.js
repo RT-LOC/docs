@@ -1,9 +1,9 @@
 module.exports = {
   title: "Documentation",
   description: "Your guide to our system",
-  base: "",
+  // base: "base",
   head: [
-    ["link", { rel: "icon", href: `/logo.png` }],
+    // ["link", { rel: "icon", href: `/logo.png` }],
     // ['link', { rel: 'manifest', href: '/manifest.json' }],
     ["meta", { name: "theme-color", content: "#0c5a9e" }],
     ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
@@ -36,19 +36,19 @@ module.exports = {
           {
             text: "Core",
             items: [
-              { text: "cxRTLS", link: "/cxRTLS/" },
-              { text: "Web", link: "/web/" },
+              { text: "Desktop app", link: "/cxRTLS/" },
+              { text: "Web portal", link: "/web/" },
               { text: "Embedded/Hardware", link: "/hardware/" }
             ]
-          },
-          {
-            text: "Other",
-            items: [
-              { text: "Reference", link: "/reference/" },
-              { text: "FAQ", link: "/faq/" },
-              { text: "Troubleshoot", link: "/troubleshoot/" }
-            ]
           }
+          // {
+          //   text: "Other",
+          //   items: [
+          //     { text: "Reference", link: "/reference/" },
+          //     { text: "FAQ", link: "/faq/" },
+          //     { text: "Troubleshoot", link: "/troubleshoot/" }
+          //   ]
+          // }
           // { text: 'cxRTLS',link: '/cxRTLS/'},
           // { text: 'Web',link: '/web/'},
           // { text: 'Embedded/Hardware', link: '/hardware/'},
@@ -63,6 +63,14 @@ module.exports = {
           //   { text: 'Flashing Boards', link: '/hardware/flashing/hw_flashing' }
           //   ]
           // }
+        ]
+      },
+      {
+        text: "Other",
+        items: [
+          { text: "Reference", link: "/reference/" },
+          { text: "FAQ", link: "/faq/" },
+          { text: "Troubleshoot", link: "/troubleshoot/" }
         ]
       },
       { text: "API", link: "/api/" },
@@ -99,7 +107,7 @@ function getInstallSidebar() {
       collapsable: true,
       children: [
         ["adhoc_getting_started", "Getting Started"],
-        ["firststeps", "First steps"],
+        ["firststeps", "First steps"]
         // ["anchor_placement", "Anchor Placement"]
       ]
     },
@@ -206,8 +214,8 @@ function getWebSidebar() {
   return [
     {
       title: "Web portal",
-      collapsable: true,
-      children: [["web", "Set up"]]
+      collapsable: true
+      // children: [["web", "Set up"]]
     }
   ];
 }
