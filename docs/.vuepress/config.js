@@ -89,13 +89,12 @@ module.exports = {
     }
   },
   plugins: [
-    ["@vuepress/medium-zoom", true],
     ["@vuepress/plugin-pagination", true],
     ["@vuepress/plugin-back-to-top", true],
     ["@vuepress/search", true],
-    ["@vuepress/medium-zoom", true],
-    ["@vuepress/last-updated", true]
-    // '@vuepress/pwa',
+    ["@vuepress/plugin-medium-zoom", true],
+    ["@vuepress/last-updated", true],
+    // TODO: pwa
   ],
   evergreen: true
 };
