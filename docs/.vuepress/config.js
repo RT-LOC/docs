@@ -65,6 +65,7 @@ module.exports = {
           // }
         ]
       },
+      { text: "API", link: "/api/" },
       {
         text: "Other",
         items: [
@@ -73,7 +74,6 @@ module.exports = {
           { text: "Troubleshoot", link: "/troubleshoot/" }
         ]
       },
-      { text: "API", link: "/api/" },
       { text: "Support", link: "https://rtloc.com/customer-support" }
     ],
     // sidebar: 'auto'

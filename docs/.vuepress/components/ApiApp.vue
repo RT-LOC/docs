@@ -2352,7 +2352,7 @@ export default {
   #protocolWrapper{margin:0 austo;margin-bottom:20px;}
   #protocolHeader{background-color:#EEE;border-bottom:1px solid #DDD;line-height:50px;width:100%;font-weight: bold;}
   .protocolBlock{border-bottom:1px solid #DDD;height:auto !important;height:10px;min-height:10px;}
-  .protocolLeftSide{float:left;font-size:85%;height:50px;line-height:50px;padding-left:10px;width:100px;font-weight: bold;text-align: center;}
+  .protocolLeftSide{float:left;font-size:85%;padding-top:10px;padding-left:10px;width:100px;font-weight: bold;text-align: center;}
   .protocolRightSide{border-left:1px solid #DDD;float:left;font-size:85%;}
   .protocolBlock .protocolRightSide .block{margin-top:10px;}
   .protocolBlock .protocolRightSide .line{height:auto !important;height:30px;line-height:30px;min-height:30px;min-width:699px;}
