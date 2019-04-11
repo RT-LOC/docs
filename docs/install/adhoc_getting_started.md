@@ -20,7 +20,7 @@ Before you get started, make sure you have at least the following hardware:
 ![network](./img/adhoc_phone.png)
 
 ```
-  - 1 Phone or Tabled (with BLE)
+  - 1 Phone or Tablet (with BLE)
 ```
 
 ### Power supplies

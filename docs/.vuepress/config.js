@@ -3,7 +3,7 @@ module.exports = {
   description: "Your guide to our system",
   // base: "base",
   head: [
-    // ["link", { rel: "icon", href: `/logo.png` }],
+    // ["link", { rel: "icon", href: `/img/logo.png` }],
     // ['link', { rel: 'manifest', href: '/manifest.json' }],
     ["meta", { name: "theme-color", content: "#0c5a9e" }],
     ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
