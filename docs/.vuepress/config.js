@@ -1,20 +1,17 @@
 module.exports = {
-  title: "Documentation",
+  title: "RTLOC docs",
   description: "Your guide to our system",
-  // base: "base",
+  base: "docs",
   head: [
-    // ["link", { rel: "icon", href: `/img/logo.png` }],
-    // ['link', { rel: 'manifest', href: '/manifest.json' }],
-    ["meta", { name: "theme-color", content: "#0c5a9e" }],
-    ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
-    [
-      "meta",
-      { name: "apple-mobile-web-app-status-bar-style", content: "black" }
-    ],
-    // ['link', { rel: 'apple-touch-icon', href: `/icons/apple-touch-icon-152x152.png` }],
-    // ['link', { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#3eaf7c' }],
-    // ['meta', { name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png' }],
-    ["meta", { name: "msapplication-TileColor", content: "#0c5a9e" }]
+    ['link', { rel: 'icon', href: `/img/logo.png` }],
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
+    ['meta', { name: 'theme-color', content: '#095A9E' }],
+    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+    ['link', { rel: 'apple-touch-icon', href: `/icons/apple-touch-icon-152x152.png` }],
+    ['link', { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#095A9E' }],
+    ['meta', { name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png' }],
+    ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
   // theme: 'vue',
   // serviceWorker: true,
@@ -27,16 +24,16 @@ module.exports = {
     lastUpdated: "Last Updated", // string | boolean
     sidebarDepth: 3,
     nav: [
-      { text: "Home", link: "/" },
+      // { text: "Home", link: "/" }, // Don't need this
       { text: "Install", link: "/install/" },
       {
         text: "System guide",
         items: [
           { text: "Introduction", link: "/guide/" },
           {
-            // text: "Core",
+            // text: "Components",
             items: [
-              { text: "Desktop app", link: "/cxRTLS/" },
+              { text: "Desktop app", link: "/desktop/" },
               { text: "Web portal", link: "/web/" },
               { text: "Embedded/Hardware", link: "/hardware/" }
             ]
@@ -67,10 +64,10 @@ module.exports = {
       },
       { text: "API", link: "/api/" },
       {
-        text: "Other",
+        text: "Learn more",
         items: [
           { text: "Reference", link: "/reference/" },
-          { text: "FAQ", link: "/faq/" },
+          { text: "FAQ", link: "/faq/faq_general" },
           { text: "Troubleshoot", link: "/troubleshoot/" }
         ]
       },
@@ -79,9 +76,10 @@ module.exports = {
     // sidebar: 'auto'
     sidebar: {
       "/install/": getInstallSidebar(),
-      "/cxRTLS/": getcxRTLSSidebar(),
+      "/desktop/": getcxRTLSSidebar(),
       "/hardware/": getHardwareSidebar(),
       "/web/": getWebSidebar(),
+      // "/web/": webSideBar,
       "/api/": getAPISidebar(),
       "/reference/": getReferenceSidebar(),
       "/faq/": getFAQSidebar(),
@@ -94,7 +92,10 @@ module.exports = {
     ["@vuepress/search", true],
     ["@vuepress/plugin-medium-zoom", true],
     ["@vuepress/last-updated", true],
-    // TODO: pwa
+    ['@vuepress/pwa', {
+      serviceWorker: true,
+      updatePopup: true
+    }],
   ],
   evergreen: true
 };
@@ -124,8 +125,9 @@ function getInstallSidebar() {
 
 function getcxRTLSSidebar() {
   return [
+    ['', 'Desktop configurator'],
     {
-      title: "Pages",
+      title: "Tiles / views",
       collapsable: true,
       children: [
         ["cxRTLS_config", "Config"],
@@ -161,7 +163,7 @@ function getcxRTLSSidebar() {
 function getTroubleshootSidebar() {
   return [
     {
-      title: "Troubleshoots",
+      title: "Troubleshooting",
       collapsable: true,
       children: [
         ["/troubleshoot/troubleshoot_enet", "Ethernet"],
@@ -211,10 +213,29 @@ function getAPISidebar() {
 
 function getWebSidebar() {
   return [
+// const webSideBar = [
+    ['', 'Web portal'],
     {
-      title: "Web portal",
-      collapsable: true
-      // children: [["web", "Set up"]]
+      title: "Configuration",
+      collapsable: true,
+      children: [
+        // ['', 'Introduction'],
+        // ["user", "User accounts"],
+        ["client", "Clients & projects"],
+        ["data", "Data"],
+        // ["/web/viewer", "Viewer"],
+        // ["/web/data", "Data control"]
+      ]
+    },
+    {
+      title: "Views / tabs",
+      collapsable: true,
+      children: [
+        ["viewer", "Viewer"],
+        ["debug", "Debug"],
+        ["settings", "Settings"],
+        // ["data", "Data control"],
+      ]
     }
   ];
 }

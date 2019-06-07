@@ -1,4 +1,5 @@
 set -e
+
 cd .\docs\.vuepress\dist
 
 git init

@@ -1,6 +1,5 @@
 ## Which frequencies are you using?
-We operate on all channels that the DW1000 provides. This means:
-(tabelletje)
+We operate on all channels that the DW1000 provides.
 We can easily change between all channels, which makes interference mitigation even better.
 
 ## What about interference with other systems?

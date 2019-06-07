@@ -3,15 +3,24 @@ home: true
 heroImage: img/logo.svg
 actionText: Get Started
 actionLink: /install/
-features:
-- title: Installation
-  details: Instructions on how to set-up your RTLS system.
-- title: System guide
-  details: Reference manual for our software
-- title: API integration
-  details: Developer guide on interfacing with our system
-footer: Copyright © 2018-present RTLOC, Callitrix
+footer: Copyright © 2018-present RTLOC, Callitrix NV
 ---
+
+<div class="features">
+  <div class="feature">
+    <router-link to="/install"><h2>Installation</h2></router-link>
+    <p>Instructions on how to set-up your RTLS system</p>
+  </div>
+  <div class="feature">
+    <router-link to="/guide"><h2>System guide</h2></router-link>
+    <p>Reference manual for our software</p>
+  </div>
+  <div class="feature">
+    <router-link to="/api"><h2>API integration</h2></router-link>
+    <p>Developer guide on interfacing with our system</p>
+  </div>
+</div>
+
 ::: tip
 Documentation undergoing development!
 :::

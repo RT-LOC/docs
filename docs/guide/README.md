@@ -8,8 +8,8 @@ On top of the PC software, we also offer a complete web-based portal called **cx
 
 Contents of this guide:
 
-* [PC Software](/cxRTLS/) - Configure, manage and analyze the RTLS system.
-* [Web portal](/web/) - View all RTLS data and statistics from within the browser.
+* [PC Software](/desktop/) - Configure, manage and analyze the RTLS system.
+* [Web portal](/web/) - View all RTLS data and statistics anywhere, from within the browser.
 * [Hardware](/hardware/) - Interface with our hardware and more.
 
 

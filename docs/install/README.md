@@ -1,6 +1,11 @@
 
-# Install the RTLOC System
-You will find help on how to install an RTLOC Positioning or Adhoc System on these pages.
+# Getting started
+We distinguish between (simple) ad-hoc distance tracking and a full positioning setup. For entry-level users, it is easyer to get started with simple distance tracking. All hardware can be reused if you later switch to position tracking.
+
+::: tip
+  You need RTLS hardware to get started. You can purchase these from us or other vendors. (we provide interoperability, for example with Decawave's DWM1001)
+  For a simple online demo of positioning data, check out <a href="https://cloud.rtloc.com">https://cloud.rtloc.com</a>.
+:::
 
 ## Ad-hoc distance tracking
 An ad-hoc system requires only tags and will only work with the distances between these tags. Follow these steps to get started:

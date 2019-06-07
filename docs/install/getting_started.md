@@ -1,4 +1,4 @@
-# Getting started With RTLOC
+# Getting started: positioning system
 
 ## Introduction
 In this guide we will go through the setup of the RTLOC positioning system. You will learn some of the basics of the system and get familiar with some of the features.

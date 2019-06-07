@@ -1,6 +1,6 @@
 {
   "name": "rtloc-docs",
-  "version": "0.8.0",
+  "version": "1.0.0",
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
@@ -16,6 +16,6 @@
     "sitemap": "^2.0.1"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.3"
+    "browser-sync": "^2.26.7"
   }
 }

@@ -1,9 +1,8 @@
-# Introduction to cxRTLS
-## Description
-cxRTLS is the main program from the software suite. You can configure, manage and analyze the full system with it.
+# RTLS configurator (cxRTLS)
+
+cxRTLS is the main (desktop) program from the software suite. You can configure, manage and analyze the full system with it.
 It is designed to be as efficient as possible when it comes to memory consumption and CPU usage, without compromising on performance.
 It runs on Windows 7 or later versions and requires around 30MB of storage.
-
 
 ## Overview
 When you open the program, you will see something similar:
