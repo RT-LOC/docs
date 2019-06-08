@@ -33,7 +33,7 @@ Before you get started, make sure you have at least the following hardware:
 ```
 
 ### Other
-![pc](./img/install_pc.jpeg)
+![pc](./img/install_PC.jpeg)
 
 ```
  - Computer (desktop/laptop/tablet), preferably Windows OS
