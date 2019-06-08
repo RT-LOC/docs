@@ -28,20 +28,20 @@ In order to optimally make use of the BLE, we need to make a service especially 
 ## BlueFruit
 BlueFruit is a free app from Adafruit, available on iOS and android, that supports the NUS. Search for 'BlueFruit' in the appstore or the google store and download the app.
 
-![bluefruit ios](./img/ble/ble_nus_bluefruit_download.png "BlueFruit in iOS")
+![bluefruit ios](./img/ble/ble_nus_bluefruit_download.PNG "BlueFruit in iOS")
 
 ### Make a connection
 When you open the app, it will have the correct predefined settings. The app is set in Central mode, and it will show all Peripherals (in other words: the tags) that are advertising the UART service. Whenever you have some tags running, you should see something like this:
 
-![bluefruit 1](./img/ble/ble_nus_bluefruit_1.png "BlueFruit 1")
+![bluefruit 1](./img/ble/ble_nus_bluefruit_1.PNG "BlueFruit 1")
 
 If you don't see the tags, try to reset the tag and/or the bluetooth connection on your phone/tablet.
 
 Now press connect on the tag of choice. It will show you the following:
 
-![bluefruit connect](./img/ble/ble_nus_bluefruit_2.png "BlueFruit connect")
+![bluefruit connect](./img/ble/ble_nus_bluefruit_2.PNG "BlueFruit connect")
 
-![bluefruit connected](./img/ble/ble_nus_bluefruit_3.png "BlueFruit connected")
+![bluefruit connected](./img/ble/ble_nus_bluefruit_3.PNG "BlueFruit connected")
 
 `Note:` we will only make use of the UART module of this app. You can ignore the other modules.
 
@@ -53,7 +53,7 @@ The data is shown in ASCII-format so that it's readable. Each dataframe has the 
 ```
 The distances are in centimeter and represent the measured distance between the tag you made the BLE connection with and the tag with ID shown before the '>>'
 
-![bluefruit data](./img/ble/ble_nus_bluefruit_4.png "BlueFruit data")
+![bluefruit data](./img/ble/ble_nus_bluefruit_4.PNG "BlueFruit data")
 
 In the screenshot you see a how it can look like when a tag is ranging with 7 other tags.
 
@@ -61,11 +61,11 @@ In the screenshot you see a how it can look like when a tag is ranging with 7 ot
 ### Exporting data
 BlueFruit has the nice feature that you can export the data. Press the gear in the right upper corner to show the settings menu.
 
-![bluefruit data](./img/ble/ble_nus_bluefruit_5.png "BlueFruit data")
+![bluefruit data](./img/ble/ble_nus_bluefruit_5.PNG "BlueFruit data")
 
 When you press 'Export', you will see the different supported formats: `txt`, `csv`, `json` and `bin`.
 
-![bluefruit data](./img/ble/ble_nus_bluefruit_6.png "BlueFruit data")
+![bluefruit data](./img/ble/ble_nus_bluefruit_6.PNG "BlueFruit data")
 
 
 ## Conclusion
