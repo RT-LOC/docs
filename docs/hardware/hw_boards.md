@@ -16,7 +16,7 @@
 ### DWM1001
 We fully support the [DWM1001 boards](https://www.decawave.com/product/dwm1001-module/). This is a lowcost node designed by Decawave.
 It is powered  by the nRF52832 chip that has built-in BLE support. 
-![DWM1001](./img/hw_dwm1001.JPG)
+<!-- ![DWM1001](./img/hw_dwm1001.JPG) -->
 
 ### Others
 Some of our clients have built custom tags that our fully featured by our tag firmware.
