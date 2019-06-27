@@ -193,15 +193,15 @@ function getAPISidebar() {
   return [
     {
       title: "External (Position data) API's",
-      collapsable: true,
+      collapsable: false,
       children: [
-        ["/api/api_application", "Application"],
-        ["/api/api_web", "Web"]
+        ["/api/api_application", "Binary API"],
+        ["/api/api_web", "JSON API"]
       ]
     },
     {
       title: "Internal API's",
-      collapsable: true,
+      collapsable: false,
       children: [
         ["/api/api_console", "Console"],
         ["/api/api_firmware", "Firmware"],
