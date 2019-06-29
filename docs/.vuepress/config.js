@@ -192,20 +192,21 @@ function getFAQSidebar() {
 function getAPISidebar() {
   return [
     {
-      title: "External (Position data) API's",
+      title: "Data API's",
       collapsable: false,
       children: [
         ["/api/api_application", "Binary API"],
-        ["/api/api_web", "JSON API"]
+        ["/api/api_web", "JSON API"],
+        ["/api/api_rest", "REST (meta data) API"]
       ]
     },
     {
-      title: "Internal API's",
+      title: "Single device API's",
       collapsable: false,
       children: [
-        ["/api/api_console", "Console"],
-        ["/api/api_firmware", "Firmware"],
-        ["/api/api_ble", "BLE"]
+        ["/api/api_console", "Console (CLI)"],
+        ["/api/api_firmware", "Firmware library"],
+        ["/api/api_ble", "BLE service(s)"]
       ]
     }
   ];
