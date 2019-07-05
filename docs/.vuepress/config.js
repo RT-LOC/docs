@@ -192,16 +192,24 @@ function getFAQSidebar() {
 function getAPISidebar() {
   return [
     {
-      title: "Data API's",
+      title: "API specs",
       collapsable: false,
       children: [
-        ["/api/api_application", "Binary API"],
-        ["/api/api_web", "JSON API"],
+        ["/api/api_application", "Binary data API"],
+        ["/api/api_web", "JSON data API"],
         ["/api/api_rest", "REST (meta data) API"]
       ]
     },
     {
-      title: "Single device API's",
+      title: "API connection protocols",
+      collapsable: false,
+      children: [
+        ["/api/api_mqtt", "MQTT"],
+        ["/api/api_direct", "TCP/UDP or Websocket"]
+      ]
+    },
+    {
+      title: "Single device Connection",
       collapsable: false,
       children: [
         ["/api/api_console", "Console (CLI)"],

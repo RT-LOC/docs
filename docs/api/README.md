@@ -1,14 +1,21 @@
 # APIs
-There are different ways to integrate with the RTLOC system, depending on your needs:
-* Data API's: get position and sensor data from our system, send basic commands
-  - [`Binary API`](/api/api_application.html) - Interact in a native (PC, phone or tablet) application. Allows for fast and compact transmission over TCP/UDP.
-  - [`JSON websocket API`](/api/api_web.html) - Suitable for web- or cloud-oriented apps. Receive data over direct websocket or through an MQTT broker (TCP or websocket).
-  - [`REST API`](/api/api_rest.html) - Access meta information about your projects, users and more (information in database).
+There are different ways to integrate with the RTLOC system, depending on your needs.
 
-* Device API's: for extra control over devices
-  - [`BLE API`](/api/api_ble.html) - Make a wireless connection with one of the tags or anchors via the Bluetooth Low Energy protocol.
+* We provide direct **positioning and sensor data** in binary and JSON format:
+  - **[`Binary format`](/api/api_application.html)** - Allows for fast and very compact transmission over TCP/UDP.
+  - [`JSON format`](/api/api_web.html) - Receive data in JSON over direct websocket or through an MQTT broker (TCP or websocket).
+
+* This data can be accessed over TCP/UDP, websockets, or MQTT (pub/sub)
+  - **[`MQTT`](/api/api_mqtt.html)**
+  - [`Direct TCP/UDP/WS(S)`](/api/api_direct.html)
+
+* Access **meta information** about your projects, users and more (information in database) through our [`REST API`](/api/api_rest.html)
+
+* **Single device** (tag / anchor) information can be read through the CLI or via Bluetooth (BLE).
+  - [`BLE API`](/api/api_ble.html) - Make a wireless connection with one of the tags with our BLE interface.
   - [`Device CLI`](/api/api_console.html) - Access the RTLS hardware (anchors and tags) via one of the [interfaces](/hardware/#interfaces).
-  - [`Firmware API`](/api/api_firmware.html) - Build your own firmware (if you want to go low-level), run it next to our firmware
+
+* If you want to go low-level build your own **firmware** and run it next to ours using our [`firmware library`](/api/api_firmware.html)
 
 ## Overview
 The following image gives an overview of where the APIs reside within the system architecture.
