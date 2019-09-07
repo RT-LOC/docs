@@ -7,4 +7,4 @@ Hosted at https://docs.rtloc.com
 `npm install -g vuepress@next`
 
 ## Deploy
-Travis CI configuration => run at commit
+Travis CI configuration => runs on commit

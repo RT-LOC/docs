@@ -6,7 +6,7 @@ There are different ways to integrate with the RTLOC system, depending on your n
   - [`JSON format`](/api/api_web.html) - Receive data in JSON over direct websocket or through an MQTT broker (TCP or websocket).
 
 * This data can be accessed over TCP/UDP, websockets, or MQTT (pub/sub)
-  - **[`MQTT`](/api/api_mqtt.html)**
+  - **[`MQTT`](/api/api_mqtt.html)** (over TCP or websocket)
   - [`Direct TCP/UDP/WS(S)`](/api/api_direct.html)
 
 * Access **meta information** about your projects, users and more (information in database) through our [`REST API`](/api/api_rest.html)

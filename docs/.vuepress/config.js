@@ -1,5 +1,5 @@
 module.exports = {
-  title: "RTLOC docs",
+  title: "Documentation",
   description: "Your guide to our system",
   // base: "/docs/",
   head: [

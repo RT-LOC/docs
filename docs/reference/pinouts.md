@@ -4,7 +4,7 @@ We offer several tags that you can integrate in your own hardware.
 ## PCB Edge
 An external electrical connection is made via metallic tracks on the edge of the PCB that engage with the contacts in the corresponding socket.
 
-### Jupiter
+### Jupiter / vehicle tag
 The Jupiter tag is equipped with a custom RTLOC PCB edge connection with the following pinout. There is support for `UART`, `RS-232`, `SPI`, `I2C`, `CAN` and `USB`.
 
 ![ref_pinout_jupiter](./img/ref_pinout_jupiter.png)
