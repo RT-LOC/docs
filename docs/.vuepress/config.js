@@ -116,7 +116,7 @@ function getInstallSidebar() {
       collapsable: true,
       children: [
         ["getting_started", "Getting Started"],
-        ["firststeps", "First steps"],
+        // ["firststeps", "First steps"],
         ["anchor_placement", "Anchor Placement"]
       ]
     }
@@ -127,7 +127,7 @@ function getcxRTLSSidebar() {
   return [
     ['', 'Desktop configurator'],
     {
-      title: "Tiles / views",
+      title: "Program sections",
       collapsable: true,
       children: [
         ["cxRTLS_config", "Config"],
@@ -149,7 +149,7 @@ function getcxRTLSSidebar() {
       ]
     },
     {
-      title: "Other",
+      title: "Details",
       collapsable: true,
       children: [
         ["cxRTLS_console", "Console"],

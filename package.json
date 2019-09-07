@@ -7,12 +7,11 @@
     "buildtest": "browser-sync start --server \"docs/.vuepress/dist\" --online \"false\" --serveStatic \"./\" --files \"docs/.vuepress/dist\""
   },
   "dependencies": {
-    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.0",
-    "@vuepress/plugin-medium-zoom": "^1.0.0-alpha.0",
+    "@vuepress/plugin-back-to-top": "^1.0.3",
+    "@vuepress/plugin-medium-zoom": "^1.0.3",
     "@vuepress/plugin-pagination": "^1.0.0-alpha.0",
-    "@vuepress/plugin-pwa": "^1.0.0-alpha.0",
-    "@vuepress/plugin-search": "^1.0.0-alpha.0",
-    "node-gyp": "^3.8.0",
+    "@vuepress/plugin-pwa": "^1.0.3",
+    "@vuepress/plugin-search": "^1.0.3",
     "sitemap": "^2.0.1"
   },
   "devDependencies": {

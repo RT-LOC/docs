@@ -46,7 +46,7 @@ Before you get started, make sure you have at least the following hardware:
 ## Connect the Hardware
 Let's apply power to the hardware (_HW_) to spark some life into it. There are multiple ways to power the HW. Click [here](LINK) for more information. The easiest way to get started is to power the boards via the usb cables.
 
-Once the boards have juice, you should see some lights blinking. There are a couple of [patters](/reference/leds.html) possible. If all is going well, you should see a green light blinking on all boards.
+Once the boards are powered, you should see some lights blinking. There are a couple of [patterns](/reference/leds.html) possible. If all is going well, you should see a green light blinking on all boards.
 
 The last step before we turn to the PC is to connect the listener and one anchor to the same network as your PC. You can use the switch for this. The lights on the ethernet plug will start blinking.
 

@@ -4,11 +4,15 @@ cxRTLS is the main (desktop) program from the software suite. You can configure,
 It is designed to be as efficient as possible when it comes to memory consumption and CPU usage, without compromising on performance.
 It runs on Windows 7 or later versions and requires around 30MB of storage.
 
-## Overview
+## Getting started
 When you open the program, you will see something similar:
 ![overview](./img/cxRTLS/1_raw.png)
 
-The program consists of multiple bars and menus:
+Follow the [getting started](/install/getting_started.html) steps to bootstrap your first RTLS project
+
+## Program layout
+
+The program consists of these bars and menus:
 ![overview](./img/cxRTLS/1.png)
  1. host bar
  2. system bar
