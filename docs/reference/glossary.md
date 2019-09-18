@@ -1,9 +1,17 @@
-# Glossary
+# Terminology
 
 ## General
 `RTLS` - Real-time location system.
 
 `Positioning` - Calculate the positions of (moving) tags.
+
+## RTLOC terminology
+`Client` - A customer of ours (possibly not the end customer, if you're an integrator), you for example?
+
+`Project` - A project contains a license (1 license per project) and associated hardware. A client can have multiple projects. (When having multiple RTLS locations, or when selling to own customers)
+
+`Setup` - In a project (single license) there may be a few *setups*. This happens for example when you move your hardware to a new location (for example when doing multiple (sports) events).
+
 
 ## Technology
 Some more information on the different technologies we harness. Click here for a full comparison.

@@ -3,11 +3,11 @@ There are different ways to integrate with the RTLOC system, depending on your n
 
 * We provide direct **positioning and sensor data** in binary and JSON format:
   - **[`Binary format`](/api/api_application.html)** - Allows for fast and very compact transmission over TCP/UDP.
-  - [`JSON format`](/api/api_web.html) - Receive data in JSON over direct websocket or through an MQTT broker (TCP or websocket).
+  - **[`JSON format`](/api/api_web.html)** - Receive data in JSON over direct websocket or through an MQTT broker (TCP or websocket).
 
 * This data can be accessed over TCP/UDP, websockets, or MQTT (pub/sub)
-  - **[`MQTT`](/api/api_mqtt.html)** (over TCP or websocket)
-  - [`Direct TCP/UDP/WS(S)`](/api/api_direct.html)
+  - [`Direct TCP/UDP/WS(S)`](/api/api_conns.html)
+  - **[`MQTT`](/api/api_conns.html)** (over TCP or websocket)
 
 * Access **meta information** about your projects, users and more (information in database) through our [`REST API`](/api/api_rest.html)
 

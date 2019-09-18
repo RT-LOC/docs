@@ -192,22 +192,29 @@ function getFAQSidebar() {
 function getAPISidebar() {
   return [
     {
-      title: "API specs",
+      title: "Real-time data",
       collapsable: false,
       children: [
-        ["/api/api_application", "Binary data API"],
-        ["/api/api_web", "JSON data API"],
-        ["/api/api_rest", "REST (meta data) API"]
+        ["/api/api_application", "Binary data format"],
+        ["/api/api_web", "JSON data format"],
+        ["/api/api_conns", "Connection types"],
       ]
     },
     {
-      title: "API connection protocols",
+      title: "Meta data",
       collapsable: false,
       children: [
-        ["/api/api_mqtt", "MQTT"],
-        ["/api/api_direct", "TCP/UDP or Websocket"]
+        ["/api/api_rest", "REST (meta data) API"]
       ]
     },
+    // {
+    //   title: "Connection protocols",
+    //   collapsable: false,
+    //   children: [
+    //     ["/api/api_mqtt", "MQTT"],
+    //     ["/api/api_direct", "TCP/UDP or Websocket"]
+    //   ]
+    // },
     {
       title: "Single device Connection",
       collapsable: false,
@@ -230,7 +237,7 @@ function getWebSidebar() {
       children: [
         // ['', 'Introduction'],
         // ["user", "User accounts"],
-        ["client", "Clients & projects"],
+        ["client", "Clients, projects and setups"],
         ["data", "Data"],
         // ["/web/viewer", "Viewer"],
         // ["/web/data", "Data control"]
@@ -283,7 +290,7 @@ function getReferenceSidebar() {
       children: [
         ["leds", "LED Patterns"],
         ["pinouts", "Pinout"],
-        ["glossary", "Glossary"],
+        ["terminology", "Terminology"],
         ["algorithms", "Algorithms"],
         ["rf", "RF"],
         ["updaterate", "Update Rate"]
