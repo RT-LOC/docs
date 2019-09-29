@@ -25,25 +25,25 @@ If you have a full license, you can use the software unlimited (except for the f
 
 
 ## How to install the License
-Whenever you start cxRTLS for the first time, you probably don't have a license yet. To acquire one, press _'Build cxLicense.txt'_.
+Whenever you start cxRTLS for the first time, you probably don't have a license yet. To acquire one, press _'Build license.txt'_.
 
 ![license_build](./img/cxRTLS/license_build.png)
 
-A dialog message will appear and the file cxLicense.txt will be created on the following path:
+A dialog message will appear and the file license.txt will be created on the following path:
 ```
-c:/cxRTLS/cxLicense.txt
+c:/cxRTLS/license.txt
 ```
 Send this file to the e-mailaddress written in the dialog box to receive the proper license file.
 
 ![license_build](./img/cxRTLS/license_dialog.png)
 
-Within 24h after sending this e-mail, you will receive a file called cxLicense.bin, which you have to drop here:
+Within 24h after sending this e-mail, you will receive a file called license.bin, which you have to drop here:
 ```
-c:/cxRTLS/cxLicense.bin
+c:/cxRTLS/license.bin
 ```
 Doing this will automatically activate the license.
 
-> Note that the license will only work on the computer on which you have generated cxLicense.txt. For other computers, you will have to redo the procedure.
+> Note that the license will only work on the computer on which you have generated license.txt. For other computers, you will have to redo the procedure.
 
 ## Get access to more features
 [Send us a message](https://www.rtloc.com/#contact) if you want more activated features.

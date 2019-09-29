@@ -1,0 +1,2 @@
+
+An ad hoc system requires less hardware (only tags). It will only the distances between each of these tags. Thus no positions are calculated. (You can however get - less accurate - relative position estimates)

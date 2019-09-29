@@ -41,12 +41,10 @@ If your tags are not flashed with the Adhoc Firmware, you will have to do that m
 
 2. Open the web portal https://cloud.rtloc.com/ble and press the Bluetooth icon, select "Connect to device"
 
-3. Select a tag
-
-4. 
+3. Select the initiator device
 
 ### More details on BLE
-Bluetooth Low Energy gives us the possibility to read out the data (distances) on any phone/tablet/... that supports BLE 4.0 (basically any recent device).
+Bluetooth Low Energy gives us the possibility to read out the data (distances) on any phone/tablet/... that supports BLE4.0 (basically any recent device).
 More information [here](/hardware/hw_interface_ble.html).
 
 ## Other interfaces
@@ -65,3 +63,6 @@ We can read out the device via a USB cable. More info will follow.
 The Network Sniffer enables all the advanced features of the system.
 You can read out all the distances from all the tags that are in UWB range, see signal quality figures, debug timing, adhoc settings and much more.
 More information [here](/hardware/hw_interface_sniffer.html).
+
+## Conclusion
+..

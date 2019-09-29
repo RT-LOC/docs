@@ -52,7 +52,7 @@ The last step before we turn to the PC is to connect the listener and one anchor
 
 Place the anchors in a strategic way. Hang them around the area you want to track. Make sure they are placed so that they are not blocked by big objects (especially metal). You can find some more hints on how to hang the anchors [here](LINK).
 
-## Setup the PC software (cxRTLS)
+## Setup the PC Manager software
 Locate the PC software and start it by double clicking the icon.
 
 ![getting_started-setup_icon](./img/getting_started-setup_icon.png)

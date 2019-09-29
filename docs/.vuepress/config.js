@@ -33,7 +33,7 @@ module.exports = {
           {
             // text: "Components",
             items: [
-              { text: "Desktop app", link: "/desktop/" },
+              { text: "RTLS manager app", link: "/desktop/" },
               { text: "Web portal", link: "/web/" },
               { text: "Embedded/Hardware", link: "/hardware/" }
             ]
@@ -103,23 +103,33 @@ module.exports = {
 function getInstallSidebar() {
   return [
     {
-      title: "Adhoc Distance System",
+      title: "RTLS introduction",
       collapsable: true,
       children: [
-        ["adhoc_getting_started", "Getting Started"],
-        ["firststeps", "First steps"]
+        // ["adhoc_getting_started", "Getting Started"],
+        ["autortls_getting_started", "Getting Started"],
+        // ["firststeps", "First steps"]
         // ["anchor_placement", "Anchor Placement"]
       ]
     },
     {
-      title: "Positioning System",
+      title: "Pro/full RTLS",
       collapsable: true,
       children: [
         ["getting_started", "Getting Started"],
         // ["firststeps", "First steps"],
         ["anchor_placement", "Anchor Placement"]
       ]
-    }
+    },
+    {
+      title: "Ad hoc distance tracking",
+      collapsable: true,
+      children: [
+        ["adhoc_getting_started", "Getting Started"],
+        // ["firststeps", "First steps"]
+        // ["anchor_placement", "Anchor Placement"]
+      ]
+    },
   ];
 }
 
@@ -286,7 +296,7 @@ function getReferenceSidebar() {
   return [
     {
       title: "Reference",
-      collapsable: true,
+      collapsable: false,
       children: [
         ["leds", "LED Patterns"],
         ["pinouts", "Pinout"],
