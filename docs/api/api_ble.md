@@ -7,4 +7,7 @@ It allows for:
 * Perform autopositioning
 * ...and more
 
+Download the specification [here](http://callitrix.com/assets/docs/files/api_ble.pdf) or see below.
+![API_overview](./img/api_ble.png)
+
 (detailed overview coming soon)
