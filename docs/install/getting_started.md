@@ -18,8 +18,6 @@ Before you get started, make sure you have at least the following hardware:
 
 ![nodes](./img/install_nodes.png)
 
-
-
 ### Networking equipment
   - 1 Switch
   - 2 Ethernet cables

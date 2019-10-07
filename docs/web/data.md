@@ -8,6 +8,7 @@ After you log in, a data connection should automatically be initialized. If succ
 
 ## Bluetooth data
 You can also get data over Bluetooth. In a regular project this can give you some extra information about the connect tag or anchor. In an ad-hoc or autortls scenario it can be the only source of distance/position information for the dashboard.
+
 ![BLE](./img/ble.jpg)
 
 ## Data control
