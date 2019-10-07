@@ -28,7 +28,7 @@ Some more information on the different technologies we harness. Click here for a
 
 `Lora` - Long Range digital wireless data communication technology.
 
-## System
+## RTLS System
 `Node` - One of the elements of the RTLS system. Could be an anchor, tag or listener.
 
 `Anchor` - A reference node in the RTLS. Comparable with the satellites for GPS.
@@ -36,6 +36,8 @@ Some more information on the different technologies we harness. Click here for a
 `Tag` - A node that is tracked.
 
 `Listener` - A node that only listens to data in the air and forwards that data to a PC.
+
+`Autopositioning` - Calculation / estimation of the positions of the anchors by the system, as opposed to manually submitting accurate coordinates. This will provide less accurate position data than submitting accurate coordinates.
 
 `Backhaul` - Way of transporting data within the system. Can be wired of wireless.
 

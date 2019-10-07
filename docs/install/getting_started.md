@@ -1,47 +1,42 @@
-# Getting started: positioning system
+# Professional RTLS: getting started
 
 ## Introduction
-In this guide we will go through the setup of the RTLOC positioning system. You will learn some of the basics of the system and get familiar with some of the features.
-You will end up having a fully functional RTLS system and you can start tracking your first objects. Hooray!
+In this guide we will go through the setup of a professional RTLOC positioning system. You will learn some of the basics of the system and get familiar with some of the features. You will end up having a fully functional RTLS system and you can start tracking your first objects.
 
 ## Basic requirements
+You will need a valid **license** for our professional RTLS.
+
 Before you get started, make sure you have at least the following hardware:
+:::warning NOTE:
+ If you have bought the `Professional RTLS Kit`, everything will be included to get started.
+:::
 
 ### Positioning devices
-![nodes](./img/install_nodes.png)
-
-```
   - 4 anchors
   - 1 listener anchor
   - 1 Tag
-```
+
+![nodes](./img/install_nodes.png)
+
+
 
 ### Networking equipment
-![network](./img/install_network.png)
-
-```
   - 1 Switch
   - 2 Ethernet cables
-```
+
+![network](./img/install_network.png)
 
 ### Power supplies
+  - 4 Micro usb cables (type B) and batteries or socket adapters
+  - PoE
+
   ![power](./img/install_power_supply.png)
 
-```
-  - 4 Micro usb cables (type B) and batteries
-  - PoE
-```
-
 ### Other
+A computer (desktop/laptop/tablet), preferably Windows OS
+
 ![pc](./img/install_PC.jpeg)
 
-```
- - Computer (desktop/laptop/tablet), preferably Windows OS
-```
-
-:::warning NOTE:
- If you have bought the `Introduction Kit`, everything will be included to get started.
-:::
 
 ## Connect the Hardware
 Let's apply power to the hardware (_HW_) to spark some life into it. There are multiple ways to power the HW. Click [here](LINK) for more information. The easiest way to get started is to power the boards via the usb cables.

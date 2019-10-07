@@ -40,7 +40,7 @@ If your tags are not flashed with the Adhoc Firmware, you will have to do that m
 
 1. Power all devices over USB (using a power adapter or a battery)
 
-2. Open the web portal https://cloud.rtloc.com/ble and press the Bluetooth icon, select "Connect to device"
+2. Open the web portal [https://cloud.rtloc.com/ble](https://cloud.rtloc.com/ble) and press the Bluetooth icon, select "Connect to device"
 
 3. Select a tag
 
