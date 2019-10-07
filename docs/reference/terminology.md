@@ -39,17 +39,11 @@ Some more information on the different technologies we harness. Click here for a
 
 `Backhaul` - Way of transporting data within the system. Can be wired of wireless.
 
-`cxRTLS` -
+`RTManager` / `cxRTLS` - Powerful RTLS engine & UWB debugging app
 
-`Engine` -
+`Engine` / `cxEngine` - Algorithm implementation, calculates positions from distances
 
-`cxEngine` -
-
-`Viewer` -
-
-`cxViewer` -
-
-`Protocol` -
+`Viewer` / `cxViewer` - (3D) Position viewer
 
 `API` - Application Protocol Interface. See [here](../API.html).
 
@@ -66,9 +60,9 @@ Click here for more information.
 
 `Hz` - Hertz. The derived unit of frequency [1/s].
 
-`Hairs` -
+`Hairs` - UWB message visual indications in our sniffer
 
-`TagSpeed` -
+`TagSpeed` - Part of the UWB configuration, containing 
 
 `MANET` - Mobile Adhoc Network.
 

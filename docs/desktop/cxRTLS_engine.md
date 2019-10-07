@@ -1,5 +1,5 @@
 # Engine
-The engine is a set of algorithms that convert a dataset into a position of the tag. This dataset can be distances between a tag and multiple anchors (TWR) or differences of the time of arrival of tagsignals on the anchors.
+The engine is a set of algorithms that convert a data set into a position of the tag. This data set can be distances between a tag and multiple anchors (TWR) or differences of the time of arrival of tagsignals on the anchors.
 
 ![engine_single](./img/engine/engine_single.png)
 
@@ -13,13 +13,11 @@ If you choose to run the system in one of the inverse modes ([TDOA2](/reference/
 For low-end systems (not too many anchors and tags), the engine can also run on one of the anchors when in one of the normal modes.
 
 ### Internal Engine 
-As soon as the amount of anchors and tags grows however, the calculation power of the anchor will not be sufficient (it also has to do many other tasks :)). In that case we will switch to running the engine on the PC.
-Here it can run from within the data collection program (cxRTLS).
+As soon as the amount of anchors and tags grows however, the calculation power of the anchor will not be sufficient (since it also has to do many other tasks). In that case we will switch to running the engine on the PC.
+Here it can run from within the data collection program (RTManager).
 
 ### External Engine
-But also a PC has limitations. If you have a crazy amount positions to be calculated each second (in the order of thousands), you might want to opt for one or multiple external engines.
-Such an external engine can run on any PC within the same network and connect to cxRTLS via a UDP connection. The raw data is then distributed over all connected external engines, cruched and forged into positions and then fed back to the cxRTLS.
-This means that the heavy work is decentralized to be more easy to handle.
+You can also implement your own positioning engine. Such an external engine preferably runs within the same network and connect to RTManager via a UDP connection. The raw data is then distributed over all connected external engines, crunched and forged into positions and (optionally) fed back to RTManager.
 
 ## Mathematics
 The RTLOC engine supports two localization techniques: trilateration and multilateration.

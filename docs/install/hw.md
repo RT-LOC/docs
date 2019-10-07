@@ -36,7 +36,7 @@ If you are having problems getting the listener into the system, please click [h
     + Micro-USB
     + Power over Ethernet (PoE)
   - If all is well, you should see a green light blinking on all boards.
-  - Different light? See troubleshooting [TODO]
+  - See a different light? See troubleshooting
 
 * Check connection in software:
   - Connect By pressing AutoSetup, the system will automatically be set up and you won't have to bother about the details. Wait for about 15 seconds after pressing the button. You will see the green IP turn red for a short moment. All the anchors & tags that are powered on will start to appear in the list.

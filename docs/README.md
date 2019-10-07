@@ -20,7 +20,3 @@ footer: Copyright © 2018-present RTLOC, Callitrix NV
     <p>Developer guide on interfacing with our system</p>
   </div>
 </div>
-
-::: tip
-Documentation undergoing development!
-:::

@@ -1,6 +1,6 @@
 module.exports = {
   title: "Documentation",
-  description: "Your guide to our system",
+  description: "Your guide to RTLOC's positioning products",
   // base: "/docs/",
   head: [
     ['link', { rel: 'icon', href: `/img/logo.png` }],
@@ -8,13 +8,12 @@ module.exports = {
     ['meta', { name: 'theme-color', content: '#095A9E' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
-    ['link', { rel: 'apple-touch-icon', href: `/icons/apple-touch-icon-152x152.png` }],
+    ['link', { rel: 'apple-touch-icon', href: `/icons/apple-touch-icon.png` }],
     ['link', { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#095A9E' }],
-    ['meta', { name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png' }],
+    ['meta', { name: 'msapplication-TileImage', content: '/icons/mstile-150x150.png' }],
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
   // theme: 'vue',
-  // serviceWorker: true,
   themeConfig: {
     // repo: "RT-LOC/docs", // Shows link in top nav bar
     editLinks: true,
@@ -33,6 +32,7 @@ module.exports = {
           {
             // text: "Components",
             items: [
+              { text: "RTLOC app", link: "/tray/" },
               { text: "RTLS manager app", link: "/desktop/" },
               { text: "Web portal", link: "/web/" },
               { text: "Embedded/Hardware", link: "/hardware/" }
@@ -78,7 +78,14 @@ module.exports = {
       "/install/": getInstallSidebar(),
       "/desktop/": getcxRTLSSidebar(),
       "/hardware/": getHardwareSidebar(),
+      "/tray/": [{
+        title: "RTLOC App",
+        children: [
+          ["installation", "Installation"], ["apps", "App management"], ["firmware", "Firmware management"]
+        ]
+      }],
       "/web/": getWebSidebar(),
+      // "/system/web": getWebSidebar(),
       // "/web/": webSideBar,
       "/api/": getAPISidebar(),
       "/reference/": getReferenceSidebar(),
@@ -103,7 +110,7 @@ module.exports = {
 function getInstallSidebar() {
   return [
     {
-      title: "RTLS introduction",
+      title: "RTLS introduction (kit)",
       collapsable: true,
       children: [
         // ["adhoc_getting_started", "Getting Started"],
@@ -113,7 +120,7 @@ function getInstallSidebar() {
       ]
     },
     {
-      title: "Pro/full RTLS",
+      title: "Pro/full RTLS (kit)",
       collapsable: true,
       children: [
         ["getting_started", "Getting Started"],
@@ -177,7 +184,7 @@ function getTroubleshootSidebar() {
       collapsable: true,
       children: [
         ["/troubleshoot/troubleshoot_enet", "Ethernet"],
-        ["/troubleshoot/troubleshoot_embedded", "Embedded"]
+        ["/troubleshoot/troubleshoot_embedded", "Firmware"]
         // ["/faq/faq_rf", "RF"],
       ]
     }

@@ -2,13 +2,13 @@
 In this page we'll explain how to switch between RF modes. We work with predefined profiles.
 
 ::: tip REQUIRED VERSIONS
-cxRTLS - ^35100 
+RTManager - ^38000 
 
-Tag - ^xxx
+Tag - ^1.1.0
 
-Anchor - ^xxx 
+Anchor - ^1.1.0
 
-Listener - ^xxx
+Listener - ^1.1.0
 :::
 
 ## Things to know
@@ -65,6 +65,3 @@ The anchors and tags can now receive the new config, and become aware that they 
 ![rfprofile_change_config](./img/cxRTLS/rfprofile_change_task.gif)
 
 Nodes that were inactive and don't have a config, will automatically start roaming all profiles to see if it can hear any signals. Whenever it does, it will lock onto this profile and start downloading the config.
-
-## Conclusion
-Changing the rf profile of the system is a useful tool, but must always be done with precaution. 

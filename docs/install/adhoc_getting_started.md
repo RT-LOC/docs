@@ -3,7 +3,8 @@
 ## Introduction
 The Adhoc Ranging System is a variation of a `Mobile Adhoc Network` or `MANET`. It allows you to measure distances between different tags that have joined an adhoc network.
 The tags join the adhoc network and immediately start ranging. This means **no infrastructure** is needed and the whole administration and regulation of the network is done automagically.
-You can use one of the 3 interfaces to get data out of the system.
+
+Note: in an ad hoc system there are no anchors, and no positions are calculated, just distances!
 
 ![adhoc](./img/adhoc.png)
 

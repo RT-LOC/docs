@@ -1,5 +1,5 @@
 # Logging & Replay
-With cxRTLS, you can log all the data and replay it as if it is happening live. This is particularly useful whenever you want to analyze a specific event or when you are developing a third-party application.
+With RTManager, you can log all the data and replay it as if it is happening live. This is particularly useful whenever you want to analyze a specific event or when you are developing a third-party application.
 
 ## Logging
 You can log all the data to replay and analyse it afterwards.
@@ -50,14 +50,14 @@ This can be particularly useful when you are testing the PC API.
 All the events of a log are readily visible in the _'Event window'_ that you can open in the _Action bar_.
 ![replay_event](./img/cxRTLS/replay_event.png)
 Events can be:
-- New Configfile
-- New Tagspeedfile
+- New Config file
+- New Tagspeed file
 - User Event
 - User Comment
 - Timestamp
 - ...
 
-By doubleclicking the event in the _'Event window'_, you will jump immediately to that data.
+By double clicking the event in the _'Event window'_, you will jump immediately to that data.
 
 > Note that you can add and edit user comments during the replay and resave the log so that the comment is shown when you replay it again.
 You can also crop the file so that you can get rid of all the useless information.

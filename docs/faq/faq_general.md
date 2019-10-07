@@ -7,8 +7,8 @@ Adding a listener means no other anchors have to be cabled.
 
 ## What kind of computer do I need?
 Any PC with windows 7 or later will do.
-You can also run our deamon software on e.g. a NUC pc.
-The visualisation software runs on windows 7, 8, 10, iOS, macOS, linux, ...
+You can also run our daemon software on e.g. a NUC pc.
+The visualization software runs on windows 7, 8, 10, iOS, macOS, linux, ...
 
 ## How reliable is your system? 
 We've spent a lot of time on making our system as reliable as physically possible.
@@ -28,7 +28,7 @@ what is possible.
 
 ## Do I need to measure anything when setting up the system?
 No, we can auto-range and auto-position the anchors via the software.
-However, when you want to achieve a higher accuracy, it is recommended to use a totalstation/tachyometer to calculate the positions of the anchors very precisely.
+However, when you want to achieve a higher accuracy, it is recommended to use a total station / tachyometer to calculate the positions of the anchors very precisely.
 
 ## Do I need to calibrate the system?
 All hardware is delivered pre-calibrated. In most cases this will give you an accuracy that is more than sufficient.  If you want to get up to the last centimeter in all circumstances, you can calibrate your system via one of our two calibration interfaces.

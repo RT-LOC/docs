@@ -1,6 +1,6 @@
 # RTLS Manager
 
-RTLS Manager is our main (desktop) program/engine. You can configure, manage and analyze the full system with it.
+RTLS Manager (former *cxRTLS*) is our main (desktop) program/engine. You can configure, manage and analyze the full system with it.
 It is designed to be as efficient as possible when it comes to memory consumption and CPU usage, without compromising on performance.
 It runs on Windows 7 or later versions and requires around 30MB of storage.
 

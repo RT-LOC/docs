@@ -2,16 +2,16 @@
 
 Real-time data (position data, tag/anchor statuses, sensor data, etc.) can be received over UDP/TCP, (secure) websocket WS(S) or MQTT (Message Queuing Telemetry Transport, pub/sub). The data can be transferred in binary or JSON format (see previous sections).
 
-# 1. Direct socket connections
+## 1. Direct socket connections
 
 1. Configure data transmission over UDP / TCP / websocket in our desktop application
 
 2. Connect to your computer/server to the correct IP + port
 
-## Code example
+### Code example
 Check out code examples at https://github.com/RT-LOC/APIs
 
-# 2. MQTT data connection
+## 2. MQTT data connection
 
 You can receive data in a pub/sub fashion, through our hosted Mosquitto (MQTT) server. Use the following configuration for your MQTT client:
 
@@ -20,7 +20,9 @@ You can receive data in a pub/sub fashion, through our hosted Mosquitto (MQTT) s
 * Username: *Your username*
 * Password: *User password, or valid JWT*
 
-## MQTT clients
+The MQTT topic per type of message is indicated in the [format description](/api/api_web.html).
+
+### MQTT clients
 
 Clients can connect to the MQTT broker over TCP/TLS or a secure Websocket (WSS).
 Example client libraries:
@@ -33,7 +35,7 @@ Example client libraries:
 
 * ...
 
-## Code example
+### Code example
 The following example uses the [MQTT.js](https://www.npmjs.com/package/mqtt) client library to connect to our MQTT broker. It uses a demo account and displays demo data (replayed RTLS data continuously fed into our broker).
 
 ```js

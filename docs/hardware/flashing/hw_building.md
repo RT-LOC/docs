@@ -87,6 +87,3 @@ uint32_t    ctx_time_get_local_time(void);
 :::warning Note
 For more detailed information, please check the [Firmware API](/api/api_firmware.html).
 :::
-
-## Conclusion
-

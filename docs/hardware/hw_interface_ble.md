@@ -22,7 +22,7 @@ The NUS is a proprietary BLE service that mimics UART over Bluetooth. This means
 
 You can send any kind of data, so we can send strings of readable text, or encode the data via a binary protocol.
 
-#### Tailored Service (TODO)
+#### Tailored Service
 In order to optimally make use of the BLE, we need to make a service especially made for this problem. This has not been done yet however, and until then we'll make use of the NUS. Whenever the custom service is ready, we will also need a custom app to display the data.
 
 ## BlueFruit
@@ -66,8 +66,3 @@ BlueFruit has the nice feature that you can export the data. Press the gear in t
 When you press 'Export', you will see the different supported formats: `txt`, `csv`, `json` and `bin`.
 
 ![bluefruit data](./img/ble/ble_nus_bluefruit_6.png "BlueFruit data")
-
-
-## Conclusion
-BLE gives us way to send the data (distances) from the tags to other devices such as phones and tablets.
-With BlueFruit we can quickly demonstrate and export the distances. In the near future this will be replaced by a custom service and app.

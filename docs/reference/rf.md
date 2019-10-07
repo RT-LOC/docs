@@ -1,6 +1,6 @@
 # RF
 
-We harness multiple wireless technologies on our boards. For ranging and the datanetwork we use UWB. GPS is used for outdoor positioning and time management. For local readout of data end setting parameters we added Bluetooth. Below the most important RF parameters and features of these technologies are written down.
+We harness multiple wireless technologies on our boards. For ranging and the data network we use UWB. GPS is used for outdoor positioning and time management. For local readout of data end setting parameters we added Bluetooth. Below the most important RF parameters and features of these technologies are written down.
 
 ## UWB
 
@@ -18,8 +18,7 @@ There are 6 channels to choose from with the following characteristics.
 |    5    |         6489.6         |      499.2      |
 |    7    |         6489.6         |      1081.6     |
 
-You can freely choose between these channels in cxRTLS. Note that it might take up to 2 minutes for the system to be fully switched to a different channel.
-A
+You can freely choose between these channels in RTManager. Note that it might take up to 2 minutes for the system to be fully switched to a different channel.
 
 ## GNSS/GPS
 We use the GPS satellites in our GNSS receivers.

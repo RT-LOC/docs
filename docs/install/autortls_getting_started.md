@@ -63,6 +63,3 @@ We can read out the device via a USB cable. More info will follow.
 The Network Sniffer enables all the advanced features of the system.
 You can read out all the distances from all the tags that are in UWB range, see signal quality figures, debug timing, adhoc settings and much more.
 More information [here](/hardware/hw_interface_sniffer.html).
-
-## Conclusion
-..
