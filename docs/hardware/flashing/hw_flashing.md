@@ -2,9 +2,18 @@
 In order to get the boards running, we need to flash the correct (latest and greatest) firmware on the boards.
 How that is done is explained here.
 
-::: warning    
+<!-- ::: warning    
 This guide only applies for DWM1001 boards. In order to (re)flash the other hardware, contact us.
-:::
+::: -->
+## Easy (re-)flashing
+
+### RTLOC app
+You can easily (re-)flash your hardware using our app. In the firmware tab get and select the appropriate firmware. Then press the "flash firmware" button and check completion in the console. The "flash all" checkbox allows to also re-flash bootloader and firmware loader when flashing firmware.
+
+![Flash from app](./img/tray_flash.png)
+
+### RTManager: over-the-air updating
+We also support over-the-air (OTA) firmware updates. From our RTManager app, a firmware can be selected to be downloaded and installed over UWB by all devices.
 
 ## Architecture
 The flash architecture is as follows:
@@ -83,7 +92,7 @@ You should see something like this:
 ![flashing linux success](./img/flashing/flashing_linux_success.png "Flashing Linux Success")
 
 
-## Verify if it worked
-When you have successfully flashed the board, it will automatically restart and start running.
+## Verification
+If you have successfully flashed the board, it will automatically restart and start running.
 The third LED from the top should start blinking red and green after a couple of seconds. This means it is sending and receiving packets. Did this not work? Try to reset the tag by replugging the USB cable. If it is still not working, try to reflash.
-You can also verify that you can make a BLE connection. You can find more information on that [here](hw_interface_ble.html).
+You can also verify that you can make a BLE connection. You can find more information on BLE [here](hw_interface_ble.html).

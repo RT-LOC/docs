@@ -80,6 +80,7 @@ module.exports = {
       "/hardware/": getHardwareSidebar(),
       "/tray/": [{
         title: "RTLOC App",
+        collapsable: false,
         children: [
           ["installation", "Installation"], ["apps", "App management"], ["firmware", "Firmware management"]
         ]
@@ -250,7 +251,7 @@ function getWebSidebar() {
     ['', 'Web portal'],
     {
       title: "Configuration",
-      collapsable: true,
+      collapsable: false,
       children: [
         // ['', 'Introduction'],
         // ["user", "User accounts"],
@@ -262,7 +263,7 @@ function getWebSidebar() {
     },
     {
       title: "Views / tabs",
-      collapsable: true,
+      collapsable: false,
       children: [
         ["viewer", "Viewer"],
         ["debug", "Debug"],

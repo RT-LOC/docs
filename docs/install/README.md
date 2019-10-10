@@ -8,7 +8,7 @@ For RTLS setups, we distinguish between autoposition RTLS and a full high-precis
 There is also the (third) option only do distance tracking, if you only need distances (no positions, not RTLS) between a set of tags (no anchors). Read more about this [here](/install/adhoc_getting_started.html).
 
 ::: tip
-  You need RTLS hardware to get started. You can purchase these from us or even from other vendors. (we provide interoperability, for example with Decawave's DWM1001)
+  You need RTLS hardware nodes to get started. You can purchase these from us or even from other vendors. (we provide interoperability, for example with Decawave's DWM1001)
 :::
 
 ## RTLS introduction (autoposition)

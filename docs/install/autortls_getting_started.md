@@ -49,7 +49,7 @@ Follow these steps:
 
 4. Open the "visualize" tab and press the **autoposition** button. The anchor XYZ coordinates are now being measured. You should be able to track the auto positioning progress.
 
-<!-- TODO: autopos progress -->
+![BLE](./img/autopos.png)
 
 5. Check out the resulting **data**. Check if the anchor positions match your configuration. You should be able to see your tags if any are active.
 
