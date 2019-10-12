@@ -9,9 +9,11 @@ Before you get started, make sure you have at least the following hardware:
 :::
 
 ### Positioning devices
+The device hardware can be different (DWM1001, RTLOC tags/anchors, ...), as long as the correct firmware is flashed on the device.
+
+  - 1 Tag
   - 4 anchors
   - 1 listener anchor
-  - 1 Tag
 
 ![nodes](./img/install_nodes.png)
 
@@ -28,7 +30,7 @@ Before you get started, make sure you have at least the following hardware:
   ![power](./img/install_power_supply.png)
 
 ### Other
-A computer (desktop/laptop/tablet), preferably Windows OS
+A computer (desktop/laptop/tablet) with bluetooth support.
 
 ![pc](./img/install_PC.jpeg)
 
@@ -43,21 +45,23 @@ Follow these steps:
 
 2. Open the **portal app** from the RTLOC app or via [https://cloud.rtloc.com/ble](https://cloud.rtloc.com/ble). Log in using your account, or create one if you haven't already.
 
-3. Press the **Bluetooth** icon and select "Connect to device". Connect to the initiator device, called *INITxxx*. A Bluetooth connection is now being made. If successful, you should see some device information in the bluetooth page of our portal app.
+3. Optionally, create an RTLS "project". This is not a hard requirement for these first steps.
+
+4. Press the **Bluetooth** icon and select "Connect to device". Connect to the initiator device, called *INITxxx*. A Bluetooth connection is now being made. If successful, you should see some device information in the bluetooth page of our portal app.
 
 ![BLE](../web/img/ble.jpg)
 
-4. Open the "visualize" tab and press the **autoposition** button. The anchor XYZ coordinates are now being measured. You should be able to track the auto positioning progress.
+5. Open the "visualize" tab and press the **autoposition** button. The anchor XYZ coordinates are now being measured. You should be able to track the auto positioning progress.
 
 ![BLE](./img/autopos.png)
 
-5. Check out the resulting **data**. Check if the anchor positions match your configuration. You should be able to see your tags if any are active.
+6. Check out the resulting **data**. Check if the anchor positions match your configuration. You should be able to see your tags if any are active.
 
-<!-- TODO: screenshot visualization -->
+<!-- TODO: screenshot of visualization -->
 
 ### More details on BLE
 Bluetooth Low Energy gives us the possibility to read out the data (distances) on any device which supports BLE4.0 (basically any recent device).
-More information [here](/hardware/hw_interface_ble.html).
+More information can be found [here](/hardware/hw_interface_ble.html).
 
 ## 3. What's next?
 You can connect your own app to the device BLE interface and use the RTLS data. Check out the [BLE API details](api/api_ble) for BLE development.
