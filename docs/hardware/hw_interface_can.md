@@ -32,9 +32,9 @@ C:\Program Files\SEGGER\JLink_V632h\
 
 When this has happened, open a new Command Prompt (start -> 'cmd'), and type JLink. Pressing enter should bring you into the JLink program (in the command prompt still). If this has worked, you're ready to flash.
 
-### RTLS Manager
-The main software that you will use is RTLS Manager. RTLS Manager only runs on Windows. All versions from 34110 on support CAN. If you have an older version, please request a new one.
-In order to run RTLS Manager, you will need to have a valid License. Whenever you start RTLS Manager for the first time, you probably don't have a license yet. To acquire one, press 'Build license.txt'.
+### RTManager
+The main software that you will use is RTManager. RTManager only runs on Windows. All versions from 34110 on support CAN. If you have an older version, please request a new one.
+In order to run RTLManager, you will need to have a valid License. Whenever you start RTManager for the first time, you probably don't have a license yet. To acquire one, press 'Build license.txt'.
 A dialog message will appear and the file license.txt will be created on the following path:
 ```
 c:/cxRTLS/license.txt
@@ -93,18 +93,18 @@ Note that later on you can always flash more nodes as anchor or tag.
 Make sure to wire the cables correctly according to the following diagram:
 TODO
 
-## RTLS Manager
+## RTManager
 Now let's get the boards fully up-and-running. We need to configure the listener and the anchors.
 
 ### Listener
 First we will make sure the listener is properly initiated.
-Connect the listener to the same LAN as your Windows PC that is running RTLS Manager.
+Connect the listener to the same LAN as your Windows PC that is running RTManager.
 Go the the screen `Config` in which you will see the Listener Module (if the ethernet part is OK). All the connected listeners are listed here. It will show you to which IP address it is sending its data (this can be unicast, multicast or broadcast), together with the port.
 Make sure you see the IP-address of your PC in the column SendTo, and the IP-address of the listener is colored green.
 
 ### Anchor(s)
 First we will setup a wired anchor. This anchor is able to communicate with the PC over ethernet. (For convenience, don't use the anchor that will be connected to the CANbus here. Use it for the non-wired anchor).
-Connect one anchor to the same LAN as your Windows PC that is running RTLS Manager.
+Connect one anchor to the same LAN as your Windows PC that is running RTManager.
 
 In the `Config` screen, you should see the wired anchor appear in the Anchor list. It should have an IP address in a green box.
 If this is the case, and no data is coming in yet, press `NEW Config`.
@@ -122,7 +122,7 @@ If everything is OK, the CAN data should be coming in already.
 
 
 ### Import the EDS
-You can import existing EDS files into RTLS Manager.
+You can import existing EDS files into RTManager.
 Rename the file to kart.eds and put it into the following directory:
 ```
 c:/cxRtls/CAN/

@@ -33,7 +33,7 @@ module.exports = {
             // text: "Components",
             items: [
               { text: "RTLOC app", link: "/tray/" },
-              { text: "RTLS manager app", link: "/desktop/" },
+              { text: "RTManager", link: "/desktop/" },
               { text: "Web portal", link: "/web/" },
               { text: "Embedded/Hardware", link: "/hardware/" }
             ]

@@ -1,7 +1,7 @@
 # System Guide
 This page contains a list of guides that will help you to understand and use the RTLOC software.
 
-At RTLOC, we :heart:_speed_ & _extreme performance_. That's why around the heart of our product, we built the blazing-fast PC *RTLS Manager* application.
+At RTLOC, we :heart:_speed_ & _extreme performance_. That's why around the heart of our product, we built the blazing-fast PC *RTManager* application.
 This software can be used to configure, manage and analyze the RTLS system into the smallest detail.
 
 On top of the PC software, we also offer a complete web-based portal. This allows to have all your data available on any modern device.

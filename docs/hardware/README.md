@@ -14,7 +14,7 @@ There are plenty of ways to interface with our hardware. Here you can find a lis
 
 ## Flashing the Boards
 
-Firmware can be updated over-the-air from our RTLS Manager software. The latest firmwares can also be searched and flashed over USB from our RTLOC app.
+Firmware can be updated over-the-air from our RTManager software. The latest firmwares can also be searched and flashed over USB from our RTLOC app.
 
 ### Developers
 If one of the built-in firmware update methods are not enough for you and you want to experiment into the smallest detail with the hardware, you'll find help here to get you going.
