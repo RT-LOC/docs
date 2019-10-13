@@ -32,9 +32,9 @@ module.exports = {
           {
             // text: "Components",
             items: [
-              { text: "RTLOC app", link: "/tray/" },
-              { text: "RTManager", link: "/desktop/" },
-              { text: "Web portal", link: "/web/" },
+              { text: "Hub", link: "/hub/" },
+              { text: "Manager", link: "/manager/" },
+              { text: "Portal (web)", link: "/web/" },
               { text: "Embedded/Hardware", link: "/hardware/" }
             ]
           }
@@ -76,10 +76,10 @@ module.exports = {
     // sidebar: 'auto'
     sidebar: {
       "/install/": getInstallSidebar(),
-      "/desktop/": getcxRTLSSidebar(),
+      "/manager/": getcxRTLSSidebar(),
       "/hardware/": getHardwareSidebar(),
-      "/tray/": [{
-        title: "RTLOC App",
+      "/hub/": [{
+        title: "Hub",
         collapsable: false,
         children: [
           ["installation", "Installation"], ["apps", "App management"], ["firmware", "Firmware management"]
@@ -111,29 +111,29 @@ module.exports = {
 function getInstallSidebar() {
   return [
     {
-      title: "RTLS introduction (kit)",
+      title: "Basic Positioning (starterskit)",
       collapsable: true,
       children: [
-        // ["adhoc_getting_started", "Getting Started"],
-        ["autortls_getting_started", "Getting Started"],
+        // ["distance_tracking_getting_started", "Getting Started"],
+        ["basic_positioning_getting_started", "Getting Started"],
         // ["firststeps", "First steps"]
         // ["anchor_placement", "Anchor Placement"]
       ]
     },
     {
-      title: "Pro/full RTLS (kit)",
+      title: "Pro Positioning",
       collapsable: true,
       children: [
-        ["getting_started", "Getting Started"],
+        ["pro_positioning_getting_started", "Getting Started"],
         // ["firststeps", "First steps"],
         ["anchor_placement", "Anchor Placement"]
       ]
     },
     {
-      title: "Ad hoc distance tracking",
+      title: "Distance Tracking",
       collapsable: true,
       children: [
-        ["adhoc_getting_started", "Getting Started"],
+        ["distance_tracking_getting_started", "Getting Started"],
         // ["firststeps", "First steps"]
         // ["anchor_placement", "Anchor Placement"]
       ]

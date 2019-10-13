@@ -10,7 +10,7 @@ You can use our RTLOC app to manage the different software tools from your deskt
 
 Contents of this guide:
 
-* [PC Software](/desktop/) - Configure, manage and analyze the RTLS system.
+* [PC Software](/manager/) - Configure, manage and analyze the RTLS system.
 * [Web portal](/web/) - View all RTLS data and statistics anywhere, from within the browser.
 * [Hardware](/hardware/) - Interface with our hardware and more.
 

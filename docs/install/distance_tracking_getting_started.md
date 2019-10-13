@@ -1,10 +1,10 @@
-# Adhoc Ranging
+# Distance Tracking
 
 ## Introduction
-The Adhoc Ranging System is a variation of a `Mobile Adhoc Network` or `MANET`. It allows you to measure distances between different tags that have joined an adhoc network.
+The Distance Tracking System is a variation of a `Mobile Adhoc Network` or `MANET`. It allows you to measure distances between different tags that have joined an adhoc network.
 The tags join the adhoc network and immediately start ranging. This means **no infrastructure** is needed and the whole administration and regulation of the network is done automagically.
 
-Note: in an ad hoc system there are no anchors, and no positions are calculated, just distances!
+Note: in a Distance Tracking system there are no anchors, and no positions are calculated, just distances!
 
 ![adhoc](./img/adhoc.png)
 

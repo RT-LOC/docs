@@ -8,7 +8,7 @@ It runs on Windows 7 or later versions and requires around 30MB of storage.
 When you open the program, you will see something similar:
 ![overview](./img/cxRTLS/1_raw.png)
 
-Follow the [getting started](/install/getting_started.html) steps to bootstrap your first RTLS project
+Follow the [getting started](/install/pro_positioning_getting_started.html) steps to bootstrap your first RTLS project
 
 ## Program layout
 
