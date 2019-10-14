@@ -115,7 +115,8 @@ function getInstallSidebar() {
       collapsable: true,
       children: [
         // ["distance_tracking_getting_started", "Getting Started"],
-        ["basic_positioning_getting_started", "Getting Started"],
+        ["basic_positioning_general", "General"],
+        ["basic_positioning_getting_started", "First Setup"],
         // ["firststeps", "First steps"]
         // ["anchor_placement", "Anchor Placement"]
       ]
