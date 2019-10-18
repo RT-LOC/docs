@@ -31,3 +31,31 @@ Before you get started, make sure you have at least the following hardware:
 ### Flashing the boards
 In order to make use of our system, we need to flash the correct firmware on the boards.
 This can be done via the [RTHub](/hub/firmware.html) PC app.
+
+## Features
+### Fully Wireless
+
+### Fully Automatic
+
+### Autopos
+
+### Configuring the system
+
+### APIs
+
+## Feature Roadmap
+### Read out data via all anchors
+#### Description
+Right now you can only read out data of the system and of the tags via the Initiator anchor.
+You will be able to also read out this information via any anchor with which you can make a Bluetooth connection.
+Note that changing the configuration of the system will always go via the Initiator anchor.
+
+#### Date expected
+
+### Read out data directly via tag
+
+
+
+### Local system
+Now internet connection necessary. 
+Soon setup own MQTT connection.
