@@ -1,20 +1,20 @@
 # Setup your first system
-::: tip
-If you are using starterskit, the devices should already have the necessary firmware. In case you want to update the firmware on the tags (or switch to Distance Tracking). Take a look at our guide of [hardware flashing](/hardware/flashing/hw_flashing.html).
-:::
-::: tip
 Although not required, it can be convenient to download RTHub  on [https://cloud.rtloc.com/download](https://cloud.rtloc.com/download).
-:::
-::: warning
-For now we advise to use Google Chrome. Other browsers have not been tested.
-:::
 
-So let's get started! 
 ## Login on the Portal
 Before turning to the hardware, you need to make sure you have an account with which you can login. Open the **portal app** from RTHub or via [https://cloud.rtloc.com/ble](https://cloud.rtloc.com/ble). Log in using your account, or create one if you haven't already.
 
 Optionally, create an RTLS "Project". This is not a hard requirement for these first steps.
 
+::: tip
+Most browsers should be supported, though recent chromium-based browsers are your safest bet.
+:::
+
+## Device firmware
+First make sure the UWB RTLS devices (tags and anchors) have the necessary firmwares. We will need 4+ anchors, 1+ tags and one initiator anchor.
+::: tip
+If you are using starterskit, the devices should already have the necessary firmware. In case you want to update the firmware on the tags (or switch to Distance Tracking). Take a look at our guide of [hardware flashing](/hardware/flashing/hw_flashing.html).
+:::
 
 ## Anchors
 First we take care of the anchors. There is one special anchor called the `Initiator`. This is the anchor that regulates the system. You will communicate via Bluetooth with this anchor, so make sure you can get close to that anchor with your computer.

@@ -5,15 +5,15 @@ If you want to learn more on the technology behind our Real-Time Location System
 :::
 
 In order to get started, you will need hardware nodes such as anchors and tags. You can purchase them from us or even from other vendors. We support a range of hardware, including Decawaves DWM1001 based boards.
-Before we can get started, you need to know which type of system you are using. We offer 3 systems:
- - [Basic Positioning](/install/basic_positioning_getting_started.html)
- - [Pro Positioning](/install/pro_positioning_getting_started.html)
+Before we can get started, you need to know which setup type you need. We offer 3 setup types:
+ - [Basic Positioning](/install/basic_positioning_getting_started.html) (RTLS introduction kit)
+ - [Pro Positioning](/install/pro_positioning_getting_started.html) (Pro RTLS kit)
  - [Distance Tracking](/install/distance_tracking_getting_started.html)
  
-If you are only interested in measuring distances between moving objects and reading out sensor data from those objects, you want to go for the `Distance Tracking` solution.
+If you only need the distances between moving objects and possibly other sensor data from those objects, you want to go for the `Distance Tracking` solution.
 When you also need to know the position of your objects, you'll need a Positioning system. This will always involve anchors that are hung around the field of intrest. The precise positions of these anchors are fixed and need to be known.
 Are you new to RTLS, then we advise you to start with our `Basic Positioning` solution. It will allow you to let the anchors calculate their own positions.
-If you have some more experience already, you'll find everything you need and more in our `Pro Positioning`. 
+If you have some more experience already, the best results can be achieved with the `Pro Positioning` type of setup. 
 
 Please refer to the correct documentation based on your application needs or the infrastructure/kit you have available.
 ::: warning
