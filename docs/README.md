@@ -2,13 +2,13 @@
 home: true
 heroImage: img/logo.svg
 actionText: Get Started
-actionLink: /install/
+actionLink: /getstarted/
 footer: Copyright © 2018-present RTLOC, Callitrix NV
 ---
 
 <div class="features">
   <div class="feature">
-    <router-link to="/install"><h2>1) Installation</h2></router-link>
+    <router-link to="/getstarted"><h2>1) Installation</h2></router-link>
     <p>Instructions on how to set-up your RTLS system</p>
   </div>
   <div class="feature">

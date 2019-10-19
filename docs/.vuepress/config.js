@@ -24,7 +24,7 @@ module.exports = {
     sidebarDepth: 3,
     nav: [
       // { text: "Home", link: "/" }, // Don't need this
-      { text: "Install", link: "/install/" },
+      { text: "Get Started", link: "/getstarted/" },
       {
         text: "System guide",
         items: [
@@ -75,7 +75,7 @@ module.exports = {
     ],
     // sidebar: 'auto'
     sidebar: {
-      "/install/": getInstallSidebar(),
+      "/getstarted/": getInstallSidebar(),
       "/manager/": getcxRTLSSidebar(),
       "/hardware/": getHardwareSidebar(),
       "/hub/": [{

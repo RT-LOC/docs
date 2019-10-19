@@ -2,7 +2,7 @@
 home: true
 heroImage: img/logo.svg
 actionText: Get Started
-actionLink: /install/
+actionLink: /getstarted/
 features:
 - title: Installation
   details: Instructions on how to set-up your RTLS system.

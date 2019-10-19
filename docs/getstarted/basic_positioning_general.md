@@ -16,7 +16,7 @@ More information can be found [here](/hardware/hw_interface_ble.html).
 ## Minimal requirements
 :::warning NOTE:
   If you have bought the `Starterskit`, everything is included in the box to get started and the hardware is preflashed.
-  You can skip ahead to the [Getting Started](/install/basic_positioning_getting_started.html#getting-started) section.
+  You can skip ahead to the [Getting Started](/getstarted/basic_positioning_getting_started.html#getting-started) section.
 
   If you bought a starters license to use on your own hardware from other vendors you already owned (e.g. if you bought Decawaves MDEK kit), you can continue reading here.
 :::

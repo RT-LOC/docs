@@ -23,7 +23,7 @@ The anchors are marked with the label "A" and their ID below.
 
   1. **Power** all devices over USB (using a power adapter or a battery)
   
-  2. Hang the anchors in a good place. Make sure there is an anchor in each quadrant. More information on good practices on anchor placement can be found [here](/install/anchor_placement.html#_1-anchor-in-each-quadrant).
+  2. Hang the anchors in a good place. Make sure there is an anchor in each quadrant. More information on good practices on anchor placement can be found [here](/getstarted/anchor_placement.html#_1-anchor-in-each-quadrant).
   
   3. Press the **Bluetooth** icon and select `Connect to device`. 
   
@@ -62,7 +62,7 @@ You can also see the coordinates of the anchors in the _Configure_ screen.
 
 If something went wrong during the autopositioning algorithm, you will get notified to try it again.
 ![BLE](../web/img/ble5.png)
-If you don't manage to get good anchor coordinates, please refer to the [troubleshoot section](/install/basic_positioning_getting_started.html#autopos-keeps-failing) below.
+If you don't manage to get good anchor coordinates, please refer to the [troubleshoot section](/getstarted/basic_positioning_getting_started.html#autopos-keeps-failing) below.
 
 ## Tags
 Now that all anchor stuff is done, we can focus on the tags. The tags are labeled with the letter "T", with their ID below.
