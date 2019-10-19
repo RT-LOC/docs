@@ -1,19 +1,21 @@
 # Setup your first system
-Although not required, it can be convenient to download RTHub  on [https://cloud.rtloc.com/download](https://cloud.rtloc.com/download).
+On this page you'll learn how to set up your very first RTLS system. Don't worry, it's easy! Once you get the hang of it you'll be able to set up a system in minutes. Make sure you have at least one Initiator anchor,  3 normal anchors and one tag.
+
 
 ## Login on the Portal
-Before turning to the hardware, you need to make sure you have an account with which you can login. Open the **portal app** from RTHub or via [https://cloud.rtloc.com/ble](https://cloud.rtloc.com/ble). Log in using your account, or create one if you haven't already.
+Before turning to the hardware, you need to make sure you have an account with which you can login. Open the **portal app**  via [https://cloud.rtloc.com/ble](https://cloud.rtloc.com/ble) or from __RTHub__. Log in using your account, or create one if you haven't already.
 
 Optionally, create an RTLS "Project". This is not a hard requirement for these first steps.
 
 ::: tip
-Most browsers should be supported, though recent chromium-based browsers are your safest bet.
+Most browsers should be supported, though recent chromium-based browsers (such as Google Chrome) are your safest bet.
 :::
 
 ## Device firmware
-First make sure the UWB RTLS devices (tags and anchors) have the necessary firmwares. We will need 4+ anchors, 1+ tags and one initiator anchor.
+First make sure the UWB RTLS devices (tags and anchors) have the necessary firmwares. 
+
 ::: tip
-If you are using starterskit, the devices should already have the necessary firmware. In case you want to update the firmware on the tags (or switch to Distance Tracking). Take a look at our guide of [hardware flashing](/hardware/flashing/hw_flashing.html).
+If you are using starterskit, the devices should already have the necessary firmware. In case you want to update the firmware on the tags (or switch to Distance Tracking) have a look at our guide of [hardware flashing](/hardware/flashing/hw_flashing.html).
 :::
 
 ## Anchors
@@ -88,8 +90,3 @@ There could be multiple reasons for the autopos to fail. Keep the following rule
 If you are sure your tag has power, try resetting the tag. Also make sure it is in the vicinity of the anchors and it has clear sight on at least 3 anchors.
 
 [TODO]
-
-## What's next?
-You can connect your own app to the device BLE interface and use the RTLS data. Check out the [BLE API details](api/api_ble) for BLE development.
-
-It is also possible to access a real-time stream of position- and sensordata. We provide data in binary and JSON format, over UDP, TCP, websocket or MQTT. To do this, you will need a license for our professional setup. This also includes professional UWB debugging tools on the desktop.

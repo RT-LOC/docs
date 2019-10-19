@@ -5,12 +5,16 @@ The most important characteristics of this system are the following:
  - Readout of all the data via BLE
  - Autopositioning of the anchors 
 
-This solution is tailored to get you started as quickly as possible with a limited amount of tags (12) and anchors (8).
+This solution is tailored to get you started as quickly as possible with a limited amount of tags (8) and anchors (8).
 
-## More details on BLE
-This system can function 100% based on Bluetooth Low Energy or BLE communication.
-BLE gives us the possibility to read out the data (distances) on any device which supports BLE4.0 (basically any recent device).
-More information can be found [here](/hardware/hw_interface_ble.html).
+## Starterskit vs Starters License
+There are two ways you can get started with our Basic Positioning solution. The easiest is by buying the `Starterskit`. 
+If you have bought the MDEK kit from Decawave howe
+The Starterskit includes a starters license.
+
+If you have bought the `Starterskit`, everything is included in the box to get started and the hardware is preflashed.
+You can skip ahead to the [Getting Started](/getstarted/basic_positioning_getting_started.html#getting-started) section.
+
 
 
 ## Minimal requirements
@@ -24,14 +28,21 @@ More information can be found [here](/hardware/hw_interface_ble.html).
 Before you get started, make sure you have at least the following hardware:
  - 4 or more anchors with power supply
  - 1 or more tags with power supply
- - A computer (desktop or laptop) with bluetooth support and Google Chrome.
+ - A computer (desktop or laptop) with bluetooth support and a chromium-based browser (e.g. Google Chrome).
 
  Please refer to our [list of supported tags and anchors](hardware/hw_boards.html).
 
-### Flashing the boards
+## More details on BLE
+This system can function 100% based on Bluetooth Low Energy or BLE communication.
+BLE gives us the possibility to read out the data (distances) on any device which supports BLE4.0 (basically any recent device).
+More information can be found [here](/hardware/hw_interface_ble.html).
+
+
+## Flashing the boards
 In order to make use of our system, we need to flash the correct firmware on the boards.
 This can be done via the [RTHub](/hub/firmware.html) PC app.
 
+<!-- 
 ## Features
 ### Fully Wireless
 
@@ -43,19 +54,21 @@ This can be done via the [RTHub](/hub/firmware.html) PC app.
 
 ### APIs
 
+-->
+
 ## Feature Roadmap
-### Read out data via all anchors
-#### Description
+#### - Read out data via all anchors
+##### Description
 Right now you can only read out data of the system and of the tags via the Initiator anchor.
 You will be able to also read out this information via any anchor with which you can make a Bluetooth connection.
 Note that changing the configuration of the system will always go via the Initiator anchor.
 
-#### Date expected
+##### Date expected
 
-### Read out data directly via tag
+#### - Read out data directly via tag
 
 
 
-### Local system
+#### - Local system
 Now internet connection necessary. 
 Soon setup own MQTT connection.

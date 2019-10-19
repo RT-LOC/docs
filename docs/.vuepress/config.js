@@ -115,8 +115,10 @@ function getInstallSidebar() {
       collapsable: true,
       children: [
         // ["distance_tracking_getting_started", "Getting Started"],
-        ["basic_positioning_general", "General"],
+        ["basic_positioning_introduction", "Introduction"],
         ["basic_positioning_getting_started", "First Setup"],
+        ["basic_positioning_next", "What's Next"],
+
         // ["firststeps", "First steps"]
         // ["anchor_placement", "Anchor Placement"]
       ]
@@ -125,6 +127,7 @@ function getInstallSidebar() {
       title: "Pro Positioning",
       collapsable: true,
       children: [
+        ["pro_positioning_introduction", "Introduction"],
         ["pro_positioning_getting_started", "Getting Started"],
         // ["firststeps", "First steps"],
         ["anchor_placement", "Anchor Placement"]
@@ -269,6 +272,17 @@ function getWebSidebar() {
         ["viewer", "Viewer"],
         ["debug", "Debug"],
         ["settings", "Settings"],
+        // ["data", "Data control"],
+      ]
+    },
+    {
+      title: "BLE",
+      collapsable: false,
+      children: [
+        ["ble_introduction", "Introduction"],
+        ["ble_monitor", "Monitor"],
+        ["ble_visualise", "Visualise"],
+        ["ble_configure", "Configure"],
         // ["data", "Data control"],
       ]
     }
