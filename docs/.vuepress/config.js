@@ -130,7 +130,6 @@ function getInstallSidebar() {
         ["pro_positioning_introduction", "Introduction"],
         ["pro_positioning_getting_started", "Getting Started"],
         // ["firststeps", "First steps"],
-        ["anchor_placement", "Anchor Placement"]
       ]
     },
     {
