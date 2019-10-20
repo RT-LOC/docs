@@ -7,6 +7,7 @@ There are some rules of thumb to keep in mind when you are placing your anchors 
 ### 1. Anchor in each Quadrant
 For every possible position the tags can come, you want to have at least one anchor in every quadrant around that position.
 This makes that the underlying mathematical problem is _well-conditioned_, which basically means that errors in the measurements have a smaller influence on the error of the calculated position.
+
 ![anchor_placement](./img/anchor_placement.png)
 
 ### 2. Daisy-chain Anchors
@@ -32,11 +33,13 @@ When more anchors are used, the algorithm will still work but the results might 
 The returned anchor coordinates are a relative reference system. You can give the coordinates an offset or rotate them around the zero-point.
 
 You can find a step-by-step guide on how to use the AutoPos [here](LINK).
+
 ### Total Station
 A total station (TS) is an electronic/optical instrument that is mostly used for surveying and building construction.
 It allows you to very accurately (up to a few millimeters in all directions) measure the coordinates of static points in your scene.
 In our case, those static points will be the anchors.
 This is what a TS can look like:
+
 ![totalstation](./img/totalstation.jpg)
 
 If you want to achieve as accurate results as possible, you should always consider using a TS to calculate the coordinates of your anchors.

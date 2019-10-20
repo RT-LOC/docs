@@ -7,24 +7,25 @@ The most important characteristics of this system are the following:
 
 This solution is tailored to get you started as quickly as possible with a limited amount of tags (8) and anchors (8).
 
-## Starterskit vs Starters License
-There are two ways you can get started with our Basic Positioning solution. The easiest is by buying the `Starterskit`. 
-If you have bought the MDEK kit from Decawave howe
-The Starterskit includes a starters license.
+## Starterskit & Starters License
+### Kit
+There are two ways you can get started with our Basic Positioning solution. The easiest is by [buying](https://rtloc.com/product/rtls-kit-starter/) the `Starterskit`. This kit consists of all the hardware you need. The anchors & tags are preflashed so that you can start using the system right off the bat.
+The kit also includes the `Starters License`. This license enables you to download, flash and use the latest firmwares on the tags & anchors, as well as use the online portal.
 
-If you have bought the `Starterskit`, everything is included in the box to get started and the hardware is preflashed.
-You can skip ahead to the [Getting Started](/getstarted/basic_positioning_getting_started.html#getting-started) section.
+### License
+If you have bought the MDEK kit from Decawave however, you don't necessarily need to buy the hardware from us. You can use it by buying the `License` alone. You will have to flash the nodes yourself.
+
+More information on the starterskit can be found in [the whitepaper](http://callitrix.com/assets/docs/files/starterskit_whitepaper.pdf).
 
 
-
-## Minimal requirements
 :::warning NOTE:
   If you have bought the `Starterskit`, everything is included in the box to get started and the hardware is preflashed.
   You can skip ahead to the [Getting Started](/getstarted/basic_positioning_getting_started.html#getting-started) section.
 
-  If you bought a starters license to use on your own hardware from other vendors you already owned (e.g. if you bought Decawaves MDEK kit), you can continue reading here.
+  If you bought a `Starters License` to use on your own hardware from other vendors you already owned (e.g. if you bought Decawaves MDEK kit), please continue reading here.
 :::
 
+## Minimal requirements
 Before you get started, make sure you have at least the following hardware:
  - 4 or more anchors with power supply
  - 1 or more tags with power supply
@@ -66,8 +67,6 @@ Note that changing the configuration of the system will always go via the Initia
 ##### Date expected
 
 #### - Read out data directly via tag
-
-
 
 #### - Local system
 Now internet connection necessary. 

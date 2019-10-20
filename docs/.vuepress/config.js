@@ -137,6 +137,7 @@ function getInstallSidebar() {
       title: "Distance Tracking",
       collapsable: true,
       children: [
+        ["distance_tracking_introduction", "Introduction"],
         ["distance_tracking_getting_started", "Getting Started"],
         // ["firststeps", "First steps"]
         // ["anchor_placement", "Anchor Placement"]
@@ -326,7 +327,8 @@ function getReferenceSidebar() {
         ["terminology", "Terminology"],
         ["algorithms", "Algorithms"],
         ["rf", "RF"],
-        ["updaterate", "Update Rate"]
+        ["updaterate", "Update Rate"],
+        ["anchor_placement", "Anchor Placement"]
       ]
     }
   ];
