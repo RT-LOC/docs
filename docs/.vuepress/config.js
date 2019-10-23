@@ -14,20 +14,21 @@ module.exports = {
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
   plugins: [
-    ["@vuepress/plugin-pagination", true],
     ["@vuepress/plugin-back-to-top", true],
-    ["@vuepress/search", true],
     ['@vuepress/pwa', {
       serviceWorker: true,
-      updatePopup: {
-        message: "New content is available.",
-        buttonText: "Refresh"
-      }
+      updatePopup: true
+      // updatePopup: {
+      //   message: "New content is available.",
+      //   buttonText: "Refresh"
+      // }
     }],
+    // ["@vuepress/plugin-pagination", true],
+    ["@vuepress/search", true],
     ["@vuepress/plugin-medium-zoom", true],
     ["@vuepress/last-updated", true]
   ],
-  // theme: 'vue',
+  // theme: '@vuepress/vue',
   themeConfig: {
     // repo: "RT-LOC/docs", // Shows link in top nav bar
     editLinks: true,

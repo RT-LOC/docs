@@ -9,8 +9,8 @@ This solution is tailored to get you started as quickly as possible with a limit
 
 ## Starterskit & Starters License
 ### Kit
-There are two ways you can get started with our Basic Positioning solution. The easiest is by [buying](https://rtloc.com/product/rtls-kit-starter/) the `Starterskit`. This kit consists of all the hardware you need. The anchors & tags are preflashed so that you can start using the system right off the bat.
-The kit also includes the `Starters License`. This license enables you to download, flash and use the latest firmwares on the tags & anchors, as well as use the online portal.
+There are two ways you can get started with our Basic Positioning solution. The easiest is by [buying](https://rtloc.com/product/rtls-kit-starter/) the `Starter kit`. This kit consists of all the hardware you need. The anchors & tags are preflashed so that you can start using the system right off the bat.
+The kit also includes the `Starter  License`. This license enables you to download, flash and use the latest firmwares on the tags & anchors, as well as use the online portal.
 
 ### License
 If you have bought the MDEK kit from Decawave however, you don't necessarily need to buy the hardware from us. You can use it by buying the `License` alone. You will have to flash the nodes yourself.
@@ -19,10 +19,10 @@ More information on the starterskit can be found in [the whitepaper](http://call
 
 
 :::warning NOTE:
-  If you have bought the `Starterskit`, everything is included in the box to get started and the hardware is preflashed.
+  If you have bought the `Starter kit`, everything is included in the box to get started and the hardware is preflashed.
   You can skip ahead to the [Getting Started](/getstarted/basic_positioning_getting_started.html#getting-started) section.
 
-  If you bought a `Starters License` to use on your own hardware from other vendors you already owned (e.g. if you bought Decawaves MDEK kit), please continue reading here.
+  If you bought a `Starter License` to use on your own hardware from other vendors you already owned (e.g. if you bought Decawaves MDEK kit), please continue reading here.
 :::
 
 ## Minimal requirements

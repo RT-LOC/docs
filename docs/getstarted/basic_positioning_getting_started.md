@@ -53,7 +53,7 @@ You can track the progress of the algorithm live. You will see distances being m
 ![BLE](../web/img/ble4.png)
 
 
-Once the algorithm is done, the view will automatically switch to visualise the anchors. You can check if these positions correspond to where you have placed your anchors.
+Once the algorithm is done, the view will automatically switch to visualize the anchors. You can check if these positions correspond to where you have placed your anchors.
 ![BLE](../web/img/ble_anchor_positions.png)
 
 You can also see the coordinates of the anchors in the _Configure_ screen.
@@ -68,7 +68,7 @@ If you don't manage to get good anchor coordinates, please refer to the [trouble
 
 ## Tags
 Now that all anchor stuff is done, we can focus on the tags. The tags are labeled with the letter "T", with their ID below.
-The only thing you have to do is power the tag up. After a couple of seconds, the positions of the tag are coming in and all active tags are visualised.
+The only thing you have to do is power the tag up. After a couple of seconds, the positions of the tag are coming in and all active tags are visualized.
 
 ![BLE](../web/img/ble_tag_pos.png)
 
@@ -80,7 +80,7 @@ If you lost the connection with the anchor for some reason, it should reconnect 
 If this isn't the case, refresh the page and try to connect again.
 
 ### Autopos keeps failing
-There could be multiple reasons for the autopos to fail. Keep the following rules in mind:
+There could be multiple reasons for the autopositioning process to fail. Keep the following rules in mind:
  - all anchors should have visibility on each other
  - Try to put the anchors on more or less the same height
  - Make sure all tags are switched **off**
