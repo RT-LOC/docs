@@ -2,9 +2,9 @@
 # Getting started
 In order to get started, you will need hardware nodes such as anchors and tags. You can purchase them from us or even from other vendors. We support a range of hardware, including Decawaves DWM1001 based boards.
 Before we can get started, you need to know which setup type you need. We offer 3 setup types:
- - [Distance Tracking](/getstarted/distance_tracking_getting_started.html)
  - [Basic Positioning](/getstarted/basic_positioning_getting_started.html) (RTLS introduction kit)
  - [Pro Positioning](/getstarted/pro_positioning_getting_started.html) (Pro RTLS kit)
+ - [Distance Tracking](/getstarted/distance_tracking_getting_started.html)
  
  Please refer to the correct documentation based on your application needs or the infrastructure/kit you have available.
 

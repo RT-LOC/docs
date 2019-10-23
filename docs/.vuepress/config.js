@@ -13,6 +13,20 @@ module.exports = {
     ['meta', { name: 'msapplication-TileImage', content: '/icons/mstile-150x150.png' }],
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
+  plugins: [
+    ["@vuepress/plugin-pagination", true],
+    ["@vuepress/plugin-back-to-top", true],
+    ["@vuepress/search", true],
+    ['@vuepress/pwa', {
+      serviceWorker: true,
+      updatePopup: {
+        message: "New content is available.",
+        buttonText: "Refresh"
+      }
+    }],
+    ["@vuepress/plugin-medium-zoom", true],
+    ["@vuepress/last-updated", true]
+  ],
   // theme: 'vue',
   themeConfig: {
     // repo: "RT-LOC/docs", // Shows link in top nav bar
@@ -94,17 +108,6 @@ module.exports = {
       "/troubleshoot/": getTroubleshootSidebar()
     }
   },
-  plugins: [
-    ["@vuepress/plugin-pagination", true],
-    ["@vuepress/plugin-back-to-top", true],
-    ["@vuepress/search", true],
-    ["@vuepress/plugin-medium-zoom", true],
-    ["@vuepress/last-updated", true],
-    ['@vuepress/pwa', {
-      serviceWorker: true,
-      updatePopup: true
-    }],
-  ],
   evergreen: true
 };
 
