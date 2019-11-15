@@ -8,20 +8,21 @@ Real-time data (position data, tag/anchor statuses, sensor data, etc.) can be re
 
 2. Connect to your computer/server to the correct IP + port
 
-### Code example
-Check out code examples at https://github.com/RT-LOC/APIs
+### Code examples
+Check out code examples at [https://github.com/RT-LOC/APIs](https://github.com/RT-LOC/APIs) (C, Python, Javascript)
 
 ## 2. MQTT data connection
 
 You can receive data in a pub/sub fashion, through our hosted Mosquitto (MQTT) server. Use the following configuration for your MQTT client:
 
 * Host: mqtt.cloud.rtloc.com
-* Port: *1883 (TCP), 8083 (WSS) or 8883(TCP TLS)
-* Username: *client slug*:*User e-mail*
-* Password: *User password, or valid JWT*
+* Port: 1883 (TCP), 8083 (WSS) or 8883(TCP TLS)
+* Username: *client slug**: *user e-mail*
+* Password: user password, or valid JWT
 
-You can find the *client slug* in the license description, in the Hub app or the Portal at https://cloud.rtloc.com/info.
-The MQTT topic per type of message is indicated in the [format description](/api/api_web.html).
+*You can find the *client slug* in the license description, in the Hub app or the Portal at [https://cloud.rtloc.com/info](https://cloud.rtloc.com/info).
+
+The MQTT topic and data format per type of message is outlined in the [format description](/api/api_web.html).
 
 ### MQTT clients
 
@@ -36,7 +37,7 @@ Example client libraries:
 
 * ...
 
-### Code example
+### Code examples
 The following example uses the [MQTT.js](https://www.npmjs.com/package/mqtt) client library to connect to our MQTT broker. It uses a demo account and displays demo data (replayed RTLS data continuously fed into our broker).
 
 ```js

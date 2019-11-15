@@ -284,9 +284,9 @@ function getWebSidebar() {
       collapsable: false,
       children: [
         ["ble_introduction", "Introduction"],
-        ["ble_monitor", "Monitor"],
-        ["ble_visualise", "Visualise"],
-        ["ble_configure", "Configure"],
+        // ["ble_monitor", "Monitor"],
+        // ["ble_visualise", "Visualise"],
+        // ["ble_configure", "Configure"],
         // ["data", "Data control"],
       ]
     }
