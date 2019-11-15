@@ -16,10 +16,11 @@ Check out code examples at https://github.com/RT-LOC/APIs
 You can receive data in a pub/sub fashion, through our hosted Mosquitto (MQTT) server. Use the following configuration for your MQTT client:
 
 * Host: mqtt.cloud.rtloc.com
-* Port: *8083 (WSS) or 8883(TCP TLS)*
-* Username: *Your username*
+* Port: *1883 (TCP), 8083 (WSS) or 8883(TCP TLS)
+* Username: *client slug*:*User e-mail*
 * Password: *User password, or valid JWT*
 
+You can find the *client slug* in the license description, in the Hub app or the Portal at https://cloud.rtloc.com/info.
 The MQTT topic per type of message is indicated in the [format description](/api/api_web.html).
 
 ### MQTT clients
