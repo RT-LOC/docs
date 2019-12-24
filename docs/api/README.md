@@ -1,6 +1,9 @@
 # APIs
 There are different ways to integrate with the RTLOC system, depending on your needs.
 
+![API_overview](./img/API2_small.gif)
+
+
 ## Real-time device data
 The position and sensor data for each device can be accessed in real-time in a few ways:
 
