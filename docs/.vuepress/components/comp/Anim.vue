@@ -8,7 +8,8 @@
     props: {
       options: {
         type: Object,
-        required: true
+        required: true,
+        // default: { animationData: animationData.default }
       },
       height: Number,
       width: Number,
@@ -23,6 +24,11 @@
         }
       }
     },
+    methods: {
+      // handleAnimation: function (anim) {
+      //   this.anim = anim;
+      // },
+    },
     mounted () {
       this.anim = lottie.loadAnimation({
           container: this.$refs.lavContainer,
@@ -33,7 +39,7 @@
           rendererSettings: this.options.rendererSettings
         }
       );
-      this.$emit('animCreated', this.anim)
+      // this.$emit('animCreated', this.anim)
     }
   }
 </script>

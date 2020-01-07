@@ -30,8 +30,8 @@ Per tag position information
       "offset": <offset>,
       "data": {
         "dist": {
-          <id2>: <dist1>,
-          <id23>: <dist2>
+          <aid2>: [<dist>, <LOS1>, <RSSI1>, <LOS2>, <RSSI2>, <offset>],
+          ...
         },
         "pos": [<x>, <y>, <z>]
       }

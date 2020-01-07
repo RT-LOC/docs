@@ -1,7 +1,8 @@
 # APIs
 There are different ways to integrate with the RTLOC system, depending on your needs.
 
-![API_overview](./img/API2_small.gif)
+<!-- ![API_overview](./img/API2_small.gif) -->
+<AnimApis />
 
 
 ## Real-time device data

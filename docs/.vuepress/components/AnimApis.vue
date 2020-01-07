@@ -4,23 +4,16 @@
 
 <script>
   import Anim from './comp/Anim.vue';
-  import * as animationData from './anims/cmds.json';
+  import * as animationData from './anims/API2.json';
  
   export default {
     components: {
-      'Anim': Anim
+      Anim
     },
     data() {
       return {
         defaultOptions: {animationData: animationData.default},
-        animationSpeed: 1
       }
-    },
-    methods: {
-      handleAnimation: function (anim) {
-        this.anim = anim;
-      },
- 
     },
   }
 </script>

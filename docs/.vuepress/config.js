@@ -14,7 +14,8 @@ module.exports = {
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
   plugins: [
-    ["@vuepress/plugin-back-to-top", true],
+    // ["@vuepress/plugin-back-to-top", true],
+    ["@vuepress/plugin-back-to-top"],
     ['@vuepress/pwa', {
       serviceWorker: true,
       updatePopup: true
@@ -24,9 +25,12 @@ module.exports = {
       // }
     }],
     // ["@vuepress/plugin-pagination", true],
-    ["@vuepress/search", true],
-    ["@vuepress/plugin-medium-zoom", true],
-    ["@vuepress/last-updated", true]
+    // ["@vuepress/search", true],
+    ["@vuepress/search", {
+      searchMaxSuggestions: 10
+    }],
+    ["@vuepress/plugin-medium-zoom"],
+    ["@vuepress/last-updated"]
   ],
   // theme: '@vuepress/vue',
   themeConfig: {

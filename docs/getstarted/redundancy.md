@@ -1,7 +1,10 @@
 # Redundancy
-Redundancy is built-in on many levels.
-We don't want the system to break.
 
-## Anchor-level
+Redundancy can be built-in on different levels, to prevent system failure upon failure of a single device.
 
-## Listener
+<AnimRedun />
+
+* Anchor-level redundancy
+  - Listener / gateway redundancy
+
+* Desktop/server redundancy

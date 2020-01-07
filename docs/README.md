@@ -3,7 +3,7 @@ home: true
 heroImage: img/logo.svg
 actionText: Get Started
 actionLink: /getstarted/
-footer: Copyright © 2018-present RTLOC, Callitrix NV
+footer: Copyright © 2018-present RTLOC / Callitrix NV
 ---
 
 <div class="features">
