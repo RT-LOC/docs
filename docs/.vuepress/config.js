@@ -256,9 +256,9 @@ function getAPISidebar() {
   ];
 }
 
+// const webSideBar = [
 function getWebSidebar() {
   return [
-// const webSideBar = [
     ['', 'Web portal'],
     {
       title: "Configuration",
