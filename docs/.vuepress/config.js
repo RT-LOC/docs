@@ -42,7 +42,6 @@ module.exports = {
     lastUpdated: "Last Updated", // string | boolean
     sidebarDepth: 3,
     nav: [
-      // { text: "Home", link: "/" }, // Don't need this
       { text: "Get Started", link: "/getstarted/" },
       {
         text: "System guide",
