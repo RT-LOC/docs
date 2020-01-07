@@ -11,11 +11,11 @@
     "@vuepress/plugin-medium-zoom": "^1.2.0",
     "@vuepress/plugin-pwa": "^1.2.0",
     "@vuepress/plugin-search": "^1.2.0",
-    "lottie-web": "^5.5.10",
     "sitemap": "^2.0.1",
     "vuepress": "^1.2.0"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.7"
+    "browser-sync": "^2.26.7",
+    "lottie-web": "^5.5.10"
   }
 }
