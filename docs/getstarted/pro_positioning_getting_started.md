@@ -7,8 +7,11 @@ In this guide we will go through the setup of a professional RTLOC positioning s
 You will need a valid **license** for our professional RTLS.
 
 Before you get started, make sure you have at least the following hardware:
-:::warning NOTE:
- If you have bought the `Professional RTLS Kit`, everything will be included to get started.
+:::tip 
+  NOTE: If you have bought the `Professional RTLS Kit`, everything will be included to get started.
+:::
+:::tip 
+  Without any hardware, you can still use the software to play replays.
 :::
 
 ### Positioning devices
@@ -35,6 +38,13 @@ A computer (desktop/laptop/tablet), preferably Windows OS
 
 ![pc](./img/install_PC.jpeg)
 
+## Set up the software
+A convenient way to manage our tools is the Hub app. You can get it at https://cloud.rtloc.com/download. (Currently Windows only, requires some space on the C drive)
+You will need to log in using your account. If you don't have an account, [create one](https://cloud.rtloc.com/register). (If you've received an e-mail invite, preferably use that link)
+
+You will need to download your license, from the account view of the Hub app. [License download instructions]
+
+![App management](../hub/img/apps.jpg)
 
 ## Connect the Hardware
 Let's apply power to the hardware (_HW_) to spark some life into it. There are multiple ways to power the HW. Click [here](LINK) for more information. The easiest way to get started is to power the boards via the usb cables.
@@ -45,8 +55,8 @@ The last step before we turn to the PC is to connect the listener and one anchor
 
 Place the anchors in a strategic way. Hang them around the area you want to track. Make sure they are placed so that they are not blocked by big objects (especially metal). You can find some more hints on how to hang the anchors [here](LINK).
 
-## Setup the PC Manager software
-Locate the PC software and start it by double clicking the icon.
+## PC manager configuration
+Start the app from the Hub (tray) app or locate the executable and start it. 
 
 ![getting_started-setup_icon](./img/getting_started-setup_icon.png)
 
@@ -54,7 +64,7 @@ You will get welcomed in the PC software.
 
 :::warning
 The software will run in a limited demo-mode without proper license.
-[Here's some help](/cxRTLS/cxRTLS_license.html) on how to activate your license.
+[Here's some help](/manager/cxRTLS_license.html) on how to activate your license.
 :::
 
 ### Listener(s)
@@ -77,7 +87,7 @@ All the anchors & tags that are powered on will start to appear in the list.
 Whenever all is is right, the numbers in the column DecaNr should turn right. This means data of these nodes is received.
 
 ### Floorplan
-Now let's turn to visualising the data. Press the screen 'Floor'. 
+Now let's try visualizing the data. Open the 'Floor' view from the menu. 
 
 #### Anchor Coordinates
 Before we can track the tags, we need to know where the anchors are. 
@@ -103,7 +113,7 @@ Unselect "Skip Engine" to activate the engine.
 Walk around with your tag and check that the tag is actually moving on the screen.
 
 ## What's next?
-You have just set up an easy RTLS system. Congratulations! Now there are several things you can do. Extend the area of intrest by adding more anchors. Follow more objects by adding more tags. Reach the highest possible accuracy by calibrating your system. Consult the API documentation to find out how you can connect your own system to RTLOC. There's a lot to discover. A whole new world of possibilities is waiting for you.
+You have just set up an easy RTLS system. Congratulations! Now there are several things you can do. Extend the area of interest by adding more anchors. Follow more objects by adding more tags. Reach the highest possible accuracy by calibrating your system. Consult the API documentation to find out how you can connect your own system to RTLOC. There's a lot to discover. A whole new world of possibilities is waiting for you.
 
 * Setup [finetuning](/getstarted/tuning.html)
 * Follow our [system guide](/guide/)

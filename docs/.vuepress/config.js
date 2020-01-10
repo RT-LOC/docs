@@ -100,7 +100,7 @@ module.exports = {
         title: "Hub",
         collapsable: false,
         children: [
-          ["installation", "Installation"], ["apps", "App management"], ["firmware", "Firmware management"]
+          ["installation", "Installation"], ["apps", "App management"], ["firmware", "Firmware management"], ["license", "License management"]
         ]
       }],
       "/web/": getWebSidebar(),
@@ -118,25 +118,25 @@ module.exports = {
 function getInstallSidebar() {
   return [
     {
-      title: "Basic Positioning (starterskit)",
+      title: "Full RTLS setup",
+      collapsable: true,
+      children: [
+        // ["pro_positioning_introduction", "Introduction"],
+        ["pro_positioning_getting_started", "Getting Started"],
+        // ["firststeps", "First steps"],
+      ]
+    },
+    {
+      title: "Starter kit",
       collapsable: true,
       children: [
         // ["distance_tracking_getting_started", "Getting Started"],
         ["basic_positioning_introduction", "Introduction"],
-        ["basic_positioning_getting_started", "First Setup"],
+        ["basic_positioning_getting_started", "Initial Setup"],
         ["basic_positioning_next", "What's Next"],
 
         // ["firststeps", "First steps"]
         // ["anchor_placement", "Anchor Placement"]
-      ]
-    },
-    {
-      title: "Pro Positioning",
-      collapsable: true,
-      children: [
-        ["pro_positioning_introduction", "Introduction"],
-        ["pro_positioning_getting_started", "Getting Started"],
-        // ["firststeps", "First steps"],
       ]
     },
     {

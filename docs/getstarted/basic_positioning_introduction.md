@@ -7,7 +7,7 @@ The most important characteristics of this system are the following:
 
 This solution is tailored to get you started as quickly as possible with a limited amount of tags (8) and anchors (8).
 
-## Starterskit & Starters License
+## Starter kit & Starter License
 ### Kit
 There are two ways you can get started with our Basic Positioning solution. The easiest is by [buying](https://rtloc.com/product/rtls-kit-starter/) the `Starter kit`. This kit consists of all the hardware you need. The anchors & tags are preflashed so that you can start using the system right off the bat.
 The kit also includes the `Starter  License`. This license enables you to download, flash and use the latest firmwares on the tags & anchors, as well as use the online portal.
@@ -15,7 +15,7 @@ The kit also includes the `Starter  License`. This license enables you to downlo
 ### License
 If you have bought the MDEK kit from Decawave however, you don't necessarily need to buy the hardware from us. You can use it by buying the `License` alone. You will have to flash the nodes yourself.
 
-More information on the starterskit can be found in [the whitepaper](http://callitrix.com/assets/docs/files/starterskit_whitepaper.pdf).
+More information on the starter kit can be found in [the whitepaper](http://callitrix.com/assets/docs/files/starterskit_whitepaper.pdf).
 
 
 :::warning NOTE:

@@ -1,7 +1,11 @@
 # Licenses
 The features that are enabled in the program are based on the license you have. You can find more details on the licenses below.
 
-## License Groups
+:::tip 
+  The most convenient way to download your license is to use the Hub app. Go to your account, select a project, add your PC and download the license.
+:::
+
+## License types
 Features can be enabled on a per-license basis. In general there are 3 license groups:
 - No License
 - Demo License

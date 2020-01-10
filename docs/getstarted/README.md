@@ -1,14 +1,13 @@
 
 # Getting started
-In order to get started, you will need hardware nodes such as anchors and tags. You can purchase them from us or even from other vendors. We support a range of hardware, including Decawave's DWM1001 based boards.
-Before we can get started, you need to know which setup type you need. We offer 3 setup types:
- - [Basic Positioning](/getstarted/basic_positioning_getting_started.html) (RTLS introduction kit)
- - [Pro Positioning](/getstarted/pro_positioning_getting_started.html) (Pro RTLS kit)
- - [Distance Tracking](/getstarted/distance_tracking_getting_started.html)
- 
- Please refer to the correct documentation based on your application needs or the infrastructure/kit you have available.
+In order to start tracking, you will need hardware nodes such as anchors and tags. You can purchase them from us or even from other vendors. We support a range of hardware, including Decawave's DWM1001 based boards.
+Before we can get started, you need to know which setup type you need. For full positioning performance, a [Professional / full setup](/getstarted/pro_positioning_getting_started.html) is used.
 
- ## Distance Tracking
+However to get started with position tracking, using anchor autopositioning, follow our [Basic Positioning](/getstarted/basic_positioning_getting_started.html).
+
+If you need to track only the distance between different tags (no anchors), you need a [Distance Tracking](/getstarted/distance_tracking_getting_started.html) setup.
+
+## Distance Tracking
 If you only need the distances between moving objects and possibly other sensor data from those objects, you want to go for the `Distance Tracking` solution.
 
 When you also need to know the position of your objects, you'll need a Positioning system. This will always involve anchors that are hung around the field of interest. The precise positions of these anchors are fixed and need to be known.
@@ -16,7 +15,7 @@ When you also need to know the position of your objects, you'll need a Positioni
 ## Basic Positioning
 If you are new to RTLS, we advise you to start with our `Basic Positioning` solution. It will allow you to set up a system in no-time. You can configure the system and read out the data in a web browser via a BLE connection.
 ::: warning
-If you bought the starterskit, you can jump immediately to the dedicated [getting started](/getstarted/basic_positioning_getting_started.html#getting-started) section
+If you bought the starter kit, you can jump immediately to the dedicated [getting started](/getstarted/basic_positioning_getting_started.html#getting-started) section
 :::
 ::: tip
 Note that all hardware can be reused if you later decide to upgrade to a [Pro Positioning](/getstarted/pro_positioning_getting_started.html) setup.

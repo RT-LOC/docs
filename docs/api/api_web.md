@@ -6,24 +6,25 @@ The provided data is structured similarly as in the [`Binary API`](/api/api_appl
 (the overview here may not be complete)
 
 ## Anchor list
-* MQTT topic: **rtls/anchors**
+* MQTT topic: **rtls/<project-slug>/anchors**
 
 ```json
-[
-  {
-    "id": <int>, // anchor id
-    "pos": [<x>, <y>, <z>]
+{
+  "ver": 1,
+  "anchorList": {
+    <id>: [<x>, <y>, <z>]
   }
-]
+}
 ```
 
 ## Positioning information
 Per tag position information
 
-* MQTT topic: **rtls/posxyz**
+* MQTT topic: **rtls/<project-slug>/posxyz**
 
 ```json
 {
+  "ver": 1,
   "frameNr": , // frame number
   "tags": {
     <id1>: {
@@ -44,11 +45,13 @@ Per tag position information
 ## Status
 List of status information per tag
 
-* MQTT topic: **rtls/status**
+* MQTT topic: **rtls/<project-slug>/status**
 
 ```json
   // With example data:
-  [
+{
+  "ver": 1,
+  "tagStatus": [
     {
       "id": 101           // Device ID
       "frameOff": 0       // Frame offset
@@ -67,11 +70,17 @@ List of status information per tag
       ...
     }
   ]
+}
 ```
 
-<!-- ## Tag information
-* MQTT topic: **rtls/tags**
+## Tag list
+* MQTT topic: **rtls/<project-slug>/tags**
 
+```json
+[
+  "ver": 1,
+  "tagList": {
+    <id>: [<x>, <y>, <z>]
+  }
+]
 ```
-
-``` -->
