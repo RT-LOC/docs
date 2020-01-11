@@ -334,7 +334,8 @@ function getReferenceSidebar() {
         ["algorithms", "Algorithms"],
         ["rf", "RF"],
         ["updaterate", "Update Rate"],
-        ["anchor_placement", "Anchor Placement"]
+        ["anchor_placement", "Anchor Placement"],
+        ["redundancy", "Redundancy"]
       ]
     }
   ];
