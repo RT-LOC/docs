@@ -2,6 +2,9 @@
 The tasks offer a way to send commands and settings to any of the nodes. 
 Tasks can be sent to individual nodes are multiple at once. 
 
+<AnimCmds />
+
+
 ## How to send a task
 
 ## Instant Tasks
@@ -17,7 +20,5 @@ Tasks can remain unprocessed for a longer time (the node can for example be temp
 In the Task History screen you can see the status of all sent tasks.
 This screen shows you whether or not the tasks have been acknowledged and if so by whom. 
 ...
-
-
 
 ## List of Tasks
