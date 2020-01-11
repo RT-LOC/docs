@@ -1,25 +1,26 @@
 # Professional RTLS: getting started
 
 ## Introduction
-In this guide we will go through the setup of a professional RTLOC positioning system. You will learn some of the basics of the system and get familiar with some of the features. You will end up having a fully functional RTLS system and you can start tracking your first objects.
+In this guide we will go through the setup of a professional RTLOC positioning system. You will learn the basics of the system and get familiar with some of the features. You will end up having a fully functional RTLS system and you can start tracking your first objects.
 
 ## Basic requirements
 You will need a valid **license** for our professional RTLS.
 
 Before you get started, make sure you have at least the following hardware:
+
+### Positioning devices
+  - 4 Anchors
+  - 1 Listener
+  - 1 Tag
+
+![nodes](./img/install_nodes.png)
+
 :::tip 
   NOTE: If you have bought the `Professional RTLS Kit`, everything will be included to get started.
 :::
 :::tip 
   Without any hardware, you can still use the software to play replays.
 :::
-
-### Positioning devices
-  - 4 anchors
-  - 1 listener anchor
-  - 1 Tag
-
-![nodes](./img/install_nodes.png)
 
 ### Networking equipment
   - 1 Switch
