@@ -48,13 +48,13 @@ You will need to download your license, from the account view of the Hub app. [L
 ![App management](../hub/img/apps.jpg)
 
 ## Connect the Hardware
-Let's apply power to the hardware (_HW_) to spark some life into it. There are multiple ways to power the HW. Click [here](../hardware) for more information. The easiest way to get started is to power the boards via the usb cables.
+Let's apply power to the hardware (_HW_) to spark some life into it. There are multiple ways to power the HW. Click [here](../hardware/) for more information. The easiest way to get started is to power the boards via the usb cables.
 
 Once the boards are powered, you should see some lights blinking. There are a couple of [patterns](/reference/leds.html) possible. If all is going well, you should see a green light blinking on all boards.
 
 The last step before we turn to the PC is to connect the listener and one anchor to the same network as your PC. You can use the switch for this. The lights on the ethernet plug will start blinking.
 
-Place the anchors in a strategic way. Hang them around the area you want to track. Make sure they are placed so that they are not blocked by big objects (especially metal). You can find some more hints on how to hang the anchors [here](../anchor_placement.html).
+Place the anchors in a strategic way. Hang them around the area you want to track. Make sure they are placed so that they are not blocked by big objects (especially metal). You can find some more hints on how to hang the anchors [here](../reference/anchor_placement).
 
 ## PC manager configuration
 Start the app from the Hub (tray) app or locate the executable and start it. 
