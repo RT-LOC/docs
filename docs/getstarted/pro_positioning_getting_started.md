@@ -48,7 +48,7 @@ You will need to download your license, from the account view of the Hub app. [L
 ![App management](../hub/img/apps.jpg)
 
 ## Connect the Hardware
-Let's apply power to the hardware (_HW_) to spark some life into it. There are multiple ways to power the HW. Click [here](LINK) for more information. The easiest way to get started is to power the boards via the usb cables.
+Let's apply power to the hardware (_HW_) to spark some life into it. There are multiple ways to power the HW. Click [here](../hardware) for more information. The easiest way to get started is to power the boards via the usb cables.
 
 Once the boards are powered, you should see some lights blinking. There are a couple of [patterns](/reference/leds.html) possible. If all is going well, you should see a green light blinking on all boards.
 
@@ -69,7 +69,7 @@ The software will run in a limited demo-mode without proper license.
 :::
 
 ### Listener(s)
-First we will make sure the listener is properly initiated. Go the the screen  'Floor' in which you will see the _Listener Module_. All the connected listeners are listed here. It will show you to which IP address it is sending its data (this can be unicast, multicast or broadcast), together with the port.
+First we will make sure the listener is properly initiated. Go the the screen 'Config' in which you will see the _Listener Module_. All the connected listeners are listed here. It will show you to which IP address it is sending its data (this can be unicast, multicast or broadcast), together with the port.
 
 ![getting_started-listener2](./img/getting_started-listener2.png)
 
