@@ -40,7 +40,7 @@ A computer (desktop/laptop/tablet), preferably Windows OS
 ![pc](./img/install_PC.jpeg)
 
 ## Set up the software
-A convenient way to manage our tools is the Hub app. You can get it at https://cloud.rtloc.com/download. (Currently Windows only, requires some space on the C drive)
+A convenient way to manage our tools is the Hub app. You can get it at [https://cloud.rtloc.com/download](https://cloud.rtloc.com/download). (Currently Windows only, requires some space on the C drive)
 You will need to log in using your account. If you don't have an account, [create one](https://cloud.rtloc.com/register). (If you've received an e-mail invite, preferably use that link)
 
 You will need to download your license, from the account view of the Hub app. [License download instructions]
@@ -54,7 +54,7 @@ Once the boards are powered, you should see some lights blinking. There are a co
 
 The last step before we turn to the PC is to connect the listener and one anchor to the same network as your PC. You can use the switch for this. The lights on the ethernet plug will start blinking.
 
-Place the anchors in a strategic way. Hang them around the area you want to track. Make sure they are placed so that they are not blocked by big objects (especially metal). You can find some more hints on how to hang the anchors [here](../reference/anchor_placement).
+Place the anchors in a strategic way. Hang them around the area you want to track. Make sure they are placed so that they are not blocked by big objects (especially metal). You can find some more hints on how to hang the anchors [here](../reference/anchor_placement.html).
 
 ## PC manager configuration
 Start the app from the Hub (tray) app or locate the executable and start it. 
@@ -65,7 +65,7 @@ You will get welcomed in the PC software.
 
 :::warning
 The software will run in a limited demo-mode without proper license.
-[Here's some help](/manager/cxRTLS_license.html) on how to activate your license.
+[Here's some help](/manager/cxRTLS_license.html#how-to-install-the-license) on how to activate your license.
 :::
 
 ### Listener(s)
@@ -94,7 +94,7 @@ Now let's try visualizing the data. Open the 'Floor' view from the menu.
 Before we can track the tags, we need to know where the anchors are. 
 You can calculate their (relative) positions automatically by pressing _AutoPos_. 
 After a short while, you will see the anchors move to their position and you are ready to calculate your first tag positions.
-Find more information on the anchor coordinates [here](/getstarted/anchor_placement.html).
+Find more information on the anchor coordinates [here](/reference/anchor_placement.html#calculating-anchor-coordinates).
 
 #### Engine
 Make sure that the internal engine is switched on. You can find the engine menu in the Action Bar. Whenever the engine is running, the engine menu button looks like this: 
