@@ -4,7 +4,7 @@ Real-time data (position data, tag/anchor statuses, sensor data, etc.) can be re
 
 ## 1. Direct socket connections
 
-1. Configure data transmission over UDP / TCP / websocket in our desktop application
+1. Configure data transmission over UDP / TCP / websocket in our desktop application (in the API view)
 
 2. Connect to your computer/server to the correct IP + port
 

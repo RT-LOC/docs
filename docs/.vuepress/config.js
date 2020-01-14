@@ -156,7 +156,7 @@ function getcxRTLSSidebar() {
   return [
     ['', 'Desktop configurator'],
     {
-      title: "Program sections",
+      title: "Views",
       collapsable: true,
       children: [
         ["cxRTLS_config", "Config"],
