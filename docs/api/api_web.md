@@ -6,7 +6,7 @@ The provided data is structured similarly as in the [`Binary API`](/api/api_appl
 (the overview here may not be complete)
 
 ## Anchor list
-* MQTT topic: **rtls/<project-slug>/anchors**
+* MQTT topic: `rtls/<project-slug>/anchors`
 
 ```json
 {
@@ -20,7 +20,7 @@ The provided data is structured similarly as in the [`Binary API`](/api/api_appl
 ## Positioning information
 Per tag position information
 
-* MQTT topic: **rtls/<project-slug>/posxyz**
+* MQTT topic: `rtls/<project-slug>/posxyz`
 
 ```json
 {
@@ -45,7 +45,7 @@ Per tag position information
 ## Status
 List of status information per tag
 
-* MQTT topic: **rtls/<project-slug>/status**
+* MQTT topic: `rtls/<project-slug>/status`
 
 ```json
   // With example data:
@@ -74,7 +74,7 @@ List of status information per tag
 ```
 
 ## Tag list
-* MQTT topic: **rtls/<project-slug>/tags**
+* MQTT topic: `rtls/<project-slug>/tags`
 
 ```json
 [
