@@ -19,7 +19,7 @@
       <div id="protocolHeader">
           <div class="protocolLeftSide" style="float: left">COMMAND</div>
           <div class="protocolRightSide">
-              <div class="smallBlock">
+              <div class="smallBlock fl">
                   PARAMS
               </div>
               <div class="smallBlock fl">
