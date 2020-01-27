@@ -22,13 +22,12 @@ In most existing RTLS systems, you will need a master anchor that is the ‘boss
 Note that every anchor that is cabled, can send tasks to any other anchor.
 
 ## How many position updates can you offer?
-Our system is able to go up to 1500 positional updates per second with 4 anchors, or 1.000 updates with 16 anchors.
-This means we calculate 16.000 distances per second, which is close to the physical limit of 
-what is possible.
+This depends on other parameters, mainly: how many devices will be used. Our system is able to go up to 1500 positional updates per second with 4 anchors, or 1.000 updates with 16 anchors.
+This means we calculate 16.000 distances per second, which is close to the physical limit of what is possible.
 
 ## Do I need to measure anything when setting up the system?
 No, we can auto-range and auto-position the anchors via the software.
-However, when you want to achieve a higher accuracy, it is recommended to use a total station / tachyometer to calculate the positions of the anchors very precisely.
+However, when you want to achieve a higher accuracy, it is recommended to submit accurate anchor positions. You can measure these positions very precisely using a total station.
 
 ## Do I need to calibrate the system?
 All hardware is delivered pre-calibrated. In most cases this will give you an accuracy that is more than sufficient.  If you want to get up to the last centimeter in all circumstances, you can calibrate your system via one of our two calibration interfaces.

@@ -3,7 +3,9 @@ The anchors serve as the reference points of your system. They are similar to th
 It is crucial that they are put on a strategic place and that their coordinates are calculated very accurately.
 
 ## Placement Strategy
+
 There are some rules of thumb to keep in mind when you are placing your anchors in order to get the most out of your system.
+
 ### 1. Anchor in each Quadrant
 For every possible position the tags can come, you want to have at least one anchor in every quadrant around that position.
 This makes that the underlying mathematical problem is _well-conditioned_, which basically means that errors in the measurements have a smaller influence on the error of the calculated position.
@@ -14,9 +16,9 @@ This makes that the underlying mathematical problem is _well-conditioned_, which
 Try to put the anchors such that every anchor sees at least a couple other anchors.
 Doing this makes the time synchronization between the anchors easier and thus more accurate.
 
-### 3. Have LOS in mind
+### 3. Keep LOS in mind
 Any object that is in between the `Line of Sight` between an anchor and a tag will have a certain influence on the measurement.
-Some objects are worse than others. Metal, concrete and fluids for example can severly attenuate the UWB signal and increase the measured distance.
+Some objects are worse than others. Metal, concrete and fluids for example can severely attenuate the UWB signal and increase the measured distance.
 
 ### 4. Keep the Antenna away from metal
 Aim your antenna well and make sure it doesn't have any metal objects nearby.

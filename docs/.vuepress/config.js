@@ -84,7 +84,7 @@ module.exports = {
       {
         text: "Learn more",
         items: [
-          { text: "Reference", link: "/reference/" },
+          { text: "System Reference", link: "/reference/" },
           { text: "FAQ", link: "/faq/faq_general" },
           { text: "Troubleshoot", link: "/troubleshoot/" }
         ]
@@ -322,21 +322,50 @@ function getHardwareSidebar() {
   ];
 }
 
+// function getReferenceSidebar() {
+//   return [
+//     {
+//       title: "Reference",
+//       collapsable: false,
+//       children: [
+//         ["terminology", "Terminology"],
+//         ["updaterate", "Update Rate"],
+//         ["anchor_placement", "Anchor Placement"],
+//         ["redundancy", "Redundancy"]
+//       ]
+//     }
+//   ];
+// }
+
+
 function getReferenceSidebar() {
   return [
     {
-      title: "Reference",
-      collapsable: false,
+      title: "Technology details",
+      collapsable: true,
       children: [
-        ["leds", "LED Patterns"],
-        ["pinouts", "Pinout"],
-        ["terminology", "Terminology"],
-        ["algorithms", "Algorithms"],
-        ["rf", "RF"],
-        ["updaterate", "Update Rate"],
-        ["anchor_placement", "Anchor Placement"],
-        ["redundancy", "Redundancy"]
+        ["rf", "UWB and other RF"],
+        ["algorithms", "Positioning algorithms"],
       ]
-    }
-  ];
+    },
+    {
+      title: "Setup reference",
+      collapsable: true,
+      children: [
+        ["anchor_placement", "Anchor Placement"],
+        ["redundancy", "Redundancy"],
+        ["updaterate", "Update Rate: a note"]
+      ]
+    },
+    {
+      title: "Hardware reference",
+      collapsable: true,
+      children: [
+        ["pinouts", "Pinout"],
+        ["leds", "LED Patterns"]
+      ]
+    },
+    ["terminology", "Terminology"]
+  ]
 }
+
