@@ -1474,6 +1474,24 @@
               </div>
               <div class="line">
                 <div class="smallBlock fl">
+                  block length
+                </div>
+                <div class="smallBlock fl">
+                  uint8
+                </div>
+                <div class="smallBlock fl">
+                  1
+                </div>
+                <div class="smallBlock fl">
+                  8
+                </div>
+                <div class="protocolDescription fl">
+                  length of blocks to follow
+                </div>
+                <div class="cb"></div>
+              </div>
+              <div class="line">
+                <div class="smallBlock fl">
                   tagCnt
                 </div>
                 <div class="smallBlock fl">
@@ -1630,6 +1648,24 @@
                 </div>
                 <div class="protocolDescription fl">
                   command protocol version
+                </div>
+                <div class="cb"></div>
+              </div>
+              <div class="line">
+                <div class="smallBlock fl">
+                  block length
+                </div>
+                <div class="smallBlock fl">
+                  uint8
+                </div>
+                <div class="smallBlock fl">
+                  1
+                </div>
+                <div class="smallBlock fl">
+                  8
+                </div>
+                <div class="protocolDescription fl">
+                  length of blocks to follow
                 </div>
                 <div class="cb"></div>
               </div>
