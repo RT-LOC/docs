@@ -1483,7 +1483,7 @@
                   1
                 </div>
                 <div class="smallBlock fl">
-                  8
+                  5
                 </div>
                 <div class="protocolDescription fl">
                   length of blocks to follow
