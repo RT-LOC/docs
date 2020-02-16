@@ -89,7 +89,7 @@ module.exports = {
           { text: "Troubleshoot", link: "/troubleshoot/" }
         ]
       },
-      { text: "Support", link: "https://rtloc.com/customer-support" }
+      { text: "Support", link: "https://rtloc.com/ticket" }
     ],
     // sidebar: 'auto'
     sidebar: {
