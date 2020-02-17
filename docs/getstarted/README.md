@@ -17,6 +17,7 @@ If you are new to RTLS, we advise you to start with our `Basic Positioning` solu
 ::: warning
 If you bought the starter kit, you can jump immediately to the dedicated [getting started](/getstarted/basic_positioning_getting_started.html#getting-started) section
 :::
+
 ::: tip
 Note that all hardware can be reused if you later decide to upgrade to a [Pro Positioning](/getstarted/pro_positioning_getting_started.html) setup.
 ::: 

@@ -11,6 +11,7 @@ You can start logging data at any given time. All you have to to is check the ch
 You can fill in a prefix for the generated file.
 ![log](./img/cxRTLS/logging_frame.png)
 ![log](./img/cxRTLS/logging_raw_prefix.png)
+
 The logs will appear in the following directory:
 ```
 c:\cxRTLS\Replay\
@@ -37,6 +38,7 @@ Click on _'File'_ to open a window that shows all the logfiles under:
 c:\cxRTLS\Replay\
 ```
 If you have logged files on a different system, simply copy and paste the files to this directory. You can always store them in a subdirectory.
+
 ![replay_file](./img/cxRTLS/replay_file.png)
 
 Now double click on the the specific file you want to activate it. When you press _'Start'_, the file will automatically start to play.
@@ -65,3 +67,7 @@ You can also crop the file so that you can get rid of all the useless informatio
 
 ## API
 The API is fully functional for the Replayed files. You can have the data outputted via a TCP or UDP connection. [Click here]() for more information on the API.
+
+::: warning
+Replay data is separated from live data in the API's. The standard TCP server for replays will use a different port. The MQTT API will use a different topic.
+:::

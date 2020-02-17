@@ -154,36 +154,31 @@ function getInstallSidebar() {
 
 function getcxRTLSSidebar() {
   return [
-    ['', 'Desktop configurator'],
+    // ['', 'Main functionality'],
     {
-      title: "Views",
+      title: "Main functionality",
       collapsable: true,
       children: [
+        ["cxRTLS_layout", "Program layout"],
         ["cxRTLS_config", "Config"],
         ["cxRTLS_cross", "Cross"],
         ["cxRTLS_fwup", "Firmware Update"],
+        ["cxRTLS_logconn", "Connection log"],
+        ["cxRTLS_replay", "Replay"]
+        // ["cxRTLS_adhoc", "Adhoc"]
+      ]
+    },
+    {
+      title: "Advanced",
+      collapsable: true,
+      children: [
         ["cxRTLS_license", "License"],
-        ["cxRTLS_logconn", "LogConn"],
-        ["cxRTLS_replay", "Replay"],
         ["cxRTLS_actions", "Actions"],
-        ["cxRTLS_adhoc", "Adhoc"]
-      ]
-    },
-    {
-      title: "Concepts",
-      collapsable: true,
-      children: [
-        ["cxRTLS_concepts", "Concepts"],
-        ["cxRTLS_rfprofile", "RF Profile"]
-      ]
-    },
-    {
-      title: "Details",
-      collapsable: true,
-      children: [
         ["cxRTLS_console", "Console"],
         ["cxRTLS_engine", "Engine"],
-        ["cxRTLS_tasks", "Tasks"]
+        ["cxRTLS_tasks", "Tasks"],
+        ["cxRTLS_concepts", "Concepts"],
+        ["cxRTLS_rfprofile", "RF Profile"]
       ]
     }
   ];

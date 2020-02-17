@@ -1,6 +1,6 @@
 {
   "name": "rtloc-docs",
-  "version": "1.0.0",
+  "version": "1.8.0",
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
