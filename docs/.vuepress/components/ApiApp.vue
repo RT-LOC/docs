@@ -2369,6 +2369,11 @@ export default {
     return {
       view: 0
     }
+  },
+  mounted() {
+    if ('analytics' in window) {
+      window.analytics.page('Binary API page')
+    }
   }
 }
 </script>
