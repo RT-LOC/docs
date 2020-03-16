@@ -1,4 +1,4 @@
-# LEDs
+# LED patterns
 This page contains an overview of the meaning of the LEDs on the boards.
 We make a distinction between anchors and tags.
 :::warning Note

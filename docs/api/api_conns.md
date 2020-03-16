@@ -13,7 +13,11 @@ Check out code examples at [https://github.com/RT-LOC/APIs](https://github.com/R
 
 ## 2. MQTT data connection
 
-You can receive data in a pub/sub fashion, through our hosted Mosquitto (MQTT) server. Use the following configuration for your MQTT client:
+You can receive data in a pub/sub fashion, through an Mosquitto (MQTT) broker.
+You can use our MQTT broker (some limitations may apply) or set up your own.
+
+Make sure your RTLS setup is publishing MQTT data to the broker
+Use the following configuration for your MQTT client(s):
 
 * Host: mqtt.cloud.rtloc.com
 * Port: 1883 (TCP), 8083 (WSS) or 8883(TCP TLS)

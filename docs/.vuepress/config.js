@@ -132,7 +132,7 @@ function getInstallSidebar() {
       ]
     },
     {
-      title: "Starter kit",
+      title: "Basic positioning",
       collapsable: true,
       children: [
         // ["distance_tracking_getting_started", "Getting Started"],
