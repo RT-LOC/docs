@@ -128,6 +128,7 @@ function getInstallSidebar() {
       children: [
         // ["pro_positioning_introduction", "Introduction"],
         ["pro_positioning_getting_started", "Getting Started"],
+        ["trying_demo_replays", "Trying Demo Replays"],
         // ["firststeps", "First steps"],
       ]
     },
