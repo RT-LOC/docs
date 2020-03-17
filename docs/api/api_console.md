@@ -27,7 +27,7 @@ Read back bytes from the internal flashing.
 ```
 
 ### `jumpbl`
-Jump back to the bootloader and stey there.
+Jump back to the bootloader and stay there.
 
 **Parameters:** none
 

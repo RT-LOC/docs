@@ -9,7 +9,7 @@ This solution is tailored to get you started as quickly as possible with a limit
 
 ## Starter kit & Starter License
 ### Kit
-There are two ways you can get started with our Basic Positioning solution. The easiest is by [buying](https://rtloc.com/product/rtls-kit-starter/) the `Starter kit`. This kit consists of all the hardware you need. The anchors & tags are preflashed so that you can start using the system right off the bat.
+There are two ways you can get started with our Basic Positioning solution. The easiest is by [buying](https://rtloc.com/product/) the `Starter kit`. This kit consists of all the hardware you need. The anchors & tags are preflashed so that you can start using the system right off the bat.
 The kit also includes the `Starter  License`. This license enables you to download, flash and use the latest firmwares on the tags & anchors, as well as use the online portal.
 
 ### License
