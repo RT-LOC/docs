@@ -16,7 +16,7 @@ Check out code examples at [https://github.com/RT-LOC/APIs](https://github.com/R
 You can receive data in a pub/sub fashion, through an Mosquitto (MQTT) broker.
 You can use our MQTT broker (some limitations may apply) or set up your own.
 
-Make sure your RTLS setup is publishing MQTT data to the broker
+Make sure your RTLS setup is publishing MQTT data to the broker.
 Use the following configuration for your MQTT client(s):
 
 * Host: mqtt.cloud.rtloc.com
@@ -44,7 +44,7 @@ Example client libraries:
 ### Code examples
 The following example uses the [MQTT.js](https://www.npmjs.com/package/mqtt) client library to connect to our MQTT broker. It uses a demo account and displays demo data (replayed RTLS data continuously fed into our broker).
 
-```js
+``` js
 const mqtt = require('mqtt')
 
 mqttOptions = {
