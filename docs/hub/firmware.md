@@ -4,4 +4,4 @@ Currently, you can:
   - Get and remove firmwares for different platforms, in different versions
   - Flash these firmwares from the app
 
-![Firmware management](./img/firmwares.png)
+![Firmware management](./img/firmwares.jpg)
