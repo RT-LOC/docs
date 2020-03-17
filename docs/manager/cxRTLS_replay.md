@@ -66,7 +66,11 @@ You can also crop the file so that you can get rid of all the useless informatio
 
 
 ## API
-The API is fully functional for the Replayed files. You can have the data outputted via a TCP or UDP connection. [Click here]() for more information on the API.
+The API is fully functional for the Replayed files. You can have the data outputted via a TCP or UDP connection. More information on how to use API for replays [here](../getstarted/trying_demo_replays.html#rtmanager). 
+
+![api_view](./img/cxRTLS/api.jpg)
+
+[Click here](../api/) for more information on the API.
 
 ::: warning
 Replay data is separated from live data in the API's. The standard TCP server for replays will use a different port. The MQTT API will use a different topic.
