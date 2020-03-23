@@ -47,6 +47,9 @@ Sending data to RTLOC cloud can be done through the RTManager:
 2. Fill in the forms with the correct [information](https://cloud.rtloc.com/settings/connection).
 3. Click _'Save'_.
 ![replay_file](./img/manager_api.jpg)
+4. Now click on the red _'MQTT'_ and it should change to a green color, indicating that everything is working.
+![MQTT_button](./img/MQTT_button.jpg)
+
 Now all the data is sent to RTLOC cloud and can be viewed from [there](https://cloud.rtloc.com/).
 
 ### TCP_Binary connection
