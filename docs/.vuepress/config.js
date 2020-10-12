@@ -47,7 +47,9 @@ module.exports = {
     lastUpdated: "Last Updated", // string | boolean
     sidebarDepth: 3,
     nav: [
-      { text: "Get Started", link: "/getstarted/" },
+      // { text: "Get Started", link: "/getstarted/" },
+      { text: "Safety/Distancing", link: "/distancing/" },
+      { text: "Positioning", link: "/positioning/" },
       {
         text: "System guide",
         items: [
@@ -98,7 +100,9 @@ module.exports = {
     ],
     // sidebar: 'auto'
     sidebar: {
-      "/getstarted/": getInstallSidebar(),
+      // "/getstarted/": getInstallSidebar(),
+      "/distancing/": getDistancingSidebar(),
+      "/positioning/": getPositioningSidebar(),
       "/manager/": getcxRTLSSidebar(),
       "/hardware/": getHardwareSidebar(),
       "/hub/": [{
@@ -120,18 +124,67 @@ module.exports = {
   evergreen: true
 };
 
-function getInstallSidebar() {
+// function getInstallSidebar() {
+//   return [
+//     {
+//       title: "Full RTLS setup",
+//       collapsable: true,
+//       children: [
+//         // ["pro_positioning_introduction", "Introduction"],
+//         ["pro_positioning_getting_started", "Getting Started"],
+//         ["trying_demo_replays", "Demo Replays"],
+//         // ["firststeps", "First steps"],
+//       ]
+//     },
+//     {
+//       title: "Basic positioning",
+//       collapsable: true,
+//       children: [
+//         // ["distance_tracking_getting_started", "Getting Started"],
+//         ["basic_positioning_introduction", "Introduction"],
+//         ["basic_positioning_getting_started", "Initial Setup"],
+//         ["basic_positioning_next", "What's Next"],
+
+//         // ["firststeps", "First steps"]
+//         // ["anchor_placement", "Anchor Placement"]
+//       ]
+//     },
+//     {
+//       title: "Distance Tracking",
+//       collapsable: true,
+//       children: [
+//         ["distance_tracking_introduction", "Introduction"],
+//         ["distance_tracking_getting_started", "Getting Started"],
+//         // ["firststeps", "First steps"]
+//         // ["anchor_placement", "Anchor Placement"]
+//       ]
+//     },
+//   ];
+// }
+function getDistancingSidebar() {
   return [
     {
-      title: "Full RTLS setup",
+      title: "Getting started",
       collapsable: true,
       children: [
-        // ["pro_positioning_introduction", "Introduction"],
-        ["pro_positioning_getting_started", "Getting Started"],
-        ["trying_demo_replays", "Demo Replays"],
-        // ["firststeps", "First steps"],
+        ["distance_intro_setup", "Set up"],
+        ["accessing_data", "Accessing data"],
       ]
     },
+    {
+      title: "APIs",
+      collapsable: true,
+      children: [
+        ["ble_api", "Tag BLE API"],
+        ["gateway_desktop", "Gateway to desktop"],
+        ["gateway_raw", "Gateway data"],
+      ]
+    },
+  ];
+}
+
+function getPositioningSidebar() {
+  return [
     {
       title: "Basic positioning",
       collapsable: true,
@@ -146,13 +199,21 @@ function getInstallSidebar() {
       ]
     },
     {
-      title: "Distance Tracking",
+      title: "Full RTLS setup",
       collapsable: true,
       children: [
-        ["distance_tracking_introduction", "Introduction"],
-        ["distance_tracking_getting_started", "Getting Started"],
-        // ["firststeps", "First steps"]
-        // ["anchor_placement", "Anchor Placement"]
+        // ["pro_positioning_introduction", "Introduction"],
+        ["pro_positioning_getting_started", "Getting Started"],
+        ["trying_demo_replays", "Demo Replays"],
+        // ["firststeps", "First steps"],
+      ]
+    },
+    {
+      title: "APIs",
+      collapsable: true,
+      children: [
+        ["ble_api", "Tag BLE API"],
+        ["gateway_apis", "Gateway APIs"],
       ]
     },
   ];
