@@ -163,14 +163,17 @@ module.exports = {
 // }
 function getDistancingSidebar() {
   return [
-    {
-      title: "Getting started",
-      collapsable: true,
-      children: [
-        ["distance_intro_setup", "Set up"],
-        ["accessing_data", "Accessing data"],
-      ]
-    },
+    // {
+    //   title: "Getting started",
+    //   collapsable: true,
+    //   children: [
+    //     ["distance_intro_setup", "Device set up"],
+    //     ["accessing_data", "Accessing data"],
+    //   ]
+    // },
+    ["getting_started", "Getting started"],
+    ["theory", "Theoretical remarks"],
+    ["distancing_lib", "Library"],
     {
       title: "APIs",
       collapsable: true,
@@ -185,19 +188,19 @@ function getDistancingSidebar() {
 
 function getPositioningSidebar() {
   return [
-    {
-      title: "Basic positioning",
-      collapsable: true,
-      children: [
-        // ["distance_tracking_getting_started", "Getting Started"],
-        ["basic_positioning_introduction", "Introduction"],
-        ["basic_positioning_getting_started", "Initial Setup"],
-        ["basic_positioning_next", "What's Next"],
+    // {
+    //   title: "Basic positioning",
+    //   collapsable: true,
+    //   children: [
+    //     // ["distance_tracking_getting_started", "Getting Started"],
+    //     ["basic_positioning_introduction", "Introduction"],
+    //     ["basic_positioning_getting_started", "Initial Setup"],
+    //     ["basic_positioning_next", "What's Next"],
 
-        // ["firststeps", "First steps"]
-        // ["anchor_placement", "Anchor Placement"]
-      ]
-    },
+    //     // ["firststeps", "First steps"]
+    //     // ["anchor_placement", "Anchor Placement"]
+    //   ]
+    // },
     {
       title: "Full RTLS setup",
       collapsable: true,
@@ -212,10 +215,11 @@ function getPositioningSidebar() {
       title: "APIs",
       collapsable: true,
       children: [
-        ["ble_api", "Tag BLE API"],
-        ["gateway_apis", "Gateway APIs"],
+        ["binary_apis", "Binary socket connection"],
+        ["json_apis", "JSON over Websocket/MQTT"]
       ]
     },
+    // ["apis", "APIs"]
   ];
 }
 
