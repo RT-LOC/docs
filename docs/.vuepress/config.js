@@ -1,6 +1,6 @@
 module.exports = {
   title: "Documentation",
-  description: "Your guide to RTLOC's positioning products",
+  description: "Your guide to RTLOC's ultra-wideband solutions",
   // base: "/docs/",
   head: [
     ['link', { rel: 'icon', href: `/img/logo.png` }],
@@ -48,7 +48,7 @@ module.exports = {
     sidebarDepth: 3,
     nav: [
       // { text: "Get Started", link: "/getstarted/" },
-      { text: "Safety/Distancing", link: "/distancing/" },
+      { text: "Distancing", link: "/distancing/" },
       { text: "Positioning", link: "/positioning/" },
       {
         text: "System guide",
@@ -180,7 +180,7 @@ function getDistancingSidebar() {
       children: [
         ["ble_api", "Tag BLE API"],
         ["gateway_desktop", "Gateway to desktop"],
-        ["gateway_raw", "Gateway data"],
+        // ["gateway_raw", "Gateway data"],
       ]
     },
   ];

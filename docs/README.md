@@ -8,11 +8,11 @@ footer: Copyright © 2018-present RTLOC / Callitrix NV
 
 <div class="features">
   <div class="feature">
-    <router-link to="/getstarted"><h2>Distancing solution</h2></router-link>
+    <router-link to="/distancing"><h2>Distancing solution</h2></router-link>
     <p>Instructions for our safety distancing product.</p>
   </div>
   <div class="feature">
-    <router-link to="/guide"><h2>Positioning solution</h2></router-link>
+    <router-link to="/positioning"><h2>Positioning solution</h2></router-link>
     <p>Instructions on how to set-up our RTLS system.</p>
   </div>
   <!-- <div class="feature">
