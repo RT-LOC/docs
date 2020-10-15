@@ -18,4 +18,4 @@ The distance and event data can be exported to your own application using one of
 
 > Remark: for MQTT
 
-![MQTT API settings](./img/dist_apis.png)
+![MQTT API settings](./img/dist_apis.jpg)
