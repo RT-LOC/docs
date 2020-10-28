@@ -1,4 +1,4 @@
-# Professional RTLS: getting started
+# Getting started RTLS
 
 ## Introduction
 In this guide we will go through the setup of a professional RTLOC positioning system. You will learn the basics of the system and get familiar with some of the features. You will end up having a fully functional RTLS system and you can start tracking your first objects.

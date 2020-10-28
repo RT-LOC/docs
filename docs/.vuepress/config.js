@@ -51,7 +51,7 @@ module.exports = {
       { text: "Distancing", link: "/distancing/" },
       { text: "Positioning", link: "/positioning/" },
       {
-        text: "System guide",
+        text: "Software guide",
         items: [
           { text: "Introduction", link: "/guide/" },
           {
@@ -60,7 +60,7 @@ module.exports = {
               { text: "Hub", link: "/hub/" },
               { text: "Manager", link: "/manager/" },
               { text: "Portal (web)", link: "/web/" },
-              { text: "Embedded/Hardware", link: "/hardware/" }
+              { text: "Embedded firmware", link: "/embedded/" }
             ]
           }
           // {
@@ -87,7 +87,7 @@ module.exports = {
           // }
         ]
       },
-      { text: "API", link: "/api/" },
+      // { text: "API", link: "/api/" },
       {
         text: "Learn more",
         items: [
@@ -96,7 +96,7 @@ module.exports = {
           { text: "Troubleshoot", link: "/troubleshoot/" }
         ]
       },
-      { text: "Support", link: "https://rtloc.com/ticket" }
+      { text: "Support", link: "https://rtloc.com/tickets" }
     ],
     // sidebar: 'auto'
     sidebar: {
@@ -115,7 +115,7 @@ module.exports = {
       "/web/": getWebSidebar(),
       // "/system/web": getWebSidebar(),
       // "/web/": webSideBar,
-      "/api/": getAPISidebar(),
+      // "/api/": getAPISidebar(),
       "/reference/": getReferenceSidebar(),
       "/faq/": getFAQSidebar(),
       "/troubleshoot/": getTroubleshootSidebar()
@@ -172,7 +172,6 @@ function getDistancingSidebar() {
     //   ]
     // },
     ["getting_started", "Getting started"],
-    ["theory", "Theoretical remarks"],
     ["distancing_lib", "Library"],
     {
       title: "APIs",
@@ -183,6 +182,7 @@ function getDistancingSidebar() {
         // ["gateway_raw", "Gateway data"],
       ]
     },
+    ["theory", "Theoretical remarks"]
   ];
 }
 
@@ -202,23 +202,34 @@ function getPositioningSidebar() {
     //   ]
     // },
     {
-      title: "Full RTLS setup",
+      title: "Getting started",
       collapsable: true,
       children: [
         // ["pro_positioning_introduction", "Introduction"],
-        ["pro_positioning_getting_started", "Getting Started"],
+        ["positioning_getting_started", "Getting Started"],
         ["trying_demo_replays", "Demo Replays"],
         // ["firststeps", "First steps"],
+      ]
+    },
+    {
+      title: "Setup finetuning",
+      collapsable: true,
+      children: [
+        ["anchor_placement", "Anchor Placement"],
+        ["redundancy", "Redundancy"],
+        ["updaterate", "On update Rate"]
       ]
     },
     {
       title: "APIs",
       collapsable: true,
       children: [
+        ["apis_overview", "APIs overview"],
         ["binary_apis", "Binary socket connection"],
         ["json_apis", "JSON over Websocket/MQTT"]
       ]
     },
+    ["rtls_remarks", "Theoretical remarks"],
     // ["apis", "APIs"]
   ];
 }
@@ -414,15 +425,15 @@ function getReferenceSidebar() {
         ["algorithms", "Positioning algorithms"],
       ]
     },
-    {
-      title: "Setup reference",
-      collapsable: true,
-      children: [
-        ["anchor_placement", "Anchor Placement"],
-        ["redundancy", "Redundancy"],
-        ["updaterate", "Update Rate: a note"]
-      ]
-    },
+    // {
+    //   title: "Setup reference",
+    //   collapsable: true,
+    //   children: [
+    //     ["anchor_placement", "Anchor Placement"],
+    //     ["redundancy", "Redundancy"],
+    //     ["updaterate", "Update Rate: a note"]
+    //   ]
+    // },
     {
       title: "Hardware reference",
       collapsable: true,

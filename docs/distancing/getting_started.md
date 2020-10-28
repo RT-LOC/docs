@@ -15,23 +15,15 @@ Before you get started, make sure you have the following hardware:
 ### Positioning devices
 ![nodes](./img/adhoc_nodes.png)
 
-```
-  - 2 Tags
-```
 
 ### Power supplies
-  ![power](./img/adhoc_power_supply.png)
 
-```
-  - 2 Micro usb cables (type B) and batteries
-  or
-  - 2 LiPo batteries
-```
+Power banks or (LiPo) batteries can be used.
+
+  ![power](./img/adhoc_power_supply.png)
 
 ### Optional: gateway
 The gateway device will allow a connection with our PC software described below.
-
-  ![power](./img/adhoc_power_supply.png)
 
 ## Software set-up
 
@@ -40,4 +32,21 @@ If you have a gateway, you can connect to our Ranger program to:
 - allow debugging of the active devices
 - allow over-the-air (OTA) over UWB updates of all device firmwares
 
-You can conveniently install the Ranger app via our central Windows application, downloadable via https://cloud.rtloc.com/download.
+You can conveniently install the Ranger app via our central Hub application (Windows), downloadable via [https://cloud.rtloc.com/download](https://cloud.rtloc.com/download).
+
+### Updating firmware
+
+A tag or gateway might have older or RTLS firmware present. In that case you best update the firmware for the device by re-flashing it over USB.
+
+1. Connect the device to the PC over USB
+2. Download the new firmware via "Chk New Version"
+  > Look for kind "ADHOC" and name DW_DWM1001 (MDEK tag) or CTX_FRDM (anchor/gateway)
+  > If the device has a non-RTLOC firmware present, you will also need the bootloader (BL and the corresponding device name)
+3. Flash to the device using the "Flash" button
+  > Bootloader first, then the application firmware. (Only the firmware is required if a recent bootloader is present)
+
+![Downloading firmware](./img/downloading_fw.png)
+
+### Accessing data
+
+Check out the "gateway to desktop" API description.
