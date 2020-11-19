@@ -24,7 +24,7 @@ The position and sensor data for each device can be accessed in real-time in a f
 
 * **Single device** (tag / anchor) information can be read through the CLI or via Bluetooth (BLE).
   - [`BLE API`](/api/api_ble.html) - Make a wireless connection with one of the tags with our BLE interface.
-  - [`Device CLI`](/api/api_console.html) - Access the RTLS hardware (anchors and tags) via one of the [interfaces](/hardware/#interfaces).
+  - [`Device CLI`](/api/api_console.html) - Access the RTLS hardware (anchors and tags) via one of the [interfaces](/embedded/#interfaces).
 
 ## Custom firmware toolkit
 

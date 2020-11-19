@@ -1,5 +1,5 @@
 module.exports = {
-  title: "Documentation",
+  title: "RTLOC Documentation",
   description: "Your guide to RTLOC's ultra-wideband solutions",
   // base: "/docs/",
   head: [
@@ -50,43 +50,43 @@ module.exports = {
       // { text: "Get Started", link: "/getstarted/" },
       { text: "Distancing", link: "/distancing/" },
       { text: "Positioning", link: "/positioning/" },
-      {
-        text: "Software guide",
-        items: [
-          { text: "Introduction", link: "/guide/" },
-          {
-            // text: "Components",
-            items: [
-              { text: "Hub", link: "/hub/" },
-              { text: "Manager", link: "/manager/" },
-              { text: "Portal (web)", link: "/web/" },
-              { text: "Embedded firmware", link: "/embedded/" }
-            ]
-          }
-          // {
-          //   text: "Other",
-          //   items: [
-          //     { text: "Reference", link: "/reference/" },
-          //     { text: "FAQ", link: "/faq/" },
-          //     { text: "Troubleshoot", link: "/troubleshoot/" }
-          //   ]
-          // }
-          // { text: 'cxRTLS',link: '/cxRTLS/'},
-          // { text: 'Web',link: '/web/'},
-          // { text: 'Embedded/Hardware', link: '/hardware/'},
-          // { text: 'Reference', link: '/reference/'},
-          // { text: 'PC', items: [
-          //   { text: 'cxRTLS', link: '/cxRTLS/' },
-          //   // { text: '', link: '/guide/' }
-          //   ]
-          // }
-          // items: [
-          //   { text: 'Interfaces', link: '/hardware/hw_interfaces' },
-          //   { text: 'Flashing Boards', link: '/hardware/flashing/hw_flashing' }
-          //   ]
-          // }
-        ]
-      },
+      // {
+      //   text: "Software guide",
+      //   items: [
+      //     { text: "Introduction", link: "/guide/" },
+      //     {
+      //       // text: "Components",
+      //       items: [
+      //         { text: "Hub", link: "/hub/" },
+      //         { text: "Manager", link: "/manager/" },
+      //         { text: "Portal (web)", link: "/web/" },
+      //         { text: "Embedded firmware", link: "/embedded/" }
+      //       ]
+      //     }
+      //     // {
+      //     //   text: "Other",
+      //     //   items: [
+      //     //     { text: "Reference", link: "/reference/" },
+      //     //     { text: "FAQ", link: "/faq/" },
+      //     //     { text: "Troubleshoot", link: "/troubleshoot/" }
+      //     //   ]
+      //     // }
+      //     // { text: 'cxRTLS',link: '/cxRTLS/'},
+      //     // { text: 'Web',link: '/web/'},
+      //     // { text: 'Embedded/Hardware', link: '/embedded/'},
+      //     // { text: 'Reference', link: '/reference/'},
+      //     // { text: 'PC', items: [
+      //     //   { text: 'cxRTLS', link: '/cxRTLS/' },
+      //     //   // { text: '', link: '/guide/' }
+      //     //   ]
+      //     // }
+      //     // items: [
+      //     //   { text: 'Interfaces', link: '/embedded/hw_interfaces' },
+      //     //   { text: 'Flashing Boards', link: '/embedded/flashing/hw_flashing' }
+      //     //   ]
+      //     // }
+      //   ]
+      // },
       // { text: "API", link: "/api/" },
       {
         text: "Learn more",
@@ -104,7 +104,7 @@ module.exports = {
       "/distancing/": getDistancingSidebar(),
       "/positioning/": getPositioningSidebar(),
       "/manager/": getcxRTLSSidebar(),
-      "/hardware/": getHardwareSidebar(),
+      "/embedded/": getHardwareSidebar(),
       "/hub/": [{
         title: "Hub",
         collapsable: false,
@@ -182,7 +182,8 @@ function getDistancingSidebar() {
         // ["gateway_raw", "Gateway data"],
       ]
     },
-    ["theory", "Theoretical remarks"]
+    ["theory", "Theoretical remarks"],
+    // ["software_guide", "Software guide"]
   ];
 }
 
@@ -203,7 +204,7 @@ function getPositioningSidebar() {
     // },
     {
       title: "Getting started",
-      collapsable: true,
+      collapsable: false,
       children: [
         // ["pro_positioning_introduction", "Introduction"],
         ["positioning_getting_started", "Getting Started"],
@@ -230,7 +231,7 @@ function getPositioningSidebar() {
       ]
     },
     ["rtls_remarks", "Theoretical remarks"],
-    // ["apis", "APIs"]
+    ["software_guide", "Software guide"]
   ];
 }
 

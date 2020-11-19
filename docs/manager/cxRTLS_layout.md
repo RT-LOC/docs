@@ -107,8 +107,8 @@ The menu to select the screen you want.
 ![menu](./img/cxRTLS/1_menu.png)
 - [License](cxRTLS_license.html) - details about your license
 - [Config](cxRTLS_config.html) -
-- [Floor](cxRTLS_floor.html) -
-- [Sniff](cxRTLS_sniff.html) -
+<!-- - [Floor](cxRTLS_floor.html) - -->
+<!-- - [Sniff](cxRTLS_sniff.html) - -->
 - [Cross](cxRTLS_cross.html) -
 - [Firmware](cxRTLS_fwup.html) -
 - [LogConn](cxRTLS_logconn.html) -

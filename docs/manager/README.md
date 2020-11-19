@@ -11,4 +11,4 @@ An easy way to install the app to your desktop is through the Hub's [app managem
 When you open the program, you will see something similar:
 ![overview](./img/cxRTLS/1_raw.png)
 
-Follow the [getting started](/getstarted/pro_positioning_getting_started.html) steps to kickstart your first RTLS project
+Follow the [getting started](/positioning/positioning_getting_started.html) steps to kickstart your first RTLS project

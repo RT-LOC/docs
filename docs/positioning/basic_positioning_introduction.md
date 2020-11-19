@@ -36,7 +36,7 @@ Before you get started, make sure you have at least the following hardware:
 ## More details on BLE
 This system can function 100% based on Bluetooth Low Energy or BLE communication.
 BLE gives us the possibility to read out the data (distances) on any device which supports BLE4.0 (basically any recent device).
-More information can be found [here](/hardware/hw_interface_ble.html).
+More information can be found [here](/embedded/hw_interface_ble.html).
 
 
 ## Flashing the boards

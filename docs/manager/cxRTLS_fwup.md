@@ -70,7 +70,7 @@ This method will make it possible to connect an anchor via USB to your host and 
 
 ### USB
 If you don't have any infrastructure available or you miss a TCP connection to your anchor(s), the USB firmware update might help you out.
-Connect the node you want to update via a USB cable to the host computer and [open the connection](TODO).
+Connect the node you want to update via a USB cable to the host computer and open the connection.
 Force the node into BootLoader by pressing on _'BootLoader'_. Select the firmware you want to upload in the Firmware screen. The selected FW will appear in the USB window.
 
 ![fwup_usb_version](./img/cxRTLS/fwup_usb_version.png)
@@ -88,4 +88,4 @@ If you have access to the ctx_taglib, you can find the scripts in:
 PATH_TO_LIB/ctx_taglib/scripts/
 ```
 ...
-[Click here](LINKREQUIRED) for more information on setting up the toolchain.
+<!-- [Click here](LINKREQUIRED) for more information on setting up the toolchain. -->

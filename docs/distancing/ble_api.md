@@ -2,4 +2,4 @@
 
 Full description coming soon.
 
-Get in touch to view the spec.
+[Get in touch](https://rtloc.com/contact/) to view the spec.

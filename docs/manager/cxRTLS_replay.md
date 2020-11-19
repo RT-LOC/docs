@@ -66,7 +66,7 @@ You can also crop the file so that you can get rid of all the useless informatio
 
 
 ## API
-The API is fully functional for the Replayed files. You can have the data outputted via a TCP or UDP connection. More information on how to use API for replays [here](../getstarted/trying_demo_replays.html#rtmanager). 
+The API is fully functional for the Replayed files. You can have the data outputted via a TCP or UDP connection. More information on how to use API for replays [here](../positioning/trying_demo_replays.html#rtmanager). 
 
 ![api_view](./img/cxRTLS/api.jpg)
 

@@ -44,7 +44,7 @@ Some more information on the different technologies we harness. Click here for a
 
 `Viewer` / `cxViewer` - (3D) Position viewer
 
-`API` - Application Protocol Interface. See [here](../API.html).
+`API` - Application Protocol Interface. Chout out [our RTLS API](/positioning/apis_overview.html).
 
 `Task` -
 

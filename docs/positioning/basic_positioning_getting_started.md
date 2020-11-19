@@ -15,7 +15,7 @@ Most browsers should be supported, though recent chromium-based browsers (such a
 First make sure the UWB RTLS devices (tags and anchors) have the necessary firmwares. 
 
 ::: tip
-If you are using starter kit, the devices should already have the necessary firmware. In case you want to update the firmware on the tags (or switch to Distance Tracking) have a look at our guide of [hardware flashing](/hardware/flashing/hw_flashing.html).
+If you are using starter kit, the devices should already have the necessary firmware. In case you want to update the firmware on the tags (or switch to Distance Tracking) have a look at our guide of [hardware flashing](/embedded/flashing/hw_flashing.html).
 :::
 
 ## Anchors

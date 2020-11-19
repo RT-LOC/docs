@@ -48,7 +48,7 @@ You will need to download your license, from the account view of the Hub app. [L
 ![App management](../hub/img/apps.jpg)
 
 ## Connect the Hardware
-Let's apply power to the hardware (_HW_) to spark some life into it. There are multiple ways to power the HW. Click [here](../hardware/) for more information. The easiest way to get started is to power the boards via the usb cables.
+Let's apply power to the hardware (_HW_) to spark some life into it. There are multiple ways to power the HW. Click [here](../embedded/) for more information. The easiest way to get started is to power the boards via the usb cables.
 
 Once the boards are powered, you should see some lights blinking. There are a couple of [patterns](/reference/leds.html) possible. If all is going well, you should see a green light blinking on all boards.
 
@@ -116,6 +116,6 @@ Walk around with your tag and check that the tag is actually moving on the scree
 ## What's next?
 You have just set up an easy RTLS system. Congratulations! Now there are several things you can do. Extend the area of interest by adding more anchors. Follow more objects by adding more tags. Reach the highest possible accuracy by calibrating your system. Consult the API documentation to find out how you can connect your own system to RTLOC. There's a lot to discover. A whole new world of possibilities is waiting for you.
 
-* Setup [finetuning](/getstarted/tuning.html)
+<!-- * Setup [finetuning](/getstarted/tuning.html) -->
 * Follow our [system guide](/guide/)
 * Integrating with [our API](/api/)

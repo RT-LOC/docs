@@ -16,7 +16,7 @@ Click in the first column of the anchor/tag if you want to enable it in the cros
 ## InterAnchorDist
 By toggling the _'InterAnchorDist'_ -checkbox, you can switch to the measurements between all the anchors.
 ![cross_interanchor](./img/cxRTLS/cross_anchoranchor.png)
-If you have entered the exact coordinates of the anchors ([see here](LINKREQUIRED)), the interdistances are shown.
+If you have entered the exact coordinates of the anchors, the interdistances are shown.
 Now you can measure the distances between the anchors by clicking on _'Run Anchor Dist'_. All the anchors will start to range with each other. This process can take a while, depending on how many anchors you have (about 10 seconds per anchor).
 If not all anchors have visibility to each other, the table might have some open spots.
 

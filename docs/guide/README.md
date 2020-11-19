@@ -11,7 +11,7 @@ Contents of this guide:
 
 * [PC Software](/manager/) - Configure, manage and analyze the RTLS system.
 * [Web portal](/web/) - View all RTLS data and statistics anywhere, from within the browser.
-* [Hardware](/hardware/) - Interface with our hardware and more.
+* [Hardware](/embedded/) - Interface with our embedded hardware.
 
 
 <!-- > :hammer: Work in progress! Elaborate documentation **COMING SOON** -->

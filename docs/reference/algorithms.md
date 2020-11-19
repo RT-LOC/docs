@@ -1,4 +1,4 @@
-# Algorithms
+# Positioning algorithms
 
 The position of an object can be determined in many different ways. It can be based on the **Time Difference Of Arrival (TDOA)** of the signals or by calculating the distance between the tags and the anchors via a method called **Two Way Ranging (TWR)**. Also measuring the Received Signal Strength (RSS) gives you an idea of the distance between the sender and receiver. When the angle of the propagation of the signal is measured, Angle of Arrival (AOA) could be applied. For each of the methods, different implementations and variations exist. All algorithms have their pros and cons, which we will discuss below.
 

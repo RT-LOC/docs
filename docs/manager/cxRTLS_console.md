@@ -2,8 +2,8 @@
 The console is the primary interface to quickly read out data from the board and set settings.
 
 ## Usage 
-The console is accessible via one of the [hardware interfaces](/hardware/).
-The easiest way to test the interface is to  hook up one of your boards with a USB connection. Our PC software suite contains a [built-in console window](/cxRTLS/cxRTLS_actions.html#usb) that you can use to send the commands. 
+The console is accessible via one of the [hardware interfaces](/embedded/).
+The easiest way to test the interface is to  hook up one of your boards with a USB connection. Our PC software suite contains a [built-in console window](/manager/cxRTLS_actions.html#usb) that you can use to send the commands. 
 ## Commands
 The following commands are available.
 
