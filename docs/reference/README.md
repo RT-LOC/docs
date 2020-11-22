@@ -5,4 +5,4 @@ These pages contain some reference information.
 - [Pinout of the boards](pinouts.html)
 - [Terminology](terminology.html)
 - [Algorithms](algorithms.html)
-- [Redundancy](redundancy.html)
+<!-- - [Redundancy](redundancy.html) -->

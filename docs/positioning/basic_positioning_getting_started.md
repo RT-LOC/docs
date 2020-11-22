@@ -25,7 +25,7 @@ The anchors are marked with the label "A" and their ID below.
 
   1. **Power** all devices over USB (using a power adapter or a battery)
   
-  2. Hang the anchors in a good place. Make sure there is an anchor in each quadrant. More information on good practices on anchor placement can be found [here](/reference/anchor_placement.html#_1-anchor-in-each-quadrant).
+  2. Hang the anchors in a good place. Make sure there is an anchor in each quadrant. More information on good practices on anchor placement can be found [here](/positioning/anchor_placement.html#_1-anchor-in-each-quadrant).
   
   3. Press the **Bluetooth** icon and select `Connect to device`. 
   

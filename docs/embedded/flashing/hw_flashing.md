@@ -95,4 +95,4 @@ You should see something like this:
 ## Verification
 If you have successfully flashed the board, it will automatically restart and start running.
 The third LED from the top should start blinking red and green after a couple of seconds. This means it is sending and receiving packets. Did this not work? Try to reset the tag by replugging the USB cable. If it is still not working, try to reflash.
-You can also verify that you can make a BLE connection. You can find more information on BLE [here](hw_interface_ble.html).
+You can also verify that you can make a BLE connection. You can find more information on BLE [here](/embedded/hw_interface_ble.html).

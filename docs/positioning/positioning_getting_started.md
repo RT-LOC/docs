@@ -116,6 +116,6 @@ Walk around with your tag and check that the tag is actually moving on the scree
 ## What's next?
 You have just set up an easy RTLS system. Congratulations! Now there are several things you can do. Extend the area of interest by adding more anchors. Follow more objects by adding more tags. Reach the highest possible accuracy by calibrating your system. Consult the API documentation to find out how you can connect your own system to RTLOC. There's a lot to discover. A whole new world of possibilities is waiting for you.
 
-<!-- * Setup [finetuning](/getstarted/tuning.html) -->
+* Setup [finetuning](/positioning/anchor_placement.html)
 * Follow our [system guide](/guide/)
 * Integrating with [our API](/api/)
