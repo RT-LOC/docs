@@ -22,6 +22,8 @@ In case you have some more experience already, the best results can be achieved 
 
 Our full RTLS system features very accurate position tracking as well as efficient communication over UWB. It features extensive APIs to interact with all data. 
 
+<AnimPos />
+
 ::: tip
   For a simple online demo of how to use this data in your app, check out <a href="https://cloud.rtloc.com">https://cloud.rtloc.com</a> using the demo account.
 :::
@@ -29,5 +31,3 @@ Our full RTLS system features very accurate position tracking as well as efficie
 ::: tip
 If you want to learn more on the technology behind our Real-Time Location System (RTLS) products, please refer to [this page](https://rtloc.com/technology) first.
 :::
-
-<AnimPos />

@@ -203,7 +203,7 @@ function getPositioningSidebar() {
     //   ]
     // },
     {
-      title: "Getting started",
+      title: "Initial testing",
       collapsable: false,
       children: [
         // ["pro_positioning_introduction", "Introduction"],
@@ -435,6 +435,13 @@ function getReferenceSidebar() {
     //     ["updaterate", "Update Rate: a note"]
     //   ]
     // },
+    {
+      title: "Software reference",
+      collapsable: true,
+      children: [
+        ["fwupdate", "Updating firmware"],
+      ]
+    },
     {
       title: "Hardware reference",
       collapsable: true,

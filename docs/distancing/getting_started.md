@@ -36,16 +36,7 @@ You can conveniently install the Ranger app via our central Hub application (Win
 
 ### Updating firmware
 
-A tag or gateway might have older or RTLS firmware present. In that case you best update the firmware for the device by re-flashing it over USB.
-
-1. Connect the device to the PC over USB
-2. Download the new firmware via "Chk New Version"
-  > Look for kind "ADHOC" and name DW_DWM1001 (MDEK tag) or CTX_FRDM (anchor/gateway)
-  > If the device has a non-RTLOC firmware present, you will also need the bootloader (BL and the corresponding device name)
-3. Flash to the device using the "Flash" button
-  > Bootloader first, then the application firmware. (Only the firmware is required if a recent bootloader is present)
-
-![Downloading firmware](./img/downloading_fw.png)
+A tag or gateway might have not have the most recent firmware. In that case you best [update the firmware](/reference/fwupdate) for the device by re-flashing it over USB.
 
 ### Accessing data
 

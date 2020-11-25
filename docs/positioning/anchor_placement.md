@@ -34,7 +34,7 @@ This procedure is quite convenient, but you need to keep in mind that this is on
 When more anchors are used, the algorithm will still work but the results might become unreliable. Especially when there are some missing measurements between some anchors because they are out of range for each other.
 The returned anchor coordinates are a relative reference system. You can give the coordinates an offset or rotate them around the zero-point.
 
-You can find a step-by-step guide on how to use the AutoPos [here](LINK).
+<!-- You can find a step-by-step guide on how to use the AutoPos [here](LINK). -->
 
 ### Total Station
 A total station (TS) is an electronic/optical instrument that is mostly used for surveying and building construction.
