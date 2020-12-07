@@ -60,12 +60,20 @@ The software will run in a limited demo-mode without proper license.
 [Here's some help](/manager/cxRTLS_license.html#how-to-install-the-license) on how to activate your license.
 :::
 
-## Update device firmware
+## Device setup
+
+### Update device firmware
 
 A tag, anchor or listener might not have the most recent firmware. In that case you best [update the firmware](/reference/fwupdate) for the device by re-flashing it over USB.
-Check
 
-### Listener(s)
+### Power the devices
+
+Once the boards are powered, you should see some lights blinking. There are a couple of [patterns](/reference/leds.html) possible. If all is going well, you should see a green light blinking on all boards. In the software, the numbers in the column DecaNr should turn right. This means data of these nodes is received.
+
+
+Place the anchors in a strategic way. Hang them around the area you want to track. Make sure they are placed so that they are not blocked by big objects (especially metal). You can find some more hints on how to hang the anchors [here](../reference/anchor_placement.html).
+
+## Software setup
 First we will make sure the listener (or dual anchor) is properly initiated. Go the the screen 'Config' in which you will see the _Listener Module_. All the connected listeners are listed here. It will show you to which IP address it is sending its data (this can be unicast, multicast or broadcast), together with the port.
 
 ![getting_started-listener2](./img/getting_started-listener2.png)
@@ -81,11 +89,6 @@ All the anchors & tags that are powered on will start to appear in the list.
 ![getting_started-tags](./img/getting_started-tags.png)
 
 ![getting_started-anchors](./img/getting_started-anchors.png)
-
-
-Once the boards are powered, you should see some lights blinking. There are a couple of [patterns](/reference/leds.html) possible. If all is going well, you should see a green light blinking on all boards. In the software, the numbers in the column DecaNr should turn right. This means data of these nodes is received.
-
-Place the anchors in a strategic way. Hang them around the area you want to track. Make sure they are placed so that they are not blocked by big objects (especially metal). You can find some more hints on how to hang the anchors [here](../reference/anchor_placement.html).
 
 ### Floorplan
 Now let's try visualizing the data. Open the 'Floor' view from the menu. 
