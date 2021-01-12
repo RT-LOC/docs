@@ -38,7 +38,7 @@ If everything is correct you should see a circle moving around on the screen. Mo
 
 ## API setup
 
-If you want to send the data from the RTManager to our [cloud server](https://cloud.rtloc.com/) or any other computer there are multiple ways to do it. [API Docs](http://localhost:8080/api/)
+If you want to send the data from the RTManager to our [cloud server](https://cloud.rtloc.com/) or any other computer there are multiple ways to do it.
 
 ### RTLOC cloud
 
