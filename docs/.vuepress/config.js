@@ -178,7 +178,7 @@ function getDistancingSidebar() {
       collapsable: true,
       children: [
         ["ble_api", "Tag BLE API"],
-        ["gateway_desktop", "Gateway to desktop"],
+        ["gateway_desktop", "Gateway backhaul"],
         // ["gateway_raw", "Gateway data"],
       ]
     },
