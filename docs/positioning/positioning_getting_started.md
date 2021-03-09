@@ -73,7 +73,7 @@ A tag, anchor or listener might not have the most recent firmware. In that case 
 Once the boards are powered, you should see some lights blinking. There are a couple of [patterns](/reference/leds.html) possible. If all is going well, you should see a green light blinking on all boards. In the software, the numbers in the column DecaNr should turn right. This means data of these nodes is received.
 
 
-Place the anchors in a strategic way. Hang them around the area you want to track. Make sure they are placed so that they are not blocked by big objects (especially metal). You can find some more hints on how to hang the anchors [here](../reference/anchor_placement.html).
+Place the anchors in a strategic way. Hang them around the area you want to track. Make sure they are placed so that they are not blocked by big objects (especially metal). You can find some more hints on how to hang the anchors [here](/positioning/anchor_placement.html).
 
 ## Software setup
 First we will make sure the listener (or dual anchor) is properly initiated. Go the the screen 'Config' in which you will see the _Listener Module_. All the connected listeners are listed here. It will show you to which IP address it is sending its data (this can be unicast, multicast or broadcast), together with the port.
@@ -99,7 +99,7 @@ Now let's try visualizing the data. Open the 'Floor' view from the menu.
 Before we can track the tags, we need to know where the anchors are. 
 You can calculate their (relative) positions automatically by pressing _AutoPos_. 
 After a short while, you will see the anchors move to their position and you are ready to calculate your first tag positions.
-Find more information on the anchor coordinates [here](/reference/anchor_placement.html#calculating-anchor-coordinates).
+Find more information on the anchor coordinates [here](/positioning/anchor_placement.html#calculating-anchor-coordinates).
 
 #### Engine
 Make sure that the internal engine is switched on. You can find the engine menu in the Action Bar. Whenever the engine is running, the engine menu button looks like this: 

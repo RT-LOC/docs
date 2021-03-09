@@ -54,7 +54,7 @@ Now all the data is sent to RTLOC cloud and can be viewed from [there](https://c
 
 ### TCP_Binary connection
 
-[TCP_Binary](http://localhost:8080/api/api_application.html) connection allows for fast and very compact transmission over TCP/UDP. It is useful for fast data transfers to your own servers.
+[TCP_Binary](/api/api_application.html) connection allows for fast and very compact transmission over TCP/UDP. It is useful for fast data transfers to your own servers.
 
 In this example, we will be using [Python example](https://github.com/RT-LOC/API-examples/tree/master/Data%20API/TCP_binary/Python) code to create a connection when everything is running on our local machine. Make sure Python is installed ([link](https://www.python.org/downloads/)). 
 
@@ -87,5 +87,5 @@ More TCP_Binary connection [examples](https://github.com/RT-LOC/API-examples/tre
 
 ### MQTT
 
-For MQTT data connection, please refer to this [guide](http://localhost:8080/api/api_conns.html#_2-mqtt-data-connection).
+For MQTT data connection, please refer to this [guide](/api/api_conns.html#_2-mqtt-data-connection).
 

@@ -35,7 +35,10 @@ module.exports = {
       searchMaxSuggestions: 10
     }],
     ["@vuepress/plugin-medium-zoom"],
-    ["@vuepress/last-updated"]
+    ["@vuepress/last-updated"],
+    ["sitemap", {
+      hostname: 'https://docs.rtloc.com'
+    }]
   ],
   // theme: '@vuepress/vue',
   themeConfig: {
