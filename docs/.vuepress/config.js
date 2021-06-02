@@ -1,6 +1,6 @@
 module.exports = {
   title: "RTLOC Documentation",
-  description: "Your guide to RTLOC's ultra-wideband solutions",
+  description: "Your guide to RTLOC's location intelligence IoT solutions",
   // base: "/docs/",
   head: [
     ['link', { rel: 'icon', href: `/img/logo.png` }],

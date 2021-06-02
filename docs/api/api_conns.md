@@ -24,7 +24,7 @@ Use the following configuration for your MQTT client(s):
 * Username: *client slug**: *user e-mail*
 * Password: user password, or valid JWT
 
-*You can find the *client slug* in the license description, in the Hub app or the Portal at [https://cloud.rtloc.com/info](https://cloud.rtloc.com/info).
+*You can find the *client slug* in the license description, in the Hub app or the Portal at [https://app.rtloc.com/info](https://app.rtloc.com/info).
 
 The MQTT topic and data format per type of message is outlined in the [format description](/api/api_web.html).
 

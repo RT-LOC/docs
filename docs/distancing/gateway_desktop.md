@@ -2,7 +2,7 @@
 
 ## Install the Ranger software
 
-A convenient way to manage our tools is the Hub app. You can get it at [https://cloud.rtloc.com/download](https://cloud.rtloc.com/download). (Currently Windows only, requires some space on the C drive). From the Hub app you can download the Ranger app.
+A convenient way to manage our tools is the Hub app. You can get it at [https://app.rtloc.com/download](https://app.rtloc.com/download). (Currently Windows only, requires some space on the C drive). From the Hub app you can download the Ranger app.
 Another option is to install the Ranger app by itself, you can request the executable from us.
 
 ## Set up gateway (or "listener")
