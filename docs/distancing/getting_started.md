@@ -32,7 +32,7 @@ If you have a gateway, you can connect to our Ranger program to:
 - allow debugging of the active devices
 - allow over-the-air (OTA) over UWB updates of all device firmwares
 
-You can conveniently install the Ranger app via our central Hub application (Windows), downloadable via [https://cloud.rtloc.com/download](https://cloud.rtloc.com/download).
+You can conveniently install the Ranger app via our central Hub application (Windows), downloadable via [https://app.rtloc.com/download](https://app.rtloc.com/download).
 
 
 ### Connecting devices

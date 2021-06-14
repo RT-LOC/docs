@@ -42,8 +42,8 @@ A computer (desktop/laptop/tablet), preferably Windows OS
 ![pc](./img/install_PC.jpeg)
 
 ## Set up the software
-A convenient way to manage our tools is the Hub app. You can get it at [https://cloud.rtloc.com/download](https://cloud.rtloc.com/download). (Currently Windows only, requires some space on the C drive)
-You will need to log in using your account. If you don't have an account, [create one](https://cloud.rtloc.com/register). (If you've received an e-mail invite, preferably use that link)
+A convenient way to manage our tools is the Hub app. You can get it at [https://app.rtloc.com/download](https://app.rtloc.com/download). (Currently Windows only, requires some space on the C drive)
+You will need to log in using your account. If you don't have an account, [create one](https://app.rtloc.com/register). (If you've received an e-mail invite, preferably use that link)
 
 You will need to download your license, from the account view of the Hub app. [License download instructions](../hub/license.html)
 

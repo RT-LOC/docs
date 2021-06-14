@@ -25,7 +25,7 @@ Our full RTLS system features very accurate position tracking as well as efficie
 <AnimPos />
 
 ::: tip
-  For a simple online demo of how to use this data in your app, check out <a href="https://cloud.rtloc.com">https://cloud.rtloc.com</a> using the demo account.
+  For a simple online demo of how to use this data in your app, check out <a href="https://app.rtloc.com">https://app.rtloc.com</a> using the demo account.
 :::
 
 ::: tip
