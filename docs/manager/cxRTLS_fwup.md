@@ -1,10 +1,11 @@
 # Firmware Update
-Whenever a new firmware is released or when you built your own with the DevKit, there are multiple ways to deploy that firmware to the system.
-In this document you learn how to install the version you want on your system.
+There are several ways to deploy a new firmware to your system.
+In this document you learn how to do a Firmware Update.
 
 ## Verify the version
 In the panel _'Deca Version'_, you can verify the current version of all the tags and anchors.
 The version will appear here once the system has received the information from the node. This will happen automatically. Keep in mind however that after booting the Manager, it might take some time before all the information is collected (typically 20 seconds).
+The first few lines show the highest detected version per hardware type.
 
 ![fwup_version](./img/cxRTLS/fwup_version.png)
 
@@ -25,7 +26,7 @@ c:\cxRTLS\bin\
 The name of the file doesn't matter. You can drag in any type (tag, anchor, listener, ...) of firmware into this directory, the manager will recognize the type.
 ![fwup_import1](./img/cxRTLS/fwup_import_1.png)
 
-After doing this, press _'Search Bin'_ in the lower left corner of the screen.
+After doing this, press _'Search Bin'_ in the lower left corner of the _'Deca Firmwarefiles'_ panel.
 ![fwup_import2](./img/cxRTLS/fwup_import_2.png)
 
 Upon pressing the button, the firmwares will be imported in the system. You can verify the details in the _'Firmwarefiles'_ panel.
@@ -42,7 +43,7 @@ There are 3 ways to update a node:
  - Over-The-Air via BLE
  - Reflashing with a programmer
 
-Whenever your system is all set up and running, the easiest way is to perform an Over-The-Air (OTA) update via UWB. Everything can be done from within The Manager and no physical interactions are required. Multiple devices can be updated at the same time. 
+Whenever your system is all set up and running, the easiest way is to perform an Over-The-Air (OTA) update via UWB. Everything can be done from within The Manager and no physical interactions are required. Multiple devices can be updated at the same time with the same firmware. 
 You can also update individual nodes by connecting it to the RTLOC App (if the device has BLE). 
 In case you have a board that has never been flashed before or if you want to update the bootloader, you can use a programmer to flash the firmwares on the board.
 
