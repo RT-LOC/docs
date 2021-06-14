@@ -112,7 +112,14 @@ module.exports = {
         title: "Hub",
         collapsable: false,
         children: [
-          ["installation", "Installation"], ["apps", "App management"], ["firmware", "Firmware management"], ["license", "License management"]
+          ["installation", "Installation"], ["apps", "App management"], ["license", "License management"]
+        ]
+      }],
+      "/connect/": [{
+        title: "RTLOC Connect",
+        collapsable: false,
+        children: [
+          ["installation", "Installation"], ["features", "Features"]
         ]
       }],
       "/web/": getWebSidebar(),
@@ -247,6 +254,7 @@ function getcxRTLSSidebar() {
       children: [
         ["cxRTLS_layout", "Program layout"],
         ["cxRTLS_config", "Config"],
+        ["cxRTLS_floor", "Floor"],
         ["cxRTLS_cross", "Cross"],
         ["cxRTLS_fwup", "Firmware Update"],
         ["cxRTLS_logconn", "Connection log"],

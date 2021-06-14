@@ -1,6 +1,6 @@
-# RTHub
+# Hub
 
-The RTHub application is the starting point when it comes to our PC software suite. It provides an easy way to install, update and open our different apps. It can also download different firmwares and flash them onto devices. 
+The Hub application is the starting point when it comes to our PC software suite. It provides an easy way to install, update and open our different apps. It can also download different firmwares and flash them onto devices. 
 
 ## App installation
 
