@@ -25,7 +25,7 @@ Power banks or (LiPo) batteries can be used.
 ### Optional: gateway
 The gateway device will allow a connection with our PC software described below.
 
-## Software set-up
+## Data collection: Desktop software
 
 If you have a gateway, you can connect to our Ranger program to:
 - export data to the PC program
@@ -50,4 +50,9 @@ A tag or gateway might have not have the most recent firmware. In that case you 
 ### Accessing data
 
 Check out the "gateway to desktop" API description.
+
+
+## Data collection: Mobile app
+
+## Data visualization: Portal app
 
