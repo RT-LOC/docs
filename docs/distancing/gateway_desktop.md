@@ -22,8 +22,9 @@ When turning on tags, they should automatically appear in the tag list. When tag
 The distance and event data can be exported to your own application using one of our APIs. Current options include REST (HTTP POST) or MQTT (publishing to a broker, to which your client can subscribe).
 
 ### MQTT
+
 To configure MQTT you'll have to provide the broker link, login credentials and the topic to post to.
-You can use our MQTT broker for basic testing, but for reliable daily use we recommend setting up your own broker (e.g. RabbitMQ). If you need an example of MQTT client code, we have python and Javascript examples on our Github: https://github.com/RT-LOC/API-examples/tree/master/Data%20API/MQTT.
+You can use our MQTT broker for basic testing, but for reliable daily use we recommend setting up your own broker (e.g. RabbitMQ). If you need an example of MQTT client code, we have python and Javascript examples on our Github: [MQTT API example](https://github.com/RT-LOC/API-examples/tree/master/Data%20API/MQTT).
 
 In the Ranger program, you can use your account credentials like so (for demo@rtloc.com):
 
@@ -32,4 +33,5 @@ In the Ranger program, you can use your account credentials like so (for demo@rt
 > You can use this demo account for testing. Choose a unique topic name to prevent overlap with someone else's data though.
 
 ### HTTP POST
+
 For the REST option you'll have to provide the POST route of your back-end. The program will then regularly post events to it once there are enough gathered.
