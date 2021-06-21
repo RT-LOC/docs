@@ -45,7 +45,7 @@ A tag or gateway might have not have the most recent firmware. In that case you 
 
 ### Accessing data
 
-Check out the "gateway to desktop" API description.
+Check out the [gateway to desktop](/distancing/gateway_desktop.html) API description.
 
 ## Data collection: Mobile app
 
