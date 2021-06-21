@@ -31,9 +31,11 @@ If you have a full license, you can use the software unlimited (except for the f
 ## How to install the License
 Whenever you start RTManager for the first time, you probably don't have a license yet. To acquire one, press _'Build license.txt'_.
 
+### From the Hub app
+
 If you have the [RTHub](/hub/) app installed, go to the profile view and press "Download license". If there's an indication that your PC has not been included in the license yet, you should do that first.
 
-### Manual license generation
+### Alternative: Manual license generation
 ![license_build](./img/cxRTLS/license_build.png)
 
 A dialog message will appear and the file license.txt will be created on the following path:
