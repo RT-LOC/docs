@@ -35,6 +35,8 @@ You will - at a very minimum - need:
   - 4 Micro usb cables (type B) and batteries or socket adapters
   - PoE
 
+  <!-- ![power](./img/install_power_supply.png) -->
+
 ### Other
 A computer (desktop/laptop/tablet), preferably Windows OS
 
@@ -50,7 +52,11 @@ You will need to download your license, from the account view of the Hub app. [L
 
 
 ## Manager app configuration
-Start the Manager app from the Hub app or locate the executable and open it. 
+Start the Manager app from the Hub app or locate the executable and start it. 
+
+<!-- ![getting_started-setup_icon](./img/getting_started-setup_icon.png) -->
+
+You will get welcomed in the PC software.
 
 :::warning
 The software will run in a limited demo-mode without proper license.
@@ -117,7 +123,7 @@ Walk around with your tag and check that the tag is actually moving on the scree
 The position data can be visualized in our Portal application, which can be launched via the Hub app or via https://app.rtloc.com. 
 The Manager app will need to have the correct MQTT configuration, as will be indicated in the Portal app settings. For the demo user:
 
-![portal_checklist](./img/portal_pos_checklist.jpg "Configuration checklist")
+![portal_checklist](./img/portal_pos_checklist.png "Configuration checklist")
 
 
 ## What's next?

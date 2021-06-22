@@ -205,6 +205,7 @@ function getPositioningSidebar() {
     //     // ["anchor_placement", "Anchor Placement"]
     //   ]
     // },
+    ["positioning_getting_started", "Getting started"],
     {
       title: "Initial testing",
       collapsable: false,
@@ -250,7 +251,8 @@ function getcxRTLSSidebar() {
         ["cxRTLS_cross", "Cross"],
         ["cxRTLS_fwup", "Firmware Update"],
         ["cxRTLS_logconn", "Connection log"],
-        ["cxRTLS_replay", "Replay"]
+        ["using_replays", "Using Replays"],
+        // ["cxRTLS_replay", "Recording Replays"]
         // ["cxRTLS_adhoc", "Adhoc"]
       ]
     },
