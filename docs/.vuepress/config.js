@@ -206,16 +206,14 @@ function getPositioningSidebar() {
     //   ]
     // },
     ["positioning_getting_started", "Getting started"],
-    {
-      title: "Initial testing",
-      collapsable: false,
-      children: [
-        // ["pro_positioning_introduction", "Introduction"],
-        ["positioning_getting_started", "Getting Started"],
-        ["trying_demo_replays", "Demo Replays"],
-        // ["firststeps", "First steps"],
-      ]
-    },
+    // {
+    //   title: "Initial testing",
+    //   collapsable: false,
+    //   children: [
+    //     ["positioning_getting_started", "Getting Started"],
+    //     ["trying_demo_replays", "Demo Replays"],
+    //   ]
+    // },
     {
       title: "Setup finetuning",
       collapsable: true,
