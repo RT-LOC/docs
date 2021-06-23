@@ -50,7 +50,7 @@ Check out the [gateway to desktop](/distancing/gateway_desktop.html) API descrip
 ## Data collection: Mobile app
 
 ::: warning
-Currently Mobile app is only available on Android devices. iOS support will be released in the future
+Currently Mobile app is only available on Android devices. iOS support is planned to be released in the future
 :::
 
 You can connect your tag to our Mobile app to:
