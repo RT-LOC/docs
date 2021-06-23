@@ -49,4 +49,36 @@ Check out the [gateway to desktop](/distancing/gateway_desktop.html) API descrip
 
 ## Data collection: Mobile app
 
+::: warning
+Currently Mobile app is only available on Android devices. iOS support will be released in the future
+:::
+
+You can connect your tag to our Mobile app to:
+
+-   allow over-the-air (OTA) device firmware updates
+-   change device characteristics (such as breach distance)
+-   send breach data to RTLOC backend
+-   and more...
+
+Android version of the app can be downloaded from [Google Play](https://play.google.com/store/apps/details?id=com.rtloc.debug).
+
+### Connecting devices
+
+Power your devices and open our Mobile app on your phone. From the app, scan for devices and once your device is found, press on it to get connected. You should see a green indicator at the top, indicating that you are connected:
+
+<img src="./img/mobile-connect.jpg" width="222" height="450">
+
+### Updating firmware
+
+A tag might have not have the most recent firmware. You can update your tags directly from your phone through Bluetooth. Navigate to the "Device firmware" screen and follow the instruction. You can find more detailed instructions [here](/reference/fwupdate).
+
+<img src="./img/mobile-DFU.jpg" width="222" height="450">
+
+### Accessing data
+
+Every breach event is automatically sent to RTLOC backend, which then can be viewed through our Portal app. But before these events can be sent, you will need to login through the Mobile app. Login form can be found in the "Settings" screen. Once you are logged in, **choose the client and project** you want your events to be sent to. Now wait for any breach event and view the them in the Portal app.
+
+<img src="./img/mobile-login.jpg" width="222" height="450">
+<img src="./img/mobile-loggedin.jpg" width="222" height="450">
+
 ## Data visualization: Portal app
