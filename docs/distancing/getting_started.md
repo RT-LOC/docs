@@ -82,3 +82,11 @@ Every breach event is automatically sent to RTLOC backend, which then can be vie
 <img src="./img/mobile-loggedin.jpg" width="222" height="450">
 
 ## Data visualization: Portal app
+
+Our Portal app solution is an easy way to visualize your breach events. It offers:
+
+-   The full chronological log of every breach event sent to our server.
+-   Assignment of devices to assets (people, vehicles, object and etc.), which will filter and show detailed information about the asset.
+-   Aggregated project and asset statistics.
+
+![nodes](./img/portalapp-summaries.jpg)
