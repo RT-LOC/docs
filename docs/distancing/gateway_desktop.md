@@ -34,4 +34,8 @@ In the Ranger program, you can use your account credentials like so (for demo@rt
 
 ### HTTP POST
 
-For the REST option you'll have to provide the POST route of your back-end. The program will then regularly post events to it once there are enough gathered.
+For the REST option you'll have to provide the POST route of your or our back-end. The program will then regularly post events to it once there are enough gathered.
+
+If you choose to use our backend, you need to generate an API key and use the associated POST link. This can be found in the "Ranging settings". It looks like this:
+
+![Ranging settings](./img/API-keys.jpg)
