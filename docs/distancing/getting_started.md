@@ -1,4 +1,4 @@
-# Getting started with Proximity raning
+# Getting started with Proximity ranging
 
 ## Introduction
 
@@ -64,7 +64,7 @@ Android version of the app can be downloaded from [Google Play](https://play.goo
 
 ### Connecting devices
 
-Power your devices and open our Mobile app on your phone. From the app, scan for devices and once your device is found, press on it to get connected. You should see a green indicator at the top, indicating that you are connected:
+Power your device and open our Mobile app on your phone. From the app, scan for devices and once your device is found, press on it to get connected. You should see a green indicator at the top, indicating that you are connected:
 
 <img src="./img/mobile-connect.jpg" width="222" height="450">
 
