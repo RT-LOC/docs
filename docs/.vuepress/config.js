@@ -94,6 +94,7 @@ module.exports = {
                             { text: "Hub", link: "/hub/" },
                             { text: "Manager", link: "/manager/" },
                             { text: "Portal (web)", link: "/web/" },
+                            { text: "Mobile app", link: "/mobile/" },
                             { text: "Embedded firmware", link: "/embedded/" }
                         ]
                     }
@@ -138,8 +139,10 @@ module.exports = {
             // "/getstarted/": getInstallSidebar(),
             "/distancing/": getDistancingSidebar(),
             "/positioning/": getPositioningSidebar(),
+            "/mobile/": getMobileSidebar(),
             "/manager/": getcxRTLSSidebar(),
             "/embedded/": getHardwareSidebar(),
+            "/api/": getAPISidebar(),
             "/hub/": [
                 {
                     title: "Hub",
@@ -201,6 +204,22 @@ module.exports = {
 //     },
 //   ];
 // }
+function getMobileSidebar() {
+  return [
+    {
+        title: "Mobile app",
+        collapsable: false,
+        children: [
+            ["connecting", "Connecting devices"],
+            ["firmware", "Firmware update"],
+            ["characteristics", "Device configuration"]
+
+            
+        ]
+    }
+  ]
+}
+
 function getDistancingSidebar() {
     return [
         // {
