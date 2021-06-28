@@ -205,19 +205,19 @@ module.exports = {
 //   ];
 // }
 function getMobileSidebar() {
-  return [
-    {
-        title: "Mobile app",
-        collapsable: false,
-        children: [
-            ["connecting", "Connecting devices"],
-            ["firmware", "Firmware update"],
-            ["characteristics", "Device configuration"]
-
-            
-        ]
-    }
-  ]
+    return [
+        {
+            title: "Mobile app",
+            collapsable: false,
+            children: [
+                ["connecting", "Connecting devices"],
+                ["sending-data", "Sending Data"],
+                ["firmware", "Firmware update"],
+                ["characteristics", "Device configuration"],
+                ["viewing-data", "Viewing data"]
+            ]
+        }
+    ]
 }
 
 function getDistancingSidebar() {

@@ -1,6 +1,6 @@
 # Device configuration
 
-Using our mobile app you can configure distancing devices to your needs. You can access the "Device config" screen by pressing on the bottom navigation button: 
+Using our mobile app you can configure distancing devices to your needs. You can access the "Device config" screen by pressing on the bottom navigation button:
 
 ![config bottom](./img/mobile-config-bottom.jpg)
 
@@ -16,16 +16,16 @@ Current time service refers to a Real Time Clock on the device itself. Current w
 
 ### Battery level
 
-Battery level service displays the current battery level on the device. Every minute battery level is logged on your phone, you can view all of the logged data in the "Battery monitor" screen. 
+Battery level service displays the current battery level on the device. Every minute battery level is logged on your phone, you can view all of the logged data in the "Battery monitor" screen.
 
 ### Device information
 
 Here you can see some information about the device:
 
-* Model number
-* Manufacturer name - RTLOC
-* Firmware revision
-* Hardware revision
+-   Model number
+-   Manufacturer name - RTLOC
+-   Firmware revision
+-   Hardware revision
 
 ### Application service
 
@@ -33,7 +33,7 @@ Application service is the most important and contains all of the needed informa
 
 #### IDs
 
-Here you can set current device's UID and the Company ID. These setting shouldn't be changed often, most likely only once, during the setup.
+Here you can set current device's UID and the Company ID. These settings shouldn't be changed often, most likely only once, during the setup.
 
 #### MSD thresholds
 
@@ -47,14 +47,14 @@ MSD flags let you choose which functions should the device do or not do. For exa
 
 With event requester you can manually offload events from the device itself. Every breach event is stored on the device (even if it is not connected to a phone/computer), so everytime you connect your device to a phone it will start offloading these events (and also sending them to the backend). But you also have the ability to do it manually. In addition to this you can also:
 
-* Erase last offloaded event from the device (also done automatically when offloading).
-* Erase everything.
-* Generate 100 random events.
-* View how many events are stored on the device and how many of them were offloaded.
+-   Erase last offloaded event from the device (also done automatically when offloading).
+-   Erase everything.
+-   Generate 100 random events.
+-   View how many events are stored on the device and how many of them were offloaded.
 
 #### Alarm settings
 
-*under contruction*
+_under contruction_
 
 ## Notifications
 
