@@ -402,7 +402,8 @@ function getWebSidebar() {
                 // ['', 'Introduction'],
                 // ["user", "User accounts"],
                 ["client", "Clients, projects and setups"],
-                ["data", "Data"]
+                ["data", "Data"],
+                ["devices_assets", "Devices and Assets"]
                 // ["/web/viewer", "Viewer"],
                 // ["/web/data", "Data control"]
             ]
