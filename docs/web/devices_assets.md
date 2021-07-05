@@ -65,3 +65,9 @@ In "Tracing" you can visually see who breached who and trace them.
 In "Stats" you can see summarized statistics of the asset and statistics of each separate device.
 
 ![Edit asset](./img/asset-stats.jpg)
+
+### Asset subcategories
+
+When creating a new asset you can add a category to it and also a sub-category. Categories are fixed to: person, vehicle, object and other, but you can expand them by adding any kind of category to them. You can do so by going to the "Settings" -> "Asset settings" and add or deleting subcategories
+
+![Edit asset](./img/subcategories.jpg)
