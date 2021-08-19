@@ -117,8 +117,8 @@ Walk around with your tag and check that the tag is actually moving on the scree
 The position data can be visualized in our Portal application, which can be launched via the Hub app or via https://app.rtloc.com. 
 The Manager app will need to have the correct MQTT configuration, as will be indicated in the Portal app settings. 
 
-<!-- For the demo user:
-![portal_checklist](./img/portal_pos_checklist.jpg "Configuration checklist") -->
+For the demo user:
+![portal_checklist](./img/portal_pos_checklist.jpg "Configuration checklist")
 
 
 ## What's next?
