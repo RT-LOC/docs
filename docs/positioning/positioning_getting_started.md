@@ -50,7 +50,7 @@ You will need to download your license, from the account view of the Hub app. [L
 
 
 ## Manager app configuration
-Start the Manager app from the Hub app or locate the executable and open it. 
+Start the Manager app from the Hub app or locate the executable and open it. The following guide will assume that you have the necessary tags and anchors. Alternatively, you can [run a replay](/manager/using_replays) (and receive that replay data over the API).
 
 :::warning
 The software will run in a limited demo-mode without proper license.

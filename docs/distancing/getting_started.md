@@ -50,21 +50,21 @@ Check out the [gateway to desktop](/distancing/gateway_desktop.html) API descrip
 ## Data collection: Mobile app
 
 ::: warning
-Currently Mobile app is only available on Android devices. iOS support is planned to be released in the future
+Currently the mobile app is only available on Android devices. iOS support is planned to be released in the future
 :::
 
 You can connect your tag to our Mobile app to:
 
 -   allow over-the-air (OTA) device firmware updates
 -   change device characteristics (such as breach distance)
--   send breach data to RTLOC backend
+-   send breach data to the RTLOC backend or your own
 -   and more...
 
-Android version of the app can be downloaded from [Google Play](https://play.google.com/store/apps/details?id=com.rtloc.debug).
+The Android version of the app can be downloaded from [Google Play](https://play.google.com/store/apps/details?id=com.rtloc.debug).
 
 ### Connecting devices
 
-Power your device and open our Mobile app on your phone. From the app, scan for devices and once your device is found, press on it to get connected. You should see a green indicator at the top, indicating that you are connected. More detailed instructions [here](/mobile/connecting).
+Power your device and open our mobile app on your phone. From the app, scan for devices and once your device is found, press on it to get connected. You should see a green indicator at the top, indicating that you are connected. More detailed instructions [here](/mobile/connecting).
 
 <img src="./img/mobile-connect.jpg" width="222" height="450">
 

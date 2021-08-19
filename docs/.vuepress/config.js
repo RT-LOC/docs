@@ -401,34 +401,32 @@ function getWebSidebar() {
             children: [
                 // ['', 'Introduction'],
                 // ["user", "User accounts"],
-                ["client", "Clients, projects and setups"],
-                ["data", "Data"],
+                ["client", "Clients and projects"],
+                ["data", "Live data"],
                 ["devices_assets", "Devices and Assets"]
                 // ["/web/viewer", "Viewer"],
                 // ["/web/data", "Data control"]
             ]
         },
         {
-            title: "Views / tabs",
+            title: "Functionality",
             collapsable: false,
             children: [
-                ["viewer", "Viewer"],
-                ["debug", "Debug"],
-                ["settings", "Settings"]
-                // ["data", "Data control"],
+                ["viewer", "Local positions"],
+                // ["viewer", "Proximity ranging"],
             ]
         },
-        {
-            title: "BLE",
-            collapsable: false,
-            children: [
-                ["ble_introduction", "Introduction"]
-                // ["ble_monitor", "Monitor"],
-                // ["ble_visualise", "Visualise"],
-                // ["ble_configure", "Configure"],
-                // ["data", "Data control"],
-            ]
-        }
+        // {
+        //     title: "BLE",
+        //     collapsable: false,
+        //     children: [
+        //         ["ble_introduction", "Introduction"]
+        //         // ["ble_monitor", "Monitor"],
+        //         // ["ble_visualise", "Visualise"],
+        //         // ["ble_configure", "Configure"],
+        //         // ["data", "Data control"],
+        //     ]
+        // }
     ]
 }
 
