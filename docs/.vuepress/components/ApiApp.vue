@@ -280,7 +280,7 @@
                     1
                   </div>
                   <div class="smallBlock fl">
-                    'D'
+                    
                   </div>
                   <div class="protocolDescription fl">
                     ..

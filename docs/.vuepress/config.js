@@ -91,11 +91,11 @@ module.exports = {
                     {
                         // text: "Components",
                         items: [
-                            { text: "Hub", link: "/hub/" },
-                            { text: "Manager", link: "/manager/" },
-                            { text: "Portal (web)", link: "/web/" },
-                            { text: "Mobile app", link: "/mobile/" },
-                            { text: "Embedded firmware", link: "/embedded/" }
+                            // { text: "Desktop v2", link: "/hub/" }, // TODO
+                            { text: "Web", link: "/web/" },
+                            { text: "Desktop v1", link: "/manager/" },
+                            { text: "Mobile", link: "/mobile/" },
+                            { text: "Devices", link: "/embedded/" }
                         ]
                     }
                     // {
@@ -122,13 +122,14 @@ module.exports = {
                     // }
                 ]
             },
+            { text: "APIs", link: "/api/" },
             // { text: "API", link: "/api/" },
             {
                 text: "Learn more",
                 items: [
                     { text: "System Reference", link: "/reference/" },
                     { text: "FAQ", link: "/faq/faq_general" },
-                    { text: "API", link: "/api/" },
+                    // { text: "API", link: "/api/" },
                     { text: "Troubleshoot", link: "/troubleshoot/" }
                 ]
             },
@@ -358,29 +359,24 @@ function getFAQSidebar() {
 function getAPISidebar() {
     return [
         {
-            title: "Real-time data",
+            title: "Engine interface",
             collapsable: false,
             children: [
+              ["/api/api_local", "Local live data"],
+              ["/api/api_cloud", "Cloud live data"],
                 ["/api/api_application", "Binary data format"],
                 ["/api/api_web", "JSON data format"],
-                ["/api/api_conns", "Connection types"]
+                // ["/api/api_conns", "Connection types"]
             ]
         },
-        {
-            title: "Meta data",
-            collapsable: false,
-            children: [["/api/api_rest", "REST (meta data) API"]]
-        },
         // {
-        //   title: "Connection protocols",
-        //   collapsable: false,
-        //   children: [
-        //     ["/api/api_mqtt", "MQTT"],
-        //     ["/api/api_direct", "TCP/UDP or Websocket"]
-        //   ]
+        //     title: "Meta data",
+        //     collapsable: false,
+        //     children: [["/api/api_rest", "REST (meta data) API"]]
         // },
+        // {
         {
-            title: "Single device Connection",
+            title: "Device interface",
             collapsable: false,
             children: [
                 ["/api/api_console", "Console (CLI)"],

@@ -1,3 +1,7 @@
+::: danger REMARK
+This guide was written for our original software (desktop v1) and is yet to be adapted to reflect the latest changes. The necessary steps are similar with recent software.
+:::
+
 # Getting started with Proximity ranging
 
 ## Introduction

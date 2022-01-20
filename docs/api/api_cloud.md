@@ -1,23 +1,14 @@
-# Connection types
+# Cloud live data
 
 Real-time data (position data, tag/anchor statuses, sensor data, etc.) can be received over UDP/TCP, (secure) websocket WS(S) or MQTT (Message Queuing Telemetry Transport, pub/sub). The data can be transferred in binary or JSON format (see previous sections).
 
-## 1. Direct socket connections
-
-1. Configure data transmission over UDP / TCP / websocket in our desktop application (in the API view)
-
-2. Connect to your computer/server to the correct IP + port
-
-### Code examples
-Check out code examples at [https://github.com/RT-LOC/APIs](https://github.com/RT-LOC/APIs) (C, Python, Javascript)
-
-## 2. MQTT data connection
+## MQTT data connection (recommended)
 
 You can receive data in a pub/sub fashion, through an Mosquitto (MQTT) broker.
 You can use our MQTT broker (some limitations may apply) or set up your own.
 
 Make sure your RTLS setup is publishing MQTT data to the broker.
-Use the following configuration for your MQTT client(s):
+To connect to our broker use the following configuration for your MQTT client(s):
 
 * Host: mqtt.cloud.rtloc.com
 * Port: 1883 (TCP), 8083 (WSS) or 8883(TCP TLS)
@@ -55,8 +46,8 @@ mqttOptions = {
   clean: true,
   reconnectPeriod: 60000,
   connectTimeout: 30 * 1000,
-  username: 'demo:demo@rtloc.com',
-  password: '12345', // Alternative: access token instead of password
+  username: 'demo:demo@rtloc.com', // client "demo"
+  password: '12345', // Alternative: access TOKEN instead of password
   rejectUnauthorized: false
 }
 
@@ -64,9 +55,7 @@ mqttOptions = {
 const client = mqtt.connect('wss://mqtt.cloud.rtloc.com:8083/ws', mqttOptions)
 
 // Subscribe to a few topics
-client.subscribe('rtls/replay/kart/status', { qos: 0 })
-client.subscribe('rtls/replay/kart/anchors', { qos: 0 })
-client.subscribe('rtls/replay/kart/posxyz', { qos: 0 })
+client.subscribe('default/data/#', { qos: 0 }) // Project "default"
 
 // On message: print topic and JSON message
 client.on('message', function (topic, message) {
@@ -75,3 +64,12 @@ client.on('message', function (topic, message) {
   console.log(json)
 })
 ```
+
+## 2. Direct socket connections
+
+1. Configure data transmission over UDP / TCP / websocket in our desktop application (in the API view)
+
+2. Connect to your computer/server to the correct IP + port
+
+### Code examples
+Check out code examples at [https://github.com/RT-LOC/APIs](https://github.com/RT-LOC/APIs) (C, Python, Javascript)

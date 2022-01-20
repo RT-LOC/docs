@@ -1,4 +1,8 @@
 
+::: danger REMARK
+This guide was written for our original software (desktop v1) and is yet to be adapted to reflect the latest changes. The necessary steps are similar with recent software.
+:::
+
 # Getting started
 
 In order to start tracking, you will need hardware nodes such as anchors and tags. You can purchase them from us or even from other vendors. We support a range of hardware, including Decawave's DWM1001 based boards.
@@ -29,5 +33,5 @@ Our full RTLS system features very accurate position tracking as well as efficie
 :::
 
 ::: tip
-If you want to learn more on the technology behind our Real-Time Location System (RTLS) products, please refer to [this page](https://rtloc.com/technology) first.
+If you need some initial details on the technology behind our Real-Time Location System (RTLS) products, please refer to [this page](https://rtloc.com/technology) first.
 :::

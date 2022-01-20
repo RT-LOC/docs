@@ -1,6 +1,6 @@
 # JSON API
 
-The JSON/web API provides data over direct websockets (WSS) or over MQTT (TCL/TLS OR websocket).
+The JSON/web API provides data over MQTT (TCL/TLS OR websocket).
 The provided data is structured similarly as in the [`Binary API`](/api/api_application.html).
 
 (the overview here may not be complete)
