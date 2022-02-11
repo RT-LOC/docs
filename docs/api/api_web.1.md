@@ -1,32 +1,9 @@
-# JSON APIs
+# JSON API
 
-Real-time data (position data, tag/anchor statuses, sensor data, etc.) can be received in JSON format to conveniently integrate it with your own backend solution.
+The JSON/web API provides data over MQTT (TCL/TLS OR websocket).
+The provided data is structured similarly as in the [`Binary API`](/api/api_application.html).
 
-## Connection setup
-
-1. Configure data transmission over MQTT / websocket in our Manager application (in the API view)
-
-2. Connect to your client to the correct IP + port
-
-### Manager MQTT configuration
-You can use our MQTT broker (some limitations may apply) or set up your own broker.
-
-Make sure your RTLS setup is publishing MQTT data to the broker.
-Use the following configuration for your MQTT client(s):
-
-* Host: mqtt.cloud.rtloc.com
-* Port: 1883 (TCP), 8083 (WSS) or 8883(TCP TLS)
-* Username: *client slug**: *user e-mail*
-* Password: user password, or valid JWT
-
-You can find the *client slug* in the license description, in the Desktop app or the Portal at [https://app.rtloc.com/settings/info](https://app.rtloc.com/settings/info).
-
-The MQTT topic and data format per type of message is outlined in the [format description](/api/api_web.html).
-
-### Client code
-Check out the code examples at [https://github.com/RT-LOC/APIs](https://github.com/RT-LOC/APIs) (C, Python, Javascript) to get started with your own MQTT client.
-
-## JSON data format
+(the overview here may not be complete)
 
 ## Anchor list
 * MQTT topic: `rtls/replay/<project-slug>/anchors`

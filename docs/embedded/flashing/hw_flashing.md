@@ -12,8 +12,8 @@ You can easily (re-)flash your hardware using our app. In the firmware tab get a
 
 ![Flash from app](./img/tray_flash.png)
 
-### RTManager: over-the-air updating
-We also support over-the-air (OTA) firmware updates. From our RTManager app, a firmware can be selected to be downloaded and installed over UWB by all devices.
+### Manager: over-the-air updating
+We also support over-the-air (OTA) firmware updates. From our Manager app, a firmware can be selected to be downloaded and installed over UWB by all devices.
 
 ## Architecture
 The flash architecture is as follows:

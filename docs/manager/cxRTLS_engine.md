@@ -14,10 +14,10 @@ For low-end systems (not too many anchors and tags), the engine can also run on 
 
 ### Internal Engine 
 As soon as the amount of anchors and tags grows however, the calculation power of the anchor will not be sufficient (since it also has to do many other tasks). In that case we will switch to running the engine on the PC.
-Here it can run from within the data collection program (RTManager).
+Here it can run from within the data collection program (Manager).
 
 ### External Engine
-You can also implement your own positioning engine. Such an external engine preferably runs within the same network and connect to RTManager via a UDP connection. The raw data is then distributed over all connected external engines, crunched and forged into positions and (optionally) fed back to RTManager.
+You can also implement your own positioning engine. Such an external engine preferably runs within the same network and connect to Manager via a UDP connection. The raw data is then distributed over all connected external engines, crunched and forged into positions and (optionally) fed back to Manager.
 
 ## Mathematics
 The RTLOC engine supports two localization techniques: trilateration and multilateration.

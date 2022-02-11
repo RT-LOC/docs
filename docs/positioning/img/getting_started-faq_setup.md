@@ -14,7 +14,7 @@ You will need at least:
 ##Step 1 - Power up the hardware
 Apply power to your hardware (HW). Make sure at least one listener is switched on and an ethernet cable connects to the same network as your PC. For the power possibilities, click here [LINK]. Are the LEDs blinking as expected? Good! You're ready to go to step 2. When in doubt, you can check the LED blinking patterns here [LINK].
 
-##Step 2 - Open RTManager.exe
+##Step 2 - Open Manager.exe
 Locate the PC software and start it.
 ![img_setup_icon]
 

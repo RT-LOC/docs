@@ -91,10 +91,10 @@ module.exports = {
                     {
                         // text: "Components",
                         items: [
-                            // { text: "Desktop v2", link: "/hub/" }, // TODO
+                            { text: "Desktop App", link: "/hub/" }, // TODO
+                            { text: "Manager / cxRTLS", link: "/manager/" },
                             { text: "Web", link: "/web/" },
-                            { text: "Desktop v1", link: "/manager/" },
-                            { text: "Mobile", link: "/mobile/" },
+                            // { text: "Mobile", link: "/mobile/" },
                             { text: "Devices", link: "/embedded/" }
                         ]
                     }
@@ -146,14 +146,15 @@ module.exports = {
             "/api/": getAPISidebar(),
             "/hub/": [
                 {
-                    title: "Hub",
+                    title: "Desktop",
                     collapsable: false,
-                    children: [
-                        ["installation", "Installation"],
-                        ["apps", "App management"],
-                        ["firmware", "Firmware management"],
-                        ["license", "License management"]
-                    ]
+                    // children: [
+                    //     ["installation", "Installation"],
+                    //     ["configuration", "Configuration"],
+                    //     // ["apps", "App management"],
+                    //     // ["firmware", "Firmware management"],
+                    //     // ["license", "License management"]
+                    // ]
                 }
             ],
             "/web/": getWebSidebar(),
@@ -262,7 +263,8 @@ function getPositioningSidebar() {
         //     // ["anchor_placement", "Anchor Placement"]
         //   ]
         // },
-        ["positioning_getting_started", "Getting started"],
+        ["1_positioning_getting_started", "1. Getting started"],
+        ["2_configuration", "2. Configuration"],
         // {
         //   title: "Initial testing",
         //   collapsable: false,
@@ -280,15 +282,15 @@ function getPositioningSidebar() {
                 ["updaterate", "On update Rate"]
             ]
         },
-        {
-            title: "APIs",
-            collapsable: true,
-            children: [
-                ["apis_overview", "APIs overview"],
-                ["binary_apis", "Binary socket connection"],
-                ["json_apis", "JSON over Websocket/MQTT"]
-            ]
-        },
+        // {
+        //     title: "APIs",
+        //     collapsable: true,
+        //     children: [
+        //         ["apis_overview", "APIs overview"],
+        //         ["json_apis", "JSON over Websocket/MQTT"],
+        //         ["binary_apis", "Binary socket connection"]
+        //     ]
+        // },
         ["rtls_remarks", "Theoretical remarks"],
         ["software_guide", "Software guide"]
     ]
@@ -362,11 +364,11 @@ function getAPISidebar() {
             title: "Engine interface",
             collapsable: false,
             children: [
-              ["/api/api_local", "Local live data"],
-              ["/api/api_cloud", "Cloud live data"],
-                ["/api/api_application", "Binary data format"],
-                ["/api/api_web", "JSON data format"],
-                // ["/api/api_conns", "Connection types"]
+              ["/api/api_local", "Local connection"],
+              // ["/api/api_cloud", "Cloud live data"],
+              ["/api/api_web", "MQTT JSON packets"],
+              ["/api/api_application", "TCP Binary packets"],
+              // ["/api/api_conns", "Connection types"]
             ]
         },
         // {

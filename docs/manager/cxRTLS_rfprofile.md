@@ -2,7 +2,7 @@
 In this page we'll explain how to switch between RF modes. We work with predefined profiles.
 
 ::: tip REQUIRED VERSIONS
-RTManager - ^38000 
+Manager - ^38000 
 
 Tag - ^1.1.0
 

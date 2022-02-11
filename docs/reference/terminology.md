@@ -38,7 +38,7 @@ Some more information on the different technologies we harness. Click here for a
 
 `Backhaul` - Way of transporting data within the system. Can be wired of wireless.
 
-`RTManager` / `cxRTLS` - Powerful RTLS engine & UWB debugging app
+`Manager` / `cxRTLS` - Powerful RTLS engine & UWB debugging app
 
 `Engine` / `cxEngine` - Algorithm implementation, calculates positions from distances
 

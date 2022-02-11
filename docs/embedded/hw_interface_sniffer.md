@@ -1,4 +1,4 @@
-# Listener & RTManager <Badge text="Advanced" type="warning"/>
+# Listener & Manager <Badge text="Advanced" type="warning"/>
 The Network Listener enables all the advanced features of the system.
 You can read out all the distances from all the tags that are in UWB range, see signal quality figures, debug timing, adhoc settings and much more.
 
@@ -6,7 +6,7 @@ You can read out all the distances from all the tags that are in UWB range, see 
 The *Listener* is another kind of node that we can add to the system. It is continuously listening (hence the name) to UWB data in the air, will filter and accumulate all relevant information and finally send this to the PC.
 Because there can be a lot of data, the connection between sniffer & PC is done with an ethernet connection.
 
-The PC software is called `RTManager`. It will capture and decode the information it receives from the listener (or multiple listeners). The software contains many features to make the Black Magic that RF/UWB sometimes is more tangible. It also serves as the central data hub.
+The PC software is called `Manager`. It will capture and decode the information it receives from the listener (or multiple listeners). The software contains many features to make the Black Magic that RF/UWB sometimes is more tangible. It also serves as the central data hub.
 
 `Note:` the Listener is not a default node in an Adhoc Ranging system. If you want to make use of it, contact us.
 

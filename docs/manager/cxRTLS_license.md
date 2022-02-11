@@ -2,7 +2,7 @@
 The features that are enabled in the program are based on the license you have. You can find more details on the licenses below.
 
 :::tip 
-  The most convenient way to download your license is to use the Hub app. Go to your account, select a project, add your PC and download the license.
+  The most convenient way to download your license is to use the Desktop app. Go to your account, select a project, add your PC and download the license.
 :::
 
 ## License types
@@ -29,11 +29,11 @@ If you have a full license, you can use the software unlimited (except for the f
 
 
 ## How to install the License
-Whenever you start RTManager for the first time, you probably don't have a license yet. To acquire one, press _'Build license.txt'_.
+Whenever you start Manager for the first time, you probably don't have a license yet. To acquire one, press _'Build license.txt'_.
 
-### From the Hub app
+### From the Desktop app
 
-If you have the [RTHub](/hub/) app installed, go to the profile view and press "Download license". If there's an indication that your PC has not been included in the license yet, you should do that first.
+If you have the [Desktop](/hub/) app installed, go to the profile view and press "Download license". If there's an indication that your PC has not been included in the license yet, you should do that first.
 
 ### Alternative: Manual license generation
 ![license_build](./img/cxRTLS/license_build.png)

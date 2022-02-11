@@ -70,4 +70,4 @@ client.on('message', function (topic, message) {
 2. Connect to your computer/server to the correct IP + port
 
 ### Code examples
-Check out code examples at [https://github.com/RT-LOC/APIs](https://github.com/RT-LOC/APIs) (C, Python, Javascript)
+Check out basic code examples at [https://github.com/RT-LOC/APIs](https://github.com/RT-LOC/APIs) (C, Python, Javascript)

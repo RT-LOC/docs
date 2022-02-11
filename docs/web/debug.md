@@ -1,7 +1,7 @@
 # Debug
 
 Contains information for debugging purposes
-> More detailed debugging is available in our [RTManager](/manager/) desktop app
+> More detailed debugging is available in our [Manager](/manager/) desktop app
 
 ## Connection debugging
 * An overview of the received packets, per type and with a timestamp.

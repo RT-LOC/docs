@@ -3,7 +3,7 @@ On this page you'll learn how to set up your very first RTLS system. Don't worry
 
 
 ## Login on the Portal
-Before turning to the hardware, you need to make sure you have an account with which you can login. Open the **portal app**  via [https://app.rtloc.com/ble](https://app.rtloc.com/ble) or from __RTHub__. Log in using your account, or create one if you haven't already.
+Before turning to the hardware, you need to make sure you have an account with which you can login. Open the **portal app**  via [https://app.rtloc.com/ble](https://app.rtloc.com/ble) or from __Desktop__. Log in using your account, or create one if you haven't already.
 
 Optionally, create an RTLS "Project". This is not a hard requirement for these first steps.
 
