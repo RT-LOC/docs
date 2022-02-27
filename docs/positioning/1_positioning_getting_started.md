@@ -4,7 +4,18 @@
 
 In this guide we will go through the setup of a professional RTLOC positioning system. You will learn the basics of the system and get familiar with some of the features. You will end up having a fully functional RTLS system and you can start tracking your first objects.
 
-## Basic requirements
+## Set up the software
+A convenient way to manage our tools is the Desktop app. You can get it at [https://app.rtloc.com/download](https://app.rtloc.com/download). (Currently Windows only, requires some space on the C drive)
+
+For full use of our software, you will need to log in using your account. You should've received an invitation from RTLOC when your license was created. You can add team members in the app. 
+<!-- If you don't have an account, [create one](https://app.rtloc.com/register). (If you've received an e-mail invite, preferably use that link) -->
+
+You will need to download your desktop license, from the account view of the Desktop app. [License download instructions](../hub/license.html)
+
+
+![App management](../hub/img/apps.jpg)
+
+## Hardware requirements
 <!-- You will need a valid **license** for our professional RTLS. -->
 
 Before you get started, make sure you have at least the following hardware:
@@ -40,17 +51,9 @@ A computer (desktop/laptop/tablet), preferably Windows OS
 
 ![pc](./img/install_PC.jpeg)
 
-## Set up the software
-A convenient way to manage our tools is the Desktop app. You can get it at [https://app.rtloc.com/download](https://app.rtloc.com/download). (Currently Windows only, requires some space on the C drive)
-You will need to log in using your account. If you don't have an account, [create one](https://app.rtloc.com/register). (If you've received an e-mail invite, preferably use that link)
 
-You will need to download your desktop license, from the account view of the Desktop app. [License download instructions](../hub/license.html)
-
-![App management](../hub/img/apps.jpg)
-
-
-## Manager (cxRTLS) app configuration
-Start the Manager (cxRTLS) app from the Desktop app or locate the executable and open it. The rest of the guide will assume that you have the necessary tags and anchors. Alternatively, you can [run a replay](/manager/using_replays) (and receive that replay data over the API).
+## Engine (cxRTLS) app configuration
+Start the Engine (cxRTLS) app from the Desktop app or locate the executable and open it. The rest of the guide will assume that you have the necessary tags and anchors. Alternatively, you can [run a replay](/manager/using_replays) (and receive that replay data over the API).
 
 :::warning
 The software will run in a limited demo-mode without proper license.

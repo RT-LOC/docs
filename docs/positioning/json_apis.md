@@ -4,11 +4,11 @@ Real-time data (position data, tag/anchor statuses, sensor data, etc.) can be re
 
 ## Connection setup
 
-1. Configure data transmission over MQTT / websocket in our Manager application (in the API view)
+1. Configure data transmission over MQTT / websocket in our Engine application (in the API view)
 
 2. Connect to your client to the correct IP + port
 
-### Manager MQTT configuration
+### Engine MQTT configuration
 You can use our MQTT broker (some limitations may apply) or set up your own broker.
 
 Make sure your RTLS setup is publishing MQTT data to the broker.

@@ -29,7 +29,7 @@ If you have a full license, you can use the software unlimited (except for the f
 
 
 ## How to install the License
-Whenever you start Manager for the first time, you probably don't have a license yet. To acquire one, press _'Build license.txt'_.
+Whenever you start Engine for the first time, you probably don't have a license yet. To acquire one, press _'Build license.txt'_.
 
 ### From the Desktop app
 

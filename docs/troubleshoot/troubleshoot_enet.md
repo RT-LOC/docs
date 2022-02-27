@@ -3,7 +3,7 @@ Having problems with getting the listener in the system? Or is the TCP connectio
 If the connection is not green as below, something is going wrong.  Try the steps below to find a solution.
 
 ## 1. Listener not entering the System
-A listener that is connected to the same LAN as the computer running Manager, should automatically become visible in the listener module on the Config page.
+A listener that is connected to the same LAN as the computer running Engine, should automatically become visible in the listener module on the Config page.
 If this is not the case, please check the following things:
 - Is the ethernet cable well connected to the box?
 - Is your computer well connected to the LAN?
@@ -12,7 +12,7 @@ If this is not the case, please check the following things:
 
 Some more things you can try:
 - Change the ethernet cable to rule out there is no problem with it.
-- Try to restart Manager.
+- Try to restart Engine.
 - Try to restart the host computer.
 
 If you know the IP address of the node, try pinging it.
@@ -35,7 +35,7 @@ The connection has been active before. Please refer to 1.
 ## 4. Not receiving any of the Output Data
 Please refer to here (XX) to get more information on the Output Data API.
 ### TCP connection
-In case you expect the data via TCP, make sure you have a TCP connection established with the TCP Output server. In Manager, you can monitor the active TCP connections in the API screen.
+In case you expect the data via TCP, make sure you have a TCP connection established with the TCP Output server. In Engine, you can monitor the active TCP connections in the API screen.
 If this is the case, you can verify in the logConn screen that the data is actually transmitted. Click here to read more about the logConn.
 Make sure the UDP1 is not enabled. This will prevent the data from being outputted over the TCP connection.
 

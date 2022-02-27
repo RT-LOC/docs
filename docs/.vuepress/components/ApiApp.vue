@@ -3,15 +3,15 @@
   <nav id="nav">
       <div class="wrapper">
           <a @click="view=0">VIEW ALL</a>
-          <a @click="view=1">1. TAGSPEED</a>
-          <a @click="view=2">2. DATA</a>
+          <a @click="view=1">1. TAGSPEED (SET/RX)</a>
+          <a @click="view=2">2. DATA (RX)</a>
           <a @click="view=3">3. TO TAG RAW</a>
           <a @click="view=4">4. GET TAGLIST</a>
-          <a @click="view=5">5. TAGLIST</a>
+          <a @click="view=5">5. TAGLIST (RX)</a>
           <a @click="view=6">6. GET ANCHORLIST</a>
-          <a @click="view=7">7. ANCHORLIST</a>
-          <a @click="view=8">8. EXTERNAL IMPULSE</a>
-          <a @click="view=9">9. TAG STATUS</a>
+          <a @click="view=7">7. ANCHORLIST (RX)</a>
+          <a @click="view=8">8. EXTERNAL IMPULSE (RX)</a>
+          <a @click="view=9">9. DEVICE STATUSES (RX)</a>
           <div class="cb"></div>
       </div>
   </nav>
@@ -1918,7 +1918,7 @@
           <div class="cb"></div>
         </div>
         <div v-if="view===9 || view===0" data-id="nine" class="protocolBlock">
-          <div class="protocolLeftSide">TAG STATUS</div>
+          <div class="protocolLeftSide">DEVICE STATUSES</div>
           <div class="protocolRightSide">
             <div class="block">
               <div class="line">

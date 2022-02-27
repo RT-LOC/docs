@@ -1,3 +1,15 @@
+const path = require("path");
+
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const { VuetifyLoaderPlugin } = require('vuetify-loader')
+
+
+const plugins = [
+    new BundleAnalyzerPlugin({ analyzerMode: 'static' }),
+    new VuetifyLoaderPlugin()
+
+];
+
 module.exports = {
     title: "RTLOC Documentation",
     description: "Your guide to RTLOC's location intelligence IoT solutions",
@@ -48,10 +60,10 @@ module.exports = {
             {
                 serviceWorker: true,
                 updatePopup: true
-                // updatePopup: {
-                //   message: "New content is available.",
-                //   buttonText: "Refresh"
-                // }
+                    // updatePopup: {
+                    //   message: "New content is available.",
+                    //   buttonText: "Refresh"
+                    // }
             }
         ],
         // ["@vuepress/plugin-pagination", true],
@@ -91,8 +103,8 @@ module.exports = {
                     {
                         // text: "Components",
                         items: [
-                            { text: "Desktop App", link: "/hub/" }, // TODO
-                            { text: "Manager / cxRTLS", link: "/manager/" },
+                            { text: "Desktop", link: "/hub/" }, // TODO
+                            { text: "Engine / cxRTLS", link: "/manager/" },
                             { text: "Web", link: "/web/" },
                             // { text: "Mobile", link: "/mobile/" },
                             { text: "Devices", link: "/embedded/" }
@@ -144,19 +156,17 @@ module.exports = {
             "/manager/": getcxRTLSSidebar(),
             "/embedded/": getHardwareSidebar(),
             "/api/": getAPISidebar(),
-            "/hub/": [
-                {
-                    title: "Desktop",
-                    collapsable: false,
-                    // children: [
-                    //     ["installation", "Installation"],
-                    //     ["configuration", "Configuration"],
-                    //     // ["apps", "App management"],
-                    //     // ["firmware", "Firmware management"],
-                    //     // ["license", "License management"]
-                    // ]
-                }
-            ],
+            "/hub/": [{
+                title: "Desktop",
+                collapsable: false,
+                // children: [
+                //     ["installation", "Installation"],
+                //     ["configuration", "Configuration"],
+                //     // ["apps", "App management"],
+                //     // ["firmware", "Firmware management"],
+                //     // ["license", "License management"]
+                // ]
+            }],
             "/web/": getWebSidebar(),
             // "/system/web": getWebSidebar(),
             // "/web/": webSideBar,
@@ -166,7 +176,40 @@ module.exports = {
             "/troubleshoot/": getTroubleshootSidebar()
         }
     },
-    evergreen: true
+    evergreen: true,
+    configureWebpack: {
+        // devtool: devtool,
+        plugins: plugins,
+        resolve: {
+            alias: {
+                "@shared": path.join(__dirname, "../../../backends/portal_backend/shared"),
+            }
+        },
+        module: {
+            // rules: [{
+            //     test: /\.s(c|a)ss$/,
+            //     use: [
+            //         'vue-style-loader',
+            //         'css-loader',
+            //         {
+            //             loader: 'sass-loader',
+            //             // Requires sass-loader@^7.0.0
+            //             options: {
+            //                 implementation: require('sass'),
+            //                 indentedSyntax: true // optional
+            //             },
+            //             // Requires >= sass-loader@^8.0.0
+            //             options: {
+            //                 implementation: require('sass'),
+            //                 sassOptions: {
+            //                     indentedSyntax: true // optional
+            //                 },
+            //             },
+            //         },
+            //     ],
+            // }, ],
+        }
+    }
 }
 
 // function getInstallSidebar() {
@@ -207,19 +250,17 @@ module.exports = {
 //   ];
 // }
 function getMobileSidebar() {
-    return [
-        {
-            title: "Mobile app",
-            collapsable: false,
-            children: [
-                ["connecting", "Connecting devices"],
-                ["sending-data", "Sending Data"],
-                ["firmware", "Firmware update"],
-                ["characteristics", "Device configuration"],
-                ["viewing-data", "Viewing data"]
-            ]
-        }
-    ]
+    return [{
+        title: "Mobile app",
+        collapsable: false,
+        children: [
+            ["connecting", "Connecting devices"],
+            ["sending-data", "Sending Data"],
+            ["firmware", "Firmware update"],
+            ["characteristics", "Device configuration"],
+            ["viewing-data", "Viewing data"]
+        ]
+    }]
 }
 
 function getDistancingSidebar() {
@@ -330,45 +371,43 @@ function getcxRTLSSidebar() {
 }
 
 function getTroubleshootSidebar() {
-    return [
-        {
-            title: "Troubleshooting",
-            collapsable: true,
-            children: [
-                ["/troubleshoot/troubleshoot_enet", "Ethernet"],
-                ["/troubleshoot/troubleshoot_embedded", "Firmware"]
-                // ["/faq/faq_rf", "RF"],
-            ]
-        }
-    ]
+    return [{
+        title: "Troubleshooting",
+        collapsable: true,
+        children: [
+            ["/troubleshoot/troubleshoot_enet", "Ethernet"],
+            ["/troubleshoot/troubleshoot_embedded", "Firmware"]
+            // ["/faq/faq_rf", "RF"],
+        ]
+    }]
 }
 
 function getFAQSidebar() {
-    return [
-        {
-            title: "FAQs",
-            collapsable: true,
-            children: [
-                ["/faq/faq_general", "General"],
-                ["/faq/faq_sensors", "Sensors"],
-                ["/faq/faq_network", "Network"]
-                // ["/faq/faq_rf", "RF"],
-            ]
-        }
-    ]
+    return [{
+        title: "FAQs",
+        collapsable: true,
+        children: [
+            ["/faq/faq_general", "General"],
+            ["/faq/faq_sensors", "Sensors"],
+            ["/faq/faq_network", "Network"]
+            // ["/faq/faq_rf", "RF"],
+        ]
+    }]
 }
 
 function getAPISidebar() {
-    return [
-        {
+    return [{
             title: "Engine interface",
             collapsable: false,
             children: [
-              ["/api/api_local", "Local connection"],
-              // ["/api/api_cloud", "Cloud live data"],
-              ["/api/api_web", "MQTT JSON packets"],
-              ["/api/api_application", "TCP Binary packets"],
-              // ["/api/api_conns", "Connection types"]
+                ["/api/api_engine_local_mqtt", "Local MQTT JSON data"],
+                ["/api/api_engine_local_bin", "Local TCP Binary data"],
+                ["/api/api_engine_cloud_mqtt", "Cloud MQTT JSON data"],
+                // ["/api/api_local", "Local connection"],
+                // ["/api/api_cloud", "Cloud live data"],
+                // ["/api/api_web", "MQTT JSON packets"],
+                // ["/api/api_application", "TCP Binary packets"],
+                // ["/api/api_conns", "Connection types"]
             ]
         },
         // {
@@ -429,8 +468,7 @@ function getWebSidebar() {
 }
 
 function getHardwareSidebar() {
-    return [
-        {
+    return [{
             title: "Building & Flashing",
             collapsable: true,
             // children: [["hardware/flashing/hw_flashing", "Flashing Boards"]]
@@ -470,8 +508,7 @@ function getHardwareSidebar() {
 // }
 
 function getReferenceSidebar() {
-    return [
-        {
+    return [{
             title: "Technology details",
             collapsable: true,
             children: [
@@ -491,7 +528,9 @@ function getReferenceSidebar() {
         {
             title: "Software reference",
             collapsable: true,
-            children: [["fwupdate", "Updating firmware"]]
+            children: [
+                ["fwupdate", "Updating firmware"]
+            ]
         },
         {
             title: "Hardware reference",

@@ -4,12 +4,12 @@ In this document you can learn how to install the version you want on your syste
 
 ## Verify the version
 In the panel _'Deca Version'_, you can verify the current version of all the tags and anchors.
-The version will appear here once the system has received the information from the node. This will happen automatically. Keep in mind however that after booting the Manager, it might take some time before all the information is collected (typically 20 seconds).
+The version will appear here once the system has received the information from the node. This will happen automatically. Keep in mind however that after booting the Engine, it might take some time before all the information is collected (typically 20 seconds).
 
 ![fwup_version](./img/cxRTLS/fwup_version.png)
 
-## Import FWs in Manager
-Before you can update a node, you need to import the firmware in Manager. Doing this is easy. First drag and drop the binary you want into the following directory:
+## Import FWs in Engine
+Before you can update a node, you need to import the firmware in Engine. Doing this is easy. First drag and drop the binary you want into the following directory:
 ```
 c:\cxRTLS\bin\
 ```
@@ -33,7 +33,7 @@ There are 3 ways to update a node:
  - Via USB cable
  - By reflashing the board
 
-Whenever your system is all set up and running, the easiest way is to perform an Over-The-Air (OTA) update. Everything can be done from within Manager and no physical interactions are required. You can also update individual nodes by connecting it to the computer with a USB cable. In case you have a board that has never been flashed before or if you want to update the bootloader, you can use a programmer and the provided scripts.
+Whenever your system is all set up and running, the easiest way is to perform an Over-The-Air (OTA) update. Everything can be done from within Engine and no physical interactions are required. You can also update individual nodes by connecting it to the computer with a USB cable. In case you have a board that has never been flashed before or if you want to update the bootloader, you can use a programmer and the provided scripts.
 
 ### OTA System
 The OTA system consists of 2 steps. First you need to force the nodes you want into update mode. Then you can update it with the firmware of choice.

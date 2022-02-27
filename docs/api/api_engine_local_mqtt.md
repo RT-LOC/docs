@@ -1,8 +1,8 @@
 # Local live data
 
-Real-time data (position data, tag/anchor statuses, sensor data, etc.) can be received over UDP/TCP, (secure) websocket WS(S) or MQTT (Message Queuing Telemetry Transport, pub/sub). The data can be transferred in binary or JSON format (see previous sections).
+Real-time data (position data, tag/anchor statuses, sensor data, etc.) can be received over MQTT (Message Queuing Telemetry Transport, pub/sub), either direct over TCP or over Websocket.
 
-## 1. MQTT data connection (recommended)
+## 1. Connection protocol
 
 You can receive data in a pub/sub fashion, through an Mosquitto (MQTT) broker.
 You can use our MQTT broker (some limitations may apply) or set up your own.
@@ -63,11 +63,58 @@ client.on('message', function (topic, message) {
 })
 ```
 
-## 2. Direct socket connections
+## 2. Data Format
+Each message has the following base format:
 
-1. Configure data transmission over UDP / TCP / websocket in our desktop application (in the API view)
+``` JSON
+{
+  "time": "", // Current time
+  "meta": { // Meta information
+    "data_source": "live",
+    ...
+  },
+  "value": { // Actual data
+    ...
+  }
+}
 
-2. Connect to your computer/server to the correct IP + port
+```
+These are the message types and their associated topics:
 
-### Code examples
-Check out basic code examples at [https://github.com/RT-LOC/APIs](https://github.com/RT-LOC/APIs) (C, Python, Javascript)
+<MqttTable></MqttTable>
+
+Example *tag-data* message:
+
+``` JSON
+{
+  "time":"2022-02-26T10:07:19.128Z",
+  "meta":{
+    "msg_type":"tag-data",
+    "data_source":"replay-cx"
+  },
+  "value": {
+    {
+      "frame": 658885,
+      "tags": {
+        "2012": {
+            "pos": {"x": 9356,"y": 23872,"z": 0},
+            "speed": {
+              "value": 4.61,
+              "dir": {"x": 0.94174,"y": 0.33634}
+            }
+          },
+        "2014": {
+            "pos":{"x": 12437,"y": 23806,"z": 0},
+            "speed": {
+              "value": 5.07,
+              "dir":{"x": 0.89907,"y": -0.43781}
+            }
+          },
+        ...
+      }
+  }
+```
+
+The messages received can be inspected interactively in our app:
+
+![MQTT JSON format](./img/mqtt_json_packets.jpg)
