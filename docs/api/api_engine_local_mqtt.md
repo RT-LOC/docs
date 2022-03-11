@@ -1,17 +1,16 @@
-# Local live data
+# Local live (MQTT JSON) data
 
 Real-time data (position data, tag/anchor statuses, sensor data, etc.) can be received over MQTT (Message Queuing Telemetry Transport, pub/sub), either direct over TCP or over Websocket.
 
 ## 1. Connection protocol
 
-You can receive data in a pub/sub fashion, through an Mosquitto (MQTT) broker.
-You can use our MQTT broker (some limitations may apply) or set up your own.
+You can receive data using an Mosquitto (MQTT) **client** which connects to our local broker. This can be over websocket in a browser or over TCP from a backend program or script.
 
 Make sure your RTLS setup is publishing MQTT data to the broker.
 Use the following configuration for your MQTT client(s):
 
 * Host: *localhost (same PC) or PC's IP address*
-* Port: 1883 (TCP), 8083 (WS)
+* Port: 1883 (TCP), 8083 (Websocket)
 * Username: 
 * Password:
 
@@ -20,17 +19,15 @@ The MQTT topic and data format per type of message is outlined in the [JSON form
 ### MQTT clients
 
 Clients can connect to the MQTT broker over TCP/TLS or a secure Websocket (WSS).
-Example client libraries:
+Some example client libraries:
 
-* Javascript (browser): [MQTT.js](https://www.npmjs.com/package/mqtt) (Recommended for web applications), [Eclipse Paho](https://www.eclipse.org/paho/clients/js/), ...
+* Javascript (browser): [MQTT.js](https://www.npmjs.com/package/mqtt) (Recommended for web applications, websocket), [Eclipse Paho](https://www.eclipse.org/paho/clients/js/), ...
 
 * Python: [Paho MQTT](https://pypi.org/project/paho-mqtt/), ...
 
 * C#: [MQTTnet](https://github.com/chkr1011/MQTTnet), Eclipse Paho, ...
 
-* ...
-
-### Code examples
+### Code example
 The following example uses the [MQTT.js](https://www.npmjs.com/package/mqtt) client library to connect to our MQTT broker. It uses a demo account and displays demo data (replayed RTLS data continuously fed into our broker).
 
 ``` js
@@ -63,17 +60,19 @@ client.on('message', function (topic, message) {
 })
 ```
 
+> For websocket, use *ws://localhost:8883* instead (change protocol and port)
+
 ## 2. Data Format
 Each message has the following base format:
 
 ``` JSON
 {
-  "time": "", // Current time
+  "time": "", // Time: Based on GPS time of anchor if available, otherwise PC time
   "meta": { // Meta information
     "data_source": "live",
     ...
   },
-  "value": { // Actual data
+  "value": { // Value: message data
     ...
   }
 }
@@ -93,7 +92,6 @@ Example *tag-data* message:
     "data_source":"replay-cx"
   },
   "value": {
-    {
       "frame": 658885,
       "tags": {
         "2012": {

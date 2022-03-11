@@ -182,7 +182,8 @@ module.exports = {
         plugins: plugins,
         resolve: {
             alias: {
-                "@shared": path.join(__dirname, "../../../backends/portal_backend/shared"),
+                "@shared": path.join(__dirname, "../../../backend/shared"),
+                "@shared-front": path.join(__dirname, "../../../frontends/shared-frontend"),
             }
         },
         module: {
@@ -397,7 +398,7 @@ function getFAQSidebar() {
 
 function getAPISidebar() {
     return [{
-            title: "Engine interface",
+            title: "Live data interfaces",
             collapsable: false,
             children: [
                 ["/api/api_engine_local_mqtt", "Local MQTT JSON data"],
@@ -417,7 +418,7 @@ function getAPISidebar() {
         // },
         // {
         {
-            title: "Device interface",
+            title: "Device interfaces",
             collapsable: false,
             children: [
                 ["/api/api_console", "Console (CLI)"],

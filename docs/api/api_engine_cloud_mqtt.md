@@ -1,4 +1,4 @@
-# Local live data
+# Cloud live (MQTT JSON) data [Alpha]
 
 Real-time data (position data, tag/anchor statuses, sensor data, etc.) can be received over MQTT (Message Queuing Telemetry Transport, pub/sub), either direct over TCP or over Websocket.
 
@@ -16,12 +16,12 @@ Each message has the following base format:
 
 ``` JSON
 {
-  "time": "", // Current time
+  "time": "", // Time: GPS time of anchor if available, otherwise PC time
   "meta": { // Meta information
     "data_source": "live",
     ...
   },
-  "value": { // Actual data
+  "value": { // Value: message data
     ...
   }
 }
@@ -41,7 +41,6 @@ Example *tag-data* message:
     "data_source":"replay-cx"
   },
   "value": {
-    {
       "frame": 658885,
       "tags": {
         "2012": {

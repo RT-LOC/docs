@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import PacketsTable from "@shared/vue/components/rtls/PacketsTable";
+import PacketsTable from "@shared-front/vue/components/rtls/PacketsTable";
 
 export default {
   components: {

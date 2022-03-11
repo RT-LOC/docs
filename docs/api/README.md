@@ -6,21 +6,21 @@ There are different ways to integrate with the RTLOC system, depending on your n
 
 
 ## Real-time device data
-The position and sensor data for each device can be accessed in real-time in a few ways:
+The position and sensor data for each device can be accessed in real-time in the following ways:
 
-* We provide direct **positioning and sensor data** in two formats: binary and JSON
-  - **[`Binary format`](/api/api_application.html)** - Allows for fast and very compact transmission over TCP/UDP.
-  - **[`JSON format`](/api/api_web.html)** - Receive data in JSON over direct websocket or through an MQTT broker (TCP or websocket).
+* **[`Local JSON over MQTT`](/api/api_engine_local_mqtt.html)**:
+  - Easy to understand, easy to integrate JSON format
+  - Pub/sub per topic type because of MQTT
+  - Most-complete API with zone information, events
+  - Access data over websocket from a browser (MQTT over websocket) or over TCP (MQTT over TCP) in a script or program
 
-* This (binary or JSON) data can be accessed over TCP/UDP, websockets, or MQTT
-  - [`Direct TCP/UDP/WS(S)`](/api/api_conns.html)
-  - **[`MQTT`](/api/api_conns.html)** (over TCP or websocket)
+* **[`Cloud JSON over MQTT`](/api/api_engine_cloud_mqtt.html)**: Use your own broker to receive the above data
 
-  > MQTT can be connected to over TCP or (secure) websocket
+* **[`Binary over TCP`](/api/api_engine_local_bin.html)**:
+  - Compact format, requiring some more decoding effort
+  - Includes raw data direct from the engine, no zone/event/race data
 
 ## Meta data
-
-* Access **meta information** about your projects, users and more (information in database) through our [`REST API`](/api/api_rest.html)
 
 * **Single device** (tag / anchor) information can be read through the CLI or via Bluetooth (BLE).
   - [`BLE API`](/api/api_ble.html) - Make a wireless connection with one of the tags with our BLE interface.
