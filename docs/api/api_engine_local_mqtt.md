@@ -10,7 +10,7 @@ Make sure your RTLS setup is publishing MQTT data to the broker.
 Use the following configuration for your MQTT client(s):
 
 * Host: *localhost (same PC) or PC's IP address*
-* Port: 1883 (TCP), 8083 (Websocket)
+* Port: 1883 (TCP), 8883 (Websocket)
 * Username: 
 * Password:
 
