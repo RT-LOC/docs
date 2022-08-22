@@ -269,10 +269,10 @@
                             uint64
                         </div>
                         <div class="smallBlock fl">
-                            0xAAAA123456780001
+                            8
                         </div>
                         <div class="smallBlock fl">
-                            8
+                            0xAA..01
                         </div>
                         <div class="protocolDescription fl">
                             Unique ID
@@ -630,7 +630,7 @@
                   0
                 </div>
                 <div class="protocolDescription fl">
-                  enable hairs (0 = disable, 1 = enable)
+                  enable hairs <\br> > 0 = disable <\br> > 1 = enable
                 </div>
                 <div class="cb"></div>
               </div>
