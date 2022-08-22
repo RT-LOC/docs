@@ -84,7 +84,7 @@
                           uint16
                       </div>
                       <div class="smallBlock fl">
-                          12
+                          48
                       </div>
                       <div class="smallBlock fl">
                           3
@@ -94,6 +94,226 @@
                       </div>
                       <div class="cb"></div>
                   </div>
+                  <div class="line">
+                      <div class="smallBlock fl">
+                          uptime
+                      </div>
+                      <div class="smallBlock fl">
+                          uint32
+                      </div>
+                      <div class="smallBlock fl">
+                          100
+                      </div>
+                      <div class="smallBlock fl">
+                          3
+                      </div>
+                      <div class="protocolDescription fl">
+                          uptime of device (in seconds)
+                      </div>
+                      <div class="cb"></div>
+                  </div>
+                  <div class="line">
+                      <div class="smallBlock fl">
+                          antenna delay (RX)
+                      </div>
+                      <div class="smallBlock fl">
+                          uint16
+                      </div>
+                      <div class="smallBlock fl">
+                          16500
+                      </div>
+                      <div class="smallBlock fl">
+                          3
+                      </div>
+                      <div class="protocolDescription fl">
+                          antenna delay (RX) of the device
+                      </div>
+                      <div class="cb"></div>
+                  </div>                  
+                  <div class="line">
+                      <div class="smallBlock fl">
+                          antenna delay (TX)
+                      </div>
+                      <div class="smallBlock fl">
+                          uint16
+                      </div>
+                      <div class="smallBlock fl">
+                          16500
+                      </div>
+                      <div class="smallBlock fl">
+                          3
+                      </div>
+                      <div class="protocolDescription fl">
+                          lantenna delay (TX) of the device
+                      </div>
+                      <div class="cb"></div>
+                  </div>
+                  <div class="line">
+                      <div class="smallBlock fl">
+                          reset type
+                      </div>
+                      <div class="smallBlock fl">
+                          uint8
+                      </div>
+                      <div class="smallBlock fl">
+                          1
+                      </div>
+                      <div class="smallBlock fl">
+                          3
+                      </div>
+                      <div class="protocolDescription fl">
+                          reset type of the device:
+                          1 = todo
+                          2 = todo
+                      </div>
+                      <div class="cb"></div>
+                  </div>
+                  <div class="line">
+                      <div class="smallBlock fl">
+                          hw version
+                      </div>
+                      <div class="smallBlock fl">
+                          uint8
+                      </div>
+                      <div class="smallBlock fl">
+                          1
+                      </div>
+                      <div class="smallBlock fl">
+                          3
+                      </div>
+                      <div class="protocolDescription fl">
+                          HW type:
+                          1 = todo
+                          2 = todo
+                      </div>
+                      <div class="cb"></div>
+                  </div>
+                  <div class="line">
+                      <div class="smallBlock fl">
+                          obsolete
+                      </div>
+                      <div class="smallBlock fl">
+                          uint64
+                      </div>
+                      <div class="smallBlock fl">
+                          0
+                      </div>
+                      <div class="smallBlock fl">
+                          3
+                      </div>
+                      <div class="protocolDescription fl">
+                          obsolete
+                      </div>
+                      <div class="cb"></div>
+                  </div>
+                  <div class="line">
+                      <div class="smallBlock fl">
+                          FW version
+                      </div>
+                      <div class="smallBlock fl">
+                          uint16
+                      </div>
+                      <div class="smallBlock fl">
+                          1
+                      </div>
+                      <div class="smallBlock fl">
+                          30404
+                      </div>
+                      <div class="protocolDescription fl">
+                          Firmware version
+                      </div>
+                      <div class="cb"></div>
+                  </div>
+                  <div class="line">
+                      <div class="smallBlock fl">
+                          Firmware version (sub)
+                      </div>
+                      <div class="smallBlock fl">
+                          uint8
+                      </div>
+                      <div class="smallBlock fl">
+                          1
+                      </div>
+                      <div class="smallBlock fl">
+                          3
+                      </div>
+                      <div class="protocolDescription fl">
+                          Subversion number
+                      </div>
+                      <div class="cb"></div>
+                  </div>
+                  <div class="line">
+                      <div class="smallBlock fl">
+                          obsolete
+                      </div>
+                      <div class="smallBlock fl">
+                          uint48
+                      </div>
+                      <div class="smallBlock fl">
+                          1
+                      </div>
+                      <div class="smallBlock fl">
+                          3
+                      </div>
+                      <div class="protocolDescription fl">
+                          obsolete
+                      </div>
+                      <div class="cb"></div>
+                  </div>
+                  <div class="line">
+                      <div class="smallBlock fl">
+                          uid
+                      </div>
+                      <div class="smallBlock fl">
+                          uint64
+                      </div>
+                      <div class="smallBlock fl">
+                          0xAAAA123456780001
+                      </div>
+                      <div class="smallBlock fl">
+                          3
+                      </div>
+                      <div class="protocolDescription fl">
+                          Unique ID
+                      </div>
+                      <div class="cb"></div>
+                  </div>
+                  <div class="line">
+                      <div class="smallBlock fl">
+                          obsolete
+                      </div>
+                      <div class="smallBlock fl">
+                          uint64
+                      </div>
+                      <div class="smallBlock fl">
+                          1
+                      </div>
+                      <div class="smallBlock fl">
+                          3
+                      </div>
+                      <div class="protocolDescription fl">
+                          obsolete
+                      </div>
+                      <div class="cb"></div>
+                  </div>
+                  <div class="line">
+                      <div class="smallBlock fl">
+                          obsolete
+                      </div>
+                      <div class="smallBlock fl">
+                          uint8
+                      </div>
+                      <div class="smallBlock fl">
+                          1
+                      </div>
+                      <div class="smallBlock fl">
+                          3
+                      </div>
+                      <div class="protocolDescription fl">
+                          obsolete
+                      </div>
+                      <div class="cb"></div>
+                  </div>                 
               </div>
           </div>
           <div class="cb"></div>
