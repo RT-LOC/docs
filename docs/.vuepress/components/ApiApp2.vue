@@ -472,7 +472,7 @@
           <div class="cb"></div>
         </div>
         <div v-if="view===5 || view===0" data-id="five" class="protocolBlock">
-          <div class="protocolLeftSide">TAGLIST</div>
+          <div class="protocolLeftSide">TX Power</div>
           <div class="protocolRightSide">
             <div class="block">
               <div class="line">
@@ -534,7 +534,7 @@
           <div class="cb"></div>
         </div>
         <div v-if="view===6 || view===0" data-id="six" class="protocolBlock">
-          <div class="protocolLeftSide">GET ANCHORLIST</div>
+          <div class="protocolLeftSide">HAIRS (Get)</div>
           <div class="protocolRightSide">
             <div class="block">
               <div class="line">
@@ -548,7 +548,7 @@
                   1
                 </div>
                 <div class="smallBlock fl">
-                  ’A’/65
+                  47
                 </div>
                 <div class="protocolDescription fl">
                 </div>
@@ -565,7 +565,7 @@
                   1
                 </div>
                 <div class="smallBlock fl">
-                  0
+                  3
                 </div>
                 <div class="protocolDescription fl">
                   command protocol version
@@ -577,7 +577,7 @@
           <div class="cb"></div>
         </div>
         <div v-if="view===7 || view===0" data-id="seven" class="protocolBlock">
-          <div class="protocolLeftSide">ANCHORLIST</div>
+          <div class="protocolLeftSide">HAIRS (Set)</div>
           <div class="protocolRightSide">
             <div class="block">
               <div class="line">
@@ -591,7 +591,7 @@
                   1
                 </div>
                 <div class="smallBlock fl">
-                  ’A’/65
+                  48
                 </div>
                 <div class="protocolDescription fl">
                 </div>
@@ -608,7 +608,7 @@
                   1
                 </div>
                 <div class="smallBlock fl">
-                  0
+                  3
                 </div>
                 <div class="protocolDescription fl">
                   command protocol version
@@ -617,7 +617,7 @@
               </div>
               <div class="line">
                 <div class="smallBlock fl">
-                  block length
+                  enable
                 </div>
                 <div class="smallBlock fl">
                   uint8
@@ -626,112 +626,73 @@
                   1
                 </div>
                 <div class="smallBlock fl">
-                  8
+                  0
                 </div>
                 <div class="protocolDescription fl">
-                  length of blocks to follow
+                  enable hairs (0 = disable, 1 = enable)
                 </div>
                 <div class="cb"></div>
               </div>
               <div class="line">
                 <div class="smallBlock fl">
-                  anchorCnt
+                  save
                 </div>
                 <div class="smallBlock fl">
-                  uint16
+                  uint8
                 </div>
                 <div class="smallBlock fl">
-                  2
+                  1
                 </div>
                 <div class="smallBlock fl">
-                  2
+                  0
                 </div>
                 <div class="protocolDescription fl">
-                  amount of id’s that will follow
+                  Save parameter to permanent storage (0 = no, 1 = save)
                 </div>
                 <div class="cb"></div>
               </div>
-              <div class="lineGroup lineGroupGray">
-                  <div class="repeatText">repeated anchorCnt times</div>
-                <div class="line">
-                  <div class="smallBlock fl">
-                    id
-                  </div>
-                  <div class="smallBlock fl">
-                    uint16
-                  </div>
-                  <div class="smallBlock fl">
-                    2
-                  </div>
-                  <div class="smallBlock fl">
-                    101
-                  </div>
-                  <div class="protocolDescription fl">
-                    node id
-                  </div>
-                  <div class="cb"></div>
+              <div class="line">
+                <div class="smallBlock fl">
+                  size
                 </div>
-                <div class="line">
-                  <div class="smallBlock fl">
-                    x-coord
-                  </div>
-                  <div class="smallBlock fl">
-                    int16
-                  </div>
-                  <div class="smallBlock fl">
-                    2
-                  </div>
-                  <div class="smallBlock fl">
-                    1234
-                  </div>
-                  <div class="protocolDescription fl">
-                    x-coordinate of the anchor in cm
-                  </div>
-                  <div class="cb"></div>
+                <div class="smallBlock fl">
+                  uint8
                 </div>
-                <div class="line">
-                  <div class="smallBlock fl">
-                    y-coord
-                  </div>
-                  <div class="smallBlock fl">
-                    int16
-                  </div>
-                  <div class="smallBlock fl">
-                    2
-                  </div>
-                  <div class="smallBlock fl">
-                    1234
-                  </div>
-                  <div class="protocolDescription fl">
-                    y-coordinate of the anchor in cm
-                  </div>
-                  <div class="cb"></div>
+                <div class="smallBlock fl">
+                  1
                 </div>
-                <div class="line">
-                  <div class="smallBlock fl">
-                    z-coord
-                  </div>
-                  <div class="smallBlock fl">
-                    int16
-                  </div>
-                  <div class="smallBlock fl">
-                    2
-                  </div>
-                  <div class="smallBlock fl">
-                    1234
-                  </div>
-                  <div class="protocolDescription fl">
-                    z-coordinate of the anchor in cm
-                  </div>
-                  <div class="cb"></div>
+                <div class="smallBlock fl">
+                  0
                 </div>
+                <div class="protocolDescription fl">
+                  Small hairs = 128b Big hairs = 512b (0 = small,1 = big)
+                </div>
+                <div class="cb"></div>
+              </div>
+              <div class="line">
+                <div class="smallBlock fl">
+                  continuous enable
+                </div>
+                <div class="smallBlock fl">
+                  uint8
+                </div>
+                <div class="smallBlock fl">
+                  1
+                </div>
+                <div class="smallBlock fl">
+                  1
+                </div>
+                <div class="protocolDescription fl">
+                Continuously transmit the hairs, instead of on request (0 = disable, 1 = enable)
+                </div>
+                <div class="cb"></div>
               </div>
             </div>
           </div>
           <div class="cb"></div>
         </div>
         <div v-if="view===8 || view===0" data-id="eight" class="protocolBlock">
-          <div class="protocolLeftSide">EXTERNAL IMPULSE</div>
+          <div class="protocolLeftSide">HAIRS</div>
           <div class="protocolRightSide">
             <div class="block">
               <div class="line">
@@ -745,7 +706,7 @@
                   1
                 </div>
                 <div class="smallBlock fl">
-                  'E'/69
+                  48
                 </div>
                 <div class="protocolDescription fl">
                 </div>
@@ -762,7 +723,7 @@
                   1
                 </div>
                 <div class="smallBlock fl">
-                  0
+                  3
                 </div>
                 <div class="protocolDescription fl">
                   command protocol version
@@ -771,7 +732,7 @@
               </div>
               <div class="line">
                 <div class="smallBlock fl">
-                  length
+                  enable
                 </div>
                 <div class="smallBlock fl">
                   uint8
@@ -780,16 +741,16 @@
                   1
                 </div>
                 <div class="smallBlock fl">
-                  15
+                  0
                 </div>
                 <div class="protocolDescription fl">
-                  amount of bytes that follows
+                  enable hairs (0 = disable, 1 = enable)
                 </div>
                 <div class="cb"></div>
               </div>
               <div class="line">
                 <div class="smallBlock fl">
-                  type
+                  save
                 </div>
                 <div class="smallBlock fl">
                   uint8
@@ -798,82 +759,46 @@
                   1
                 </div>
                 <div class="smallBlock fl">
-                  101
+                  0
                 </div>
                 <div class="protocolDescription fl">
-                  type information
+                  Save parameter to permanent storage (0 = no, 1 = save)
                 </div>
                 <div class="cb"></div>
               </div>
               <div class="line">
                 <div class="smallBlock fl">
-                  frame
+                  size
                 </div>
                 <div class="smallBlock fl">
-                  uint32
+                  uint8
                 </div>
                 <div class="smallBlock fl">
-                  4
+                  1
                 </div>
                 <div class="smallBlock fl">
-                  1234
+                  0
                 </div>
                 <div class="protocolDescription fl">
-                  frame number in which the event has happened
+                  Small hairs = 128b Big hairs = 512b (0 = small,1 = big)
                 </div>
                 <div class="cb"></div>
               </div>
               <div class="line">
                 <div class="smallBlock fl">
-                  offset
+                  continuous enable
                 </div>
                 <div class="smallBlock fl">
-                  uint16
+                  uint8
                 </div>
                 <div class="smallBlock fl">
-                  2
+                  1
                 </div>
                 <div class="smallBlock fl">
-                  1234
+                  1
                 </div>
                 <div class="protocolDescription fl">
-                  offset in ms within the frame
-                </div>
-                <div class="cb"></div>
-              </div>
-              <div class="line">
-                <div class="smallBlock fl">
-                  gps
-                </div>
-                <div class="smallBlock fl">
-                  uint8[8]
-                </div>
-                <div class="smallBlock fl">
-                  8
-                </div>
-                <div class="smallBlock fl">
-                  <i>see up (add link)</i>
-                </div>
-                <div class="protocolDescription fl">
-                  time in GPS format
-                </div>
-                <div class="cb"></div>
-              </div>
-              <div class="line">
-                <div class="smallBlock fl">
-                  spare
-                </div>
-                <div class="smallBlock fl">
-                  uint16
-                </div>
-                <div class="smallBlock fl">
-                  2
-                </div>
-                <div class="smallBlock fl">
-                  1234
-                </div>
-                <div class="protocolDescription fl">
-                  spare bytes
+                Continuously transmit the hairs, instead of on request (0 = disable, 1 = enable)
                 </div>
                 <div class="cb"></div>
               </div>
