@@ -422,7 +422,7 @@ function getAPISidebar() {
             collapsable: false,
             children: [
                 ["/api/api_console", "Console (CLI)"],
-                ["/api/api_uart", "Serial (UART2)"],
+                ["/api/api_uart", "Serial (UART)"],
                 ["/api/api_firmware", "Firmware library"],
                 ["/api/api_ble", "BLE service(s)"]
             ]
