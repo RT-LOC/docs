@@ -362,7 +362,7 @@
           <div class="cb"></div>
         </div>
         <div v-if="view===3 || view===0" data-id="three" class="protocolBlock">
-          <div class="protocolLeftSide">TO TAG RAW</div>
+          <div class="protocolLeftSide">TX POWER (Get) </div>
           <div class="protocolRightSide">
             <div class="block">
               <div class="line">
@@ -373,10 +373,10 @@
                   char
                 </div>
                 <div class="smallBlock fl">
-                  1
+                  0
                 </div>
                 <div class="smallBlock fl">
-                  'U'
+                  44
                 </div>
                 <div class="protocolDescription fl">
                 </div>
@@ -393,94 +393,19 @@
                   1
                 </div>
                 <div class="smallBlock fl">
-                  0
+                  3
                 </div>
                 <div class="protocolDescription fl">
                   command protocol version
                 </div>
                 <div class="cb"></div>
-              </div>
-              <div class="line">
-                <div class="smallBlock fl">
-                  idCnt
-                </div>
-                <div class="smallBlock fl">
-                  uint8
-                </div>
-                <div class="smallBlock fl">
-                  1
-                </div>
-                <div class="smallBlock fl">
-                  2
-                </div>
-                <div class="protocolDescription fl">
-                  amount of id’s that will follow
-                </div>
-                <div class="cb"></div>
-              </div>
-              <div class="lineGroup lineGroupGray">
-                  <div class="repeatText">repeated idCnt times</div>
-                <div class="line">
-                  <div class="smallBlock fl">
-                    id
-                  </div>
-                  <div class="smallBlock fl">
-                    uint16
-                  </div>
-                  <div class="smallBlock fl">
-                    2
-                  </div>
-                  <div class="smallBlock fl">
-                    101
-                  </div>
-                  <div class="protocolDescription fl">
-                    node id
-                  </div>
-                  <div class="cb"></div>
-                </div>
-                <div class="line">
-                  <div class="smallBlock fl">
-                    count
-                  </div>
-                  <div class="smallBlock fl">
-                    uint16
-                  </div>
-                  <div class="smallBlock fl">
-                    2
-                  </div>
-                  <div class="smallBlock fl">
-                    6
-                  </div>
-                  <div class="protocolDescription fl">
-
-                  </div>
-                  <div class="cb"></div>
-                </div>
-                <div class="line">
-                  <div class="smallBlock fl">
-                    bytestream
-                  </div>
-                  <div class="smallBlock fl">
-                    uint8
-                  </div>
-                  <div class="smallBlock fl">
-                    count
-                  </div>
-                  <div class="smallBlock fl">
-                    [1 2 3 4 5 6]
-                  </div>
-                  <div class="protocolDescription fl">
-
-                  </div>
-                  <div class="cb"></div>
-                </div>
               </div>
             </div>
           </div>
           <div class="cb"></div>
         </div>
         <div v-if="view===4 || view===0" data-id="four" class="protocolBlock">
-          <div class="protocolLeftSide">GET TAGLIST</div>
+          <div class="protocolLeftSide">TX Power (Set)</div>
           <div class="protocolRightSide">
             <div class="block">
               <div class="line">
@@ -494,7 +419,7 @@
                   1
                 </div>
                 <div class="smallBlock fl">
-                  'T'/84
+                  45
                 </div>
                 <div class="protocolDescription fl">
                 </div>
@@ -511,13 +436,37 @@
                   1
                 </div>
                 <div class="smallBlock fl">
-                  0
+                  3
                 </div>
                 <div class="protocolDescription fl">
                   command protocol version
                 </div>
                 <div class="cb"></div>
               </div>
+
+              <div class="line">
+                <div class="smallBlock fl">
+                  tx power (SET)
+                </div>
+                <div class="smallBlock fl">
+                  uint8
+                </div>
+                <div class="smallBlock fl">
+                  1
+                </div>
+                <div class="smallBlock fl">
+                  33
+                </div>
+                <div class="protocolDescription fl">
+                TX Power amplification in dB (0..33 dB)
+                </div>
+                <div class="cb"></div>
+              </div>
+
+
+
+
+
             </div>
           </div>
           <div class="cb"></div>
@@ -537,7 +486,7 @@
                   1
                 </div>
                 <div class="smallBlock fl">
-                  'T'/84
+                  46
                 </div>
                 <div class="protocolDescription fl">
                 </div>
@@ -554,16 +503,17 @@
                   1
                 </div>
                 <div class="smallBlock fl">
-                  0
+                  3
                 </div>
                 <div class="protocolDescription fl">
                   command protocol version
                 </div>
                 <div class="cb"></div>
               </div>
+
               <div class="line">
                 <div class="smallBlock fl">
-                  block length
+                  tx power
                 </div>
                 <div class="smallBlock fl">
                   uint8
@@ -572,87 +522,12 @@
                   1
                 </div>
                 <div class="smallBlock fl">
-                  5
+                  33
                 </div>
                 <div class="protocolDescription fl">
-                  length of blocks to follow
+                TX Power amplification in dB (0..33 dB)
                 </div>
                 <div class="cb"></div>
-              </div>
-              <div class="line">
-                <div class="smallBlock fl">
-                  tagCnt
-                </div>
-                <div class="smallBlock fl">
-                  uint16
-                </div>
-                <div class="smallBlock fl">
-                  2
-                </div>
-                <div class="smallBlock fl">
-                  2
-                </div>
-                <div class="protocolDescription fl">
-                  amount of id’s that will follow
-                </div>
-                <div class="cb"></div>
-              </div>
-              <div class="lineGroup lineGroupGray">
-                  <div class="repeatText">repeated tagCnt times</div>
-                <div class="line">
-                  <div class="smallBlock fl">
-                    id
-                  </div>
-                  <div class="smallBlock fl">
-                    uint16
-                  </div>
-                  <div class="smallBlock fl">
-                    2
-                  </div>
-                  <div class="smallBlock fl">
-                    101
-                  </div>
-                  <div class="protocolDescription fl">
-                    node id
-                  </div>
-                  <div class="cb"></div>
-                </div>
-                <div class="line">
-                  <div class="smallBlock fl">
-                    speed
-                  </div>
-                  <div class="smallBlock fl">
-                    uint8
-                  </div>
-                  <div class="smallBlock fl">
-                    1
-                  </div>
-                  <div class="smallBlock fl">
-                    1
-                  </div>
-                  <div class="protocolDescription fl">
-
-                  </div>
-                  <div class="cb"></div>
-                </div>
-                <div class="line">
-                  <div class="smallBlock fl">
-                    z-coords
-                  </div>
-                  <div class="smallBlock fl">
-                    int16
-                  </div>
-                  <div class="smallBlock fl">
-                    2
-                  </div>
-                  <div class="smallBlock fl">
-                    1234
-                  </div>
-                  <div class="protocolDescription fl">
-                    height of the tag in cm
-                  </div>
-                  <div class="cb"></div>
-                </div>
               </div>
             </div>
           </div>
