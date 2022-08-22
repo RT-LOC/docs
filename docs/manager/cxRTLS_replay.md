@@ -1,5 +1,5 @@
 # Logging & Replay
-With RTManager, you can log all the data and replay it as if it is happening live. This is particularly useful whenever you want to analyze a specific event or when you are developing a third-party application.
+With Engine, you can log all the data and replay it as if it is happening live. This is particularly useful whenever you want to analyze a specific event or when you are developing a third-party application.
 
 ## Logging
 You can log all the data to replay and analyse it afterwards.

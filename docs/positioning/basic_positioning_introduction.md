@@ -41,7 +41,7 @@ More information can be found [here](/embedded/hw_interface_ble.html).
 
 ## Flashing the boards
 In order to make use of our system, we need to flash the correct firmware on the boards.
-This can be done via the [RTHub](/hub/firmware.html) PC app.
+This can be done via the [Desktop](/hub/firmware.html) PC app.
 
 <!-- 
 ## Features

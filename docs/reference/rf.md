@@ -25,7 +25,7 @@ There are 6 channels to choose from with the following characteristics.
 |    5    |         6489.6         |      499.2      |
 |    7    |         6489.6         |      1081.6     |
 
-You can freely choose between these channels in RTManager. Note that it might take up to 2 minutes for the system to be fully switched to a different channel.
+You can freely choose between these channels in Engine. Note that it might take up to 2 minutes for the system to be fully switched to a different channel.
 
 ## GNSS/GPS
 Apart from positioning in regions where we have no UWB coverage, GPS provides a useful timing signal.

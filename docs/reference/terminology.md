@@ -1,69 +1,43 @@
 # Terminology
 
-## General
-`RTLS` - Real-time location system.
+## RTLOC App
+- `Client` - A company or organization owning a license.
 
-`Positioning` - Calculate the positions of (moving) tags.
+- `Project` - A project is a physical setup. It is associated with one purchased license, one engine, one floorplan (and other configurations). A client can have multiple RTLS projects. These are different setups at different locations that can run simultaneously.
 
-## RTLOC terminology
-`Client` - A company or organization owning a license.
-
-`Project` - A client can have multiple RTLS projects. These are different setups at different locations that can run simultaneously.
-
-## Technology
-Some more information on the different technologies we harness. Click here for a full comparison.
-
-`UWB` - Ultra-wide band. A wireless technology that uses a wide spectrum of frequency bands to transmit large amounts of data over a short distance with very low power. All nodes are equipped with UWB. It is used for ranging and communication purposes.
-
-`RFID` - Radio-frequency identification.
-
-`BT` - Bluetooth.
-
-`BLE` - Bluetooth Low Energy. All tags are by default equipped with a BLE chip for short range communication.
-
-`ENET` - Ethernet. All anchors and listeners are by default equipped with ethernet.
-
-`Lora` - Long Range digital wireless data communication technology.
+- `Desktop License` - License needed to run RTLS functionality on-premise (local / desktop)
 
 ## RTLS System
-`Node` - One of the elements of the RTLS system. Could be an anchor, tag or listener.
+- `RTLS` - Real-time location system.
 
-`Anchor` - A reference node in the RTLS. Comparable with the satellites for GPS.
+- `Node` - One of the elements of the RTLS system. Could be an anchor, tag or listener.
 
-`Tag` - A node that is tracked.
+- `Anchor` - A reference node in the RTLS. Comparable with the satellites for GPS.
 
-`Listener` - A node that only listens to data in the air and forwards that data to a PC.
+- `Tag` - A node that is tracked.
 
-`Autopositioning` - Calculation / estimation of the positions of the anchors by the system, as opposed to manually submitting accurate coordinates. This will provide less accurate position data than submitting accurate coordinates.
+- `Listener` - A node that only listens to data in the air and forwards that data to a PC.
 
-`Backhaul` - Way of transporting data within the system. Can be wired of wireless.
+- `Autopositioning` - Calculation / estimation of the positions of the anchors by the system, as opposed to manually submitting accurate coordinates. This will provide less accurate position data than submitting accurate coordinates.
 
-`RTManager` / `cxRTLS` - Powerful RTLS engine & UWB debugging app
+- `Backhaul` - Way of transporting data within the system. Can be wired of wireless.
 
-`Engine` / `cxEngine` - Algorithm implementation, calculates positions from distances
+- `Engine` / `cxRTLS` - Powerful RTLS engine & UWB debugging app
 
-`Viewer` / `cxViewer` - (3D) Position viewer
+- `Engine` / `cxEngine` - Algorithm implementation, calculates positions from distances
 
-`API` - Application Protocol Interface. Chout out [our RTLS API](/positioning/apis_overview.html).
+- `API` - Application Protocol Interface. Chout out [our RTLS API](/positioning/apis_overview.html).
 
-`Task` -
-
-`Console` - The console through which you can directly communicate with one of the nodes. This node can be attached via UART, USB or Ethernet.
+- `Console` - The console through which you can directly communicate with one of the nodes. This node can be attached via UART, USB or Ethernet.
 Click here for more information.
 
-`HW` - Hardware
+- `Hz` - Hertz. The derived unit of frequency [1/s].
 
-`SW` - Software
+- `Hairs` - UWB message visual indications in our sniffer
 
-`FW` - Firmware
+- `TagSpeed` - Part of the UWB configuration, containing 
 
-`Hz` - Hertz. The derived unit of frequency [1/s].
-
-`Hairs` - UWB message visual indications in our sniffer
-
-`TagSpeed` - Part of the UWB configuration, containing 
-
-`MANET` - Mobile Adhoc Network.
+- `MANET` - Mobile Adhoc Network.
 
 ### Sensors
 - `Accelerometer` - Measures acceleration forces. These forces may be static (such as gravity) or dynamic.
@@ -72,7 +46,18 @@ Click here for more information.
 
 - `Magnetometer` - Measures magnetic fields.
 
-## Other Technology
+## Technology General
+
+`UWB` - Ultra-wide band. A wireless technology that uses a wide spectrum of frequency bands to transmit large amounts of data over a short distance with very low power. All nodes are equipped with UWB. It is used for ranging and communication purposes.
+
+`RFID` - Radio-frequency identification.
+
+`BLE` - Bluetooth Low Energy. All tags are by default equipped with a BLE chip for short range communication.
+
+`ENET` - Ethernet. All anchors and listeners are by default equipped with ethernet.
+
+`Lora` - Long Range digital wireless data communication technology.
+
 `IP66` - International Protection Marking. Rating of our enclosures. Dust- and waterproof.
 More information [here](https://en.wikipedia.org/wiki/IP_Code).
 

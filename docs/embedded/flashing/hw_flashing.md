@@ -12,8 +12,8 @@ You can easily (re-)flash your hardware using our app. In the firmware tab get a
 
 ![Flash from app](./img/tray_flash.png)
 
-### RTManager: over-the-air updating
-We also support over-the-air (OTA) firmware updates. From our RTManager app, a firmware can be selected to be downloaded and installed over UWB by all devices.
+### Engine: over-the-air updating
+We also support over-the-air (OTA) firmware updates. From our Engine app, a firmware can be selected to be downloaded and installed over UWB by all devices.
 
 ## Architecture
 The flash architecture is as follows:
@@ -73,9 +73,9 @@ It could be that the board is not well attached to the PC (especially when you'r
 
 ![flashing windows fail](./img/flashing/flashing_win_fail.png "Flashing Windows Fail")
 
-Make sure the board is recognized by the PC. You should see the *JLink CDC UART port* in the Device Manager:
+Make sure the board is recognized by the PC. You should see the *JLink CDC UART port* in the Device Engine:
 
-![flashing device manager](./img/flashing/flashing_device_manager.png "Flashing Device Manager")
+![flashing device manager](./img/flashing/flashing_device_manager.png "Flashing Device Engine")
 
 
 

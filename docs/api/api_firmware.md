@@ -1,4 +1,8 @@
-# Firmware API
+# Firmware Library
+
+Working with a firmware library allows you to bring your own functionality to the (tag) device while interfacing with our powerful UWB capabilities.
+
+Here's an overview of (some of the) functions available in the library.
 
 ## General
 ### `set subversion`

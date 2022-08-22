@@ -3,17 +3,17 @@
 ## Introduction
 If you don't yet have our [devices](https://rtloc.com/product/), you can still try out our software and API. In this tutorial we will show you how our products work using [replays](../manager/cxRTLS_replay.html#logging). This will give you a basic understanding of how to set up our software.
 
-## Hub App Setup
-We will need to download and install [RTLOC Hub app](https://app.rtloc.com/download). Once installed, login using your account and download the license from account view. [License download instructions](../hub/license.html)
+## Desktop App Setup
+We will need to download and install [RTLOC Desktop app](https://app.rtloc.com/download). Once installed, login using your account and download the license from account view. [License download instructions](../hub/license.html)
 
 After that, download _'Demo Replays'_. These [replays](../manager/cxRTLS_replay.html#logging) allow you to replay all the data from positioning devices as if it is happening live. 
 ![Downloading Demo Replays](../hub/img/demo.jpg)
 
-Lastly, download RTManager and open it.
+Lastly, download Engine and open it.
 ![App management](../hub/img/apps.jpg)
 
-## RTManager
-RTManager is the main application that collects all of the data. Using this app we can view data live, replay it, send it over the internet and [more](../manager/). 
+## Engine
+Engine is the main application that collects all of the data. Using this app we can view data live, replay it, send it over the internet and [more](../manager/). 
 
 First, if we want to replay the data, we need to change the View Mode to Replay. Click on _'REPL'_ to switch to the `Replay View Mode`
 
@@ -38,11 +38,11 @@ If everything is correct you should see a circle moving around on the screen. Mo
 
 ## API setup
 
-If you want to send the data from the RTManager to our [cloud server](https://app.rtloc.com/) or any other computer there are multiple ways to do it.
+If you want to send the data from the Engine to our [cloud server](https://app.rtloc.com/) or any other computer there are multiple ways to do it.
 
 ### RTLOC cloud
 
-Sending data to RTLOC cloud can be done through the RTManager:
+Sending data to RTLOC cloud can be done through the Engine:
 1. Click on _'API'_ in the left side [menu](../manager/cxRTLS_layout.html#menu).
 2. Fill in the forms with the correct [information](https://app.rtloc.com/settings/connection).
 3. Click _'Save'_.

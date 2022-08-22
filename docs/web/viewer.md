@@ -1,18 +1,20 @@
-# Viewer
+# Local positions
 
-The viewer tab contains a web app to display a setup in 3D. Positioning data can be 2.5D (fixed Z) or 3D.
+Local position data is displayed on a 2D map. To begin, a floor plan needs to be configured using the setup tab.
 
-![viewer](https://res.cloudinary.com/dki7divh8/image/upload/q_auto/v1554118062/rtloc_com/viewer_karting.gif)
+## Setup
 
-## Viewing data
-Tag and anchor positions can come from data (websocket/MQTT) connection or from local BLE readout.
+In the setup tab you can follow a few steps to configure your floor plan. The first step is uploading an image. Supported formats are PNG and JPG. In the next steps you can scale and position the image on the 2D map. There's also the option of choosing the coordinate system's orientation. 
 
-### No devices visible?
-* Data connection: check the "debug" tab for counts per packet type
-  - STATUS, TAGS and POS packets are relevant for displaying tags
-  - ANCHORS packets are needed to display anchors
+In some cases coordinate compensation can be applied. This will offset the coordinates that arrive from the Engine program (to provide a different center).
 
-* BLE: Open the BLE device info view, check that position packets are received from the "Location service" console
+![Floorplan setup](./img/floor_setup.jpg)
 
-## Floor configuration
-You can upload a 2D image describing your floor (e.g. a floorplan) or use one of the pre-made models (generic field, football field, athletics track, ...). Use the settings drawer (right side) to tweak the floor to your needs.
+## Live view
+
+Until the floorplan configuration is set and a connection is made, the live view tab will show the following error checklist:
+
+![Configuration errors](./img/lopos_checklist.jpg)
+
+Once everything is configured, tag and anchor positions can be viewed on the map.
+

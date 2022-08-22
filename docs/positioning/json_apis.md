@@ -4,9 +4,27 @@ Real-time data (position data, tag/anchor statuses, sensor data, etc.) can be re
 
 ## Connection setup
 
-1. Configure data transmission over MQTT / websocket in our desktop application (in the API view)
+1. Configure data transmission over MQTT / websocket in our Engine application (in the API view)
 
 2. Connect to your client to the correct IP + port
+
+### Engine MQTT configuration
+You can use our MQTT broker (some limitations may apply) or set up your own broker.
+
+Make sure your RTLS setup is publishing MQTT data to the broker.
+Use the following configuration for your MQTT client(s):
+
+* Host: mqtt.cloud.rtloc.com
+* Port: 1883 (TCP), 8083 (WSS) or 8883(TCP TLS)
+* Username: *client slug**: *user e-mail*
+* Password: user password, or valid JWT
+
+You can find the *client slug* in the license description, in the Desktop app or the Portal at [https://app.rtloc.com/settings/info](https://app.rtloc.com/settings/info).
+
+The MQTT topic and data format per type of message is outlined in the [format description](/api/api_web.html).
+
+### Client code
+Check out the code examples at [https://github.com/RT-LOC/APIs](https://github.com/RT-LOC/APIs) (C, Python, Javascript) to get started with your own MQTT client.
 
 ## JSON data format
 

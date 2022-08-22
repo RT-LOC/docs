@@ -1,22 +1,30 @@
 {
-  "name": "rtloc-docs",
-  "version": "1.8.0",
-  "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
-    "buildtest": "browser-sync start --server \"docs/.vuepress/dist\" --online \"false\" --serveStatic \"./\" --files \"docs/.vuepress/dist\""
-  },
-  "dependencies": {
-    "@vuepress/plugin-back-to-top": "^1.2.0",
-    "@vuepress/plugin-medium-zoom": "^1.2.0",
-    "@vuepress/plugin-pwa": "^1.2.0",
-    "@vuepress/plugin-search": "^1.2.0",
-    "sitemap": "^2.0.1",
-    "vuepress": "^1.2.0",
-    "vuepress-plugin-sitemap": "^2.3.1"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "lottie-web": "^5.5.10"
-  }
+    "name": "rtloc-docs",
+    "version": "1.9.0",
+    "scripts": {
+        "dev": "vuepress dev docs",
+        "build": "vuepress build docs",
+        "buildtest": "browser-sync start --server \"docs/.vuepress/dist\" --online \"false\" --serveStatic \"./\" --files \"docs/.vuepress/dist\""
+    },
+    "dependencies": {
+        "@vuepress/plugin-back-to-top": "^1.2.0",
+        "@vuepress/plugin-medium-zoom": "^1.2.0",
+        "@vuepress/plugin-pwa": "^1.2.0",
+        "@vuepress/plugin-search": "^1.2.0",
+        "sitemap": "^2.0.1",
+        "vue-cli-plugin-vuetify": "^2.4.6",
+        "vuepress": "^1.2.0",
+        "vuepress-plugin-sitemap": "^2.3.1",
+        "vuetify": "^2.4.10"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.26.7",
+        "deepmerge": "^4.2.2",
+        "lottie-web": "^5.5.10",
+        "sass": "~1.32",
+        "sass-loader": "^7.3.1",
+        "vue-cli-plugin-vuepress": "~0.1.1",
+        "vuetify-loader": "^1.7.3",
+        "webpack-bundle-analyzer": "^4.5.0"
+    }
 }

@@ -1,9 +1,21 @@
-# Getting started RTLS
+# 1. Getting started
 
 ## Introduction
+
 In this guide we will go through the setup of a professional RTLOC positioning system. You will learn the basics of the system and get familiar with some of the features. You will end up having a fully functional RTLS system and you can start tracking your first objects.
 
-## Basic requirements
+## Set up the software
+A convenient way to manage our tools is the Desktop app. You can get it at [https://app.rtloc.com/download](https://app.rtloc.com/download). (Currently Windows only, requires some space on the C drive)
+
+For full use of our software, you will need to log in using your account. You should've received an invitation from RTLOC when your license was created. You can add team members in the app. 
+<!-- If you don't have an account, [create one](https://app.rtloc.com/register). (If you've received an e-mail invite, preferably use that link) -->
+
+You will need to download your desktop license, from the account view of the Desktop app. [License download instructions](../hub/license.html)
+
+
+![App management](../hub/img/apps.jpg)
+
+## Hardware requirements
 <!-- You will need a valid **license** for our professional RTLS. -->
 
 Before you get started, make sure you have at least the following hardware:
@@ -34,32 +46,18 @@ You will - at a very minimum - need:
   - 4 Micro usb cables (type B) and batteries or socket adapters
   - PoE
 
-  ![power](./img/install_power_supply.png)
-
 ### Other
 A computer (desktop/laptop/tablet), preferably Windows OS
 
 ![pc](./img/install_PC.jpeg)
 
-## Set up the software
-A convenient way to manage our tools is the Hub app. You can get it at [https://app.rtloc.com/download](https://app.rtloc.com/download). (Currently Windows only, requires some space on the C drive)
-You will need to log in using your account. If you don't have an account, [create one](https://app.rtloc.com/register). (If you've received an e-mail invite, preferably use that link)
 
-You will need to download your license, from the account view of the Hub app. [License download instructions](../hub/license.html)
-
-![App management](../hub/img/apps.jpg)
-
-
-## PC manager configuration
-Start the app from the Hub (tray) app or locate the executable and start it. 
-
-![getting_started-setup_icon](./img/getting_started-setup_icon.png)
-
-You will get welcomed in the PC software.
+## Engine (cxRTLS) app configuration
+Start the Engine (cxRTLS) app from the Desktop app or locate the executable and open it. The rest of the guide will assume that you have the necessary tags and anchors. Alternatively, you can [run a replay](/manager/using_replays) (and receive that replay data over the API).
 
 :::warning
 The software will run in a limited demo-mode without proper license.
-[Here's some help](/manager/cxRTLS_license.html#how-to-install-the-license) on how to activate your license.
+[Activate your license](/manager/cxRTLS_license.html#how-to-install-the-license) for full access.
 :::
 
 ## Device setup
@@ -119,7 +117,13 @@ Unselect "Skip Engine" to activate the engine.
 Walk around with your tag and check that the tag is actually moving on the screen.
 
 ## What's next?
-You have just set up an easy RTLS system. Congratulations! Now there are several things you can do. Extend the area of interest by adding more anchors. Follow more objects by adding more tags. Reach the highest possible accuracy by calibrating your system. Consult the API documentation to find out how you can connect your own system to RTLOC. There's a lot to discover. A whole new world of possibilities is waiting for you.
+You have just set up a basic RTLS system, congratulations! Now there are several things you can do.
+
+For viewer configuration and additional processing options (e.g. zone detection), check out the following guide:
+
+* Step 2: Viewing and processing [configuration](/positioning/2_configuration.html)
+
+For expansion of the system (more anchors/tags) or better calibration, check out the following items:
 
 * Setup [finetuning](/positioning/anchor_placement.html)
 * Follow our [system guide](/guide/)
