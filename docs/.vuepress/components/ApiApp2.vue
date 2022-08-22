@@ -11,6 +11,7 @@
           <a @click="view=6">6. HAIRS (GET)</a>
           <a @click="view=7">7. HAIRS (SET)</a>
           <a @click="view=8">8. HAIRS</a>
+          <a @click="view=9">9. DISTANCES</a>
           <div class="cb"></div>
       </div>
   </nav>
@@ -37,288 +38,288 @@
           </div>
           <div class="cb"></div>
       </div>
-      <div v-if="view===1 || view===0" data-id="one" class="protocolBlock">
-          <div class="protocolLeftSide">PROPERTIES</div>
-          <div class="protocolRightSide">
-              <div class="block">
-                  <div class="line">
-                      <div class="smallBlock fl">
-                          cmd
-                      </div>
-                      <div class="smallBlock fl">
-                          char
-                      </div>
-                      <div class="smallBlock fl">
-                          1
-                      </div>
-                      <div class="smallBlock fl">
-                          24
-                      </div>
-                      <div class="protocolDescription fl">
-                      </div>
-                      <div class="cb"></div>
-                  </div>
-                  <div class="line">
-                      <div class="smallBlock fl">
-                          version
-                      </div>
-                      <div class="smallBlock fl">
-                          uint8
-                      </div>
-                      <div class="smallBlock fl">
-                          1
-                      </div>
-                      <div class="smallBlock fl">
-                          3
-                      </div>
-                      <div class="protocolDescription fl">
-                          command protocol version
-                      </div>
-                      <div class="cb"></div>
-                  </div>
-                  <div class="line">
-                      <div class="smallBlock fl">
-                          length
-                      </div>
-                      <div class="smallBlock fl">
-                          uint16
-                      </div>
-                      <div class="smallBlock fl">
-                          48
-                      </div>
-                      <div class="smallBlock fl">
-                          3
-                      </div>
-                      <div class="protocolDescription fl">
-                          length of this message
-                      </div>
-                      <div class="cb"></div>
-                  </div>
-                  <div class="line">
-                      <div class="smallBlock fl">
-                          uptime
-                      </div>
-                      <div class="smallBlock fl">
-                          uint32
-                      </div>
-                      <div class="smallBlock fl">
-                          100
-                      </div>
-                      <div class="smallBlock fl">
-                          3
-                      </div>
-                      <div class="protocolDescription fl">
-                          uptime of device (in seconds)
-                      </div>
-                      <div class="cb"></div>
-                  </div>
-                  <div class="line">
-                      <div class="smallBlock fl">
-                          antenna delay (RX)
-                      </div>
-                      <div class="smallBlock fl">
-                          uint16
-                      </div>
-                      <div class="smallBlock fl">
-                          16500
-                      </div>
-                      <div class="smallBlock fl">
-                          3
-                      </div>
-                      <div class="protocolDescription fl">
-                          antenna delay (RX) of the device
-                      </div>
-                      <div class="cb"></div>
-                  </div>                  
-                  <div class="line">
-                      <div class="smallBlock fl">
-                          antenna delay (TX)
-                      </div>
-                      <div class="smallBlock fl">
-                          uint16
-                      </div>
-                      <div class="smallBlock fl">
-                          16500
-                      </div>
-                      <div class="smallBlock fl">
-                          3
-                      </div>
-                      <div class="protocolDescription fl">
-                          lantenna delay (TX) of the device
-                      </div>
-                      <div class="cb"></div>
-                  </div>
-                  <div class="line">
-                      <div class="smallBlock fl">
-                          reset type
-                      </div>
-                      <div class="smallBlock fl">
-                          uint8
-                      </div>
-                      <div class="smallBlock fl">
-                          1
-                      </div>
-                      <div class="smallBlock fl">
-                          3
-                      </div>
-                      <div class="protocolDescription fl">
-                          reset type of the device:
-                          1 = todo
-                          2 = todo
-                      </div>
-                      <div class="cb"></div>
-                  </div>
-                  <div class="line">
-                      <div class="smallBlock fl">
-                          hw version
-                      </div>
-                      <div class="smallBlock fl">
-                          uint8
-                      </div>
-                      <div class="smallBlock fl">
-                          1
-                      </div>
-                      <div class="smallBlock fl">
-                          3
-                      </div>
-                      <div class="protocolDescription fl">
-                          HW type:
-                          1 = todo
-                          2 = todo
-                      </div>
-                      <div class="cb"></div>
-                  </div>
-                  <div class="line">
-                      <div class="smallBlock fl">
-                          obsolete
-                      </div>
-                      <div class="smallBlock fl">
-                          uint64
-                      </div>
-                      <div class="smallBlock fl">
-                          0
-                      </div>
-                      <div class="smallBlock fl">
-                          3
-                      </div>
-                      <div class="protocolDescription fl">
-                          obsolete
-                      </div>
-                      <div class="cb"></div>
-                  </div>
-                  <div class="line">
-                      <div class="smallBlock fl">
-                          FW version
-                      </div>
-                      <div class="smallBlock fl">
-                          uint16
-                      </div>
-                      <div class="smallBlock fl">
-                          1
-                      </div>
-                      <div class="smallBlock fl">
-                          30404
-                      </div>
-                      <div class="protocolDescription fl">
-                          Firmware version
-                      </div>
-                      <div class="cb"></div>
-                  </div>
-                  <div class="line">
-                      <div class="smallBlock fl">
-                          Firmware version (sub)
-                      </div>
-                      <div class="smallBlock fl">
-                          uint8
-                      </div>
-                      <div class="smallBlock fl">
-                          1
-                      </div>
-                      <div class="smallBlock fl">
-                          3
-                      </div>
-                      <div class="protocolDescription fl">
-                          Subversion number
-                      </div>
-                      <div class="cb"></div>
-                  </div>
-                  <div class="line">
-                      <div class="smallBlock fl">
-                          obsolete
-                      </div>
-                      <div class="smallBlock fl">
-                          uint48
-                      </div>
-                      <div class="smallBlock fl">
-                          1
-                      </div>
-                      <div class="smallBlock fl">
-                          3
-                      </div>
-                      <div class="protocolDescription fl">
-                          obsolete
-                      </div>
-                      <div class="cb"></div>
-                  </div>
-                  <div class="line">
-                      <div class="smallBlock fl">
-                          uid
-                      </div>
-                      <div class="smallBlock fl">
-                          uint64
-                      </div>
-                      <div class="smallBlock fl">
-                          0xAAAA123456780001
-                      </div>
-                      <div class="smallBlock fl">
-                          3
-                      </div>
-                      <div class="protocolDescription fl">
-                          Unique ID
-                      </div>
-                      <div class="cb"></div>
-                  </div>
-                  <div class="line">
-                      <div class="smallBlock fl">
-                          obsolete
-                      </div>
-                      <div class="smallBlock fl">
-                          uint64
-                      </div>
-                      <div class="smallBlock fl">
-                          1
-                      </div>
-                      <div class="smallBlock fl">
-                          3
-                      </div>
-                      <div class="protocolDescription fl">
-                          obsolete
-                      </div>
-                      <div class="cb"></div>
-                  </div>
-                  <div class="line">
-                      <div class="smallBlock fl">
-                          obsolete
-                      </div>
-                      <div class="smallBlock fl">
-                          uint8
-                      </div>
-                      <div class="smallBlock fl">
-                          1
-                      </div>
-                      <div class="smallBlock fl">
-                          3
-                      </div>
-                      <div class="protocolDescription fl">
-                          obsolete
-                      </div>
-                      <div class="cb"></div>
-                  </div>                 
-              </div>
-          </div>
-          <div class="cb"></div>
-      </div>
-      <div v-if="view===2 || view===0" data-id="two" class="protocolBlock">
+        <div v-if="view===1 || view===0" data-id="one" class="protocolBlock">
+            <div class="protocolLeftSide">PROPERTIES</div>
+            <div class="protocolRightSide">
+                <div class="block">
+                    <div class="line">
+                        <div class="smallBlock fl">
+                            cmd
+                        </div>
+                        <div class="smallBlock fl">
+                            char
+                        </div>
+                        <div class="smallBlock fl">
+                            1
+                        </div>
+                        <div class="smallBlock fl">
+                            24
+                        </div>
+                        <div class="protocolDescription fl">
+                        </div>
+                        <div class="cb"></div>
+                    </div>
+                    <div class="line">
+                        <div class="smallBlock fl">
+                            version
+                        </div>
+                        <div class="smallBlock fl">
+                            uint8
+                        </div>
+                        <div class="smallBlock fl">
+                            1
+                        </div>
+                        <div class="smallBlock fl">
+                            3
+                        </div>
+                        <div class="protocolDescription fl">
+                            command protocol version
+                        </div>
+                        <div class="cb"></div>
+                    </div>
+                    <div class="line">
+                        <div class="smallBlock fl">
+                            length
+                        </div>
+                        <div class="smallBlock fl">
+                            uint16
+                        </div>
+                        <div class="smallBlock fl">
+                            2
+                        </div>
+                        <div class="smallBlock fl">
+                            48
+                        </div>
+                        <div class="protocolDescription fl">
+                            length of this message (incl cmd & len)
+                        </div>
+                        <div class="cb"></div>
+                    </div>
+                    <div class="line">
+                        <div class="smallBlock fl">
+                            uptime
+                        </div>
+                        <div class="smallBlock fl">
+                            uint32
+                        </div>
+                        <div class="smallBlock fl">
+                            4
+                        </div>
+                        <div class="smallBlock fl">
+                            100
+                        </div>
+                        <div class="protocolDescription fl">
+                            uptime of device (in seconds)
+                        </div>
+                        <div class="cb"></div>
+                    </div>
+                    <div class="line">
+                        <div class="smallBlock fl">
+                            antenna delay (RX)
+                        </div>
+                        <div class="smallBlock fl">
+                            uint16
+                        </div>
+                        <div class="smallBlock fl">
+                            2
+                        </div>
+                        <div class="smallBlock fl">
+                            16500
+                        </div>
+                        <div class="protocolDescription fl">
+                            antenna delay (RX) of the device
+                        </div>
+                        <div class="cb"></div>
+                    </div>                  
+                    <div class="line">
+                        <div class="smallBlock fl">
+                            antenna delay (TX)
+                        </div>
+                        <div class="smallBlock fl">
+                            uint16
+                        </div>
+                        <div class="smallBlock fl">
+                            2
+                        </div>
+                        <div class="smallBlock fl">
+                            16500
+                        </div>
+                        <div class="protocolDescription fl">
+                            lantenna delay (TX) of the device
+                        </div>
+                        <div class="cb"></div>
+                    </div>
+                    <div class="line">
+                        <div class="smallBlock fl">
+                            reset type
+                        </div>
+                        <div class="smallBlock fl">
+                            uint8
+                        </div>
+                        <div class="smallBlock fl">
+                            1
+                        </div>
+                        <div class="smallBlock fl">
+                            1
+                        </div>
+                        <div class="protocolDescription fl">
+                            reset type of the device:
+                            1 = todo
+                            2 = todo
+                        </div>
+                        <div class="cb"></div>
+                    </div>
+                    <div class="line">
+                        <div class="smallBlock fl">
+                            hw version
+                        </div>
+                        <div class="smallBlock fl">
+                            uint8
+                        </div>
+                        <div class="smallBlock fl">
+                            1
+                        </div>
+                        <div class="smallBlock fl">
+                            1
+                        </div>
+                        <div class="protocolDescription fl">
+                            HW type:
+                            1 = todo
+                            2 = todo
+                        </div>
+                        <div class="cb"></div>
+                    </div>
+                    <div class="line">
+                        <div class="smallBlock fl">
+                            obsolete
+                        </div>
+                        <div class="smallBlock fl">
+                            uint64
+                        </div>
+                        <div class="smallBlock fl">
+                            8
+                        </div>
+                        <div class="smallBlock fl">
+                            0
+                        </div>
+                        <div class="protocolDescription fl">
+                            obsolete
+                        </div>
+                        <div class="cb"></div>
+                    </div>
+                    <div class="line">
+                        <div class="smallBlock fl">
+                            FW version
+                        </div>
+                        <div class="smallBlock fl">
+                            uint16
+                        </div>
+                        <div class="smallBlock fl">
+                            2
+                        </div>
+                        <div class="smallBlock fl">
+                            30404
+                        </div>
+                        <div class="protocolDescription fl">
+                            Firmware version
+                        </div>
+                        <div class="cb"></div>
+                    </div>
+                    <div class="line">
+                        <div class="smallBlock fl">
+                            Firmware version (sub)
+                        </div>
+                        <div class="smallBlock fl">
+                            uint8
+                        </div>
+                        <div class="smallBlock fl">
+                            1
+                        </div>
+                        <div class="smallBlock fl">
+                            1
+                        </div>
+                        <div class="protocolDescription fl">
+                            Subversion number
+                        </div>
+                        <div class="cb"></div>
+                    </div>
+                    <div class="line">
+                        <div class="smallBlock fl">
+                            obsolete
+                        </div>
+                        <div class="smallBlock fl">
+                            uint48
+                        </div>
+                        <div class="smallBlock fl">
+                            6
+                        </div>
+                        <div class="smallBlock fl">
+                            0
+                        </div>
+                        <div class="protocolDescription fl">
+                            obsolete
+                        </div>
+                        <div class="cb"></div>
+                    </div>
+                    <div class="line">
+                        <div class="smallBlock fl">
+                            uid
+                        </div>
+                        <div class="smallBlock fl">
+                            uint64
+                        </div>
+                        <div class="smallBlock fl">
+                            0xAAAA123456780001
+                        </div>
+                        <div class="smallBlock fl">
+                            8
+                        </div>
+                        <div class="protocolDescription fl">
+                            Unique ID
+                        </div>
+                        <div class="cb"></div>
+                    </div>
+                    <div class="line">
+                        <div class="smallBlock fl">
+                            obsolete
+                        </div>
+                        <div class="smallBlock fl">
+                            uint64
+                        </div>
+                        <div class="smallBlock fl">
+                            8
+                        </div>
+                        <div class="smallBlock fl">
+                            0
+                        </div>
+                        <div class="protocolDescription fl">
+                            obsolete
+                        </div>
+                        <div class="cb"></div>
+                    </div>
+                    <div class="line">
+                        <div class="smallBlock fl">
+                            obsolete
+                        </div>
+                        <div class="smallBlock fl">
+                            uint8
+                        </div>
+                        <div class="smallBlock fl">
+                            1
+                        </div>
+                        <div class="smallBlock fl">
+                            0
+                        </div>
+                        <div class="protocolDescription fl">
+                            obsolete
+                        </div>
+                        <div class="cb"></div>
+                    </div>                 
+                </div>
+            </div>
+            <div class="cb"></div>
+        </div>
+        <div v-if="view===2 || view===0" data-id="two" class="protocolBlock">
           <div class="protocolLeftSide">PROPERTIES (GET)</div>
           <div class="protocolRightSide">
             <div class="block">
@@ -347,10 +348,10 @@
                   uint8
                 </div>
                 <div class="smallBlock fl">
-                  3
+                  1
                 </div>
                 <div class="smallBlock fl">
-                  0
+                  3
                 </div>
                 <div class="protocolDescription fl">
                   command protocol version
@@ -362,7 +363,7 @@
           <div class="cb"></div>
         </div>
         <div v-if="view===3 || view===0" data-id="three" class="protocolBlock">
-          <div class="protocolLeftSide">TX POWER (Get) </div>
+          <div class="protocolLeftSide">TX POWER (GET) </div>
           <div class="protocolRightSide">
             <div class="block">
               <div class="line">
@@ -405,7 +406,7 @@
           <div class="cb"></div>
         </div>
         <div v-if="view===4 || view===0" data-id="four" class="protocolBlock">
-          <div class="protocolLeftSide">TX Power (Set)</div>
+          <div class="protocolLeftSide">TX Power (SET)</div>
           <div class="protocolRightSide">
             <div class="block">
               <div class="line">
@@ -534,7 +535,7 @@
           <div class="cb"></div>
         </div>
         <div v-if="view===6 || view===0" data-id="six" class="protocolBlock">
-          <div class="protocolLeftSide">HAIRS (Get)</div>
+          <div class="protocolLeftSide">HAIRS (GET)</div>
           <div class="protocolRightSide">
             <div class="block">
               <div class="line">
@@ -577,7 +578,7 @@
           <div class="cb"></div>
         </div>
         <div v-if="view===7 || view===0" data-id="seven" class="protocolBlock">
-          <div class="protocolLeftSide">HAIRS (Set)</div>
+          <div class="protocolLeftSide">HAIRS (SET)</div>
           <div class="protocolRightSide">
             <div class="block">
               <div class="line">
@@ -801,6 +802,125 @@
                 Continuously transmit the hairs, instead of on request (0 = disable, 1 = enable)
                 </div>
                 <div class="cb"></div>
+              </div>
+            </div>
+          </div>
+          <div class="cb"></div>
+        </div>
+        <div v-if="view===9 || view===0" data-id="nine" class="protocolBlock">
+          <div class="protocolLeftSide">DISTANCES</div>
+          <div class="protocolRightSide">
+            <div class="block">
+              <div class="line">
+                <div class="smallBlock fl">
+                  cmd
+                </div>
+                <div class="smallBlock fl">
+                  char
+                </div>
+                <div class="smallBlock fl">
+                  1
+                </div>
+                <div class="smallBlock fl">
+                  2
+                </div>
+                <div class="protocolDescription fl">
+                </div>
+                <div class="cb"></div>
+              </div>
+              <div class="line">
+                <div class="smallBlock fl">
+                  version
+                </div>
+                <div class="smallBlock fl">
+                  uint8
+                </div>
+                <div class="smallBlock fl">
+                  1
+                </div>
+                <div class="smallBlock fl">
+                  3
+                </div>
+                <div class="protocolDescription fl">
+                  command protocol version
+                </div>
+                <div class="cb"></div>
+              </div>
+              <div class="line">
+                <div class="smallBlock fl">
+                  nb distances
+                </div>
+                <div class="smallBlock fl">
+                  uint8
+                </div>
+                <div class="smallBlock fl">
+                  1
+                </div>
+                <div class="smallBlock fl">
+                  5
+                </div>
+                <div class="protocolDescription fl">
+                  amount of distance reports that will follow
+                </div>
+                <div class="cb"></div>
+              </div>
+              <div class="line">
+                <div class="smallBlock fl">
+                  frame
+                </div>
+                <div class="smallBlock fl">
+                  uint32
+                </div>
+                <div class="smallBlock fl">
+                  4
+                </div>
+                <div class="smallBlock fl">
+                  12345
+                </div>
+                <div class="protocolDescription fl">
+                  Current frame of the system
+                </div>
+                <div class="cb"></div>
+              </div>
+
+              <div class="lineGroup lineGroupGray">
+                <div class="repeatText">repeat nb_distances times</div>
+                <div class="line">
+                    <div class="smallBlock fl">
+                        id
+                    </div>
+                    <div class="smallBlock fl">
+                        uint16
+                    </div>
+                    <div class="smallBlock fl">
+                        2
+                    </div>
+                    <div class="smallBlock fl">
+                        101
+                    </div>
+                    <div class="protocolDescription fl">
+                        device id - 1..65536
+                    </div>
+                    <div class="cb"></div>
+                </div>
+                <div class="line">
+                    <div class="smallBlock fl">
+                        distance
+                    </div>
+                    <div class="smallBlock fl">
+                        uint16
+                    </div>
+                    <div class="smallBlock fl">
+                        2
+                    </div>
+                    <div class="smallBlock fl">
+                        167
+                    </div>
+                    <div class="protocolDescription fl">
+                        distance to this device (in cm)
+                    </div>
+                    <div class="cb"></div>
+                </div>
               </div>
             </div>
           </div>
