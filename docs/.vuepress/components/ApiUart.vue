@@ -921,6 +921,42 @@
                     </div>
                     <div class="cb"></div>
                 </div>
+                <div class="line">
+                    <div class="smallBlock fl">
+                        RSSI1
+                    </div>
+                    <div class="smallBlock fl">
+                        uint8
+                    </div>
+                    <div class="smallBlock fl">
+                        1
+                    </div>
+                    <div class="smallBlock fl">
+                        43
+                    </div>
+                    <div class="protocolDescription fl">
+                        RSSI1 - Tag to Anchor(in dB)
+                    </div>
+                    <div class="cb"></div>
+                </div>
+                <div class="line">
+                    <div class="smallBlock fl">
+                        RSSI2
+                    </div>
+                    <div class="smallBlock fl">
+                        uint8
+                    </div>
+                    <div class="smallBlock fl">
+                        1
+                    </div>
+                    <div class="smallBlock fl">
+                        44
+                    </div>
+                    <div class="protocolDescription fl">
+                        RSSI2 - Anchor to Tag (in dB)
+                    </div>
+                    <div class="cb"></div>
+                </div>
               </div>
             </div>
           </div>
