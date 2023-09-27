@@ -12,6 +12,7 @@
           <a @click="view=7">7. ANCHORLIST (RX)</a>
           <a @click="view=8">8. EXTERNAL IMPULSE (RX)</a>
           <a @click="view=9">9. DEVICE STATUSES (RX)</a>
+          <a @click="view=10">10. RANKING (RX)</a>
           <div class="cb"></div>
       </div>
   </nav>
@@ -39,10 +40,48 @@
           <div class="cb"></div>
       </div>
       <div v-if="view===1 || view===0" data-id="one" class="protocolBlock">
+        
           <div class="protocolLeftSide">TAGSPEED</div>
           <div class="protocolRightSide">
               <div class="block">
-                  <div class="line">
+                <div class="line">
+                  <div class="smallBlock fl">
+                      preamble
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      '##'
+                  </div>
+                  <div class="protocolDescription fl">
+                      Preamble bytes (2x '#')
+                  </div>
+                  <div class="cb"></div>
+                </div>
+                <div class="line">
+                  <div class="smallBlock fl">
+                      length
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      16
+                  </div>
+                  <div class="protocolDescription fl">
+                      Length of the complete message
+                  </div>
+                  <div class="cb"></div>
+                </div>
+              
+                <div class="line">
                       <div class="smallBlock fl">
                           cmd
                       </div>
@@ -124,6 +163,42 @@
           <div class="protocolLeftSide">DATA</div>
           <div class="protocolRightSide">
             <div class="block">
+              <div class="line">
+                  <div class="smallBlock fl">
+                      preamble
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      '##'
+                  </div>
+                  <div class="protocolDescription fl">
+                      Preamble bytes (2x '#')
+                  </div>
+                  <div class="cb"></div>
+                </div>
+                <div class="line">
+                  <div class="smallBlock fl">
+                      length
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      16
+                  </div>
+                  <div class="protocolDescription fl">
+                      Length of the complete message
+                  </div>
+                  <div class="cb"></div>
+                </div>
               <div class="line">
                 <div class="smallBlock fl">
                   cmd
@@ -1277,6 +1352,42 @@
           <div class="protocolRightSide">
             <div class="block">
               <div class="line">
+                  <div class="smallBlock fl">
+                      preamble
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      '##'
+                  </div>
+                  <div class="protocolDescription fl">
+                      Preamble bytes (2x '#')
+                  </div>
+                  <div class="cb"></div>
+                </div>
+                <div class="line">
+                  <div class="smallBlock fl">
+                      length
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      16
+                  </div>
+                  <div class="protocolDescription fl">
+                      Length of the complete message
+                  </div>
+                  <div class="cb"></div>
+                </div>
+              <div class="line">
                 <div class="smallBlock fl">
                   cmd
                 </div>
@@ -1395,6 +1506,42 @@
           <div class="protocolRightSide">
             <div class="block">
               <div class="line">
+                  <div class="smallBlock fl">
+                      preamble
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      '##'
+                  </div>
+                  <div class="protocolDescription fl">
+                      Preamble bytes (2x '#')
+                  </div>
+                  <div class="cb"></div>
+                </div>
+                <div class="line">
+                  <div class="smallBlock fl">
+                      length
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      16
+                  </div>
+                  <div class="protocolDescription fl">
+                      Length of the complete message
+                  </div>
+                  <div class="cb"></div>
+                </div>
+              <div class="line">
                 <div class="smallBlock fl">
                   cmd
                 </div>
@@ -1437,6 +1584,42 @@
           <div class="protocolLeftSide">TAGLIST</div>
           <div class="protocolRightSide">
             <div class="block">
+              <div class="line">
+                  <div class="smallBlock fl">
+                      preamble
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      '##'
+                  </div>
+                  <div class="protocolDescription fl">
+                      Preamble bytes (2x '#')
+                  </div>
+                  <div class="cb"></div>
+                </div>
+                <div class="line">
+                  <div class="smallBlock fl">
+                      length
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      16
+                  </div>
+                  <div class="protocolDescription fl">
+                      Length of the complete message
+                  </div>
+                  <div class="cb"></div>
+                </div>
               <div class="line">
                 <div class="smallBlock fl">
                   cmd
@@ -1574,6 +1757,42 @@
           <div class="protocolRightSide">
             <div class="block">
               <div class="line">
+                  <div class="smallBlock fl">
+                      preamble
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      '##'
+                  </div>
+                  <div class="protocolDescription fl">
+                      Preamble bytes (2x '#')
+                  </div>
+                  <div class="cb"></div>
+                </div>
+                <div class="line">
+                  <div class="smallBlock fl">
+                      length
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      16
+                  </div>
+                  <div class="protocolDescription fl">
+                      Length of the complete message
+                  </div>
+                  <div class="cb"></div>
+                </div>
+              <div class="line">
                 <div class="smallBlock fl">
                   cmd
                 </div>
@@ -1616,6 +1835,42 @@
           <div class="protocolLeftSide">ANCHORLIST</div>
           <div class="protocolRightSide">
             <div class="block">
+              <div class="line">
+                  <div class="smallBlock fl">
+                      preamble
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      '##'
+                  </div>
+                  <div class="protocolDescription fl">
+                      Preamble bytes (2x '#')
+                  </div>
+                  <div class="cb"></div>
+                </div>
+                <div class="line">
+                  <div class="smallBlock fl">
+                      length
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      16
+                  </div>
+                  <div class="protocolDescription fl">
+                      Length of the complete message
+                  </div>
+                  <div class="cb"></div>
+                </div>
               <div class="line">
                 <div class="smallBlock fl">
                   cmd
@@ -1771,6 +2026,42 @@
           <div class="protocolRightSide">
             <div class="block">
               <div class="line">
+                  <div class="smallBlock fl">
+                      preamble
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      '##'
+                  </div>
+                  <div class="protocolDescription fl">
+                      Preamble bytes (2x '#')
+                  </div>
+                  <div class="cb"></div>
+                </div>
+                <div class="line">
+                  <div class="smallBlock fl">
+                      length
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      16
+                  </div>
+                  <div class="protocolDescription fl">
+                      Length of the complete message
+                  </div>
+                  <div class="cb"></div>
+                </div>
+              <div class="line">
                 <div class="smallBlock fl">
                   cmd
                 </div>
@@ -1921,6 +2212,42 @@
           <div class="protocolLeftSide">DEVICE STATUSES</div>
           <div class="protocolRightSide">
             <div class="block">
+              <div class="line">
+                  <div class="smallBlock fl">
+                      preamble
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      '##'
+                  </div>
+                  <div class="protocolDescription fl">
+                      Preamble bytes (2x '#')
+                  </div>
+                  <div class="cb"></div>
+                </div>
+                <div class="line">
+                  <div class="smallBlock fl">
+                      length
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      16
+                  </div>
+                  <div class="protocolDescription fl">
+                      Length of the complete message
+                  </div>
+                  <div class="cb"></div>
+                </div>
               <div class="line">
                 <div class="smallBlock fl">
                   cmd
@@ -2359,6 +2686,239 @@
           </div>
           <div class="cb"></div>
         </div>  
+        <div v-if="view===10 || view===0" data-id="ten" class="protocolBlock">
+          <div class="protocolLeftSide">RANKING</div>
+          <div class="protocolRightSide">
+            <div class="block">
+              <div class="line">
+                  <div class="smallBlock fl">
+                      preamble
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      '##'
+                  </div>
+                  <div class="protocolDescription fl">
+                      Preamble bytes (2x '#')
+                  </div>
+                  <div class="cb"></div>
+                </div>
+                <div class="line">
+                  <div class="smallBlock fl">
+                      length
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      16
+                  </div>
+                  <div class="protocolDescription fl">
+                      Length of the complete message
+                  </div>
+                  <div class="cb"></div>
+                </div>
+              <div class="line">
+                <div class="smallBlock fl">
+                  cmd
+                </div>
+                <div class="smallBlock fl">
+                  char
+                </div>
+                <div class="smallBlock fl">
+                  1
+                </div>
+                <div class="smallBlock fl">
+                  'R'/82
+                </div>
+                <div class="protocolDescription fl">
+                  A single character indicating the command type.
+                </div>
+                <div class="cb"></div>
+              </div>
+              <div class="line">
+                <div class="smallBlock fl">
+                  version
+                </div>
+                <div class="smallBlock fl">
+                  uint8
+                </div>
+                <div class="smallBlock fl">
+                  1
+                </div>
+                <div class="smallBlock fl">
+                  ..
+                </div>
+                <div class="protocolDescription fl">
+                  A uint8 value representing the command protocol version.
+                </div>
+                <div class="cb"></div>
+              </div>
+              <div class="line">
+                <div class="smallBlock fl">
+                  length
+                </div>
+                <div class="smallBlock fl">
+                  uint16
+                </div>
+                <div class="smallBlock fl">
+                  2
+                </div>
+                <div class="smallBlock fl">
+                  ..
+                </div>
+                <div class="protocolDescription fl">
+                  A uint16 value indicating the amount of bytes that will follow.
+                </div>
+                <div class="cb"></div>
+              </div>
+              <div class="line">
+                <div class="smallBlock fl">
+                  frame
+                </div>
+                <div class="smallBlock fl">
+                  uint32
+                </div>
+                <div class="smallBlock fl">
+                  4
+                </div>
+                <div class="smallBlock fl">
+                  ..
+                </div>
+                <div class="protocolDescription fl">
+                  A uint32 value representing the frame number.
+                </div>
+                <div class="cb"></div>
+              </div>
+              <div class="line">
+                <div class="smallBlock fl">
+                  gps time
+                </div>
+                <div class="smallBlock fl">
+                  uint8[8]
+                </div>
+                <div class="smallBlock fl">
+                  8
+                </div>
+                <div class="smallBlock fl">
+                  ..
+                </div>
+                <div class="protocolDescription fl">
+                  An array of uint8[8] representing the time in GPS format.
+                </div>
+                <div class="cb"></div>
+              </div>
+              <div class="line">
+                <div class="smallBlock fl">
+                  tagCnt
+                </div>
+                <div class="smallBlock fl">
+                  uint16
+                </div>
+                <div class="smallBlock fl">
+                  2
+                </div>
+                <div class="smallBlock fl">
+                  ..
+                </div>
+                <div class="protocolDescription fl">
+                  A uint16 value indicating the amount of tags that will follow.
+                </div>
+                <div class="cb"></div>
+              </div>
+              <div class="lineGroup">
+                <div class="lineGroupInner lineGroupBlue_1">
+                  <div class="repeatText">The following block is repeated tagCnt times:</div>
+                  <div class="line">
+                    <div class="smallBlock fl">
+                      id
+                    </div>
+                    <div class="smallBlock fl">
+                      uint16
+                    </div>
+                    <div class="smallBlock fl">
+                      2
+                    </div>
+                    <div class="smallBlock fl">
+                      ..
+                    </div>
+                    <div class="protocolDescription fl">
+                      A uint16 value representing the tag id.
+                    </div>
+                    <div class="cb"></div>
+                  </div>
+                  <div class="line">
+                    <div class="smallBlock fl">
+                      horseNr
+                    </div>
+                    <div class="smallBlock fl">
+                      uint16
+                    </div>
+                    <div class="smallBlock fl">
+                      2
+                    </div>
+                    <div class="smallBlock fl">
+                      ..
+                    </div>
+                    <div class="protocolDescription fl">
+                      A uint16 value representing the horse number.
+                    </div>
+                    <div class="cb"></div>
+                  </div>
+                  <div class="line">
+                    <div class="smallBlock fl">
+                      rank
+                    </div>
+                    <div class="smallBlock fl">
+                      uint16
+                      </div>
+                      <div class="smallBlock fl">
+                        2
+                      </div>
+                      <div class="smallBlock fl">
+                        ..
+                      </div>
+                      <div class="protocolDescription fl">
+                        A uint16 value representing the rank.
+                      </div>
+                      <div class="cb"></div>
+                    </div>
+                    <div class="line">
+                      <div class="smallBlock fl">
+                        extra
+                      </div>
+                      <div class="smallBlock fl">
+                        uint16
+                      </div>
+                      <div class="smallBlock fl">
+                        2
+                      </div>
+                      <div class="smallBlock fl">
+                        ..
+                      </div>
+                      <div class="protocolDescription fl">
+                        A uint16 value representing extra information.
+                      </div>
+                      <div class="cb"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cb"></div>
+      </div>
+                      
+        
   </div>
 </div>
 </template>

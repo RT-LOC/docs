@@ -42,6 +42,42 @@
             <div class="protocolLeftSide">PROPERTIES</div>
             <div class="protocolRightSide">
                 <div class="block">
+                  <div class="line">
+                  <div class="smallBlock fl">
+                      preamble
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      '##'
+                  </div>
+                  <div class="protocolDescription fl">
+                      Preamble bytes (2x '#')
+                  </div>
+                  <div class="cb"></div>
+                </div>
+                <div class="line">
+                  <div class="smallBlock fl">
+                      length
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      16
+                  </div>
+                  <div class="protocolDescription fl">
+                      Length of the complete message
+                  </div>
+                  <div class="cb"></div>
+                </div>
                     <div class="line">
                         <div class="smallBlock fl">
                             cmd
@@ -324,6 +360,42 @@
           <div class="protocolRightSide">
             <div class="block">
               <div class="line">
+                  <div class="smallBlock fl">
+                      preamble
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      '##'
+                  </div>
+                  <div class="protocolDescription fl">
+                      Preamble bytes (2x '#')
+                  </div>
+                  <div class="cb"></div>
+                </div>
+                <div class="line">
+                  <div class="smallBlock fl">
+                      length
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      16
+                  </div>
+                  <div class="protocolDescription fl">
+                      Length of the complete message
+                  </div>
+                  <div class="cb"></div>
+                </div>
+              <div class="line">
                 <div class="smallBlock fl">
                   cmd
                 </div>
@@ -367,6 +439,42 @@
           <div class="protocolRightSide">
             <div class="block">
               <div class="line">
+                  <div class="smallBlock fl">
+                      preamble
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      '##'
+                  </div>
+                  <div class="protocolDescription fl">
+                      Preamble bytes (2x '#')
+                  </div>
+                  <div class="cb"></div>
+                </div>
+                <div class="line">
+                  <div class="smallBlock fl">
+                      length
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      16
+                  </div>
+                  <div class="protocolDescription fl">
+                      Length of the complete message
+                  </div>
+                  <div class="cb"></div>
+                </div>
+              <div class="line">
                 <div class="smallBlock fl">
                   cmd
                 </div>
@@ -409,6 +517,42 @@
           <div class="protocolLeftSide">TX Power (SET)</div>
           <div class="protocolRightSide">
             <div class="block">
+              <div class="line">
+                  <div class="smallBlock fl">
+                      preamble
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      '##'
+                  </div>
+                  <div class="protocolDescription fl">
+                      Preamble bytes (2x '#')
+                  </div>
+                  <div class="cb"></div>
+                </div>
+                <div class="line">
+                  <div class="smallBlock fl">
+                      length
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      16
+                  </div>
+                  <div class="protocolDescription fl">
+                      Length of the complete message
+                  </div>
+                  <div class="cb"></div>
+                </div>
               <div class="line">
                 <div class="smallBlock fl">
                   cmd
@@ -477,6 +621,42 @@
           <div class="protocolRightSide">
             <div class="block">
               <div class="line">
+                  <div class="smallBlock fl">
+                      preamble
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      '##'
+                  </div>
+                  <div class="protocolDescription fl">
+                      Preamble bytes (2x '#')
+                  </div>
+                  <div class="cb"></div>
+                </div>
+                <div class="line">
+                  <div class="smallBlock fl">
+                      length
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      16
+                  </div>
+                  <div class="protocolDescription fl">
+                      Length of the complete message
+                  </div>
+                  <div class="cb"></div>
+                </div>
+              <div class="line">
                 <div class="smallBlock fl">
                   cmd
                 </div>
@@ -539,6 +719,42 @@
           <div class="protocolRightSide">
             <div class="block">
               <div class="line">
+                  <div class="smallBlock fl">
+                      preamble
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      '##'
+                  </div>
+                  <div class="protocolDescription fl">
+                      Preamble bytes (2x '#')
+                  </div>
+                  <div class="cb"></div>
+                </div>
+                <div class="line">
+                  <div class="smallBlock fl">
+                      length
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      16
+                  </div>
+                  <div class="protocolDescription fl">
+                      Length of the complete message
+                  </div>
+                  <div class="cb"></div>
+                </div>
+              <div class="line">
                 <div class="smallBlock fl">
                   cmd
                 </div>
@@ -581,6 +797,42 @@
           <div class="protocolLeftSide">HAIRS (SET)</div>
           <div class="protocolRightSide">
             <div class="block">
+              <div class="line">
+                  <div class="smallBlock fl">
+                      preamble
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      '##'
+                  </div>
+                  <div class="protocolDescription fl">
+                      Preamble bytes (2x '#')
+                  </div>
+                  <div class="cb"></div>
+                </div>
+                <div class="line">
+                  <div class="smallBlock fl">
+                      length
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      16
+                  </div>
+                  <div class="protocolDescription fl">
+                      Length of the complete message
+                  </div>
+                  <div class="cb"></div>
+                </div>
               <div class="line">
                 <div class="smallBlock fl">
                   cmd
@@ -697,6 +949,42 @@
           <div class="protocolRightSide">
             <div class="block">
               <div class="line">
+                  <div class="smallBlock fl">
+                      preamble
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      '##'
+                  </div>
+                  <div class="protocolDescription fl">
+                      Preamble bytes (2x '#')
+                  </div>
+                  <div class="cb"></div>
+                </div>
+                <div class="line">
+                  <div class="smallBlock fl">
+                      length
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      16
+                  </div>
+                  <div class="protocolDescription fl">
+                      Length of the complete message
+                  </div>
+                  <div class="cb"></div>
+                </div>
+              <div class="line">
                 <div class="smallBlock fl">
                   cmd
                 </div>
@@ -811,6 +1099,42 @@
           <div class="protocolLeftSide">DISTANCES</div>
           <div class="protocolRightSide">
             <div class="block">
+              <div class="line">
+                  <div class="smallBlock fl">
+                      preamble
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      '##'
+                  </div>
+                  <div class="protocolDescription fl">
+                      Preamble bytes (2x '#')
+                  </div>
+                  <div class="cb"></div>
+                </div>
+                <div class="line">
+                  <div class="smallBlock fl">
+                      length
+                  </div>
+                  <div class="smallBlock fl">
+                      uint16
+                  </div>
+                  <div class="smallBlock fl">
+                      2
+                  </div>
+                  <div class="smallBlock fl">
+                      16
+                  </div>
+                  <div class="protocolDescription fl">
+                      Length of the complete message
+                  </div>
+                  <div class="cb"></div>
+                </div>
               <div class="line">
                 <div class="smallBlock fl">
                   cmd

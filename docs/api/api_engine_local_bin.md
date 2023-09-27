@@ -1,24 +1,21 @@
-# Local live data
+# Local Binary Data (TCP & UDP)
 
-Real-time data (position data, tag/anchor statuses, sensor data, etc.) can be received over UDP/TCP, in binary format.
+Access to real-time data is facilitated through our API. Our desktop application incorporates a UDP and/or TCP server that transmits this data in a binary format for efficient communication.
+The transmitted data encompasses various information such as position data, status of tags/anchors, sensor data, among others.
 
-## 1. Connection protocol
+## 1. Connection Protocol
 
-1. Configure data transmission over UDP / TCP / websocket in our desktop application (in the API view)
+1. Set up data transmission via UDP, TCP, or WebSocket using our desktop application (cxRTLS or cxParser).
 
-2. Connect to your computer/server to the correct IP + port
+2. Establish a connection to your computer/server using the appropriate IP address and port number.
 
-## 2. Data Format
+## 2. Data Structure
 
-### Preamble
-
-Every message will contain a preamble with the following format:
-
-![API preamble explanation](./img/api_preamble.png)
+The data format is a structured binary format designed for efficient transmission and parsing. It consists of a preamble, length, command, version, and other fields depending on the command type.
 
 ### Commands
 
-Depending on the command indicated in the preamble, the rest of the message will be decoded as indicated below.
+Depending on the command indicated in he preamble, the rest of the message will be decoded as indicated below.
 
 <ApiApp></ApiApp>
 

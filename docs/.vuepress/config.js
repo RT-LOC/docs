@@ -401,9 +401,9 @@ function getAPISidebar() {
             title: "Live data interfaces",
             collapsable: false,
             children: [
-                ["/api/api_engine_local_mqtt", "Local MQTT JSON data"],
-                ["/api/api_engine_local_bin", "Local TCP Binary data"],
-                ["/api/api_engine_cloud_mqtt", "Cloud MQTT JSON data"],
+                ["/api/api_engine_local_bin", "Local Binary data (TCP & UDP)"],
+                ["/api/api_engine_local_mqtt", "Local JSON data (MQTT)"],
+                ["/api/api_engine_cloud_mqtt", "Cloud JSON data (MQTT)"],
                 // ["/api/api_local", "Local connection"],
                 // ["/api/api_cloud", "Cloud live data"],
                 // ["/api/api_web", "MQTT JSON packets"],
@@ -421,8 +421,8 @@ function getAPISidebar() {
             title: "Device interfaces",
             collapsable: false,
             children: [
-                ["/api/api_console", "Console (CLI)"],
                 ["/api/api_uart", "Serial (UART)"],
+                ["/api/api_console", "Console (CLI)"],
                 ["/api/api_firmware", "Firmware library"],
                 ["/api/api_ble", "BLE service(s)"]
             ]
