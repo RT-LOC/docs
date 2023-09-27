@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Local Binary Data (TCP &amp; UDP) | RTLOC Documentation</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/img/logo.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#095A9E">
+    <script>!function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+    analytics.load("6B7vSa8ecCLBUEiWTPbvB5xNfm9aMMSE");
+    analytics.page();
+    }}();</script>
+    <meta name="description" content="Your guide to RTLOC&#39;s location intelligence IoT solutions">
+    <meta name="theme-color" content="#095A9E">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/mstile-150x150.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.4ab85554.css" as="style"><link rel="preload" href="/assets/js/app.d03c60b2.js" as="script"><link rel="preload" href="/assets/js/5.40e3af12.js" as="script"><link rel="preload" href="/assets/js/75.661ea03d.js" as="script"><link rel="preload" href="/assets/js/39.5082a64a.js" as="script"><link rel="preload" href="/assets/js/41.2220e4f8.js" as="script"><link rel="prefetch" href="/assets/js/1.874bf543.js"><link rel="prefetch" href="/assets/js/10.e42a3494.js"><link rel="prefetch" href="/assets/js/100.a5325a7c.js"><link rel="prefetch" href="/assets/js/101.20760156.js"><link rel="prefetch" href="/assets/js/102.4788e8ec.js"><link rel="prefetch" href="/assets/js/103.01891357.js"><link rel="prefetch" href="/assets/js/104.fcfa6487.js"><link rel="prefetch" href="/assets/js/105.284c58e8.js"><link rel="prefetch" href="/assets/js/106.8f886da1.js"><link rel="prefetch" href="/assets/js/107.0fb3e63f.js"><link rel="prefetch" href="/assets/js/108.56e79427.js"><link rel="prefetch" href="/assets/js/109.c7589478.js"><link rel="prefetch" href="/assets/js/11.0f23a8cf.js"><link rel="prefetch" href="/assets/js/110.3d9ee697.js"><link rel="prefetch" href="/assets/js/111.c5a7d8e7.js"><link rel="prefetch" href="/assets/js/112.031f726b.js"><link rel="prefetch" href="/assets/js/113.216ff747.js"><link rel="prefetch" href="/assets/js/114.7a9cb9ad.js"><link rel="prefetch" href="/assets/js/115.517bfa58.js"><link rel="prefetch" href="/assets/js/116.a1b610cf.js"><link rel="prefetch" href="/assets/js/117.42e003d0.js"><link rel="prefetch" href="/assets/js/118.b53c45ee.js"><link rel="prefetch" href="/assets/js/119.0b318bca.js"><link rel="prefetch" href="/assets/js/12.e5136303.js"><link rel="prefetch" href="/assets/js/120.5e50c19a.js"><link rel="prefetch" href="/assets/js/121.999b64a2.js"><link rel="prefetch" href="/assets/js/122.dd10e455.js"><link rel="prefetch" href="/assets/js/123.3394e895.js"><link rel="prefetch" href="/assets/js/124.570f124e.js"><link rel="prefetch" href="/assets/js/125.a9134aeb.js"><link rel="prefetch" href="/assets/js/126.e077cc22.js"><link rel="prefetch" href="/assets/js/127.416d98b3.js"><link rel="prefetch" href="/assets/js/128.f0f09ec0.js"><link rel="prefetch" href="/assets/js/129.fb86f8ec.js"><link rel="prefetch" href="/assets/js/13.90b1bd5e.js"><link rel="prefetch" href="/assets/js/14.b3a2ed1d.js"><link rel="prefetch" href="/assets/js/15.ec02bb73.js"><link rel="prefetch" href="/assets/js/16.9b3be9bb.js"><link rel="prefetch" href="/assets/js/17.d9c3f936.js"><link rel="prefetch" href="/assets/js/18.b42f09e0.js"><link rel="prefetch" href="/assets/js/19.945d56f0.js"><link rel="prefetch" href="/assets/js/2.d552cac1.js"><link rel="prefetch" href="/assets/js/20.2876e3b4.js"><link rel="prefetch" href="/assets/js/21.99b60bfc.js"><link rel="prefetch" href="/assets/js/22.0b0ceaec.js"><link rel="prefetch" href="/assets/js/23.606e2206.js"><link rel="prefetch" href="/assets/js/24.f45a54df.js"><link rel="prefetch" href="/assets/js/25.557be4d8.js"><link rel="prefetch" href="/assets/js/26.744bd58d.js"><link rel="prefetch" href="/assets/js/27.91fbc47e.js"><link rel="prefetch" href="/assets/js/28.6a52f062.js"><link rel="prefetch" href="/assets/js/29.f10c3921.js"><link rel="prefetch" href="/assets/js/3.3cc591a2.js"><link rel="prefetch" href="/assets/js/30.a5b2417c.js"><link rel="prefetch" href="/assets/js/31.79d23ae5.js"><link rel="prefetch" href="/assets/js/32.c6b9815f.js"><link rel="prefetch" href="/assets/js/33.25acd17b.js"><link rel="prefetch" href="/assets/js/34.699792a1.js"><link rel="prefetch" href="/assets/js/35.b9fdd935.js"><link rel="prefetch" href="/assets/js/36.56cf6aa7.js"><link rel="prefetch" href="/assets/js/37.d18461eb.js"><link rel="prefetch" href="/assets/js/38.b8991898.js"><link rel="prefetch" href="/assets/js/40.418af7fe.js"><link rel="prefetch" href="/assets/js/42.9cea7929.js"><link rel="prefetch" href="/assets/js/43.813dc714.js"><link rel="prefetch" href="/assets/js/44.8ef7fd2b.js"><link rel="prefetch" href="/assets/js/45.66411ad7.js"><link rel="prefetch" href="/assets/js/46.3c196e43.js"><link rel="prefetch" href="/assets/js/47.bb5bd240.js"><link rel="prefetch" href="/assets/js/48.0b2c4ad9.js"><link rel="prefetch" href="/assets/js/49.21c42ded.js"><link rel="prefetch" href="/assets/js/50.6e07d654.js"><link rel="prefetch" href="/assets/js/51.5db4d4cb.js"><link rel="prefetch" href="/assets/js/52.7a166684.js"><link rel="prefetch" href="/assets/js/53.600bad8a.js"><link rel="prefetch" href="/assets/js/54.3717471c.js"><link rel="prefetch" href="/assets/js/55.b6396326.js"><link rel="prefetch" href="/assets/js/56.b7f86dc0.js"><link rel="prefetch" href="/assets/js/57.64ad3778.js"><link rel="prefetch" href="/assets/js/58.66b0c139.js"><link rel="prefetch" href="/assets/js/59.33a52aeb.js"><link rel="prefetch" href="/assets/js/6.a3b217e9.js"><link rel="prefetch" href="/assets/js/60.e3fa3313.js"><link rel="prefetch" href="/assets/js/61.31360618.js"><link rel="prefetch" href="/assets/js/62.c70b8c36.js"><link rel="prefetch" href="/assets/js/63.b68b8485.js"><link rel="prefetch" href="/assets/js/64.4d4fe3a3.js"><link rel="prefetch" href="/assets/js/65.2f8aa947.js"><link rel="prefetch" href="/assets/js/66.3b33a18d.js"><link rel="prefetch" href="/assets/js/67.cf6e6648.js"><link rel="prefetch" href="/assets/js/68.e404c36c.js"><link rel="prefetch" href="/assets/js/69.47999d0e.js"><link rel="prefetch" href="/assets/js/7.6111e648.js"><link rel="prefetch" href="/assets/js/70.4db60185.js"><link rel="prefetch" href="/assets/js/71.57175e65.js"><link rel="prefetch" href="/assets/js/72.015345f2.js"><link rel="prefetch" href="/assets/js/73.e4b04221.js"><link rel="prefetch" href="/assets/js/74.901a207a.js"><link rel="prefetch" href="/assets/js/76.25b59486.js"><link rel="prefetch" href="/assets/js/77.e62fee4e.js"><link rel="prefetch" href="/assets/js/78.a2b624c9.js"><link rel="prefetch" href="/assets/js/79.00f90e9b.js"><link rel="prefetch" href="/assets/js/8.912d71a0.js"><link rel="prefetch" href="/assets/js/80.04a5fbec.js"><link rel="prefetch" href="/assets/js/81.1ad12ec6.js"><link rel="prefetch" href="/assets/js/82.a6285988.js"><link rel="prefetch" href="/assets/js/83.59850f2e.js"><link rel="prefetch" href="/assets/js/84.6f05ee34.js"><link rel="prefetch" href="/assets/js/85.8f5c17c4.js"><link rel="prefetch" href="/assets/js/86.4db3d411.js"><link rel="prefetch" href="/assets/js/87.88221abc.js"><link rel="prefetch" href="/assets/js/88.efd97a97.js"><link rel="prefetch" href="/assets/js/89.c039b2ea.js"><link rel="prefetch" href="/assets/js/9.fc1e21f6.js"><link rel="prefetch" href="/assets/js/90.8944571f.js"><link rel="prefetch" href="/assets/js/91.0a40c7ec.js"><link rel="prefetch" href="/assets/js/92.afd06fc8.js"><link rel="prefetch" href="/assets/js/93.6dd91234.js"><link rel="prefetch" href="/assets/js/94.eba9a9ab.js"><link rel="prefetch" href="/assets/js/95.a9c9de99.js"><link rel="prefetch" href="/assets/js/96.517a970f.js"><link rel="prefetch" href="/assets/js/97.cb8e5a60.js"><link rel="prefetch" href="/assets/js/98.c5f1dc65.js"><link rel="prefetch" href="/assets/js/99.f55d8976.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.4ab85554.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">RTLOC Documentation</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/distancing/" class="nav-link">
+  Distancing
+</a></div><div class="nav-item"><a href="/positioning/" class="nav-link">
+  Positioning
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Software" class="dropdown-title"><span class="title">Software</span> <span class="arrow down"></span></button> <button type="button" aria-label="Software" class="mobile-dropdown-title"><span class="title">Software</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/" class="nav-link">
+  Introduction
+</a></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/hub/" class="nav-link">
+  Desktop
+</a></li><li class="dropdown-subitem"><a href="/manager/" class="nav-link">
+  Engine / cxRTLS
+</a></li><li class="dropdown-subitem"><a href="/web/" class="nav-link">
+  Web
+</a></li><li class="dropdown-subitem"><a href="/embedded/" class="nav-link">
+  Devices
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/api/" class="nav-link router-link-active">
+  APIs
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Learn more" class="dropdown-title"><span class="title">Learn more</span> <span class="arrow down"></span></button> <button type="button" aria-label="Learn more" class="mobile-dropdown-title"><span class="title">Learn more</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/reference/" class="nav-link">
+  System Reference
+</a></li><li class="dropdown-item"><!----> <a href="/faq/faq_general.html" class="nav-link">
+  FAQ
+</a></li><li class="dropdown-item"><!----> <a href="/troubleshoot/" class="nav-link">
+  Troubleshoot
+</a></li></ul></div></div><div class="nav-item"><a href="https://rtloc.com/tickets" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Support
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/distancing/" class="nav-link">
+  Distancing
+</a></div><div class="nav-item"><a href="/positioning/" class="nav-link">
+  Positioning
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Software" class="dropdown-title"><span class="title">Software</span> <span class="arrow down"></span></button> <button type="button" aria-label="Software" class="mobile-dropdown-title"><span class="title">Software</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/" class="nav-link">
+  Introduction
+</a></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/hub/" class="nav-link">
+  Desktop
+</a></li><li class="dropdown-subitem"><a href="/manager/" class="nav-link">
+  Engine / cxRTLS
+</a></li><li class="dropdown-subitem"><a href="/web/" class="nav-link">
+  Web
+</a></li><li class="dropdown-subitem"><a href="/embedded/" class="nav-link">
+  Devices
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/api/" class="nav-link router-link-active">
+  APIs
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Learn more" class="dropdown-title"><span class="title">Learn more</span> <span class="arrow down"></span></button> <button type="button" aria-label="Learn more" class="mobile-dropdown-title"><span class="title">Learn more</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/reference/" class="nav-link">
+  System Reference
+</a></li><li class="dropdown-item"><!----> <a href="/faq/faq_general.html" class="nav-link">
+  FAQ
+</a></li><li class="dropdown-item"><!----> <a href="/troubleshoot/" class="nav-link">
+  Troubleshoot
+</a></li></ul></div></div><div class="nav-item"><a href="https://rtloc.com/tickets" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Support
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Live data interfaces</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/api/api_engine_local_bin.html" aria-current="page" class="active sidebar-link">Local Binary data (TCP &amp; UDP)</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/api/api_engine_local_bin.html#_1-connection-protocol" class="sidebar-link">1. Connection Protocol</a></li><li class="sidebar-sub-header"><a href="/api/api_engine_local_bin.html#_2-data-structure" class="sidebar-link">2. Data Structure</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/api/api_engine_local_bin.html#commands" class="sidebar-link">Commands</a></li></ul></li><li class="sidebar-sub-header"><a href="/api/api_engine_local_bin.html#code-examples" class="sidebar-link">Code examples</a></li></ul></li><li><a href="/api/api_engine_local_mqtt.html" class="sidebar-link">Local JSON data (MQTT)</a></li><li><a href="/api/api_engine_cloud_mqtt.html" class="sidebar-link">Cloud JSON data (MQTT)</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Device interfaces</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/api/api_uart.html" class="sidebar-link">Serial (UART)</a></li><li><a href="/api/api_console.html" class="sidebar-link">Console (CLI)</a></li><li><a href="/api/api_firmware.html" class="sidebar-link">Firmware library</a></li><li><a href="/api/api_ble.html" class="sidebar-link">BLE service(s)</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="local-binary-data-tcp-udp"><a href="#local-binary-data-tcp-udp" class="header-anchor">#</a> Local Binary Data (TCP &amp; UDP)</h1> <p>Access to real-time data is facilitated through our API. Our desktop application incorporates a UDP and/or TCP server that transmits this data in a binary format for efficient communication.
+The transmitted data encompasses various information such as position data, status of tags/anchors, sensor data, among others.</p> <h2 id="_1-connection-protocol"><a href="#_1-connection-protocol" class="header-anchor">#</a> 1. Connection Protocol</h2> <ol><li><p>Set up data transmission via UDP, TCP, or WebSocket using our desktop application (cxRTLS or cxParser).</p></li> <li><p>Establish a connection to your computer/server using the appropriate IP address and port number.</p></li></ol> <h2 id="_2-data-structure"><a href="#_2-data-structure" class="header-anchor">#</a> 2. Data Structure</h2> <p>The data format is a structured binary format designed for efficient transmission and parsing. It consists of a preamble, length, command, version, and other fields depending on the command type.</p> <h3 id="commands"><a href="#commands" class="header-anchor">#</a> Commands</h3> <p>Depending on the command indicated in he preamble, the rest of the message will be decoded as indicated below.</p> <div style="width:830px;margin-left:-40px;"><nav id="nav"><div class="wrapper"><a>VIEW ALL</a> <a>1. TAGSPEED (SET/RX)</a> <a>2. DATA (RX)</a> <a>3. TO TAG RAW</a> <a>4. GET TAGLIST</a> <a>5. TAGLIST (RX)</a> <a>6. GET ANCHORLIST</a> <a>7. ANCHORLIST (RX)</a> <a>8. EXTERNAL IMPULSE (RX)</a> <a>9. DEVICE STATUSES (RX)</a> <a>10. RANKING (RX)</a> <div class="cb"></div></div></nav> <div id="protocolWrapper"><div id="protocolHeader"><div class="protocolLeftSide" style="float: left">COMMAND</div> <div class="protocolRightSide"><div class="smallBlock fl">
+                  PARAMS
+              </div> <div class="smallBlock fl">
+                  TYPE
+              </div> <div class="smallBlock fl">
+                  BYTES
+              </div> <div class="smallBlock fl">
+                  EXAMPLE
+              </div> <div class="protocolDescription fl">
+                  DESCRIPTION
+              </div> <div class="cb"></div></div> <div class="cb"></div></div> <div data-id="one" class="protocolBlock"><div class="protocolLeftSide">TAGSPEED</div> <div class="protocolRightSide"><div class="block"><div class="line"><div class="smallBlock fl">
+                      preamble
+                  </div> <div class="smallBlock fl">
+                      uint16
+                  </div> <div class="smallBlock fl">
+                      2
+                  </div> <div class="smallBlock fl">
+                      '##'
+                  </div> <div class="protocolDescription fl">
+                      Preamble bytes (2x '#')
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                      length
+                  </div> <div class="smallBlock fl">
+                      uint16
+                  </div> <div class="smallBlock fl">
+                      2
+                  </div> <div class="smallBlock fl">
+                      16
+                  </div> <div class="protocolDescription fl">
+                      Length of the complete message
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                          cmd
+                      </div> <div class="smallBlock fl">
+                          char
+                      </div> <div class="smallBlock fl">
+                          1
+                      </div> <div class="smallBlock fl">
+                          'S'
+                      </div> <div class="protocolDescription fl"></div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                          version
+                      </div> <div class="smallBlock fl">
+                          uint8
+                      </div> <div class="smallBlock fl">
+                          1
+                      </div> <div class="smallBlock fl">
+                          0
+                      </div> <div class="protocolDescription fl">
+                          command protocol version
+                      </div> <div class="cb"></div></div> <div class="lineGroup lineGroupGray"><div class="repeatText">repeat x times</div> <div class="line"><div class="smallBlock fl">
+                              id
+                          </div> <div class="smallBlock fl">
+                              uint16
+                          </div> <div class="smallBlock fl">
+                              2
+                          </div> <div class="smallBlock fl">
+                              101
+                          </div> <div class="protocolDescription fl">
+                              tag id - 100..65536
+                          </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                              speed
+                          </div> <div class="smallBlock fl">
+                              uint8
+                          </div> <div class="smallBlock fl">
+                              1
+                          </div> <div class="smallBlock fl">
+                              1
+                          </div> <div class="protocolDescription fl">
+                              speed group of tag.<br>list given via other command (to specify)
+                          </div> <div class="cb"></div></div></div></div></div> <div class="cb"></div></div> <div data-id="two" class="protocolBlock"><div class="protocolLeftSide">DATA</div> <div class="protocolRightSide"><div class="block"><div class="line"><div class="smallBlock fl">
+                      preamble
+                  </div> <div class="smallBlock fl">
+                      uint16
+                  </div> <div class="smallBlock fl">
+                      2
+                  </div> <div class="smallBlock fl">
+                      '##'
+                  </div> <div class="protocolDescription fl">
+                      Preamble bytes (2x '#')
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                      length
+                  </div> <div class="smallBlock fl">
+                      uint16
+                  </div> <div class="smallBlock fl">
+                      2
+                  </div> <div class="smallBlock fl">
+                      16
+                  </div> <div class="protocolDescription fl">
+                      Length of the complete message
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  cmd
+                </div> <div class="smallBlock fl">
+                  char
+                </div> <div class="smallBlock fl">
+                  1
+                </div> <div class="smallBlock fl">
+                  'D'
+                </div> <div class="protocolDescription fl"></div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  version
+                </div> <div class="smallBlock fl">
+                  uint8
+                </div> <div class="smallBlock fl">
+                  1
+                </div> <div class="smallBlock fl">
+                  0
+                </div> <div class="protocolDescription fl">
+                  command protocol version
+                </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  length
+                </div> <div class="smallBlock fl">
+                  uint8
+                </div> <div class="smallBlock fl">
+                  1
+                </div> <div class="smallBlock fl">
+                  12 + 13 * timeCnt
+                </div> <div class="protocolDescription fl">
+                  length of (sub)header that follows
+                </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  msg id
+                </div> <div class="smallBlock fl">
+                  uint32
+                </div> <div class="smallBlock fl">
+                  4
+                </div> <div class="smallBlock fl">
+                  5423
+                </div> <div class="protocolDescription fl">
+                  message count for the distances (absolute count)
+                </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  frame nr
+                </div> <div class="smallBlock fl">
+                  uint32
+                </div> <div class="smallBlock fl">
+                  4
+                </div> <div class="smallBlock fl">
+                  145
+                </div> <div class="protocolDescription fl">
+                  number of the current frame<br>frame count goes from 0 to 10.000.000
+                </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  frame size
+                </div> <div class="smallBlock fl">
+                  uint16
+                </div> <div class="smallBlock fl">
+                  2
+                </div> <div class="smallBlock fl">
+                  5000
+                </div> <div class="protocolDescription fl">
+                  frame size in microseconds, divided by 10<br>default frame size = 50000 us
+                </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  timeCnt
+                </div> <div class="smallBlock fl">
+                  uint8
+                </div> <div class="smallBlock fl">
+                  1
+                </div> <div class="smallBlock fl">
+                  1
+                </div> <div class="protocolDescription fl">
+                  amount of timestamps that will follow
+                </div> <div class="cb"></div></div> <div class="lineGroup lineGroupGray"><div class="repeatText">repeat timeCnt times</div> <div class="line"><div class="smallBlock fl">
+                      source id
+                    </div> <div class="smallBlock fl">
+                      uint16
+                    </div> <div class="smallBlock fl">
+                      2
+                    </div> <div class="smallBlock fl">
+                      9000
+                    </div> <div class="protocolDescription fl">
+                      ID of the node that serves the time
+                    </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    year
+                  </div> <div class="smallBlock fl">
+                    uint8
+                  </div> <div class="smallBlock fl">
+                    1
+                  </div> <div class="smallBlock fl"></div> <div class="protocolDescription fl">
+                    ..
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    month
+                  </div> <div class="smallBlock fl">
+                    uint8
+                  </div> <div class="smallBlock fl">
+                    1
+                  </div> <div class="smallBlock fl">
+                    1
+                  </div> <div class="protocolDescription fl">
+                    month
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    day
+                  </div> <div class="smallBlock fl">
+                    uint8
+                  </div> <div class="smallBlock fl">
+                    1
+                  </div> <div class="smallBlock fl">
+                    1
+                  </div> <div class="protocolDescription fl">
+                    day
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    hour
+                  </div> <div class="smallBlock fl">
+                    uint8
+                  </div> <div class="smallBlock fl">
+                    1
+                  </div> <div class="smallBlock fl">
+                    1
+                  </div> <div class="protocolDescription fl">
+                    hour
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    minute
+                  </div> <div class="smallBlock fl">
+                    uint8
+                  </div> <div class="smallBlock fl">
+                    1
+                  </div> <div class="smallBlock fl">
+                    1
+                  </div> <div class="protocolDescription fl">
+                    minute
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    second
+                  </div> <div class="smallBlock fl">
+                    uint8
+                  </div> <div class="smallBlock fl">
+                    1
+                  </div> <div class="smallBlock fl">
+                    1
+                  </div> <div class="protocolDescription fl">
+                    second
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    millisecond
+                  </div> <div class="smallBlock fl">
+                    uint16
+                  </div> <div class="smallBlock fl">
+                    2
+                  </div> <div class="smallBlock fl">
+                    123
+                  </div> <div class="protocolDescription fl">
+                    millisecond
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    timeflag
+                  </div> <div class="smallBlock fl">
+                    uint8
+                  </div> <div class="smallBlock fl">
+                    1
+                  </div> <div class="smallBlock fl">
+                    131
+                  </div> <div class="protocolDescription fl">
+                    flag for time - 0 = CPU, otherwise bit1 = GPS time, bit6 = leap second validated, bit7 = time validated, bit8 = date validated.
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    spare
+                  </div> <div class="smallBlock fl">
+                    uint16
+                  </div> <div class="smallBlock fl">
+                    2
+                  </div> <div class="smallBlock fl">
+                    0
+                  </div> <div class="protocolDescription fl">
+                    spare bytes
+                  </div> <div class="cb"></div></div></div> <div class="line"><div class="smallBlock fl">
+                  tagCnt
+                </div> <div class="smallBlock fl">
+                  uint8
+                </div> <div class="smallBlock fl">
+                  1
+                </div> <div class="smallBlock fl">
+                  10
+                </div> <div class="protocolDescription fl">
+                  amount of tags<br>indicates how many tag measurements will follow
+                </div> <div class="cb"></div></div> <div class="lineGroup lineGroupGray"><div class="repeatText">repeated tagCnt times</div> <div class="line"><div class="smallBlock fl">
+                    tag id
+                  </div> <div class="smallBlock fl">
+                    uint16
+                  </div> <div class="smallBlock fl">
+                    2
+                  </div> <div class="smallBlock fl">
+                    101
+                  </div> <div class="protocolDescription fl">
+                    tag id - 100..65536
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    tag offset
+                  </div> <div class="smallBlock fl">
+                    uint16
+                  </div> <div class="smallBlock fl">
+                    2
+                  </div> <div class="smallBlock fl">
+                    45000
+                  </div> <div class="protocolDescription fl">
+                    offset for timestamp in microsec, divided by 10
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    tagSize
+                  </div> <div class="smallBlock fl">
+                    uint16
+                  </div> <div class="smallBlock fl">
+                    2
+                  </div> <div class="smallBlock fl">
+                    100
+                  </div> <div class="protocolDescription fl">
+                    amount of bytes connected to this tag that will follow<br>sum of all the type blocks
+                  </div> <div class="cb"></div></div> <div class="lineGroupInner lineGroupBlue_1"><div class="line"><div class="smallBlock fl">
+                      type
+                    </div> <div class="smallBlock fl">
+                      uint8
+                    </div> <div class="smallBlock fl">
+                      1
+                    </div> <div class="smallBlock fl">
+                      68
+                    </div> <div class="protocolDescription fl">
+                      ‘D’ for distances
+                    </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                      anchorCnt
+                    </div> <div class="smallBlock fl">
+                      uint8
+                    </div> <div class="smallBlock fl">
+                      1
+                    </div> <div class="smallBlock fl">
+                      10
+                    </div> <div class="protocolDescription fl">
+                      amount of anchors<br>indicates how many anchor measurements will follow
+                    </div> <div class="cb"></div></div> <div class="lineGroup lineGroupInner lineGroupBlue_2"><div class="repeatTextLight">repeated anchorCnt times</div> <div class="line"><div class="smallBlock fl">
+                        anchor id
+                      </div> <div class="smallBlock fl">
+                        uint16
+                      </div> <div class="smallBlock fl">
+                        2
+                      </div> <div class="smallBlock fl">
+                        10
+                      </div> <div class="protocolDescription fl">
+                        anchor id - 10..99
+                      </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                        distance
+                      </div> <div class="smallBlock fl">
+                        uint16
+                      </div> <div class="smallBlock fl">
+                        2
+                      </div> <div class="smallBlock fl">
+                        1500
+                      </div> <div class="protocolDescription fl">
+                        distance in cm
+                      </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                        LOS1
+                      </div> <div class="smallBlock fl">
+                        uint8
+                      </div> <div class="smallBlock fl">
+                        1
+                      </div> <div class="smallBlock fl">
+                        1
+                      </div> <div class="protocolDescription fl">
+                        tag to anchor LOS status<br>0 = LOS, 1 = NLOS
+                      </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                        RSSI1
+                      </div> <div class="smallBlock fl">
+                        uint8
+                      </div> <div class="smallBlock fl">
+                        1
+                      </div> <div class="smallBlock fl">
+                        45
+                      </div> <div class="protocolDescription fl">
+                        tag to anchor RSSI [dB]
+                      </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                        LOS2
+                      </div> <div class="smallBlock fl">
+                        uint8
+                      </div> <div class="smallBlock fl">
+                        1
+                      </div> <div class="smallBlock fl">
+                        1
+                      </div> <div class="protocolDescription fl">
+                        anchor to tag LOS status<br>0 = LOS, 1 = NLOS
+                      </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                        RSSI2
+                      </div> <div class="smallBlock fl">
+                        uint8
+                      </div> <div class="smallBlock fl">
+                        1
+                      </div> <div class="smallBlock fl">
+                        45
+                      </div> <div class="protocolDescription fl">
+                        anchor to tag RSSI [dB]
+                      </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                        anchor offset
+                      </div> <div class="smallBlock fl">
+                        uint16
+                      </div> <div class="smallBlock fl">
+                        2
+                      </div> <div class="smallBlock fl">
+                        45000
+                      </div> <div class="protocolDescription fl">
+                        offset for timestamp in microsec, divided by 10
+                      </div> <div class="cb"></div></div></div></div> <div class="lineGroupInner lineGroupBlue_1"><div class="line"><div class="smallBlock fl">
+                      type
+                    </div> <div class="smallBlock fl">
+                      uint8
+                    </div> <div class="smallBlock fl">
+                      1
+                    </div> <div class="smallBlock fl">
+                      81
+                    </div> <div class="protocolDescription fl">
+                      ‘Q’ for quaternions
+                    </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                      q0
+                    </div> <div class="smallBlock fl">
+                      float
+                    </div> <div class="smallBlock fl">
+                      4
+                    </div> <div class="smallBlock fl">
+                      0.9913
+                    </div> <div class="protocolDescription fl">
+                      q0
+                    </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                      q1
+                    </div> <div class="smallBlock fl">
+                      float
+                    </div> <div class="smallBlock fl">
+                      4
+                    </div> <div class="smallBlock fl">
+                      0.0014
+                    </div> <div class="protocolDescription fl">
+                      q1
+                    </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                      q2
+                    </div> <div class="smallBlock fl">
+                      float
+                    </div> <div class="smallBlock fl">
+                      4
+                    </div> <div class="smallBlock fl">
+                      0.2341
+                    </div> <div class="protocolDescription fl">
+                      q2
+                    </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                      q3
+                    </div> <div class="smallBlock fl">
+                      float
+                    </div> <div class="smallBlock fl">
+                      4
+                    </div> <div class="smallBlock fl">
+                      0.1958
+                    </div> <div class="protocolDescription fl">
+                      q3
+                    </div> <div class="cb"></div></div></div> <div class="lineGroupInner lineGroupBlue_1"><div class="line"><div class="smallBlock fl">
+                      type
+                    </div> <div class="smallBlock fl">
+                      uint8
+                    </div> <div class="smallBlock fl">
+                      1
+                    </div> <div class="smallBlock fl">
+                      82
+                    </div> <div class="protocolDescription fl">
+                      ‘R’ for raw
+                    </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                      sampleCnt
+                    </div> <div class="smallBlock fl">
+                      uint8
+                    </div> <div class="smallBlock fl">
+                      1
+                    </div> <div class="smallBlock fl">
+                      1
+                    </div> <div class="protocolDescription fl">
+                      amount of samples that will follow
+                    </div> <div class="cb"></div></div> <div class="lineGroup lineGroupInner lineGroupBlue_2"><div class="repeatTextLight">repeated sampleCnt times</div> <div class="line"><div class="smallBlock fl">
+                        ts
+                      </div> <div class="smallBlock fl">
+                        uint16
+                      </div> <div class="smallBlock fl">
+                        2
+                      </div> <div class="smallBlock fl">
+                        25
+                      </div> <div class="protocolDescription fl">
+                        ts offset in us, divided by 10
+                      </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                        ax
+                      </div> <div class="smallBlock fl">
+                        uint16
+                      </div> <div class="smallBlock fl">
+                        2
+                      </div> <div class="smallBlock fl">
+                        123
+                      </div> <div class="protocolDescription fl">
+                        raw accel x value
+                      </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                        ay
+                      </div> <div class="smallBlock fl">
+                        uint16
+                      </div> <div class="smallBlock fl">
+                        2
+                      </div> <div class="smallBlock fl">
+                        123
+                      </div> <div class="protocolDescription fl">
+                        raw accel y value
+                      </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                        az
+                      </div> <div class="smallBlock fl">
+                        uint16
+                      </div> <div class="smallBlock fl">
+                        2
+                      </div> <div class="smallBlock fl">
+                        123
+                      </div> <div class="protocolDescription fl">
+                        raw accel z value
+                      </div> <div class="cb"></div></div> <br> <div class="line"><div class="smallBlock fl">
+                        gx
+                      </div> <div class="smallBlock fl">
+                        uint16
+                      </div> <div class="smallBlock fl">
+                        2
+                      </div> <div class="smallBlock fl">
+                        123
+                      </div> <div class="protocolDescription fl">
+                        raw accel x value
+                      </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                        gy
+                      </div> <div class="smallBlock fl">
+                        uint16
+                      </div> <div class="smallBlock fl">
+                        2
+                      </div> <div class="smallBlock fl">
+                        123
+                      </div> <div class="protocolDescription fl">
+                        raw accel y value
+                      </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                        gz
+                      </div> <div class="smallBlock fl">
+                        uint16
+                      </div> <div class="smallBlock fl">
+                        2
+                      </div> <div class="smallBlock fl">
+                        123
+                      </div> <div class="protocolDescription fl">
+                        raw accel z value
+                      </div> <div class="cb"></div></div> <br> <div class="line"><div class="smallBlock fl">
+                        mx
+                      </div> <div class="smallBlock fl">
+                        uint16
+                      </div> <div class="smallBlock fl">
+                        2
+                      </div> <div class="smallBlock fl">
+                        123
+                      </div> <div class="protocolDescription fl">
+                        raw accel x value
+                      </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                        my
+                      </div> <div class="smallBlock fl">
+                        uint16
+                      </div> <div class="smallBlock fl">
+                        2
+                      </div> <div class="smallBlock fl">
+                        123
+                      </div> <div class="protocolDescription fl">
+                        raw accel y value
+                      </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                        mz
+                      </div> <div class="smallBlock fl">
+                        uint16
+                      </div> <div class="smallBlock fl">
+                        2
+                      </div> <div class="smallBlock fl">
+                        123
+                      </div> <div class="protocolDescription fl">
+                        raw accel z value
+                      </div> <div class="cb"></div></div></div></div> <div class="lineGroupInner lineGroupBlue_1"><div class="line"><div class="smallBlock fl">
+                      type
+                    </div> <div class="smallBlock fl">
+                      uint8
+                    </div> <div class="smallBlock fl">
+                      1
+                    </div> <div class="smallBlock fl">
+                      80
+                    </div> <div class="protocolDescription fl">
+                      ‘P’ for positions
+                    </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                      x
+                    </div> <div class="smallBlock fl">
+                      uint32
+                    </div> <div class="smallBlock fl">
+                      4
+                    </div> <div class="smallBlock fl">
+                      1363
+                    </div> <div class="protocolDescription fl">
+                      x coordinate in cm
+                    </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                      y
+                    </div> <div class="smallBlock fl">
+                      uint32
+                    </div> <div class="smallBlock fl">
+                      4
+                    </div> <div class="smallBlock fl">
+                      -7348
+                    </div> <div class="protocolDescription fl">
+                      y coordinate in cm
+                    </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                      z
+                    </div> <div class="smallBlock fl">
+                      uint32
+                    </div> <div class="smallBlock fl">
+                      4
+                    </div> <div class="smallBlock fl">
+                      201
+                    </div> <div class="protocolDescription fl">
+                      z coordinate in cm
+                    </div> <div class="cb"></div></div></div> <div class="lineGroupInner lineGroupBlue_1"><div class="line"><div class="smallBlock fl">
+                      type
+                    </div> <div class="smallBlock fl">
+                      uint8
+                    </div> <div class="smallBlock fl">
+                      1
+                    </div> <div class="smallBlock fl">
+                      85
+                    </div> <div class="protocolDescription fl">
+                      ‘U’ for userdata out
+                    </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                      count
+                    </div> <div class="smallBlock fl">
+                      uint16
+                    </div> <div class="smallBlock fl">
+                      2
+                    </div> <div class="smallBlock fl">
+                      6
+                    </div> <div class="protocolDescription fl">
+                      amount of bytes that will follow
+                    </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                      bytestream
+                    </div> <div class="smallBlock fl">
+                      uint8
+                    </div> <div class="smallBlock fl">
+                      count
+                    </div> <div class="smallBlock fl">
+                      [1 2 3 4 5 6]
+                    </div> <div class="protocolDescription fl"></div> <div class="cb"></div></div></div> <div class="lineGroupInner lineGroupBlue_1"><div class="line"><div class="smallBlock fl">
+                      type
+                    </div> <div class="smallBlock fl">
+                      uint8
+                    </div> <div class="smallBlock fl">
+                      1
+                    </div> <div class="smallBlock fl">
+                      73
+                    </div> <div class="protocolDescription fl">
+                      'I' for Impulse Response
+                    </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                      length
+                    </div> <div class="smallBlock fl">
+                      uint16
+                    </div> <div class="smallBlock fl">
+                      2
+                    </div> <div class="smallBlock fl">
+                      6
+                    </div> <div class="protocolDescription fl">
+                      Amount of bytes that will follow
+                    </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                      source
+                    </div> <div class="smallBlock fl">
+                      uint16
+                    </div> <div class="smallBlock fl">
+                      2
+                    </div> <div class="smallBlock fl">
+                      101
+                    </div> <div class="protocolDescription fl">
+                      source of IR
+                    </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                      index
+                    </div> <div class="smallBlock fl">
+                      uint16
+                    </div> <div class="smallBlock fl">
+                      2
+                    </div> <div class="smallBlock fl">
+                      6
+                    </div> <div class="protocolDescription fl">
+                      index in accumulator
+                    </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                      left
+                    </div> <div class="smallBlock fl">
+                      uint8
+                    </div> <div class="smallBlock fl">
+                      1
+                    </div> <div class="smallBlock fl">
+                      5
+                    </div> <div class="protocolDescription fl">
+                      samples left of index
+                    </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                      right
+                    </div> <div class="smallBlock fl">
+                      uint8
+                    </div> <div class="smallBlock fl">
+                      1
+                    </div> <div class="smallBlock fl">
+                      15
+                    </div> <div class="protocolDescription fl">
+                      samples right of index
+                    </div> <div class="cb"></div></div> <div class="lineGroup lineGroupInner lineGroupBlue_2"><div class="repeatTextLight">repeated (left + right + 1) times</div> <div class="line"><div class="smallBlock fl">
+                          real
+                        </div> <div class="smallBlock fl">
+                          int16
+                        </div> <div class="smallBlock fl">
+                          2
+                        </div> <div class="smallBlock fl">
+                          -12
+                        </div> <div class="protocolDescription fl">
+                          real part of complex number
+                        </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                          complex
+                        </div> <div class="smallBlock fl">
+                          int16
+                        </div> <div class="smallBlock fl">
+                          2
+                        </div> <div class="smallBlock fl">
+                          75
+                        </div> <div class="protocolDescription fl">
+                          complex part of complex number
+                        </div> <div class="cb"></div></div></div></div></div></div></div> <div class="cb"></div></div> <div data-id="three" class="protocolBlock"><div class="protocolLeftSide">TO TAG RAW</div> <div class="protocolRightSide"><div class="block"><div class="line"><div class="smallBlock fl">
+                      preamble
+                  </div> <div class="smallBlock fl">
+                      uint16
+                  </div> <div class="smallBlock fl">
+                      2
+                  </div> <div class="smallBlock fl">
+                      '##'
+                  </div> <div class="protocolDescription fl">
+                      Preamble bytes (2x '#')
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                      length
+                  </div> <div class="smallBlock fl">
+                      uint16
+                  </div> <div class="smallBlock fl">
+                      2
+                  </div> <div class="smallBlock fl">
+                      16
+                  </div> <div class="protocolDescription fl">
+                      Length of the complete message
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  cmd
+                </div> <div class="smallBlock fl">
+                  char
+                </div> <div class="smallBlock fl">
+                  1
+                </div> <div class="smallBlock fl">
+                  'U'
+                </div> <div class="protocolDescription fl"></div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  version
+                </div> <div class="smallBlock fl">
+                  uint8
+                </div> <div class="smallBlock fl">
+                  1
+                </div> <div class="smallBlock fl">
+                  0
+                </div> <div class="protocolDescription fl">
+                  command protocol version
+                </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  idCnt
+                </div> <div class="smallBlock fl">
+                  uint8
+                </div> <div class="smallBlock fl">
+                  1
+                </div> <div class="smallBlock fl">
+                  2
+                </div> <div class="protocolDescription fl">
+                  amount of id’s that will follow
+                </div> <div class="cb"></div></div> <div class="lineGroup lineGroupGray"><div class="repeatText">repeated idCnt times</div> <div class="line"><div class="smallBlock fl">
+                    id
+                  </div> <div class="smallBlock fl">
+                    uint16
+                  </div> <div class="smallBlock fl">
+                    2
+                  </div> <div class="smallBlock fl">
+                    101
+                  </div> <div class="protocolDescription fl">
+                    node id
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    count
+                  </div> <div class="smallBlock fl">
+                    uint16
+                  </div> <div class="smallBlock fl">
+                    2
+                  </div> <div class="smallBlock fl">
+                    6
+                  </div> <div class="protocolDescription fl"></div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    bytestream
+                  </div> <div class="smallBlock fl">
+                    uint8
+                  </div> <div class="smallBlock fl">
+                    count
+                  </div> <div class="smallBlock fl">
+                    [1 2 3 4 5 6]
+                  </div> <div class="protocolDescription fl"></div> <div class="cb"></div></div></div></div></div> <div class="cb"></div></div> <div data-id="four" class="protocolBlock"><div class="protocolLeftSide">GET TAGLIST</div> <div class="protocolRightSide"><div class="block"><div class="line"><div class="smallBlock fl">
+                      preamble
+                  </div> <div class="smallBlock fl">
+                      uint16
+                  </div> <div class="smallBlock fl">
+                      2
+                  </div> <div class="smallBlock fl">
+                      '##'
+                  </div> <div class="protocolDescription fl">
+                      Preamble bytes (2x '#')
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                      length
+                  </div> <div class="smallBlock fl">
+                      uint16
+                  </div> <div class="smallBlock fl">
+                      2
+                  </div> <div class="smallBlock fl">
+                      16
+                  </div> <div class="protocolDescription fl">
+                      Length of the complete message
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  cmd
+                </div> <div class="smallBlock fl">
+                  char
+                </div> <div class="smallBlock fl">
+                  1
+                </div> <div class="smallBlock fl">
+                  'T'/84
+                </div> <div class="protocolDescription fl"></div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  version
+                </div> <div class="smallBlock fl">
+                  uint8
+                </div> <div class="smallBlock fl">
+                  1
+                </div> <div class="smallBlock fl">
+                  0
+                </div> <div class="protocolDescription fl">
+                  command protocol version
+                </div> <div class="cb"></div></div></div></div> <div class="cb"></div></div> <div data-id="five" class="protocolBlock"><div class="protocolLeftSide">TAGLIST</div> <div class="protocolRightSide"><div class="block"><div class="line"><div class="smallBlock fl">
+                      preamble
+                  </div> <div class="smallBlock fl">
+                      uint16
+                  </div> <div class="smallBlock fl">
+                      2
+                  </div> <div class="smallBlock fl">
+                      '##'
+                  </div> <div class="protocolDescription fl">
+                      Preamble bytes (2x '#')
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                      length
+                  </div> <div class="smallBlock fl">
+                      uint16
+                  </div> <div class="smallBlock fl">
+                      2
+                  </div> <div class="smallBlock fl">
+                      16
+                  </div> <div class="protocolDescription fl">
+                      Length of the complete message
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  cmd
+                </div> <div class="smallBlock fl">
+                  char
+                </div> <div class="smallBlock fl">
+                  1
+                </div> <div class="smallBlock fl">
+                  'T'/84
+                </div> <div class="protocolDescription fl"></div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  version
+                </div> <div class="smallBlock fl">
+                  uint8
+                </div> <div class="smallBlock fl">
+                  1
+                </div> <div class="smallBlock fl">
+                  0
+                </div> <div class="protocolDescription fl">
+                  command protocol version
+                </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  block length
+                </div> <div class="smallBlock fl">
+                  uint8
+                </div> <div class="smallBlock fl">
+                  1
+                </div> <div class="smallBlock fl">
+                  5
+                </div> <div class="protocolDescription fl">
+                  length of blocks to follow
+                </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  tagCnt
+                </div> <div class="smallBlock fl">
+                  uint16
+                </div> <div class="smallBlock fl">
+                  2
+                </div> <div class="smallBlock fl">
+                  2
+                </div> <div class="protocolDescription fl">
+                  amount of id’s that will follow
+                </div> <div class="cb"></div></div> <div class="lineGroup lineGroupGray"><div class="repeatText">repeated tagCnt times</div> <div class="line"><div class="smallBlock fl">
+                    id
+                  </div> <div class="smallBlock fl">
+                    uint16
+                  </div> <div class="smallBlock fl">
+                    2
+                  </div> <div class="smallBlock fl">
+                    101
+                  </div> <div class="protocolDescription fl">
+                    node id
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    speed
+                  </div> <div class="smallBlock fl">
+                    uint8
+                  </div> <div class="smallBlock fl">
+                    1
+                  </div> <div class="smallBlock fl">
+                    1
+                  </div> <div class="protocolDescription fl"></div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    z-coords
+                  </div> <div class="smallBlock fl">
+                    int16
+                  </div> <div class="smallBlock fl">
+                    2
+                  </div> <div class="smallBlock fl">
+                    1234
+                  </div> <div class="protocolDescription fl">
+                    height of the tag in cm
+                  </div> <div class="cb"></div></div></div></div></div> <div class="cb"></div></div> <div data-id="six" class="protocolBlock"><div class="protocolLeftSide">GET ANCHORLIST</div> <div class="protocolRightSide"><div class="block"><div class="line"><div class="smallBlock fl">
+                      preamble
+                  </div> <div class="smallBlock fl">
+                      uint16
+                  </div> <div class="smallBlock fl">
+                      2
+                  </div> <div class="smallBlock fl">
+                      '##'
+                  </div> <div class="protocolDescription fl">
+                      Preamble bytes (2x '#')
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                      length
+                  </div> <div class="smallBlock fl">
+                      uint16
+                  </div> <div class="smallBlock fl">
+                      2
+                  </div> <div class="smallBlock fl">
+                      16
+                  </div> <div class="protocolDescription fl">
+                      Length of the complete message
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  cmd
+                </div> <div class="smallBlock fl">
+                  char
+                </div> <div class="smallBlock fl">
+                  1
+                </div> <div class="smallBlock fl">
+                  ’A’/65
+                </div> <div class="protocolDescription fl"></div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  version
+                </div> <div class="smallBlock fl">
+                  uint8
+                </div> <div class="smallBlock fl">
+                  1
+                </div> <div class="smallBlock fl">
+                  0
+                </div> <div class="protocolDescription fl">
+                  command protocol version
+                </div> <div class="cb"></div></div></div></div> <div class="cb"></div></div> <div data-id="seven" class="protocolBlock"><div class="protocolLeftSide">ANCHORLIST</div> <div class="protocolRightSide"><div class="block"><div class="line"><div class="smallBlock fl">
+                      preamble
+                  </div> <div class="smallBlock fl">
+                      uint16
+                  </div> <div class="smallBlock fl">
+                      2
+                  </div> <div class="smallBlock fl">
+                      '##'
+                  </div> <div class="protocolDescription fl">
+                      Preamble bytes (2x '#')
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                      length
+                  </div> <div class="smallBlock fl">
+                      uint16
+                  </div> <div class="smallBlock fl">
+                      2
+                  </div> <div class="smallBlock fl">
+                      16
+                  </div> <div class="protocolDescription fl">
+                      Length of the complete message
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  cmd
+                </div> <div class="smallBlock fl">
+                  char
+                </div> <div class="smallBlock fl">
+                  1
+                </div> <div class="smallBlock fl">
+                  ’A’/65
+                </div> <div class="protocolDescription fl"></div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  version
+                </div> <div class="smallBlock fl">
+                  uint8
+                </div> <div class="smallBlock fl">
+                  1
+                </div> <div class="smallBlock fl">
+                  0
+                </div> <div class="protocolDescription fl">
+                  command protocol version
+                </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  block length
+                </div> <div class="smallBlock fl">
+                  uint8
+                </div> <div class="smallBlock fl">
+                  1
+                </div> <div class="smallBlock fl">
+                  8
+                </div> <div class="protocolDescription fl">
+                  length of blocks to follow
+                </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  anchorCnt
+                </div> <div class="smallBlock fl">
+                  uint16
+                </div> <div class="smallBlock fl">
+                  2
+                </div> <div class="smallBlock fl">
+                  2
+                </div> <div class="protocolDescription fl">
+                  amount of id’s that will follow
+                </div> <div class="cb"></div></div> <div class="lineGroup lineGroupGray"><div class="repeatText">repeated anchorCnt times</div> <div class="line"><div class="smallBlock fl">
+                    id
+                  </div> <div class="smallBlock fl">
+                    uint16
+                  </div> <div class="smallBlock fl">
+                    2
+                  </div> <div class="smallBlock fl">
+                    101
+                  </div> <div class="protocolDescription fl">
+                    node id
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    x-coord
+                  </div> <div class="smallBlock fl">
+                    int16
+                  </div> <div class="smallBlock fl">
+                    2
+                  </div> <div class="smallBlock fl">
+                    1234
+                  </div> <div class="protocolDescription fl">
+                    x-coordinate of the anchor in cm
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    y-coord
+                  </div> <div class="smallBlock fl">
+                    int16
+                  </div> <div class="smallBlock fl">
+                    2
+                  </div> <div class="smallBlock fl">
+                    1234
+                  </div> <div class="protocolDescription fl">
+                    y-coordinate of the anchor in cm
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    z-coord
+                  </div> <div class="smallBlock fl">
+                    int16
+                  </div> <div class="smallBlock fl">
+                    2
+                  </div> <div class="smallBlock fl">
+                    1234
+                  </div> <div class="protocolDescription fl">
+                    z-coordinate of the anchor in cm
+                  </div> <div class="cb"></div></div></div></div></div> <div class="cb"></div></div> <div data-id="eight" class="protocolBlock"><div class="protocolLeftSide">EXTERNAL IMPULSE</div> <div class="protocolRightSide"><div class="block"><div class="line"><div class="smallBlock fl">
+                      preamble
+                  </div> <div class="smallBlock fl">
+                      uint16
+                  </div> <div class="smallBlock fl">
+                      2
+                  </div> <div class="smallBlock fl">
+                      '##'
+                  </div> <div class="protocolDescription fl">
+                      Preamble bytes (2x '#')
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                      length
+                  </div> <div class="smallBlock fl">
+                      uint16
+                  </div> <div class="smallBlock fl">
+                      2
+                  </div> <div class="smallBlock fl">
+                      16
+                  </div> <div class="protocolDescription fl">
+                      Length of the complete message
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  cmd
+                </div> <div class="smallBlock fl">
+                  char
+                </div> <div class="smallBlock fl">
+                  1
+                </div> <div class="smallBlock fl">
+                  'E'/69
+                </div> <div class="protocolDescription fl"></div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  version
+                </div> <div class="smallBlock fl">
+                  uint8
+                </div> <div class="smallBlock fl">
+                  1
+                </div> <div class="smallBlock fl">
+                  0
+                </div> <div class="protocolDescription fl">
+                  command protocol version
+                </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  length
+                </div> <div class="smallBlock fl">
+                  uint8
+                </div> <div class="smallBlock fl">
+                  1
+                </div> <div class="smallBlock fl">
+                  15
+                </div> <div class="protocolDescription fl">
+                  amount of bytes that follows
+                </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  type
+                </div> <div class="smallBlock fl">
+                  uint8
+                </div> <div class="smallBlock fl">
+                  1
+                </div> <div class="smallBlock fl">
+                  101
+                </div> <div class="protocolDescription fl">
+                  type information
+                </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  frame
+                </div> <div class="smallBlock fl">
+                  uint32
+                </div> <div class="smallBlock fl">
+                  4
+                </div> <div class="smallBlock fl">
+                  1234
+                </div> <div class="protocolDescription fl">
+                  frame number in which the event has happened
+                </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  offset
+                </div> <div class="smallBlock fl">
+                  uint16
+                </div> <div class="smallBlock fl">
+                  2
+                </div> <div class="smallBlock fl">
+                  1234
+                </div> <div class="protocolDescription fl">
+                  offset in ms within the frame
+                </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  gps
+                </div> <div class="smallBlock fl">
+                  uint8[8]
+                </div> <div class="smallBlock fl">
+                  8
+                </div> <div class="smallBlock fl"><i>see up (add link)</i></div> <div class="protocolDescription fl">
+                  time in GPS format
+                </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  spare
+                </div> <div class="smallBlock fl">
+                  uint16
+                </div> <div class="smallBlock fl">
+                  2
+                </div> <div class="smallBlock fl">
+                  1234
+                </div> <div class="protocolDescription fl">
+                  spare bytes
+                </div> <div class="cb"></div></div></div></div> <div class="cb"></div></div> <div data-id="nine" class="protocolBlock"><div class="protocolLeftSide">DEVICE STATUSES</div> <div class="protocolRightSide"><div class="block"><div class="line"><div class="smallBlock fl">
+                      preamble
+                  </div> <div class="smallBlock fl">
+                      uint16
+                  </div> <div class="smallBlock fl">
+                      2
+                  </div> <div class="smallBlock fl">
+                      '##'
+                  </div> <div class="protocolDescription fl">
+                      Preamble bytes (2x '#')
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                      length
+                  </div> <div class="smallBlock fl">
+                      uint16
+                  </div> <div class="smallBlock fl">
+                      2
+                  </div> <div class="smallBlock fl">
+                      16
+                  </div> <div class="protocolDescription fl">
+                      Length of the complete message
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  cmd
+                </div> <div class="smallBlock fl">
+                  char
+                </div> <div class="smallBlock fl">
+                  1
+                </div> <div class="smallBlock fl">
+                  'X'/88
+                </div> <div class="protocolDescription fl"></div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  version
+                </div> <div class="smallBlock fl">
+                  uint8
+                </div> <div class="smallBlock fl">
+                  1
+                </div> <div class="smallBlock fl">
+                  0
+                </div> <div class="protocolDescription fl">
+                  command protocol version
+                </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  block length
+                </div> <div class="smallBlock fl">
+                  uint8
+                </div> <div class="smallBlock fl">
+                  1
+                </div> <div class="smallBlock fl">
+                  48
+                </div> <div class="protocolDescription fl">
+                  length of each block that follows
+                </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  nodeCnt
+                </div> <div class="smallBlock fl">
+                  uint16
+                </div> <div class="smallBlock fl">
+                  2
+                </div> <div class="smallBlock fl">
+                  3
+                </div> <div class="protocolDescription fl">
+                  amount of blocks that will follow
+                </div> <div class="cb"></div></div> <div class="lineGroup lineGroupGray"><div class="repeatText">repeated nodeCnt times</div> <div class="line"><div class="smallBlock fl">
+                    nodeid
+                  </div> <div class="smallBlock fl">
+                    uint16
+                  </div> <div class="smallBlock fl">
+                    2
+                  </div> <div class="smallBlock fl">
+                    100
+                  </div> <div class="protocolDescription fl">
+                    tag id - 100..65536
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    node kind
+                  </div> <div class="smallBlock fl">
+                    uint8
+                  </div> <div class="smallBlock fl">
+                    1
+                  </div> <div class="smallBlock fl">
+                    1
+                  </div> <div class="protocolDescription fl">
+                    kind of FW running at the moment &lt;\br&gt; <i>(see list of node kind)</i></div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    frame_off_micro
+                  </div> <div class="smallBlock fl">
+                    uint16
+                  </div> <div class="smallBlock fl">
+                    2
+                  </div> <div class="smallBlock fl">
+                    1000
+                  </div> <div class="protocolDescription fl">
+                    offset inside frame in microsec/10
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    uptime
+                  </div> <div class="smallBlock fl">
+                    uint32
+                  </div> <div class="smallBlock fl">
+                    4
+                  </div> <div class="smallBlock fl">
+                    10000
+                  </div> <div class="protocolDescription fl">
+                    uptime in seconds
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    reset reason
+                  </div> <div class="smallBlock fl">
+                    uint8
+                  </div> <div class="smallBlock fl">
+                    1
+                  </div> <div class="smallBlock fl">
+                    1
+                  </div> <div class="protocolDescription fl">
+                    reson of last boot  &lt;\br&gt; <i>(see list of boot reasons)</i></div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    config ver
+                  </div> <div class="smallBlock fl">
+                    uint16
+                  </div> <div class="smallBlock fl">
+                    2
+                  </div> <div class="smallBlock fl">
+                    10
+                  </div> <div class="protocolDescription fl">
+                    config file version
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    tagspeed ver
+                  </div> <div class="smallBlock fl">
+                    uint16
+                  </div> <div class="smallBlock fl">
+                    2
+                  </div> <div class="smallBlock fl">
+                    10
+                  </div> <div class="protocolDescription fl">
+                    tagspeed file version
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    ant delay
+                  </div> <div class="smallBlock fl">
+                    uint16
+                  </div> <div class="smallBlock fl">
+                    2
+                  </div> <div class="smallBlock fl">
+                    16475
+                  </div> <div class="protocolDescription fl">
+                    antenna delay
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    last seen
+                  </div> <div class="smallBlock fl">
+                    uint32
+                  </div> <div class="smallBlock fl">
+                    4
+                  </div> <div class="smallBlock fl">
+                    ..
+                  </div> <div class="protocolDescription fl">
+                    time last seen
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    last user data
+                  </div> <div class="smallBlock fl">
+                    uint32
+                  </div> <div class="smallBlock fl">
+                    4
+                  </div> <div class="smallBlock fl">
+                    ..
+                  </div> <div class="protocolDescription fl">
+                    time of last seen user data
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    voltage
+                  </div> <div class="smallBlock fl">
+                    uint16
+                  </div> <div class="smallBlock fl">
+                    2
+                  </div> <div class="smallBlock fl">
+                    40000
+                  </div> <div class="protocolDescription fl">
+                    raw ADC value <br>(formula = <i>(3.3 x value)/(2ˆ15) </i>)
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    hw number
+                  </div> <div class="smallBlock fl">
+                    uint8
+                  </div> <div class="smallBlock fl">
+                    1
+                  </div> <div class="smallBlock fl">
+                    2
+                  </div> <div class="protocolDescription fl">
+                    hardware number  <br><i>see HW list</i></div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    loader ver
+                  </div> <div class="smallBlock fl">
+                    uint16
+                  </div> <div class="smallBlock fl">
+                    2
+                  </div> <div class="smallBlock fl">
+                    24
+                  </div> <div class="protocolDescription fl">
+                    loader fw version
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    loader crc
+                  </div> <div class="smallBlock fl">
+                    uint16
+                  </div> <div class="smallBlock fl">
+                    2
+                  </div> <div class="smallBlock fl">
+                    12345
+                  </div> <div class="protocolDescription fl">
+                    loader fw crc
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    anchor ver
+                  </div> <div class="smallBlock fl">
+                    uint16
+                  </div> <div class="smallBlock fl">
+                    2
+                  </div> <div class="smallBlock fl">
+                    473
+                  </div> <div class="protocolDescription fl">
+                    anchor fw version
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    anchor crc
+                  </div> <div class="smallBlock fl">
+                    uint16
+                  </div> <div class="smallBlock fl">
+                    2
+                  </div> <div class="smallBlock fl">
+                    12345
+                  </div> <div class="protocolDescription fl">
+                    anchor fw crc
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    tag ver
+                  </div> <div class="smallBlock fl">
+                    uint16
+                  </div> <div class="smallBlock fl">
+                    2
+                  </div> <div class="smallBlock fl">
+                    473
+                  </div> <div class="protocolDescription fl">
+                    tag fw version
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    tag crc
+                  </div> <div class="smallBlock fl">
+                    uint16
+                  </div> <div class="smallBlock fl">
+                    2
+                  </div> <div class="smallBlock fl">
+                    12345
+                  </div> <div class="protocolDescription fl">
+                    tag fw crc
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    tag subver
+                  </div> <div class="smallBlock fl">
+                    uint8
+                  </div> <div class="smallBlock fl">
+                    1
+                  </div> <div class="smallBlock fl">
+                    13
+                  </div> <div class="protocolDescription fl">
+                    tag fw subversion
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                    deca64
+                  </div> <div class="smallBlock fl">
+                    uint64
+                  </div> <div class="smallBlock fl">
+                    8
+                  </div> <div class="smallBlock fl">
+                    0xDECA1234
+                  </div> <div class="protocolDescription fl">
+                    the long ID of the tag
+                  </div> <div class="cb"></div></div></div></div></div> <div class="cb"></div></div> <div data-id="ten" class="protocolBlock"><div class="protocolLeftSide">RANKING</div> <div class="protocolRightSide"><div class="block"><div class="line"><div class="smallBlock fl">
+                      preamble
+                  </div> <div class="smallBlock fl">
+                      uint16
+                  </div> <div class="smallBlock fl">
+                      2
+                  </div> <div class="smallBlock fl">
+                      '##'
+                  </div> <div class="protocolDescription fl">
+                      Preamble bytes (2x '#')
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                      length
+                  </div> <div class="smallBlock fl">
+                      uint16
+                  </div> <div class="smallBlock fl">
+                      2
+                  </div> <div class="smallBlock fl">
+                      16
+                  </div> <div class="protocolDescription fl">
+                      Length of the complete message
+                  </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  cmd
+                </div> <div class="smallBlock fl">
+                  char
+                </div> <div class="smallBlock fl">
+                  1
+                </div> <div class="smallBlock fl">
+                  'R'/82
+                </div> <div class="protocolDescription fl">
+                  A single character indicating the command type.
+                </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  version
+                </div> <div class="smallBlock fl">
+                  uint8
+                </div> <div class="smallBlock fl">
+                  1
+                </div> <div class="smallBlock fl">
+                  ..
+                </div> <div class="protocolDescription fl">
+                  A uint8 value representing the command protocol version.
+                </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  length
+                </div> <div class="smallBlock fl">
+                  uint16
+                </div> <div class="smallBlock fl">
+                  2
+                </div> <div class="smallBlock fl">
+                  ..
+                </div> <div class="protocolDescription fl">
+                  A uint16 value indicating the amount of bytes that will follow.
+                </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  frame
+                </div> <div class="smallBlock fl">
+                  uint32
+                </div> <div class="smallBlock fl">
+                  4
+                </div> <div class="smallBlock fl">
+                  ..
+                </div> <div class="protocolDescription fl">
+                  A uint32 value representing the frame number.
+                </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  gps time
+                </div> <div class="smallBlock fl">
+                  uint8[8]
+                </div> <div class="smallBlock fl">
+                  8
+                </div> <div class="smallBlock fl">
+                  ..
+                </div> <div class="protocolDescription fl">
+                  An array of uint8[8] representing the time in GPS format.
+                </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                  tagCnt
+                </div> <div class="smallBlock fl">
+                  uint16
+                </div> <div class="smallBlock fl">
+                  2
+                </div> <div class="smallBlock fl">
+                  ..
+                </div> <div class="protocolDescription fl">
+                  A uint16 value indicating the amount of tags that will follow.
+                </div> <div class="cb"></div></div> <div class="lineGroup"><div class="lineGroupInner lineGroupBlue_1"><div class="repeatText">The following block is repeated tagCnt times:</div> <div class="line"><div class="smallBlock fl">
+                      id
+                    </div> <div class="smallBlock fl">
+                      uint16
+                    </div> <div class="smallBlock fl">
+                      2
+                    </div> <div class="smallBlock fl">
+                      ..
+                    </div> <div class="protocolDescription fl">
+                      A uint16 value representing the tag id.
+                    </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                      horseNr
+                    </div> <div class="smallBlock fl">
+                      uint16
+                    </div> <div class="smallBlock fl">
+                      2
+                    </div> <div class="smallBlock fl">
+                      ..
+                    </div> <div class="protocolDescription fl">
+                      A uint16 value representing the horse number.
+                    </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                      rank
+                    </div> <div class="smallBlock fl">
+                      uint16
+                      </div> <div class="smallBlock fl">
+                        2
+                      </div> <div class="smallBlock fl">
+                        ..
+                      </div> <div class="protocolDescription fl">
+                        A uint16 value representing the rank.
+                      </div> <div class="cb"></div></div> <div class="line"><div class="smallBlock fl">
+                        extra
+                      </div> <div class="smallBlock fl">
+                        uint16
+                      </div> <div class="smallBlock fl">
+                        2
+                      </div> <div class="smallBlock fl">
+                        ..
+                      </div> <div class="protocolDescription fl">
+                        A uint16 value representing extra information.
+                      </div> <div class="cb"></div></div></div></div></div></div></div></div> <div class="cb"></div></div> <blockquote><p>the &quot;GET&quot; commands can be sent to retrieve the corresponding data</p></blockquote> <h2 id="code-examples"><a href="#code-examples" class="header-anchor">#</a> Code examples</h2> <p>Check out basic code examples at <a href="https://github.com/RT-LOC/APIs" target="_blank" rel="noopener noreferrer">https://github.com/RT-LOC/APIs<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> (C, Python, Javascript)</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">9/27/2023, 3:47:33 PM</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/api/api_engine_local_mqtt.html">
+        Local JSON data (MQTT)
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.d03c60b2.js" defer></script><script src="/assets/js/5.40e3af12.js" defer></script><script src="/assets/js/75.661ea03d.js" defer></script><script src="/assets/js/39.5082a64a.js" defer></script><script src="/assets/js/41.2220e4f8.js" defer></script>
+  </body>
+</html>
