@@ -18,7 +18,7 @@
         "vuetify": "^2.4.10"
     },
     "devDependencies": {
-        "browser-sync": "^2.26.7",
+        "browser-sync": "^2.27.10",
         "deepmerge": "^4.2.2",
         "lottie-web": "^5.5.10",
         "sass": "~1.32",
